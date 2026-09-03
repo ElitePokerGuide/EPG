@@ -1,4 +1,4 @@
-# main
+# EPG
 Elite Poker Guide
 Elite Poker Guide is a discovery and commerce hub for poker education.
 
