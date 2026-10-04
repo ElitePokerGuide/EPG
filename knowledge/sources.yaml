@@ -20,7 +20,7 @@ sources:
     formats: [cash-6max, general]
     size_bytes: 2664090
     batch: 1
-    status: normalized
+    status: extracted
   - id: cc-grade-0
     drive_id: 1iPscXIgueq4Z1rXxssTpI5xMFFWmpaq3
     file: "CARROT CORNER - CARROT POKER SCHOOL GRADE 0.txt"
@@ -29,7 +29,7 @@ sources:
     formats: [cash-6max]
     size_bytes: 995113
     batch: 1
-    status: normalized
+    status: extracted
   - id: br79-ctm-6max
     drive_id: 1_4Y34wBTMkBsodn_WseD9mVA3pH4PG4C
     file: "BlackRain79 Crushing the micros 6 max.txt"
@@ -38,7 +38,7 @@ sources:
     formats: [cash-6max]
     size_bytes: 286327
     batch: 1
-    status: normalized
+    status: extracted
   - id: 2cc-flop-exploits
     drive_id: 18eek6Jb0w2HltROqtlHb38M4nS3BabNX
     file: "2 Card Confidence Mini-Course - Flop Exploits.txt"
@@ -47,7 +47,7 @@ sources:
     formats: [cash-6max]
     size_bytes: 295591
     batch: 1
-    status: normalized
+    status: extracted
 
   # ---- Batch 2: Cash 6-max, next ----
   - { id: cc-grade-1, drive_id: 1r8rCXbDRC-xOpMJ82hnCsFwN1-w1jpQS, file: "CARROT CORNER - CARROT POKER SCHOOL GRADE 1.txt", school: cc, course: "Carrot Poker School Grade 1", formats: [cash-6max], size_bytes: 809968, batch: 2, status: pending }
