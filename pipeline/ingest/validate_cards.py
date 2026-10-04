@@ -47,8 +47,14 @@ def main():
     errors, ids, by_topic, by_status = [], Counter(), Counter(), Counter()
     source_ngrams = {}
     for f in files:
-        cards = yaml.safe_load(f.read_text()) or []
         rel = f.relative_to(KNOWLEDGE)
+        try:
+            cards = yaml.safe_load(f.read_text()) or []
+        except yaml.YAMLError as e:
+            errors.append(f"{rel}: YAML parse error: {str(e).splitlines()[0][:100]} (quote scalars containing ': ')")
+            continue
+        if not isinstance(cards, list):
+            errors.append(f"{rel}: top level must be a YAML list of cards"); continue
         for c in cards:
             cid = c.get("id", "?")
             for e in validator.iter_errors(c):
