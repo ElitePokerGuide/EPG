@@ -1,0 +1,585 @@
+- id: c-cash-6max-br1-start-own-tables-001
+  format: cash-6max
+  topic: table-selection
+  concepts: [table-selection, recreational-players, lobby, game-selection]
+  level: beginner
+  position: any
+  title: Open your own table instead of joining waiting lists
+  claim: >-
+    If you want to play against recreational players, start empty tables yourself rather than
+    queuing for the busiest high-VPIP tables. Weak players want to play immediately and will
+    sit at a table with one person waiting far sooner than they will join a list.
+  why: >-
+    Lobby stats describe the past. By the time you get a seat at a table showing a high VPIP,
+    the player who created that number may already be broke and gone. Waiting lists also take
+    away seat choice, so you cannot guarantee the weak player ends up on your right. An empty
+    table flips the dynamic: the impatient player comes to you, you already hold a seat, and
+    you choose whether to stay once you see who arrived. On smaller sites with few tables this
+    is often the only reliable way to find soft games at all.
+  common_mistake: >-
+    Loading every full high-VPIP table, joining five waiting lists and assuming the fish will
+    still be there when a seat opens.
+  numbers: []
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#01
+      stance: supports
+      note: Coach opens two empty NL2 tables and shows weak players joining within minutes.
+  consensus_score: 0.5
+  hook_ideas:
+    - Waiting lists are where your win rate goes to die.
+    - Stop chasing the fish. Let them come to you.
+    - The best table in the lobby is the one you create.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-fish-on-your-right-002
+  format: cash-6max
+  topic: table-selection
+  concepts: [seat-selection, position, recreational-players]
+  level: beginner
+  position: any
+  title: Seat selection matters as much as table selection
+  claim: >-
+    Sit so that the weakest player at the table acts before you, ideally directly to your right.
+    Position on a specific opponent decides how many hands you can play against them and who
+    gets the last bet in.
+  why: >-
+    Take two players of identical skill at a 6-max table and give one of them position on the
+    other. The player acting last will win a substantial amount from the other over time with no
+    skill difference at all. Now apply that to a player who already makes mistakes: with them on
+    your right you can isolate their limps, call their weak raises, control pot size and bet
+    when they check. With them on your left they get to act after you on every street and much
+    of that edge evaporates.
+  common_mistake: >-
+    Treating any seat at a soft table as equally good, or staying seated with the weak player
+    on your left because moving feels like effort.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#04
+      stance: supports
+      note: Coach argues positional edge between equal players is large but gives no number.
+  consensus_score: 0.5
+  hook_ideas:
+    - Same table, wrong seat, half the profit.
+    - Who sits on your right decides your win rate.
+    - The seat you choose is a decision. Treat it like one.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-headsup-button-range-003
+  format: cash-6max
+  topic: preflop-ranges
+  concepts: [heads-up, button, opening-range, short-handed]
+  level: beginner
+  street: preflop
+  position: btn
+  title: Heads-up against a weak player, raise roughly 80-85% of buttons
+  claim: >-
+    When a table is down to two players and your opponent is recreational, open about 80-85% of
+    hands from the button and fold only the pure trash such as 9-3 offsuit or T-2 offsuit.
+    Out of position, call sparingly and 3-bet occasionally rather than flatting a lot.
+  why: >-
+    Two-handed, the blinds come around every other hand, so folding costs far more than it does
+    6-max. The button has position on every postflop street and a weak opponent will fold too
+    often preflop and play badly when they do defend. That makes raising almost anything
+    profitable. The reverse also holds: without position you should stay disciplined, because
+    the same positional edge is now working against you.
+  common_mistake: >-
+    Playing a standard 6-max button range heads-up and bleeding blinds, or calling wide from the
+    big blind and getting out-positioned every hand.
+  numbers:
+    - "Heads-up button open frequency: ~80-85%"
+    - "Fold only the bottom ~15%, e.g. 9-3o, T-2o"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#02
+      stance: supports
+  consensus_score: 0.5
+  hook_ideas:
+    - Heads-up, folding the button is a leak. Here is the range.
+    - "Ten-deuce offsuit: the one hand you fold heads-up."
+    - You should raise four out of five buttons here.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-dont-bluff-stations-004
+  format: cash-6max
+  topic: exploits
+  concepts: [calling-station, bluffing, recreational-players, value]
+  level: beginner
+  street: multi-street
+  position: any
+  title: Against players who do not fold, stop bluffing and bet made hands
+  claim: >-
+    The simplest profitable plan against a recreational player is to make a decent hand and bet
+    it. Do not build a habit of trying to bluff them off pots; the one thing they reliably refuse
+    to do is fold.
+  why: >-
+    A bluff only earns money when the opponent folds a hand that beats you. A player who calls
+    with any pair, any draw and sometimes ace-high removes that fold equity almost entirely, so
+    every chip you bluff is mostly donated. The same stickiness makes them the perfect value
+    target: they pay off top pair, second pair and even weaker holdings. Redirect the aggression
+    from bluffs to value bets and your variance drops while your win rate rises.
+  common_mistake: >-
+    Firing a second and third barrel at a calling station because the board looks scary, then
+    being shown bottom pair.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#01
+      stance: supports
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#03
+      stance: supports
+      note: Repeated across the lesson in several hands; coach checks down with the best hand instead of bluffing.
+  consensus_score: 0.5
+  hook_ideas:
+    - Bluffing a calling station is just a donation with extra steps.
+    - Most micro players bluff the one opponent who never folds.
+    - You do not need to bluff. You already have the best hand.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-overbet-vs-nonfolders-005
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [overbet, value-betting, calling-station, draws]
+  level: beginner
+  street: multi-street
+  position: any
+  title: Size up to a slight overbet when they will call anyway
+  claim: >-
+    When you hold a strong hand against a micro-stakes player who never folds a draw or a pair,
+    bet a bit more than the pot on the turn and river. If their calling range does not shrink
+    as the bet grows, a smaller bet is simply money left behind.
+  why: >-
+    Bet sizing is a trade between how often you get called and how much you win when called.
+    Against a thinking opponent a larger bet cuts their calling range, so you balance the two.
+    Against a player who calls draws and weak pairs regardless of price, the first half of the
+    trade disappears. You are being called the same amount of the time whatever you bet, so
+    the only lever left is the size. This also charges draws correctly on wet boards where you
+    would otherwise give them a cheap card.
+  common_mistake: >-
+    Betting half pot "to keep them in" against someone who was never going anywhere.
+  numbers:
+    - "Slight overbet (a little above 100% pot) on turn and river against stations"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#03
+      stance: supports
+      note: Coach overbets turn and river vs a player holding a king who never folds.
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#06
+      stance: supports
+      note: Also says he bets a bit more with good hands at NL2 because they call.
+  consensus_score: 0.5
+  hook_ideas:
+    - If they always call, why are you betting half pot?
+    - The overbet is a value tool at micro stakes, not a bluff.
+    - Betting small against a station is leaving money on the table.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-isolate-limpers-006
+  format: cash-6max
+  topic: preflop-ranges
+  concepts: [isolation-raise, limpers, recreational-players, position]
+  level: beginner
+  street: preflop
+  position: ip
+  title: Raise limpers with a wide range, especially when they limp your blind
+  claim: >-
+    When a weak player open-limps, isolate with a wide range rather than limping behind or
+    folding marginal hands. Keep doing it even after they call a few times; you will not win
+    every pot, so let a missed flop go and attack again next time.
+  why: >-
+    Open-limping is close to a confession: strong players almost never do it, so the limper is
+    usually a weak player with a weak range. Raising gives you the initiative, builds a pot
+    against the person you want to play with, and frequently wins a c-bet on the flop when
+    they miss, which is most of the time. If they call and the flop is bad for you, one
+    give-up costs little compared with the pots you take down and the stacks you win when you
+    both connect.
+  common_mistake: >-
+    Letting players limp into your blinds for free, or quitting the isolation plan after one
+    failed c-bet.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#02
+      stance: supports
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#03
+      stance: supports
+      note: "'You will not win every isolation; let it go and go after them again.'"
+  consensus_score: 0.5
+  hook_ideas:
+    - Someone limps into your blind. Raise. Every time.
+    - A limp tells you more than fifty hands of stats.
+    - Limpers are inviting you to take the pot. Accept.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-tag-and-cycle-tables-007
+  format: cash-6max
+  topic: table-selection
+  concepts: [tagging, table-selection, hud, session-management]
+  level: beginner
+  position: any
+  title: Tag weak players immediately and leave tables that have none
+  claim: >-
+    Mark a player as recreational the moment you see a clear sign such as an open-limp, a short
+    or odd buy-in or a very high VPIP over even a dozen hands. Then glance at each table: if no
+    tagged player is seated, leave and open or join another one.
+  why: >-
+    Your reason for being at any table is a specific weak player, not the table itself. Tags
+    make that reason visible at a glance when you are playing several tables and cannot
+    remember who is who. They also make the exit decision mechanical: no tag, no reason to
+    stay. You will face enough regulars by accident; there is no need to volunteer for more by
+    sitting at a table where everyone plays reasonably.
+  common_mistake: >-
+    Staying at a table out of inertia after the weak player has busted, and grinding against
+    regulars for an hour.
+  numbers:
+    - "Coach treats ~64% VPIP over 14 hands as enough to tag someone"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#03
+      stance: supports
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#05
+      stance: supports
+  consensus_score: 0.5
+  hook_ideas:
+    - No fish tag on the table? You should not be there.
+    - One habit that fixes table selection in a single session.
+    - Fourteen hands is enough to know who pays you.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-passive-fish-pot-control-008
+  format: cash-6max
+  topic: exploits
+  concepts: [pot-control, passive-opponents, marginal-hands, recreational-players]
+  level: beginner
+  street: multi-street
+  position: ip
+  title: Pot control is cheap against passive players because they rarely punish it
+  claim: >-
+    With a medium-strength hand against a passive recreational player, checking a street costs
+    little. They seldom respond with a large bet that puts you in a hard spot; when they do bet,
+    the size is often small or odd and gives you a comfortable call.
+  why: >-
+    The usual argument against pot control is that checking hands the initiative to the
+    opponent, who can then bluff you off a decent hand. That argument depends on the opponent
+    being capable of a well-sized bluff. Passive players mostly check behind or bet amounts
+    that give you direct odds. So you get to see cheap turns and rivers with hands like second
+    pair, avoid stacking off when you are behind and still collect a bet later when you are
+    ahead.
+  common_mistake: >-
+    Betting a marginal hand "for protection" against a passive player, getting raised and
+    having to fold a hand that would have won at showdown.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#02
+      stance: supports
+      note: Coach notes bad players rarely make life hard with a big bet when you exercise pot control.
+  consensus_score: 0.5
+  hook_ideas:
+    - Checking here makes you more money than betting. Here is why.
+    - Passive players let you pot-control for free. Use it.
+    - The cheapest showdown in poker is against a station.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-put-the-money-in-yourself-009
+  format: cash-6max
+  topic: value-betting
+  concepts: [value-betting, passive-opponents, checking-to-induce, big-hands]
+  level: beginner
+  street: multi-street
+  position: any
+  title: Do not check big hands hoping a passive player will bet for you
+  claim: >-
+    With a strong hand against a passive micro-stakes player, bet yourself on every street.
+    Checking to induce only works against aggressive opponents; the typical weak player will
+    check behind and you lose a whole street of value.
+  why: >-
+    Trapping relies on the opponent putting chips in on their own. Players at these stakes are
+    passive by nature: they call a lot but bet rarely. Every time you check a set or two pair
+    to them, the most likely outcome is a free card and a smaller pot. Since they call bets
+    with a very wide range anyway, there is nothing to gain from disguise and a lot to lose
+    from silence. Be the one who puts the bets in.
+  common_mistake: >-
+    Checking top set on the flop "to let them catch up" and watching the hand check through
+    two streets.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#05
+      stance: supports
+      note: Coach says students get too fancy checking; passive players will not bet, so put the money in for them.
+  consensus_score: 0.5
+  hook_ideas:
+    - Checking your set to a station is the costliest move at NL5.
+    - They will not bet for you. Ever. Bet yourself.
+    - "'Let them catch up' costs you a street every time."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-no-cbet-into-many-callers-010
+  format: cash-6max
+  topic: multiway
+  concepts: [c-bet, multiway, pocket-pairs, give-up]
+  level: beginner
+  street: flop
+  pot_type: multiway
+  position: any
+  title: Do not auto c-bet a missed flop into three or more callers
+  claim: >-
+    When your open gets called in several places and you miss, check instead of firing a
+    continuation bet, even on a board that looks good for you. With that many opponents, at
+    least one usually holds a pocket pair or a piece they will not fold.
+  why: >-
+    A c-bet with nothing needs everyone to fold. Each extra caller multiplies the chance that
+    someone has connected or holds a stubborn hand like pocket eights that beats your unpaired
+    overcards and never goes away at these stakes. The fold-everyone outcome becomes rare, so
+    the bet mostly builds a pot you are losing. Save the aggression for heads-up pots where one
+    fold is all you need.
+  common_mistake: >-
+    Treating "I was the preflop raiser" as a reason to bet regardless of how many people are in
+    the hand.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#06
+      stance: supports
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#04
+      stance: supports
+      note: Also skips c-bets on draw-heavy flops vs a player who continues with many hands.
+  consensus_score: 0.5
+  hook_ideas:
+    - Four callers, no pair, and you still c-bet? Stop.
+    - Somebody always has pocket eights. Plan for it.
+    - Multiway c-bets at NL2 are a slow leak.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-why-are-you-in-this-spot-011
+  format: cash-6max
+  topic: mental-game
+  concepts: [discipline, regulars, 3-bet, focus, table-selection]
+  level: beginner
+  street: preflop
+  position: any
+  title: When a regular 3-bets you, let it go and refocus on the weak player
+  claim: >-
+    If a competent regular re-raises you, fold marginal hands without a fight and do not start
+    4-betting light to prove a point. You are at the table for the weak player; a war with a
+    regular is a distraction with little profit in it.
+  why: >-
+    Getting into a 3-bet and 4-bet battle with another thinking player is high variance for a
+    small edge at best. Meanwhile the real source of your win rate, the recreational player two
+    seats away, is being ignored. Each marginal confrontation also risks tilt, and tilt leaks
+    into the hands that actually matter. Fold, keep your image calm and wait for the spots where
+    the money is easy.
+  common_mistake: >-
+    Asking "he has 3-bet me three times, should I 4-bet A3 suited?" instead of asking why you
+    are tangling with him at all.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#06
+      stance: supports
+      note: Coach folds to first 3-bets from regs repeatedly, says he is not there to play them.
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#07
+      stance: supports
+  consensus_score: 0.5
+  hook_ideas:
+    - The reg 3-bet you again. The right answer is boring.
+    - Fighting regulars is an ego expense, not a strategy.
+    - Ask yourself what put you in this spot at all.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-defend-wider-vs-min-raise-012
+  format: cash-6max
+  topic: defending
+  concepts: [min-raise, pot-odds, recreational-players, out-of-position]
+  level: beginner
+  street: preflop
+  position: oop
+  title: Call wider against a min-raise, even out of position, when the raiser is weak
+  claim: >-
+    A minimum raise offers a great price, so defend noticeably more hands against it than
+    against a normal-sized open, including out of position. Do this especially when the raiser
+    is a recreational player, and keep folding true trash that flops poorly.
+  why: >-
+    Your preflop price is set by the raise size. A min-raise roughly halves what you must
+    invest compared with a 3x open, and the hands you add are ones that can flop a strong pair,
+    two pair or a draw against someone who plays badly after the flop. The usual reason to
+    avoid out-of-position calls, being outplayed later, matters much less against a player who
+    rarely applies pressure. Against a competent opener with a standard size, the same hands go
+    back to the muck.
+  common_mistake: >-
+    Folding hands like K7 or J8 to a min-raise from a fish on principle, or taking the great
+    price to flat with a hand that cannot make anything.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#05
+      stance: supports
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#06
+      stance: supports
+  consensus_score: 0.5
+  hook_ideas:
+    - A min-raise is an invitation. Accept it more often.
+    - Half the price, twice the hands. Simple math.
+    - Facing a min-raise from a fish? Fold less.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-think-ahead-before-betting-013
+  format: cash-6max
+  topic: fundamentals
+  concepts: [planning, one-pair, check-back, aggressive-opponents]
+  level: beginner
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Before betting a one-pair hand, decide what you do if raised
+  claim: >-
+    With a hand like top pair weak kicker or a middle pair in position, ask what you will do if
+    the opponent raises. If the honest answer is "fold", consider checking back instead,
+    especially against an aggressive player who raises often.
+  why: >-
+    A bet that folds to a raise turns a hand with decent showdown value into a bluff you did not
+    intend to make. Thinking one step ahead reveals this before the chips go in. Checking back
+    keeps the pot small, keeps your hand's showdown value intact and denies the aggressive
+    opponent the chance to blow you off it. Against a passive opponent the calculus changes,
+    because the raise you fear rarely comes.
+  common_mistake: >-
+    Betting on autopilot, getting raised, and only then realizing the hand cannot continue.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#06
+      stance: supports
+      note: Coach checks back A6 on an ace-high board vs an aggressive player because he cannot stand a raise.
+  consensus_score: 0.5
+  hook_ideas:
+    - Ask one question before every bet. What if he raises?
+    - Top pair, bad kicker, aggressive villain. Check.
+    - Most micro players bet first and think second.
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-barrel-regs-not-fish-014
+  format: cash-6max
+  topic: turn-play
+  concepts: [double-barrel, scare-cards, player-type, recreational-players]
+  level: beginner
+  street: turn
+  pot_type: srp
+  position: ip
+  title: Barrel scare cards against regulars, check them against recreational players
+  claim: >-
+    A turn overcard that is a fine double-barrel against a regular is often a check against a
+    weak player. The regular reads the card and folds marginal pairs; the weak player calls
+    with pairs anyway and actually holds the scare card more often because their range is wide.
+  why: >-
+    A barrel works through two mechanisms: the opponent folding hands you beat, and the card
+    being less likely in their range than in yours. Against a tight regular both hold. Against a
+    player who plays half their hands, the ace or king on the turn is in their range all the
+    time, and when it is not they still call with second pair. Both legs of the bluff collapse,
+    so checking and realizing your own equity is better.
+  common_mistake: >-
+    Applying "always barrel the ace" as a rule regardless of who is in the hand.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#06
+      stance: supports
+      note: Coach would barrel a reg on that turn but checks behind because a fish often has the card.
+  consensus_score: 0.5
+  hook_ideas:
+    - Same turn card, two opponents, two different plays.
+    - The scare card does not scare a player who never folds.
+    - "'Always barrel the ace' is costing you money."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br1-two-checks-means-weakness-015
+  format: cash-6max
+  topic: bluffing
+  concepts: [stab, weakness, position, recreational-players]
+  level: beginner
+  street: turn
+  pot_type: srp
+  position: ip
+  title: When a passive player checks to you twice, take a stab at the pot
+  claim: >-
+    If a weak player checks the flop and then checks the turn again, a bet in position usually
+    wins the pot even without a hand. Two checks from someone who bets their good hands means
+    they very rarely have anything.
+  why: >-
+    Recreational players are inconsistent in many ways but consistent in one: when they hold
+    something they like, they bet. Two consecutive checks are therefore an honest signal of a
+    missed hand or a draw. A small to medium bet gets through often enough to be profitable,
+    and when they do call with a draw you still have the river to see what develops. This is
+    one of the few cheap bluff spots that works against non-folders, precisely because they
+    have nothing to call with.
+  common_mistake: >-
+    Checking behind on the turn with air after two checks because "they never fold", when there
+    is nothing in their hand to fold.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/001-part1
+      chunk: br79-ctm-6max/001-part1#04
+      stance: supports
+      note: Coach breaks his no-bluff rule here, saying two checks almost always mean nothing.
+  consensus_score: 0.5
+  hook_ideas:
+    - The one spot where bluffing a station actually works.
+    - Two checks from a fish is a flashing green light.
+    - Check, check. Now bet. They have nothing.
+  status: draft
+  created: "2026-10-04"
