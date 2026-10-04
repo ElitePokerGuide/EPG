@@ -1,0 +1,613 @@
+# Concept cards extracted from br79-ctm-6max / 005-part5 (NL5 6-max session review).
+# Hand-review commentary generalized into principles. Draft, single source.
+
+- id: c-cash-6max-br5-tag-players-fast-001
+  format: cash-6max
+  topic: tools-software
+  concepts: [hud-stats, vpip-pfr, player-tagging, sample-size]
+  level: beginner
+  street: preflop
+  position: any
+  title: "Tag opponents after about a dozen hands using VPIP and PFR"
+  claim: >-
+    You do not need a big sample to label a player. VPIP and PFR settle quickly:
+    after roughly ten to twelve hands (two orbits at 6-max) a 60%+ VPIP with a tiny
+    PFR is a weak player, and someone who has played every hand for seven hands and
+    min-raised from early position can already be tagged.
+  why: >-
+    Most HUD numbers need hundreds of hands, but VPIP and PFR are measured on every
+    single hand dealt, so they converge far faster than any postflop stat. Weak players
+    also leak information through single actions: an open-limp with junk, a min-raise
+    from early position, posting in from a new seat. Tagging early matters because your
+    whole table plan depends on knowing where the weak players sit, and you want them
+    colour-coded before they bust or leave. Give the read some slack under ten hands,
+    but do not wait for a large sample before acting on it.
+  common_mistake: >-
+    Waiting for a statistically clean sample before adjusting, by which time the weak
+    player has left the table or you have already passed on ten profitable spots.
+  numbers:
+    - "tag by ~10-12 hands (about two orbits at 6-max)"
+    - "100% VPIP over 7 hands plus a min-raise is already enough to label a weak player"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#01
+      stance: supports
+      note: "Coach tags a 100/17 player after 6-7 hands; says he usually tags by about a dozen hands."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#03
+      stance: supports
+      note: "VPIP and PFR need only a small sample to be close to true values."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Seven hands is enough to spot the weak player. Here is how."
+    - "You are waiting too long to tag the fish."
+    - "Two orbits. That is all the sample you need."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-prioritize-highest-vpip-002
+  format: cash-6max
+  topic: exploits
+  concepts: [player-selection, vpip, weak-player-types]
+  level: beginner
+  position: any
+  title: "Moderate stats can hide big leaks, but chase the highest VPIP first"
+  claim: >-
+    A player with ordinary-looking numbers (around 33/25) can still cold-call a 3-bet
+    with king-nine and stack off, so never rule someone out on stats alone. But when
+    deciding whom to isolate and whom to sit next to, prioritize the biggest VPIPs
+    (60% and up), because they put the most money in with the worst hands.
+  why: >-
+    Stats describe how often a player enters pots, not how badly they play them. Some
+    players with tame preflop numbers make huge postflop errors, and you should take
+    the money when they offer it. Over a session, though, the player who sees 60% of
+    flops gives you far more opportunities than the one who sees 30%, so your seat
+    choice and isolation range should be built around the loosest player at the table.
+  common_mistake: >-
+    Ignoring a player because their VPIP looks reasonable, or spending the whole
+    session trying to outplay a 33/25 instead of the 62/5 two seats over.
+  numbers:
+    - "prioritize players with ~60%+ VPIP; a 33/25 can still make huge mistakes"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#03
+      stance: supports
+      note: "33/25 player cold-calls 3-bet with K9 and stacks off; coach still prefers targeting the 62% VPIP."
+  consensus_score: 0.5
+  hook_ideas:
+    - "His stats looked fine. He stacked off with king-nine anyway."
+    - "Not every bad player has bad stats."
+    - "Which seat makes you the most money? Check one number."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-size-up-premiums-vs-loose-callers-003
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [open-raise-sizing, isolation-raise, premium-hands, out-of-position]
+  level: beginner
+  street: preflop
+  position: any
+  title: "Raise premiums bigger when a loose player is behind or you are out of position"
+  claim: >-
+    A standard open is about 3x from every seat, but with a premium hand and a weak
+    player left to act, go 4x: if they call 4x as readily as 3x, you simply earn more.
+    The same logic applies to isolating limpers: around 4x in position, a bit more when
+    you will be out of position so they cannot limp and peel cheaply.
+  why: >-
+    Weak players at NL2-NL10 decide whether to play a hand, not whether the price is
+    right, so their calling frequency barely changes between 3x and 4x. Charging more
+    with your strongest hands against those players is free money, and it also builds
+    a bigger pot for the streets where you have the equity edge. Out of position you
+    want fewer multiway, cheap-peel situations, so a bigger raise narrows the field and
+    puts the limper to a real decision. Micro-managing sizes like this is fine at these
+    stakes because nobody is tracking your sizing tells.
+  common_mistake: >-
+    Opening kings for the same 3x against a 100% VPIP player who would have paid 4x or
+    5x without blinking.
+  numbers:
+    - "standard open ~3x from every position"
+    - "~4x with premiums when a loose player is behind"
+    - "isolate limpers ~4x in position, a little more out of position"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#02
+      stance: supports
+      note: "Kings raised bigger than usual 3x with a bad player behind and OOP; 'if they call more, put in more'."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#04
+      stance: supports
+      note: "Iso-raise normally 4x, adds a couple more blinds OOP to deny cheap peels."
+  consensus_score: 0.5
+  hook_ideas:
+    - "If he calls 4x as often as 3x, why raise 3x?"
+    - "Your kings deserve a bigger raise against this player."
+    - "One sizing tweak that prints against loose callers."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-dont-fight-small-pots-vs-fish-004
+  format: cash-6max
+  topic: exploits
+  concepts: [pot-selection, image, weak-players, discipline]
+  level: beginner
+  street: multi-street
+  position: any
+  title: "Let weak players have the small pots; you do not need an image against them"
+  claim: >-
+    When a bad player makes a strange play against you, such as min-raising the turn
+    with a medium pair, there is no need to raise back to show who is boss. Pass on
+    thin spots against them. If you ever want to establish an image, do it against a
+    regular who will actually notice.
+  why: >-
+    Weak players give their stacks away over time regardless of how you play the small
+    pots, so fighting for them adds variance without adding much profit. Image plays are
+    wasted on opponents who are not paying attention: they already think you are a
+    maniac after you win a single pot, and they will not adjust in any coherent way.
+    Your edge against them comes from big pots with big hands, not from winning every
+    skirmish. Save the creative plays for regulars, where they can actually change
+    future behaviour.
+  common_mistake: >-
+    Raising a weak player's silly turn bet with air out of pride, then having to barrel
+    the river into a player who never folds.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#01
+      stance: supports
+      note: "Coach lets a fish take a small pot after a weird turn raise; 'you don't have to fight for those little pots'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Stop fighting weak players for small pots."
+    - "He min-raised you with tens. The correct response is boring."
+    - "Image plays are wasted on players who are not watching."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-river-raises-are-the-nuts-005
+  format: cash-6max
+  topic: river-play
+  concepts: [thin-value, river-raise, fold-discipline, micro-population]
+  level: beginner
+  street: river
+  pot_type: srp
+  position: any
+  title: "At micro stakes a river raise is almost always the nuts, so value bet without fear"
+  claim: >-
+    Players at NL2-NL10 almost never raise the river light. That cuts both ways: when
+    you bet for thin value and get raised, fold easily; and stop skipping thin river
+    value bets because you are afraid of being raised. Bet around half pot against a
+    player who will call with any pair.
+  why: >-
+    Fear of a river raise is the most common reason weaker players leave value on the
+    table. But the population at these stakes raises rivers with strong hands only, so
+    the raise carries very little risk: you simply fold and lose nothing more than the
+    bet. Meanwhile loose players call river bets with second pair, third pair and
+    middling pocket pairs all day. The combination of easy folds versus raises and
+    frequent calls from worse hands makes the thin river bet clearly profitable.
+  common_mistake: >-
+    Checking back a medium-strength hand on the river to avoid being raised, then
+    paying off a raise when it does come.
+  numbers:
+    - "~half pot for thin river value against a sticky player"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#02
+      stance: supports
+      note: "Forum players afraid to bet rivers; at this limit river raises are 'pretty much always the nuts'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Scared to bet the river? That fear costs you money."
+    - "A river raise at NL5 means one thing."
+    - "The simplest river rule for micro stakes."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-flat-more-deep-ip-with-fish-behind-006
+  format: cash-6max
+  topic: preflop-ranges
+  concepts: [cold-calling, implied-odds, position, deep-stacks, weak-player-in-blinds]
+  level: beginner
+  street: preflop
+  pot_type: srp
+  position: ip
+  title: "Cold-call more preflop when deep, in position, with a weak player in the blinds"
+  claim: >-
+    The default versus an open is 3-bet or fold, with pocket pairs as the main calling
+    hands. Widen that calling range considerably when three things line up: stacks are
+    deep, you have position on the raiser, and a weak player sits in the blinds who will
+    come along. In that spot 3-betting with suited broadways mostly folds out the player
+    you want in the pot.
+  why: >-
+    Cold-calling is weak in general because you play a capped range without initiative.
+    But deep stacks raise the value of implied odds, position lets you realize equity
+    with hands like ten-nine suited, and a loose player behind you adds dead money and a
+    target for every street. Those factors swing marginal hands from fold to call. A
+    3-bet would get called by the raiser's pairs and draws while blowing the weak player
+    out, which is the opposite of what you want.
+  common_mistake: >-
+    Mechanically 3-betting or folding every hand without noticing the 100% VPIP player
+    sitting in the big blind with 150bb.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#02
+      stance: supports
+      note: "Coach, who normally 3-bets or folds, calls with a suited hand because it is deep and the fish is in the BB."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#04
+      stance: supports
+      note: "Declines to 3-bet a decent hand because the point is to get in a pot with the fish in position."
+  consensus_score: 0.5
+  hook_ideas:
+    - "3-bet or fold? Not when the fish is in the blinds."
+    - "Three conditions that turn a fold into a call preflop."
+    - "Why we stopped 3-betting here and started calling."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-leave-tables-without-a-fish-007
+  format: cash-6max
+  topic: table-selection
+  concepts: [table-hopping, leaving-tables, reg-tables, ego]
+  level: beginner
+  position: any
+  title: "Leave the moment the weak player leaves, especially when playing four tables or fewer"
+  claim: >-
+    If a table has no clear weak player, only 15/15 and 16/11 types, leave and find
+    another one, even mid-session. Leave too if the only weak player sits on your left.
+    Grinding a table of regulars to prove you can steal their blinds is an ego boost,
+    not a win rate.
+  why: >-
+    You can beat tight regulars slightly by stealing blinds, but they do not give away
+    stacks; loose passive players do. With four tables or fewer, swapping tables costs
+    almost nothing and a table with a 75% VPIP player or open-limpers can be found in
+    minutes. Position matters as much as presence: a weak player on your left acts
+    after you and limits how often you can isolate them. Treat every table as a
+    temporary seat and keep moving towards the money.
+  common_mistake: >-
+    Staying at a reg-filled table because leaving feels like admitting defeat, or
+    because you have a few big blinds of history with someone.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#02
+      stance: supports
+      note: "Leaves a table of 15/15s once the mark is gone; 'no reason to not be doing this' with four tables."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#04
+      stance: supports
+      note: "Leaves another table because no fish anywhere."
+  consensus_score: 0.5
+  hook_ideas:
+    - "The fish left. Why are you still sitting there?"
+    - "Table of regs? Leave. Your win rate is not an ego contest."
+    - "One habit that costs four-tablers a ton of money."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-set-mine-needs-stack-depth-008
+  format: cash-6max
+  topic: preflop-ranges
+  concepts: [set-mining, implied-odds, stack-depth, small-pairs]
+  level: beginner
+  street: preflop
+  pot_type: srp
+  position: any
+  title: "Set-mine only when the raiser has enough stack to pay you off"
+  claim: >-
+    Calling a raise with a small pocket pair is a bet on flopping a set, so the raiser
+    needs a deep enough stack to make the rare hit worth it. A 100bb raiser is plenty.
+    Around 60-65bb it is marginal; continue only if a weak player is also in the pot or
+    you have position. Against a min-raise the call is easy regardless.
+  why: >-
+    Small pairs rarely improve, so almost all their value comes from winning a big pot
+    when they do. If the raiser has a short stack there is no big pot to win, and the
+    call is just a slow leak. Extra factors can rescue a borderline spot: a loose
+    player already in the hand adds implied odds from a second source, and position
+    helps you extract when you hit. Check stack sizes before every set-mining call,
+    not after.
+  common_mistake: >-
+    Auto-calling raises with pocket deuces against a 40bb stack and wondering why
+    set-mining never seems to pay.
+  numbers:
+    - "100bb starting stack is plenty for set-mining"
+    - "~60-65bb is marginal; needs a weak player in the pot or position to continue"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#01
+      stance: supports
+      note: "Set-mines deuces because raiser has 100bb; 'always want to make sure they have a decent stack size'."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#03
+      stance: supports
+      note: "Calls vs ~65bb only because a fish is in the pot; would fold if the fish were absent."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Pocket deuces are a fold here. Check his stack."
+    - "Set-mining only works if there is a stack to win."
+    - "The number you must check before calling with a small pair."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-cbet-most-flops-ip-heads-up-009
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [cbet-frequency, initiative, in-position, micro-population]
+  level: beginner
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "C-bet the large majority of flops heads-up in position; micro players give up easily"
+  claim: >-
+    Heads-up and in position after raising preflop, continuation bet most flops no
+    matter what you hold, around 80% or more, with a stab of roughly 60% pot. When a
+    player checks to you, bet. The strength of your own hand matters much less than
+    the fact that the population plays very straightforwardly and folds too much.
+  why: >-
+    Players at these stakes mostly continue only when they connect, and they rarely
+    float or check-raise light. That means a single bet wins the pot often enough that
+    hand strength becomes almost secondary when you are in position against one
+    opponent. The betting lead you bought preflop is only worth something if you use
+    it. Reserve the checks for the small set of flops where you have no equity and
+    expect few folds (see the card on middling two-tone boards), and against players
+    who have shown they never fold.
+  common_mistake: >-
+    Only c-betting when you hit, which lets straightforward opponents play perfectly
+    against you and wastes the initiative you paid for preflop.
+  numbers:
+    - "c-bet roughly 80%+ heads-up in position"
+    - "standard stab ~60% pot"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#03
+      stance: supports
+      note: "'My c-bet in position against one player is probably at least 80%'; normal ~60% stab."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#04
+      stance: supports
+      note: "Players give up easily, so bet when checked to most of the time."
+  consensus_score: 0.5
+  contradictions:
+    - "Solver-based c-bet frequencies vary heavily by texture and are often well below 80%; the coach argues the micro population over-folds enough to justify a near-always c-bet in position."
+  hook_ideas:
+    - "Checked to you in position? Bet. Here is the number."
+    - "Your hand barely matters on this flop."
+    - "Most NL5 players c-bet far too little heads-up."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-call-dont-3bet-light-vs-fish-010
+  format: cash-6max
+  topic: preflop-ranges
+  concepts: [3-betting, isolation, weak-players, postflop-edge, value-3bet]
+  level: beginner
+  street: preflop
+  position: ip
+  title: "Call rather than 3-bet light against weak players; keep them in the pot"
+  claim: >-
+    Against a typical loose passive player, do not 3-bet marginal hands like queen-jack
+    suited in position; call. Your edge after the flop is huge, especially in position,
+    and a 3-bet often folds out the very player you wanted to play against. The
+    exception is a loose player who raises 30% of hands: 3-bet medium pairs such as
+    eights and nines and good broadways for pure value.
+  why: >-
+    A light 3-bet works by winning the pot preflop or by playing a bloated pot with
+    initiative. Against a weak player neither matters much: you would rather see a flop
+    with them cheaply and let them make postflop mistakes across three streets, which
+    they will. Folding them out with queen-jack is throwing away the most profitable
+    situation in the game. Against a player who raises very wide, though, your medium
+    hands are far ahead of their range, so 3-betting becomes a value play rather than
+    a bluff and you want the call.
+  common_mistake: >-
+    Treating every weak-player open as a 3-bet-for-isolation spot and watching them fold
+    hands that would have paid you off postflop.
+  numbers:
+    - "vs a player raising ~30% of hands, 3-bet 88 and 99 for value"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#03
+      stance: supports
+      note: "Coach says many players 3-bet fish lighter than he does; prefers calling IP; 3-bets 8s/9s for value vs 30% raiser."
+  consensus_score: 0.5
+  contradictions:
+    - "Many modern coaches recommend 3-betting weak players wide for value and isolation; this coach prefers flatting to keep the weak player in, reserving 3-bets for clear value."
+  hook_ideas:
+    - "Stop 3-betting the fish. Seriously."
+    - "Queen-jack suited versus the table fish: call, do not raise."
+    - "We studied how coaches treat weak players preflop. They disagree."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-raise-draws-two-ways-to-win-011
+  format: cash-6max
+  topic: bluffing
+  concepts: [semi-bluff, fold-equity, flush-draw, initiative]
+  level: beginner
+  street: flop
+  pot_type: srp
+  position: any
+  title: "Raise your draws when a fold is likely: two ways to win beat one"
+  claim: >-
+    Facing a bet with a flush draw and nothing else, on a board where the bettor often
+    gives up, raise instead of calling. You can win right now when they fold, and you
+    still have the draw as a backup if they continue. The same logic is why you raise
+    rather than limp preflop.
+  why: >-
+    Calling with a draw has exactly one way to win: hitting. Raising adds fold equity
+    on top of that, and at micro stakes opponents give up a lot after a single raise.
+    When the raise fails you are not dead; you still have outs, and sometimes a free
+    river card after your show of strength. Giving yourself the maximum number of paths
+    to the pot is the core reason aggression wins in this game, before and after the
+    flop.
+  common_mistake: >-
+    Calling every draw passively and only winning the pots where the card arrives.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#04
+      stance: supports
+      note: "Raises seven-high with a flush draw; 'give yourself as many ways to win the pot as possible'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Calling a flush draw wins one way. Raising wins two."
+    - "Seven-high, flush draw, facing a bet. Raise."
+    - "The real reason aggression wins at micro stakes."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-check-turn-with-strong-non-nut-hand-012
+  format: cash-6max
+  topic: turn-play
+  concepts: [bet-fold, pot-control, inducing, deception, barreling]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: any
+  title: "Do not auto-barrel the turn with strong non-nut hands when a bet only folds out worse"
+  claim: >-
+    When your hand is well ahead of an opponent's medium holdings, such as trips versus
+    a top-pair type, but a turn barrel would fold out everything you beat and get called
+    only by hands that beat you, check. You keep the weaker hands in for a river bet or
+    call, and you avoid bet-folding a strong hand.
+  why: >-
+    Micro-stakes players call one bet with a mediocre hand far more readily than two.
+    If you bet the turn, ace-high or a weak pair folds and you win a small pot; if you
+    check, that same hand often bets the river or calls your river bet. The check also
+    adds deception, and when the opponent does hold the nuts, their river bet is often
+    sized so small that you can call profitably with outs to improve. Checking is not
+    giving up: with trips you still call any turn bet, and you let them put in dead
+    money.
+  common_mistake: >-
+    Barrelling every turn out of habit, then folding trips to a raise or winning only
+    the small pot that a bet-fold line allows.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#05
+      stance: supports
+      note: "Trips on a flush-completing turn; checks, opponent bets river with A-T and pays. Coach bet-folds turns less than most."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#04
+      stance: supports
+      note: "'I really hate bet-folding trips in this spot'."
+  consensus_score: 0.5
+  contradictions:
+    - "Solver-informed play barrels strong hands on most turns for value and protection; the coach argues the micro population over-folds medium hands to a second barrel, so checking earns more."
+  hook_ideas:
+    - "Checking the turn here makes you more money. Here is why."
+    - "Trips on the turn. Most players bet. We check."
+    - "Bet-folding a strong hand is a leak. Fix it."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-loose-players-hold-more-aces-013
+  format: cash-6max
+  topic: hand-reading
+  concepts: [range-construction, ace-high-boards, loose-players, donk-betting]
+  level: beginner
+  street: flop
+  pot_type: srp
+  position: oop
+  title: "Loose players have an ace far more often than a normal range does"
+  claim: >-
+    A player who enters the pot with every ace holds an ace on an ace-high flop much
+    more often than a tight raiser would. So out of position with a medium pair on an
+    ace-high board against a loose player, do not lead into them; check and call or
+    fold, because they are sticky and have the ace a lot of the time.
+  why: >-
+    Range construction is about what a player actually enters pots with, not what a
+    textbook range says. Loose players treat any ace as playable, so their range is
+    weighted heavily towards ace-x. Leading out with a medium pair only creates
+    headaches: they will not fold the ace, they call with worse and then stay sticky,
+    and you end up guessing on later streets out of position. Give an unknown early
+    position raiser some credit, keep the pot small, and let them tell you where they
+    stand.
+  common_mistake: >-
+    Donk-betting middle pair into a loose player on an ace-high flop and then facing
+    a raise or two more streets of pressure with no plan.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#04
+      stance: supports
+      note: "'These kind of players have more aces in their range than a normal player'; coach declines to donk, check-calls instead."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Ace on the flop versus a loose player? Assume he has it."
+    - "The one card loose players always seem to hold."
+    - "Why leading middle pair into a fish backfires."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br5-never-fold-to-a-min-bet-014
+  format: cash-6max
+  topic: defending
+  concepts: [pot-odds, min-bets, small-bets, calling-ranges]
+  level: beginner
+  street: multi-street
+  pot_type: srp
+  position: any
+  title: "Do not fold to a min-bet; the price is almost always right"
+  claim: >-
+    Facing a bet of one big blind or a tiny fraction of the pot, call with nearly
+    anything that has outs or showdown potential. The pot odds justify it almost every
+    time, and the small bets of wide-range players carry little information. Fold later
+    if the price goes up.
+  why: >-
+    A min-bet lays you enormous odds, so even a gutshot or bottom pair is a
+    profitable call. Weak players use small bets both with monsters and
+    with nothing, so the bet does not narrow their range much either. Folding gives up
+    equity you were offered almost for free. The danger is only on later streets if the
+    sizing jumps, and you can reassess then.
+  common_mistake: >-
+    Folding a gutshot or weak pair to a one-blind bet because the hand feels too weak,
+    ignoring the price on offer.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/005-part5
+      chunk: br79-ctm-6max/005-part5#03
+      stance: supports
+      note: "Coach says he has never folded to a mini-bet; you nearly always have odds."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Never fold to a min-bet. Here is the math."
+    - "He bet one blind. Your hand does not matter yet."
+    - "The cheapest call in poker, and people still fold."
+  status: draft
+  created: "2026-10-04"

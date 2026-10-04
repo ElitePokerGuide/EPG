@@ -1,0 +1,633 @@
+# Concept cards extracted from br79-ctm-6max / 006-part6 (final NL5 6-max session, short-handed emphasis).
+# Hand-review commentary generalized into principles. Draft, single source.
+
+- id: c-cash-6max-br6-heads-up-button-range-vs-weak-players-001
+  format: cash-6max
+  topic: preflop-ranges
+  concepts: [heads-up, short-handed, button-range, open-raising]
+  level: beginner
+  street: preflop
+  position: btn
+  title: "Short-handed against weak players, raise 80-90% of button hands and fold only junk"
+  claim: >-
+    When a 6-max table is down to two or three players and the opponent is weak, open
+    roughly 80-90% of hands from the button. The 10-15% you fold are the true junk
+    hands: ten-three, nine-three, eight-two, seven-deuce offsuit and the like. Against a
+    limp-in from them, raise with the same wide range.
+  why: >-
+    Heads-up, any hand with a face card or a connection is ahead of a random hand, and
+    weak players fold the blinds too often and play badly after the flop. Raising wide
+    buys the initiative cheaply and lets you win most pots with a c-bet or by simply
+    making top pair. The few hands you fold have no playability and no showdown value,
+    so even against a bad player they lose money. If the opponent turns out to be
+    competent, do not stay; short-handed tables fill up quickly anyway.
+  common_mistake: >-
+    Playing a full-ring range when the table is three-handed, folding the button with
+    jack-six and letting a weak player collect blinds for free.
+  numbers:
+    - "raise 80-90% of button hands heads-up vs a weak player"
+    - "fold the bottom 10-15%: T3o, 93o, 82o, 72o type hands"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#01
+      stance: supports
+      note: "'Raising about 80 to 90% of my hands on the button' HU; lists the 10-15% folded."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Heads-up on the button? Raise almost everything."
+    - "The only hands we fold heads-up against a weak player."
+    - "Short-handed tables scare you? Here is the whole plan."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-keep-heads-up-simple-no-river-bluffs-002
+  format: cash-6max
+  topic: bluffing
+  concepts: [heads-up, river-bluff, simplicity, top-pair-value]
+  level: beginner
+  street: river
+  position: any
+  title: "Heads-up against micro players: make top pair, value bet, skip the river bluffs"
+  claim: >-
+    Short-handed against weak opponents, keep the game extremely simple. Raise wide,
+    c-bet, and when you make top pair, bet it for value on every street. Do not try to
+    bluff rivers, even when it would probably work; the player types you meet here
+    call too much for bluffs to be a reliable profit source.
+  why: >-
+    Weak players' defining leak is calling too wide and too long, which makes value
+    betting hugely profitable and bluffing marginal. A river bluff that works once is
+    offset by the many times a station calls with bottom pair. By sticking to value
+    with top pair or better and checking back the rest, you remove variance and let
+    their calling habit pay you. You do not need a heads-up specialist's game to beat
+    these spots; you need discipline and position.
+  common_mistake: >-
+    Treating heads-up as a licence to bluff every river, against the one player type
+    that never folds.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#01
+      stance: supports
+      note: "Checks down a river HU although a bluff would likely work; 'keep things extremely simple at these limits', hit top pair."
+  consensus_score: 0.5
+  hook_ideas:
+    - "The bluff would have worked. We still did not make it."
+    - "Heads-up at NL5 is simpler than you think."
+    - "Top pair and discipline beat fancy heads-up plays here."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-limp-reraise-means-the-nuts-003
+  format: cash-6max
+  topic: hand-reading
+  concepts: [limp-reraise, nut-reads, preflop-tells, fold-discipline]
+  level: beginner
+  street: preflop
+  pot_type: limped
+  position: any
+  title: "A limp-reraise at micro stakes is a nut hand; fold without a second thought"
+  claim: >-
+    When a player open-limps and then re-raises your isolation raise, treat it as aces
+    or kings almost every time at NL2-NL10 and fold anything short of a premium. The
+    same read applies to a river check-raise from an unknown: it is the nuts far more
+    often than a bluff.
+  why: >-
+    The limp-reraise is a classic weak-player move to trap with a monster; the
+    population at these stakes almost never does it as a bluff or with a medium hand.
+    Calling with a decent but non-premium hand sets you up to lose a big pot against a
+    range that is nearly all overpairs. The rare exception is an aggressive or tilted
+    heads-up opponent who has shown they will spazz; against everyone else the fold is
+    automatic and costs you nothing.
+  common_mistake: >-
+    Calling a limp-reraise with ace-queen or a medium pair because the pot is already
+    big, then stacking off to kings.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#01
+      stance: supports
+      note: "'When they do the old limp re-raise it is a pretty easy fold; pretty much always a nut hand'."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#02
+      stance: supports
+      note: "River re-raises at these limits are nearly always the nuts; possible exception vs a crazy HU opponent."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Limp, then re-raise. You already know what he has."
+    - "The oldest trap in micro-stakes poker still works on you."
+    - "One preflop pattern that means aces or kings."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-do-not-sit-heads-up-vs-competent-players-004
+  format: cash-6max
+  topic: table-selection
+  concepts: [heads-up, table-leaving, opponent-selection, short-handed]
+  level: beginner
+  position: any
+  title: "Do not stay heads-up against a competent player; you never have to play anyone"
+  claim: >-
+    When you start a table or sit short-handed and the only opponent turns out to be
+    reasonable rather than bad, leave or sit out. The purpose of short-handed play is
+    to catch impatient weak players, not to grind a coin flip against a thinking
+    regular. Choose who you play.
+  why: >-
+    Heads-up against a decent player your edge is small and your variance is large,
+    while a weak player at the same table would hand you money with no risk. Nothing
+    forces you to accept the match-up; tables fill fast, so passing on one opponent
+    costs you a few minutes at most. Being selective about opponents is the same
+    discipline as being selective about hands.
+  common_mistake: >-
+    Treating a heads-up match as a challenge to your pride and playing a competent
+    opponent for an hour while weak players sit at other tables.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#01
+      stance: supports
+      note: "Quits a HU opponent who seems decent; 'you don't have to play against good players'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "He turned out to be decent. So we left."
+    - "You never have to play a good player. Ever."
+    - "Heads-up is for catching fish, not proving a point."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-keep-preflop-pots-small-vs-fish-005
+  format: cash-6max
+  topic: exploits
+  concepts: [preflop-aggression, postflop-edge, medium-pairs, variance, weak-players]
+  level: beginner
+  street: preflop
+  pot_type: 3bet-pot
+  position: any
+  title: "Do not ramp up preflop aggression against weak players; your edge lives after the flop"
+  claim: >-
+    Against a loose weak player, resist getting medium pairs such as nines all in
+    preflop or stacking off with a draw that is not huge. Call and play the hand out,
+    because your advantage over them is largest on the flop, turn and river. Shoving
+    money in early turns the hand into a who-hits-the-board lottery that only helps
+    them.
+  why: >-
+    A weak player's mistakes happen postflop: calling too wide, betting silly amounts,
+    folding to pressure in the wrong spots. Every chip that goes in preflop is a chip
+    they get to put in before they have had a chance to make those mistakes, and nines
+    against a loose range is close to a flip anyway. Keeping the pot smaller early means
+    you get to realize your skill edge across three streets, and they will never put you
+    in a genuinely tough spot: when they bet odd amounts with draws or made hands you can
+    simply call with the right price.
+  common_mistake: >-
+    4-betting nines against a loose player because it looks like a value spot, converting
+    a large postflop edge into a near coin flip.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#02
+      stance: supports
+      note: "Could have got nines in preflop vs fish but prefers smaller pots and a bigger postflop edge."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#05
+      stance: supports
+      note: "Summary: ramping up preflop aggression vs fish creates a bingo game; 'relax a little versus them'."
+  consensus_score: 0.5
+  contradictions:
+    - "Equity-based and solver-based advice would happily get nines in preflop against a very loose player's 3-bet; this coach deliberately declines, preferring to keep the pot small and exploit postflop."
+  hook_ideas:
+    - "Nines all in preflop versus a fish? We say no."
+    - "Your edge against weak players is not where you think."
+    - "Stop turning your best spots into coin flips."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-induce-only-when-they-will-bet-006
+  format: cash-6max
+  topic: check-raising
+  concepts: [inducing, check-raise, slow-play, aggressive-opponents, free-cards]
+  level: beginner
+  street: multi-street
+  pot_type: srp
+  position: any
+  title: "Check a strong hand to induce only when you are nearly certain the opponent will bet"
+  claim: >-
+    Checking the nuts to let an opponent bet into you is only correct against a player
+    who is aggressive, tilted, or otherwise very likely to fire. Against a passive or
+    tight player who checks behind most of the time, just bet. The inducing play fails
+    far more often than people posting hands online seem to think.
+  why: >-
+    The check-to-induce line has two costs when it fails: you miss a full street of
+    value, and if the opponent has a draw you hand them a free card to beat you. It only
+    pays off when the probability they bet is very high, which usually means a player
+    who has just lost a pot, is visibly aggressive, or has been bluffing at checked
+    pots. Against a nit who checks back the large majority of the time the expected loss
+    is obvious. Make the opponent read first, then pick the line.
+  common_mistake: >-
+    Checking a monster against a passive player hoping for a bet, then watching them
+    check behind twice and show down a hand that would have called three streets.
+  numbers:
+    - "do not try to induce against a player who checks behind ~90% of the time"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#03
+      stance: supports
+      note: "Coach checks nuts vs a tilted aggressive player; warns it is a disaster vs a nit who checks behind 90%."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#02
+      stance: supports
+      note: "Failed check-raise attempt; admits it would have been right only if he had been winning recent pots."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Checking the nuts is a trap. For you."
+    - "Before you slow-play, answer one question about your opponent."
+    - "The induce play fails more often than forums admit."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-do-not-bluff-stations-call-to-see-hands-007
+  format: cash-6max
+  topic: exploits
+  concepts: [calling-stations, bluff-selection, showdown-information, draws]
+  level: beginner
+  street: multi-street
+  pot_type: srp
+  position: any
+  title: "Do not bluff players who do not fold; use cheap calls to see their hands instead"
+  claim: >-
+    Against a loose passive player, skip the bluffs: no river bluffs, no semi-bluff
+    raises with a draw when they will not fold, and check back draws rather than get
+    blown off them. When a call is cheap, call to see the showdown; the information you
+    gain for tagging them is worth more than the few blinds.
+  why: >-
+    Bluffs profit from folds, and this player type does not fold. Raising a draw into a
+    player who will call or shove with any pair just builds a pot where you are behind.
+    Checking your draws keeps you in the hand cheaply and lets their small bets give you
+    odds. Cheap showdowns are a bonus: seeing that someone called down with ace-high or
+    limped six-deuce lets you tag them with confidence and adjust for the rest of the
+    session.
+  common_mistake: >-
+    Trying to barrel a station off a pair, or raising a flush draw into a player whose
+    range is nearly all made hands they will never fold.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#02
+      stance: supports
+      note: "'I don't think they fold anything'; calls small river bet to see the hand and tag; checks back draw to avoid being blown off."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#01
+      stance: supports
+      note: "Big draw vs fish: raising would have got it in behind, since fish would not fold the ace."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Bluffing a calling station is just donating."
+    - "A cheap river call that pays for the whole session."
+    - "Why we check our draws against this player type."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-weak-players-react-to-the-last-pot-008
+  format: cash-6max
+  topic: exploits
+  concepts: [tilt, recent-history, dynamics, timing-plays]
+  level: beginner
+  street: multi-street
+  position: any
+  title: "Weak players react to the last pot: tilt after losing, go quiet after winning"
+  claim: >-
+    Right after a weak player loses a big pot, especially to you or after getting
+    felted, expect them to play more hands and bet more: play as many pots with them as
+    you can and let them bet into you. Right after they win a big pot off you, expect
+    far less aggression: your bets get through. Time inducing plays for when you have
+    been winning, not when they have.
+  why: >-
+    Recreational players are driven by the last result rather than by strategy. A loss
+    makes them want it back, so they spew; a win makes them protective and passive. If
+    you track who won the last few pots at the table, you can predict their next
+    aggression level better than any HUD stat. A check-raise with the nuts, for
+    example, only works against someone who is primed to bet, which is the player who
+    just lost, not the one who just won.
+  common_mistake: >-
+    Running a check-raise or induce line against a player who just dragged a big pot
+    and is now content to check everything down.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#03
+      stance: supports
+      note: "Fish on tilt after being felted; coach plays every pot with him. After a fish wins a big pot off you they are far less aggressive."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#02
+      stance: supports
+      note: "Check-raise attempt would have been better if coach had been winning recent pots."
+  consensus_score: 0.5
+  hook_ideas:
+    - "He just lost a stack. Here is what he does next."
+    - "The best read at micro stakes is not on your HUD."
+    - "Time your tricky plays by who won the last pot."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-facing-a-relentless-3bettor-on-your-left-009
+  format: cash-6max
+  topic: defending
+  concepts: [3-bet-defense, seat-selection, medium-pairs, ego, 4-betting]
+  level: beginner
+  street: preflop
+  pot_type: 3bet-pot
+  position: oop
+  title: "Versus a relentless 3-bettor on your left, fold sevens OOP; fight back smarter or move"
+  claim: >-
+    When a player keeps 3-betting you and you are out of position, do not call with
+    pocket sevens to make a stand. Either 4-bet, or call with hands like nines and tens
+    that can continue on many more flops. If it keeps happening, change seats or tables.
+    Keep your ego out of it.
+  why: >-
+    Sevens out of position in a 3-bet pot face two overcards and a c-bet most of the
+    time, so the call is a slow bleed, not a counter-strategy. If you want to push back,
+    pick a weapon that works: a 4-bet that denies them equity, or a flat with a hand that
+    sees plenty of one-overcard flops. Repeated 3-bets are annoying but not expensive if
+    you fold the junk; getting frustrated and taking a stand with a bad hand is what
+    makes them expensive. Seat changes are free.
+  common_mistake: >-
+    Calling or 4-betting light with a mediocre hand after the third 3-bet purely to
+    show the opponent you will not be pushed around.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#04
+      stance: supports
+      note: "Folds 77 OOP to repeated 3-bets; prefers 4-betting or calling with 99/TT; mentions changing seats; 'don't get your ego involved'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "He 3-bet you four times. Do not take a stand with sevens."
+    - "The right way to fight back against a 3-bet machine."
+    - "Seat changes are free. Spite calls are not."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-won-money-at-showdown-as-variance-gauge-010
+  format: cash-6max
+  topic: study-methods
+  concepts: [tracker-stats, variance, wsd, all-in-ev, session-review]
+  level: beginner
+  position: any
+  title: "Read won-money-at-showdown to separate running bad from playing bad"
+  claim: >-
+    Won money at showdown (W$SD) should sit above 50% over any decent sample, typically
+    closer to 55%. If it is in the 40s you are almost certainly running bad rather than
+    playing badly. Treat the all-in EV graph with some caution: it does not capture
+    coolers and set-over-set spots.
+  why: >-
+    After a losing session the hard question is whether you made mistakes or got
+    unlucky. W$SD answers it quickly: it measures how often you had the best hand when
+    the cards were turned over, which over a few hundred hands is dominated by run-outs
+    rather than decisions. A number far below your norm points to variance, not leaks.
+    The all-in EV line is a popular alternative but only counts hands that went all in
+    before the river, so it ignores the many ways to run bad without an all-in.
+  common_mistake: >-
+    Tearing up a sound strategy after a losing session without checking whether the
+    showdown numbers simply show a bad run.
+  numbers:
+    - "W$SD should be above 50%, usually ~55%"
+    - "W$SD in the 40s or lower signals running bad"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#05
+      stance: supports
+      note: "Session W$SD of 40% 'indicative of running bad'; should always be over 50, usually ~55. All-in EV taken with a grain of salt."
+  consensus_score: 0.5
+  hook_ideas:
+    - "One stat tells you if you ran bad or played bad."
+    - "Before you blame your strategy, check this number."
+    - "Your all-in EV graph is lying to you a little."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-start-your-own-tables-011
+  format: cash-6max
+  topic: table-selection
+  concepts: [starting-tables, waiting-lists, short-handed, game-selection]
+  level: beginner
+  position: any
+  title: "Start your own tables: impatient weak players come to you"
+  claim: >-
+    Instead of only joining full tables, open an empty one and sit down. The players who
+    join an empty or short table are disproportionately recreational players who do not
+    want to wait on a list. Tables fill within minutes, so you rarely play heads-up for
+    long, and three-handed tables are worth trying too.
+  why: >-
+    Regulars queue for the tables that already look good; weak players want to play
+    right now and click the first open seat. By sitting at an empty table you get first
+    pick of those players, often with position on them, and you get to play every hand
+    against them while the table is short. The slight discomfort of a few heads-up
+    hands is a small price for being the first seat at what becomes a soft table.
+  common_mistake: >-
+    Only joining full tables and waiting lists, where the seats around the weak player
+    are already taken by regulars.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#05
+      stance: supports
+      note: "'Really always recommend trying to start your own games'; fish will come to you."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#01
+      stance: supports
+      note: "Heads-up rarely lasts long; tables fill quickly."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Stop joining tables. Start them."
+    - "Who sits down at an empty table? Exactly who you want."
+    - "The table selection trick nobody at NL5 uses."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-weekends-are-softer-012
+  format: cash-6max
+  topic: table-selection
+  concepts: [game-timing, weekend-games, player-pool]
+  level: beginner
+  position: any
+  title: "Weekend games are considerably softer than weekday afternoons, even at micro stakes"
+  claim: >-
+    If your schedule allows, play on weekends and evenings rather than weekday
+    afternoons. The games have always been softer then and still are, at every stake
+    including NL2-NL10.
+  why: >-
+    Weekday afternoons are when the regulars grind and the recreational players are at
+    work. Weekends bring in players who treat poker as entertainment, often with a drink
+    in hand, who play more hands and call more bets. Your strategy does not change, but
+    the number of profitable spots per hour does, and that is what drives win rate.
+  common_mistake: >-
+    Grinding Tuesday afternoons out of habit and concluding the games are tough.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#05
+      stance: supports
+      note: "'The games really are considerably better on the weekend. Always have been and always will be.'"
+  consensus_score: 0.5
+  hook_ideas:
+    - "When you play matters almost as much as how."
+    - "The softest games of the week are not when you think."
+    - "A free win rate boost: change your session time."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-do-not-copy-loose-video-stats-013
+  format: cash-6max
+  topic: preflop-ranges
+  concepts: [vpip-pfr-targets, 3-bet-frequency, short-handed-inflation, study-methods]
+  level: beginner
+  street: preflop
+  position: any
+  title: "Stats from short-handed play run loose; a normal 6-max game should be tighter than 30/28"
+  claim: >-
+    Numbers like 30/28 or 27/24 come from sessions with a lot of heads-up and
+    three-handed play, which inflates VPIP, PFR, steal and 3-bet percentages. In a
+    normal six-handed game play tighter, and keep your 3-bet around 4% rather than 5%
+    or more.
+  why: >-
+    Short-handed hands force you into the blinds and the button far more often, so the
+    same strategy produces much looser aggregate stats. Copying those numbers at a full
+    6-max table would mean opening and 3-betting hands that lose money against five
+    opponents. Compare your stats with the game type you actually played, and when in
+    doubt err towards tight: the micro-stakes edge comes from value and discipline, not
+    from frequency.
+  common_mistake: >-
+    Seeing a coach or winning player at 30/28 and forcing those numbers at a six-handed
+    table full of regulars.
+  numbers:
+    - "normal 6-max 3-bet frequency ~4%; 5% shown was inflated by short-handed play"
+    - "30/28 and 27/24 session stats were skewed by heads-up and 3-handed hands"
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#05
+      stance: supports
+      note: "'I think you should be tighter than that overall'; normal 3-bet 4%; stats inflated by short-handed play."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#01
+      stance: supports
+      note: "27/24 'is not how I typically play 6-max'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Do not copy a coach's video stats. Here is why."
+    - "30/28 looked great in the video. It will lose you money."
+    - "Short-handed hands are inflating your VPIP."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-check-river-to-let-ace-high-bluff-014
+  format: cash-6max
+  topic: river-play
+  concepts: [inducing-bluffs, river-check, medium-strength, calling-down]
+  level: beginner
+  street: river
+  pot_type: srp
+  position: oop
+  title: "On the river, if worse hands will not call but ace-high might bluff, check and call"
+  claim: >-
+    Holding a medium-strength hand on the river out of position, ask what calls a bet.
+    If the answer is almost nothing you beat, but the opponent is the type to bet
+    ace-high or a missed draw when checked to, check with the intention of calling.
+    You win the same pot plus their bluff.
+  why: >-
+    A river bet with a medium hand only profits when worse hands call. Against many
+    micro players, worse hands fold and better hands call, so betting is zero or
+    negative value. Checking turns their aggression into your profit: they bluff with
+    the hands that would have folded, and you call. If they check back, you lose
+    nothing compared to the bet that would not have been called anyway. The key is a
+    read that this player does fire at checked rivers.
+  common_mistake: >-
+    Betting the river with second pair "for value", getting called only by better, and
+    never giving the opponent the chance to bluff.
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#02
+      stance: supports
+      note: "'Not a spot where I'm going to bet; he'll bluff at it; I'd rather give him the rope'; opponent had ace-high."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Checking this river wins more than betting it."
+    - "Give him the rope: a river line most NL5 players never use."
+    - "Nothing worse calls. So why are you betting?"
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-br6-big-hand-big-pot-vs-fish-015
+  format: cash-6max
+  topic: value-betting
+  concepts: [big-hand-big-pot, pot-sizing, weak-players, top-pair-good-kicker]
+  level: beginner
+  street: multi-street
+  pot_type: srp
+  position: any
+  title: "Against weak players: big hand, big pot; medium hand, small pot"
+  claim: >-
+    Versus a loose passive opponent the plan is simple. With top pair and a strong
+    kicker, two pair or better, bet big on every street and aim to get stacks in. With
+    medium hands, keep the pot small, check back the awkward turns and take the cheap
+    showdown. Do not get fancy in either direction.
+  why: >-
+    Weak players pay off big hands because they call with a wide range of worse pairs
+    and draws, so slow-playing or small-betting a strong hand against them leaves money
+    on the table. The flip side is that they are unpredictable with medium hands and
+    will sometimes show up with the one holding that beats you, so bloating a pot with a
+    marginal hand buys variance without extra value. Match pot size to hand strength
+    and let their calling habit do the rest.
+  common_mistake: >-
+    Betting small with a monster to keep the fish in, or betting big with a medium hand
+    to "find out where you are".
+  source_refs:
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#03
+      stance: supports
+      note: "'Against fish: big hand, big pot'; plays a huge pot with top pair second-nut kicker; bets a bit more than normal vs fish with good hand."
+    - school: br79
+      course: Crushing the Micros 6-max
+      lesson: br79-ctm-6max/006-part6
+      chunk: br79-ctm-6max/006-part6#04
+      stance: supports
+      note: "Bets big with top two pair vs a huge fish 'just to get money in'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Four words that beat weak players: big hand, big pot."
+    - "Stop slow-playing against the one player who always calls."
+    - "Match your pot size to your hand. That is the whole plan."
+  status: draft
+  created: "2026-10-04"
