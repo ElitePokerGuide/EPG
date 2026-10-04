@@ -1,0 +1,59 @@
+# Controlled vocabulary for concept cards and content planning.
+# Add values here first; the schema validates against this file.
+
+formats:
+  cash-6max:    "No-Limit Hold'em cash, 6-max (primary launch format)"
+  cash-fr:      "No-Limit Hold'em cash, full ring (9-max)"
+  cash-hu:      "Heads-up cash"
+  mtt:          "Multi-table tournaments"
+  sng:          "Sit & Go / Spin & Go"
+  plo:          "Pot-Limit Omaha"
+  live:         "Live poker specific"
+  general:      "Format-agnostic (theory, mental game, study methods)"
+
+levels:
+  beginner:     "Micro stakes, needs fundamentals (NL2-NL10)"
+  intermediate: "Small stakes, knows the basics (NL25-NL100)"
+  advanced:     "Mid stakes and up, solver-literate (NL200+)"
+
+streets: [preflop, flop, turn, river, multi-street]
+
+pot_types: [srp, 3bet-pot, 4bet-pot, limped, multiway]
+
+positions: [ip, oop, blinds, btn, co, hj, lj, utg, sb, bb, any]
+
+# Top-level topics. Each card has exactly one topic and 1-5 free-form concept tags.
+topics:
+  fundamentals:      "Equity, EV, pot odds, ranges, relative hand strength"
+  preflop-ranges:    "Opening, 3-betting, defending, 4-betting, squeezing"
+  cbet-strategy:     "C-bet frequency/sizing, range vs nut advantage, checking as PFR"
+  turn-play:         "Barreling, delayed c-bets, turn textures, probing"
+  river-play:        "Value/bluff thresholds, blockers, polarization, thin value"
+  bluffing:          "Bluff selection, frequencies, blocker logic"
+  value-betting:     "Thin value, sizing for value, overbets"
+  check-raising:     "Flop/turn check-raise construction"
+  defending:         "Facing bets: calling ranges, MDF, folding discipline"
+  exploits:          "Population tendencies, deviating from GTO, reads"
+  bet-sizing:        "Size selection, geometric sizing, overbets, small bets"
+  board-textures:    "Categorizing flops/turns/rivers, dynamic vs static"
+  blockers:          "Card removal effects"
+  multiway:          "3+ player pots"
+  bankroll-moving-up: "Bankroll management, moving up, game selection"
+  mental-game:       "Tilt, mindset, routines, discipline"
+  study-methods:     "How to study, solvers, database review, HUD"
+  table-selection:   "Seat/table selection, player pools"
+  hand-reading:      "Range narrowing, putting opponents on ranges"
+  tools-software:    "Solvers, trackers, HUDs"
+
+# Content eligibility by topic (platform policy). All topics are education; none promote gambling.
+content_eligible_topics: all
+
+# Hook archetypes used by generate/ (weights updated by measure/)
+hook_archetypes:
+  - mistake        # "99% of NL10 players do this wrong..."
+  - counterintuitive  # "Checking here makes you MORE money"
+  - quiz           # "What would you do? Fold / Call / Raise"
+  - schools-disagree  # "5 courses, 1 question, 2 answers"
+  - myth           # "'Always c-bet in position' is a lie"
+  - number         # "One stat that tells you to fold the river"
+  - story          # "I watched a reg lose 10 buy-ins doing this"

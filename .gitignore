@@ -1,0 +1,16 @@
+# Source course material never goes into git (copyright + size). Lives in Google Drive / private storage.
+knowledge/raw/
+knowledge/normalized/
+knowledge/chunks/
+knowledge/index/
+
+# Local artifacts
+*.pyc
+__pycache__/
+.venv/
+node_modules/
+.env
+content/queue/**/assets/
+content/queue/**/*.mp4
+content/queue/**/*.mp3
+content/queue/**/*.png

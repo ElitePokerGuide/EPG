@@ -1,0 +1,31 @@
+# Hook pattern bank. `weight` starts at 1.0 and is updated weekly by pipeline/measure from 3-second retention.
+# {X} placeholders are filled from the concept card.
+hooks:
+  - id: mistake-stakes
+    archetype: mistake
+    template: "Most {level_stakes} players get this {street} spot wrong."
+    weight: 1.0
+  - id: counter-check
+    archetype: counterintuitive
+    template: "Checking here makes you more money than betting. Here's why."
+    weight: 1.0
+  - id: quiz-3way
+    archetype: quiz
+    template: "{hero} on {board}. Villain bets. Fold, call or raise?"
+    weight: 1.0
+  - id: schools-disagree
+    archetype: schools-disagree
+    template: "We studied {n} top courses on {topic_plain}. They don't agree."
+    weight: 1.0
+  - id: myth-always
+    archetype: myth
+    template: "'{myth}' is costing you money."
+    weight: 1.0
+  - id: one-number
+    archetype: number
+    template: "One number tells you whether to {action} here: {number}."
+    weight: 1.0
+  - id: coach-line
+    archetype: story
+    template: "A coach we studied said something that changed how we play {spot}."
+    weight: 1.0

@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://elitepokerguide.io/schema/concept-card.json",
+  "title": "EPG Concept Card",
+  "description": "One atomic, publishable poker idea expressed in our own words, with internal provenance.",
+  "type": "object",
+  "required": ["id", "format", "topic", "level", "title", "claim", "why", "source_refs", "consensus_score", "status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^c-[a-z0-9]+(-[a-z0-9]+)*-[0-9]{3}$", "description": "c-<format>-<slug>-<nnn>" },
+    "format": { "type": "string", "enum": ["cash-6max", "cash-fr", "cash-hu", "mtt", "sng", "plo", "live", "general"] },
+    "topic": { "type": "string" },
+    "concepts": { "type": "array", "items": { "type": "string" }, "maxItems": 5, "description": "free-form tags, lowercase-kebab" },
+    "level": { "type": "string", "enum": ["beginner", "intermediate", "advanced"] },
+    "street": { "type": "string", "enum": ["preflop", "flop", "turn", "river", "multi-street"] },
+    "pot_type": { "type": "string", "enum": ["srp", "3bet-pot", "4bet-pot", "limped", "multiway"] },
+    "position": { "type": "string" },
+    "title": { "type": "string", "maxLength": 90, "description": "Short, specific. Not a hook. 'C-bet less OOP in 3-bet pots on low boards'" },
+    "claim": { "type": "string", "maxLength": 400, "description": "The actionable idea in one or two sentences. Our words." },
+    "why": { "type": "string", "maxLength": 900, "description": "The reasoning a good coach would give. Our words." },
+    "common_mistake": { "type": "string", "maxLength": 300, "description": "What weaker players do instead" },
+    "example_hand": {
+      "type": "object",
+      "description": "Optional illustrative spot for the hand replayer. Invented or generalized, never a verbatim course hand.",
+      "additionalProperties": false,
+      "properties": {
+        "stakes": { "type": "string" },
+        "positions": { "type": "string", "description": "e.g. 'BTN vs BB'" },
+        "hero": { "type": "string", "description": "e.g. 'AhKd'" },
+        "board": { "type": "string", "description": "e.g. '7s5d2c' or '7s5d2c Th' " },
+        "action": { "type": "string", "description": "e.g. 'BTN opens 2.5bb, BB calls. Flop: BB checks, BTN bets 33%...'" },
+        "decision": { "type": "string" },
+        "answer": { "type": "string" }
+      }
+    },
+    "numbers": { "type": "array", "items": { "type": "string" }, "description": "Concrete frequencies/sizes mentioned, e.g. 'c-bet ~33% pot on dry boards'" },
+    "source_refs": {
+      "type": "array", "minItems": 1,
+      "description": "INTERNAL. Never published.",
+      "items": {
+        "type": "object", "required": ["school", "course", "lesson"], "additionalProperties": false,
+        "properties": {
+          "school": { "type": "string" },
+          "course": { "type": "string" },
+          "lesson": { "type": "string" },
+          "chunk": { "type": "string" },
+          "stance": { "type": "string", "enum": ["supports", "nuances", "contradicts"] },
+          "note": { "type": "string", "maxLength": 200 }
+        }
+      }
+    },
+    "consensus_score": { "type": "number", "minimum": 0, "maximum": 1, "description": "Share of sources that support; 1 source = 0.5 until corroborated" },
+    "contradictions": { "type": "array", "items": { "type": "string" } },
+    "hook_ideas": { "type": "array", "items": { "type": "string" }, "maxItems": 5 },
+    "status": { "type": "string", "enum": ["draft", "needs-review", "approved", "rejected", "merged"] },
+    "review_note": { "type": "string" },
+    "created": { "type": "string" },
+    "updated": { "type": "string" }
+  }
+}

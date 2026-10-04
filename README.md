@@ -9,3 +9,20 @@ Selected listings reach up to 97% off original prices, with instant digital deli
 FOREVER LICENSE = lifetime access, no recurring subscription.
 
 https://elitepokerguide.io/
+
+---
+
+## EPG Social Content Engine
+
+This repository also hosts the autonomous educational content engine (Instagram, TikTok, YouTube) built on the knowledge inside the course catalog.
+
+| Path | What |
+|---|---|
+| `docs/strategy/` | Strategy, roadmap, monetization, risks |
+| `docs/decisions.md` | Decision log |
+| `knowledge/` | Knowledge layer: source manifest, taxonomy, schema, **concept cards** (the product). Raw transcripts are gitignored. |
+| `content/` | Voice, hard rules, hook bank, format templates, post queue |
+| `pipeline/` | ingest -> generate -> render -> publish -> measure -> review |
+| `.claude/skills/` | Claude Code skills that run the pipeline (`ingest-course`, `extract-concepts`) |
+
+Start with `docs/strategy/social-content-automation-strategy.md`, then `pipeline/README.md`.

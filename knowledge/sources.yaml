@@ -1,0 +1,100 @@
+# Manifest of course transcripts. Source of truth for ingest.
+# location: Google Drive folder "Courses Content Combined" (id 1UTAGyVnT1GkvIZuPimsknhbrLuFG56ks)
+# status: pending | fetched | normalized | extracted | skipped
+# batch: 1 = first Cash 6-max batch
+drive_folder_id: 1UTAGyVnT1GkvIZuPimsknhbrLuFG56ks
+
+schools:
+  rio:   "Run It Once"
+  br79:  "BlackRain79 / DragTheBar"
+  cc:    "Carrot Corner"
+  2cc:   "2 Card Confidence"
+
+sources:
+  # ---- Batch 1: Cash 6-max ----
+  - id: rio-game-plan
+    drive_id: 1tWS4fn7KODBfbT5-wU9E_WU9BLw8QvSG
+    file: "RUN IT ONCE THE GAME PLAN.txt"
+    school: rio
+    course: "The Game Plan"
+    formats: [cash-6max, general]
+    size_bytes: 2664090
+    batch: 1
+    status: normalized
+  - id: cc-grade-0
+    drive_id: 1iPscXIgueq4Z1rXxssTpI5xMFFWmpaq3
+    file: "CARROT CORNER - CARROT POKER SCHOOL GRADE 0.txt"
+    school: cc
+    course: "Carrot Poker School Grade 0"
+    formats: [cash-6max]
+    size_bytes: 995113
+    batch: 1
+    status: normalized
+  - id: br79-ctm-6max
+    drive_id: 1_4Y34wBTMkBsodn_WseD9mVA3pH4PG4C
+    file: "BlackRain79 Crushing the micros 6 max.txt"
+    school: br79
+    course: "Crushing the Micros 6-max"
+    formats: [cash-6max]
+    size_bytes: 286327
+    batch: 1
+    status: normalized
+  - id: 2cc-flop-exploits
+    drive_id: 18eek6Jb0w2HltROqtlHb38M4nS3BabNX
+    file: "2 Card Confidence Mini-Course - Flop Exploits.txt"
+    school: 2cc
+    course: "Mini-Course: Flop Exploits"
+    formats: [cash-6max]
+    size_bytes: 295591
+    batch: 1
+    status: normalized
+
+  # ---- Batch 2: Cash 6-max, next ----
+  - { id: cc-grade-1, drive_id: 1r8rCXbDRC-xOpMJ82hnCsFwN1-w1jpQS, file: "CARROT CORNER - CARROT POKER SCHOOL GRADE 1.txt", school: cc, course: "Carrot Poker School Grade 1", formats: [cash-6max], size_bytes: 809968, batch: 2, status: pending }
+  - { id: cc-grade-2, drive_id: 1TQ25wcG6IE3Fv7dhk-y2j03FoRfEtWeC, file: "CARROT CORNER - CARROT POKER SCHOOL GRADE 2.txt", school: cc, course: "Carrot Poker School Grade 2", formats: [cash-6max], size_bytes: 771918, batch: 2, status: pending }
+  - { id: cc-grade-3, drive_id: 1EwNEAmJN_6suafpgrlqmGrJ8OwgsMav1, file: "CARROT CORNER - CARROT POKER SCHOOL GRADE 3.txt", school: cc, course: "Carrot Poker School Grade 3", formats: [cash-6max], size_bytes: 690973, batch: 2, status: pending }
+  - { id: cc-grade-e, drive_id: 1HQJLsGArS5ndiHBb76GKXG-oQDgKWKHG, file: "CARROT CORNER - CARROT POKER SCHOOL GRADE E.txt", school: cc, course: "Carrot Poker School Grade E", formats: [cash-6max], size_bytes: 667896, batch: 2, status: pending }
+  - { id: cc-cash-injection, drive_id: 1dx06OyT6ZmvBFp2XtVeti6gW6enSIehQ, file: "CARROT CORNER CASH INJECTION.txt", school: cc, course: "Cash Injection", formats: [cash-6max], size_bytes: 291766, batch: 2, status: pending }
+  - { id: cc-weapons-of-war, drive_id: 1sXH93_iNTR7R83cn2JpR3foQasnMKEvr, file: "CARROT CORNER WEAPONS OF WAR.txt", school: cc, course: "Weapons of War", formats: [cash-6max], size_bytes: 345125, batch: 2, status: pending }
+  - { id: cc-subscription, drive_id: 1hogs-PFBbocR14s8CeSralzPCeDZk045, file: "CARROT CORNER SUBSCRIPTION.txt", school: cc, course: "Subscription content", formats: [cash-6max], size_bytes: 3274457, batch: 2, status: pending }
+  - { id: 2cc-preflop-xploits, drive_id: 1ug-8YuS2J2DLyBcq9KsbEDas43Sfysm2, file: "2 Card Confidence Preflop Xploits.txt", school: 2cc, course: "Preflop Xploits", formats: [cash-6max], size_bytes: 530110, batch: 2, status: pending }
+  - { id: 2cc-solver-mastery, drive_id: 1YC476zWSFSdAISdt4R7iSvsQ9c_emNAS, file: "2 CARD CONFIDENCE SOLVER MASTERY.txt", school: 2cc, course: "Solver Mastery", formats: [cash-6max, study-methods], size_bytes: 326970, batch: 2, status: pending }
+  - { id: br79-ctm-1, drive_id: 1WfFLoAFx8Dl2ggrAdaR_z8kq6r3FuPrD, file: "BlackRain79 Crushing the micros 1.txt", school: br79, course: "Crushing the Micros 1", formats: [cash-fr, cash-6max], size_bytes: 360951, batch: 2, status: pending }
+  - { id: br79-ctm-2, drive_id: 1YqeCOgJoCYu0krHL8tLEIGwSsnBZEZDa, file: "BlackRain79 Crushing the micros 2.txt", school: br79, course: "Crushing the Micros 2", formats: [cash-fr, cash-6max], size_bytes: 314637, batch: 2, status: pending }
+  - { id: br79-ctm-2014, drive_id: 1Y2wq8LTcqL9p7hTQ80PrCxSaWbF9usXb, file: "BlackRain79 Crushing The Micros 2014  edition.txt", school: br79, course: "Crushing the Micros 2014", formats: [cash-fr, cash-6max], size_bytes: 402164, batch: 2, status: pending }
+  - { id: br79-zoom, drive_id: 1cvJZDJ4k4vzqoDfQyB5vIuu0x8z-fX7Q, file: "BlackRain79 Zoom series.txt", school: br79, course: "Zoom series", formats: [cash-6max], size_bytes: 372534, batch: 2, status: pending }
+  - { id: br79-dtb-zoom, drive_id: 1RyTfjx16cwIj9RjjoAOPYmf5wr8mKTQ6, file: "BlackRain79 DragTheBar Crushing Zoom Nathan Williams.txt", school: br79, course: "Crushing Zoom", formats: [cash-6max], size_bytes: 376454, batch: 2, status: pending }
+  - { id: br79-regular-wars, drive_id: 1tApGWTz1yfQBukqtvxE9D_3NpAHtAmFi, file: "BlackRain79 Regular Wars.txt", school: br79, course: "Regular Wars", formats: [cash-6max], size_bytes: 291824, batch: 2, status: pending }
+  - { id: br79-nl2-mastery, drive_id: 1RuTgullDIB6KkQ98_kKVZQx9koNvzg9z, file: "BlackRain79 The NL2 Mastery Course - All 9 Videos.txt", school: br79, course: "NL2 Mastery", formats: [cash-6max], size_bytes: 332755, batch: 2, status: pending }
+  - { id: br79-elite-university, drive_id: 15X2THTVMdH3CtXthgwHWLNlYJonJLmFO, file: "BlackRain79 Elite Poker University.txt", school: br79, course: "Elite Poker University", formats: [cash-6max], size_bytes: 1075448, batch: 2, status: pending }
+  - { id: br79-value-betting, drive_id: 1tvksANxtO068C04xGHpgjaYw_OnkoeiK, file: "BlackRain79 Value betting on micros.txt", school: br79, course: "Value Betting at the Micros", formats: [cash-6max, cash-fr], size_bytes: 71531, batch: 2, status: pending }
+  - { id: br79-hand-reading, drive_id: 1eUfVpDov5xscaVvMZGfYfeGoB_OesrW7, file: "BlackRain79 Hand reading at the micros.txt", school: br79, course: "Hand Reading at the Micros", formats: [cash-6max, cash-fr], size_bytes: 77674, batch: 2, status: pending }
+  - { id: br79-getting-away, drive_id: 1_I5IkjOpLlpr55npaf2Qj6VxW0Yagxz3, file: "BlackRain79 Getting Away at the Micros.txt", school: br79, course: "Getting Away at the Micros", formats: [cash-6max, cash-fr], size_bytes: 190679, batch: 2, status: pending }
+  - { id: br79-live-nl5, drive_id: 190yyJhtNsLv4YAZhCvD6Ea1oFLoyduHZ, file: "BlackRain79 Live at NL5.txt", school: br79, course: "Live at NL5", formats: [cash-6max], size_bytes: 126433, batch: 2, status: pending }
+  - { id: br79-party-micro, drive_id: 1AxerWkmlBqb1eLTpVRg0q-lnJ-kdluO-, file: "BlackRain79 Party poker micro stakes.txt", school: br79, course: "Party Poker Micro Stakes", formats: [cash-6max], size_bytes: 81004, batch: 2, status: pending }
+  - { id: br79-2015-beyond, drive_id: 18XlyuBkT7tJrYY3ndWDZCb_a5iLrmN39, file: "BlackRain79 Crushing Online Poker in 2015 and Beyond.txt", school: br79, course: "Crushing Online Poker 2015", formats: [cash-6max, general], size_bytes: 88891, batch: 2, status: pending }
+
+  # ---- Batch 3: full ring / general / mental / study ----
+  - { id: br79-fr-pocket-pairs, drive_id: 1MvTiUz8-E8GOnbZWznRPD2Or3yoeyBup, file: "BlackRain79 Micro full ring theory all about pocket pairs.txt", school: br79, course: "FR Theory: Pocket Pairs", formats: [cash-fr], size_bytes: 94318, batch: 3, status: pending }
+  - { id: br79-fr-flop, drive_id: 1JRWcLhuJSYw4EEcHKc-yr6DVyBDC7kQ4, file: "BlackRain79 Micro full ring theory flop play.txt", school: br79, course: "FR Theory: Flop Play", formats: [cash-fr], size_bytes: 85309, batch: 3, status: pending }
+  - { id: br79-fr-bluffing, drive_id: 1xU8VND0-AXl4bm52KMNq4yd10VajwATP, file: "BlackRain79 Micro full ring theory bluffing.txt", school: br79, course: "FR Theory: Bluffing", formats: [cash-fr], size_bytes: 73250, batch: 3, status: pending }
+  - { id: br79-fr-river, drive_id: 1CwyqKr8_eHUKjD3mS_RUyCUYl3Fs7OtU, file: "BlackRain79 Micro full ring poker rapid fire river spots.txt", school: br79, course: "FR Rapid Fire River Spots", formats: [cash-fr], size_bytes: 93905, batch: 3, status: pending }
+  - { id: br79-moving-up, drive_id: 171plY2Dw1sjHhyFWve8iOFGX-tMc8dA2, file: "BlackRain79 Moving Up.txt", school: br79, course: "Moving Up", formats: [general], size_bytes: 47528, batch: 3, status: pending }
+  - { id: br79-mental, drive_id: 1uyVaOM_HGhFuxQl7jrAoSeIVjuvvgPf6, file: "BlackRain79 Mental Game at the Micros.txt", school: br79, course: "Mental Game at the Micros", formats: [general], size_bytes: 70264, batch: 3, status: pending }
+  - { id: br79-table-selection, drive_id: 1z9zaA2ZXClCA7D9ore5EVpwAKnkKiTJt, file: "BlackRain79 Table Selection at the micros.txt", school: br79, course: "Table Selection", formats: [general], size_bytes: 68927, batch: 3, status: pending }
+  - { id: br79-hud, drive_id: 1VBwl0uYL7MfgYTQUjTlGYoqOCYN3p0h7, file: "BlackRain79 Optimizing Your HUD at the Micros.txt", school: br79, course: "Optimizing Your HUD", formats: [general], size_bytes: 132001, batch: 3, status: pending }
+  - { id: br79-mass-tabling, drive_id: 1vcdm9-_0INyYX-tvDfUjVz29B-_WFaSY, file: "BlackRain79 Mass Tabling Madness.txt", school: br79, course: "Mass Tabling Madness", formats: [general], size_bytes: 48286, batch: 3, status: pending }
+  - { id: br79-observations, drive_id: 1rnBWcrXIl_sUAbh2-ee3rS0SNGYFq7Qb, file: "BlackRain79 Observations of Micro Stakes.txt", school: br79, course: "Observations of Micro Stakes", formats: [general], size_bytes: 83769, batch: 3, status: pending }
+  - { id: br79-member-reviews, drive_id: 1JGlWVW-32IR8feg--D2HC3PXPSoaCmcV, file: "BlackRain79 Member reviews.txt", school: br79, course: "Member Reviews", formats: [cash-6max, cash-fr], size_bytes: 367884, batch: 3, status: pending }
+  - { id: rio-dominate-data, drive_id: 1LMN361zogEmmeOAavB6aRq5a0b5nMj2f, file: "RUN IT ONCE Dominate with data.txt", school: rio, course: "Dominate with Data", formats: [general, study-methods], size_bytes: 2331289, batch: 3, status: pending }
+
+  # ---- Batch 4: large RIO archives (mixed cash/MTT, need per-lesson format tagging) ----
+  - { id: rio-essential-2024, drive_id: 1JnVUzh8jnZsiEF_RHnWY8VQ4NXcKI-Mi, file: "RUN IT ONCE ESSENTIAL HOLDEM 2024.txt", school: rio, course: "Essential Hold'em 2024", formats: [mixed], size_bytes: 4239209, batch: 4, status: pending }
+  - { id: rio-essential-2023, drive_id: 1ZF2CL9CSGE92iscJuBfe4-JKN_TY6KfD, file: "RUN IT ONCE ESSENTIAL HOLDEM 2023.txt", school: rio, course: "Essential Hold'em 2023", formats: [mixed], size_bytes: 4301920, batch: 4, status: pending }
+  - { id: rio-elite-2021, drive_id: 1lgK5f8fJA-4q7bkK89UguKrGxK_sRmcc, file: "RUN IT ONCE ELITE HOLDEM 2021.txt", school: rio, course: "Elite Hold'em 2021", formats: [mixed], size_bytes: 9686575, batch: 4, status: pending }
+  - { id: rio-elite-2022, drive_id: 1oLYHDPtrFxl1kxI6D9skfUZDYYOT1uF5, file: "RUN IT ONCE ELITE HOLDEM 2022.txt", school: rio, course: "Elite Hold'em 2022", formats: [mixed], size_bytes: 8192542, batch: 4, status: pending }
+  - { id: rio-elite-2023, drive_id: 1r3u4HLVYMrGuNnCg1zEHMtdkrVjncAk5, file: "RUN IT ONCE ELITE HOLDEM 2023.txt", school: rio, course: "Elite Hold'em 2023", formats: [mixed], size_bytes: 8667408, batch: 4, status: pending }
+  - { id: rio-elite-2024, drive_id: 165E1DqphTwW97mKgIbNVWkTLaxPAxaNp, file: "RUN IT ONCE ELITE HOLDEM 2024.txt", school: rio, course: "Elite Hold'em 2024", formats: [mixed], size_bytes: 9382200, batch: 4, status: pending }
+  - { id: rio-elite-essential-2025, drive_id: 1m0HLF699wfKNSLUy8XLDRt9yxDMS-j6G, file: "RUN IT ONCE ELITE & ESSENTIAL HOLDEM 2025.txt", school: rio, course: "Elite & Essential Hold'em 2025", formats: [mixed], size_bytes: 10242510, batch: 4, status: pending }
+  - { id: rio-essential-2012-2022, drive_id: 15X_i9VWpQPJnBm4cP_O3VEWKNC0W2kaF, file: "RUN IT ONCE ESSENTIAL HOLDEM 2012-2022.txt", school: rio, course: "Essential Hold'em 2012-2022", formats: [mixed], size_bytes: 42513784, batch: 4, status: pending, note: "42 MB; fetch via rclone/gdown or split on Drive" }
+  - { id: rio-elite-2012-2020, drive_id: 117lOqvOLO13iinmksa0txYyCqIGokwwq, file: "RUN IT ONCE ELITE HOLDEM 2012-2020.txt", school: rio, course: "Elite Hold'em 2012-2020", formats: [mixed], size_bytes: 49805299, batch: 4, status: pending, note: "50 MB; fetch via rclone/gdown or split on Drive" }
