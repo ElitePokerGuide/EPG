@@ -1,0 +1,309 @@
+- id: c-cash-6max-gp34-study-both-sides-of-node-001
+  format: cash-6max
+  topic: study-methods
+  concepts: [game-tree, counter-strategy, study-process, 3bet-pots]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Study the counter-strategy at the same time as your own line
+  claim: Whenever you build a strategy for one decision point, study the opponent's best response to it in the same session. Understanding how they should react explains why your line works and exposes problems before they show up at the table.
+  why: A flop c-bet strategy is only half of the node. The other half is what happens when you check and the opponent bets, and what the opponent should do against your bet. Looking at both sides together links the mechanics of your strategy to the reasons it is built that way, and it keeps the next street in view while you are still deciding the current one. Out of position this matters more than in position, because your checking range has to react to a bet immediately rather than at leisure on the turn.
+  common_mistake: Memorizing c-bet frequencies for one side of the tree while having no plan for the check-call range that strategy creates.
+  hook_ideas:
+    - Studying your c-bets without studying the response is half a lesson.
+    - Why solver c-bet charts fail you the moment someone bets back.
+    - The study habit that stops surprises on the turn.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#01
+      stance: supports
+      note: Coach opens by explaining he studies both sides of each node together.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp34-range-bet-removes-float-branch-002
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [range-bet, range-check, simplification, float-bet, 3bet-pots]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Range-betting a texture deletes the whole facing-a-float branch for you
+  claim: As the out-of-position 3-bettor, every flop texture you decide to range-bet is a texture where you will never face an in-position stab after checking. Only study the check-then-face-a-bet node on textures where your plan actually includes checks.
+  why: A simplified flop plan sorts boards into range-bet, range-check and a few mixed textures. If you never check a board class, the in-position player never gets to bet into your check there, so planning your response on that class is wasted effort. The reverse is also true. Range-check textures (high-low-low and monotone) and the mixed middle textures are exactly where you will face the most bets after checking, so those are the high-priority spots for building a check-call and check-raise plan. Simplifying the first decision point is what makes the later streets manageable.
+  common_mistake: Spending study time on how to defend a check on boards where your own game plan says you always bet.
+  hook_ideas:
+    - Half the flop spots you study will never happen to you.
+    - Range-bet here and one awkward spot disappears forever.
+    - Where does checking as the 3-bettor actually get tested?
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#01
+      stance: supports
+      note: Priority ratings for OOP vs flop float derived from where the plan checks.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp34-study-priority-order-003
+  format: cash-6max
+  topic: study-methods
+  concepts: [prioritization, game-plan, frequency-of-spots]
+  level: intermediate
+  street: multi-street
+  pot_type: 3bet-pot
+  position: any
+  title: Work down the most frequent lines first and defer rare nodes
+  claim: Rank every decision point by how often your own strategy reaches it, study the high-frequency ones to completion, and only then return to nuances and rare branches. Nodes your plan never reaches get zero time until everything important is done.
+  why: Study time is finite and the game tree is not. If your flop plan removes checks on a board class, every node below that check is dead for you and learning it is pure cost. The same logic applies to rare sizings and unusual runouts. A deliberately simple first decision point trims huge parts of the tree, which lets you go deep on the spots that come up every session instead of skimming everything equally.
+  common_mistake: Studying every node of a solver output with equal care, including lines the player's own strategy never takes.
+  hook_ideas:
+    - Stop studying spots your own strategy never reaches.
+    - The order you study poker spots in matters more than you think.
+    - A simple flop plan is also a shorter study list.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#01
+      stance: supports
+      note: Low-priority nodes deferred until all high-priority work is finished.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp34-benchmarks-vs-float-004
+  format: cash-6max
+  topic: defending
+  concepts: [float-bet, check-raise-frequency, fold-frequency, database-stats, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Aggregate benchmarks for the 3-bettor who checks and faces a flop bet
+  claim: Across all flop textures, the out-of-position 3-bettor who checks and faces an in-position bet check-raises roughly 11% of the time and folds roughly 35%. Use these as rough anchors for your database, not as targets to hit exactly.
+  why: Aggregate solver reports blend every texture and assume equilibrium bet sizes from the opponent. If your own plan converts some mixed-check textures into pure checks, your check-raise frequency should sit above the aggregate, because value hands that would have bet now check-raise instead. If your fold number is lower than the benchmark, the cause may be that opponents bet small more often than equilibrium suggests, and small bets should be folded to less. A deviation from the benchmark is a prompt to investigate, not proof of a leak.
+  numbers:
+    - "Aggregate check-raise vs flop float as OOP 3-bettor: ~11%"
+    - "Aggregate fold vs flop float as OOP 3-bettor: ~35%"
+  common_mistake: Seeing a stat in red against the solver benchmark and immediately forcing the number back toward it without asking why it differs.
+  hook_ideas:
+    - Your stat is above the solver's. That might be correct.
+    - One fold number that tells you how sticky you really are.
+    - Check-raising more than theory can be by design.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#01
+      stance: supports
+      note: Coach's own stats were more aggressive and stickier than the aggregate; he treats the first as intended.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp34-diagnose-before-fixing-005
+  format: cash-6max
+  topic: study-methods
+  concepts: [database-review, tracker-filters, leak-finding, hand-tagging]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Find the cause of a stat deviation before you try to fix it
+  claim: When a tracker stat disagrees with a solver benchmark, filter your database to that exact line, scan the hands by action, tag the ones that look off, then compare them to the closest sims you already own. Only run a custom sim when no existing one fits.
+  why: "A stat can be off for three different reasons: your strategy is deliberately different, your opponents are using sizes the aggregate did not assume, or you are misranking hands. Each has a different fix, and guessing wastes study time. Filtering to the line (3-bet preflop, check the flop, face a bet, any reaction) and sorting by what you did lets you check each bucket quickly. A rare spot with a small sample is where hand-by-hand review beats trainer drills, because you cannot trust the frequency and you need to see the individual decisions."
+  common_mistake: Reading one frequency, deciding it is a leak, and drilling the spot without ever looking at the hands that produced the number.
+  hook_ideas:
+    - Your tracker says you're too loose. Prove it first.
+    - Five tagged hands beat five hundred trainer reps for rare spots.
+    - A study workflow for leaks with tiny samples.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#01
+      stance: supports
+      note: Sample of ~6000 hands, 35 instances of the line; coach reviews rather than guesses.
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#03
+      stance: supports
+      note: Workflow walked through end to end; custom sim only for half-pot on an unsolved texture.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp34-check-raise-bluffs-need-suit-006
+  format: cash-6max
+  topic: check-raising
+  concepts: [bluff-selection, backdoor-flush-draw, blockers, float-bet, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Check-raise bluff with the live backdoor suit, flat or fold without it
+  claim: When the 3-bettor checks and faces a flop bet, bluff check-raises should come from hands holding a backdoor flush draw plus some straight or overcard interaction. The same hand without the suit should call if it has showdown or draw equity, and fold if it does not.
+  why: "The intuitive logic of \"too weak to call, so raise\" is backwards. Raising builds a pot you want to continue in, so the raising hand should be the one that improves most often and blocks the opponent's strongest continuing combos on common runouts. A backdoor flush draw does both: it adds turn cards that let you barrel and it removes suited combos from the opponent's range. Solvers consistently raise the suited version and flat or fold the unsuited version of the same hand class. Weak backdoor gutshots without the suit are mostly folds, not raises."
+  common_mistake: Check-raising ace-high or king-high hands with no backdoor suit because they feel too weak to call, while flatting the same hands when they do have the suit.
+  hook_ideas:
+    - Too weak to call, so you raise? That's backwards.
+    - The one card that turns a fold into a check-raise.
+    - Why your check-raise bluffs keep running into it.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#02
+      stance: supports
+      note: Coach reviews own check-raises made without a backdoor suit and calls the old logic backwards.
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#03
+      stance: supports
+      note: Sims confirm raising wants quality draws with the blocker suit; offsuit overcards call.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp34-rank-floats-by-live-outs-007
+  format: cash-6max
+  topic: defending
+  concepts: [hand-ranking, backdoor-draws, overcards, float-bet, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Facing a small stab after checking, rank weak hands by how live their outs are
+  claim: Among hands with no pair, continue with the ones whose draws can actually arrive and whose overcards are clean. A backdoor straight draw that uses cards already on the board, or that cannot turn an open-ender, is close to dead and should fold even to a small bet.
+  why: Low-equity floats survive on the turn cards that improve them. One clean overcard plus some straight interaction is a better hand than a junky backdoor gutshot because it has more ways to make a pair that is good and more turns to barrel. On a king-queen-high board, interaction with the low card can matter more than interaction with the top cards, but a two-gapper that cannot pick up an open-ended draw still folds. On a paired board or a board with no overcard for you, having an overcard plus a combo backdoor is what keeps a seven-high suited connector in the hand.
+  common_mistake: Calling any suited connector with three-to-a-straight because it looks connected, without checking whether the straight cards are already dominated by the board.
+  hook_ideas:
+    - Three to a straight can be a dead hand. Here's when.
+    - Not all backdoor draws deserve a call.
+    - The float you make every day that loses a blind.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#02
+      stance: supports
+      note: Coach flags a wrap-style backdoor on a board where the straight cards are dominated as a flop fold.
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#03
+      stance: supports
+      note: Sims rank one overcard plus straight interaction above junky backdoor gutshots.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp34-sizing-changes-float-defense-008
+  format: cash-6max
+  topic: defending
+  concepts: [bet-size-response, backdoor-flush-draw, ace-high, float-bet, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Your continue threshold vs a float moves a lot between 30% and 60% pot
+  claim: On a high-low-low two-tone board where the 3-bettor checks, ace-jack high continues against a 30% pot stab almost regardless of suits, but against a 60-65% pot stab it continues only with the backdoor flush draw and folds without it. Half pot sits in between and is roughly a fold without the suit.
+  why: A small bet offers a cheap price, so marginal overcards with no draw still have enough equity and playability to peel. A bet of two-thirds pot roughly doubles what you risk and demands more raw equity, and the backdoor suit is what pushes an ace-high hand over the line. If you run a high-checking plan as the 3-bettor, you will face more stabs than most players, so you need the thresholds for the sizes your opponents actually use, not only the size you prepared for your own bets.
+  numbers:
+    - "AJ no backdoor suit on T54 two-tone: pure continue vs ~30% pot, pure fold vs ~60-65% pot"
+    - "AJ with backdoor suit: pure continue vs both sizes"
+  common_mistake: Learning the defence against one small stab size and applying the same calling range when the opponent bets half pot or more.
+  hook_ideas:
+    - Ace-jack high, flop stab. Half pot changes the answer.
+    - The size you studied is not the size they use.
+    - One suit decides whether this ace-high calls or folds.
+  example_hand:
+    positions: BB vs BTN
+    hero: AhJc
+    board: Td5s4s
+    action: "BTN opens, BB 3-bets, BTN calls. Flop: BB checks, BTN bets."
+    decision: Call or fold vs 30% pot; vs 65% pot?
+    answer: Vs 30% pot call; vs 65% pot fold without a spade, call with the spade backdoor.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#03
+      stance: supports
+      note: Coach checks both bet sizes in his sims to judge a half-pot fold.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp34-one-straight-rainbow-fold-weak-aces-009
+  format: cash-6max
+  topic: defending
+  concepts: [rainbow-boards, half-pot, weak-aces, float-bet, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: On a rainbow one-straight low board, weak aces and small pairs fold to half pot
+  claim: When the 3-bettor checks a rainbow low board with a single straight and faces a half-pot bet, ace-five suited with no backdoor flush draw is a clear fold, and even a small pocket pair below the board folds. Continue with straight draws and clean broadway overcards.
+  why: "Without a flush draw possible, the only improving cards for a weak ace are the three remaining aces, and the board's straight already dominates its low-card outs. Against half pot that is not enough, and the sim shows calling loses around one big blind. A small pair below the board faces the same problem: it has no overcard and few outs. The hands worth defending are the ones that can make the straight or make top pair with a strong kicker."
+  numbers:
+    - "A5s no backdoor flush vs half pot on rainbow one-straight low board: fold, calling loses ~1bb"
+  common_mistake: Peeling any ace-high or any pocket pair against a stab because the bet "isn't that big".
+  hook_ideas:
+    - Pocket fives on a low board. Facing half pot. Fold.
+    - This ace-high call costs a full big blind every time.
+    - Rainbow boards punish weak floats harder than you think.
+  example_hand:
+    positions: BB vs BTN
+    hero: Ad5d
+    board: 9c7h3s
+    action: "BTN opens, BB 3-bets, BTN calls. Flop: BB checks, BTN bets 50% pot."
+    decision: Call or fold?
+    answer: Fold. No flush draw possible, the straight cards are not yours, and the call loses about a big blind.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#03
+      stance: supports
+      note: Custom sim run with IP given the half-pot size only; A5s and 55 fold.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp34-one-size-is-their-size-010
+  format: cash-6max
+  topic: exploits
+  concepts: [opponent-sizing, node-locking, custom-sims, reads]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Treat a regular's single flop size on a texture as their whole strategy there
+  claim: When a thinking opponent uses one bet size on a flop texture, assume that is their simplified size for that spot and run your sim with only that size available to them. One observation is enough for an opponent known to simplify early streets.
+  why: Strong players build their flop plans around one or two sizes per texture, so a single sighting usually reveals the whole strategy for that board class. Solving with the opponent restricted to that size gives you hand rankings for the spot you will actually face, rather than for a mix of sizes the opponent never uses. Solving to around 2% accuracy is plenty for hand-ranking questions, because the frequencies and relative hand values converge long before suit-level details do.
+  common_mistake: Studying against the solver's default mix of bet sizes when the opponent in front of you has shown they only use one.
+  hook_ideas:
+    - One bet from a reg tells you their whole flop plan.
+    - Stop solving against sizes your opponent never uses.
+    - You don't need a perfect sim to rank hands.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: rio-game-plan/034-checking-as-the-preflop-raiser#03
+      stance: supports
+      note: Coach gives IP credit for half pot exclusively after seeing it once from a simplifying player.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"

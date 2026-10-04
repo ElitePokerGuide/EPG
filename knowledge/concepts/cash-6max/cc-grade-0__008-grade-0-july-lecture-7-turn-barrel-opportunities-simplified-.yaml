@@ -1,0 +1,919 @@
+- id: c-cash-6max-cc07-single-size-turn-barrel-001
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [turn-barrel, simplification, single-sizing, ev-loss]
+  level: beginner
+  street: turn
+  pot_type: srp
+  position: ip
+  title: Barrel the turn with one size (~75% pot) while you learn
+  claim: >-
+    Until your fundamentals are solid, double-barrel the turn with a single size of roughly
+    three-quarters pot instead of mixing several sizes. Limiting yourself to one size costs
+    close to nothing as long as you still choose the right hands and frequency.
+  why: >-
+    A solver given three turn sizes will often spread its bets across them, or settle on an
+    overbet. That looks intimidating, but the EV gap between a 75% bet and a 150% bet with the
+    same hands is tiny, usually within solver noise. What really costs money is betting the
+    wrong hands, checking your whole range, or folding draws: those are big EV leaks. Sizing
+    choice between two sensible options is not. One familiar size lets you learn where the
+    bottom of your value range sits and which bluffs are allowed, which is far more valuable at
+    this stage than a complex sizing tree. Add overbets later, once you have stopped making the
+    large mistakes.
+  common_mistake: >-
+    Copying a solver's overbet-heavy turn strategy without understanding it, then misplacing
+    value and bluff thresholds and losing far more than the sizing ever gained.
+  numbers:
+    - "Turn barrel size: ~75% pot as the single default"
+    - "Restricting a solver from a 150% to a 75% turn size changed EV by a fraction of a percent of pot (noise)"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#01
+      stance: supports
+      note: "Coach sets B75-only turn barrel as the course simplification; no measurable EV loss vs multi-size sim."
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#02
+      stance: supports
+      note: "Coach personally overbets but says beginners should master one familiar size first."
+  consensus_score: 0.5
+  hook_ideas:
+    - "You do not need three turn sizes. One is enough."
+    - "The solver overbets here. You can still bet 75%. Here's why."
+    - "Most turn sizing worries are noise. This isn't."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-solver-sizing-is-not-a-verdict-002
+  format: cash-6max
+  topic: study-methods
+  concepts: [solver-interpretation, ev-comparison, pseudo-equilibrium, sizing]
+  level: intermediate
+  street: multi-street
+  title: A solver picking one size does not mean your other size is wrong
+  claim: >-
+    When a solver output shows a single sizing used at full frequency, do not conclude that a
+    different sizing is a mistake. Compare the EVs of the two options; if they are within a
+    fraction of a percent of the pot, both are fine.
+  why: >-
+    Any solver output is an approximation built from the limited sizes you gave it and the time
+    you let it run. Stop it a minute later and it may flip from one size to another, because the
+    two are nearly equal and it simply picks whichever is microscopically ahead at that moment.
+    It never flips between a terrible option and a good one, so a hard switch between sizes is
+    itself a sign that they were close. Treat the solver's colours as a hint and the EV numbers
+    as the evidence. Forcing it to use a different size and seeing EV barely move proves the
+    simplification is safe; forcing it to check its whole range or fold draws, by contrast,
+    shows large losses.
+  common_mistake: >-
+    Seeing an all-overbet turn node and panicking that your 75% bet has been losing money all
+    along, instead of checking how much EV the two sizes actually differ by.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#02
+      stance: supports
+      note: "Coach explains pseudo-equilibria, solver run-time noise, and 'compare the EV, not the colours'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "The solver overbets 100% here. That proves less than you think."
+    - "Stop reading solver colours. Read the EV."
+    - "'The solver only uses one size' is a trap."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-range-advantage-vs-favorability-003
+  format: cash-6max
+  topic: fundamentals
+  concepts: [range-advantage, favorability, equity-vs-ev, nut-advantage, polarization]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: any
+  title: Range advantage is about equity; favorability is about EV
+  claim: >-
+    Having a range advantage means your range has more equity than theirs. A favorable world
+    means your range has more EV, counting position, nut share and future streets. On most
+    turn barrel spots the flop caller holds the equity edge while the bettor holds the EV edge.
+  why: >-
+    Equity only measures who wins at showdown if all money went in now. EV also captures who
+    gets paid, who gets folds and who controls the pot. After a flop bet and call, the caller
+    has discarded their junk, so their average hand is stronger and their equity is often above
+    50%. The bettor, however, kept almost all the nutted hands and far more bluffs, so their
+    range is polarized. Polarized ranges earn more than their equity suggests because the nuts
+    are entitled to well over 100% of the current pot once future bets count, and the bluffs
+    still collect fold equity. So a condensed range can hold 55% equity and still be the one
+    with 42% of the pot in EV. To be in an unfavorable world while holding the range advantage,
+    you must be the condensed range facing a polarized one.
+  common_mistake: >-
+    Saying "this turn is bad for me, they have the equity now" and shutting down, when your
+    nut advantage and position still make the spot profitable to barrel.
+  numbers:
+    - "A nutted overpair on a favorable turn is worth roughly 150-200% of the current pot in EV"
+    - "Typical blank-turn barrel spot: bettor ~57-58% pot EV while caller has the equity edge"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#01
+      stance: supports
+      note: "Coach distinguishes range advantage (equity) from favorability (EV) with army analogy."
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#03
+      stance: supports
+      note: "Condensed range with equity edge but EV disadvantage; nutted hands worth 150-200% pot in EV."
+  consensus_score: 0.5
+  hook_ideas:
+    - "They have more equity. You have more money. Both are true."
+    - "'Range advantage' and 'good spot' are not the same thing."
+    - "How can 55% equity be a losing spot?"
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-flop-call-condenses-turn-barrels-selective-004
+  format: cash-6max
+  topic: turn-play
+  concepts: [turn-barrel, condensed-range, double-barrel-frequency, range-bet]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: Calling the flop strengthens their range, so turn barrels are rarely range bets
+  claim: >-
+    When the flop caller folds their weakest hands, their remaining range gets stronger on
+    average, and on the turn they usually hold the equity edge. So after a flop c-bet is
+    called, barrel the turn selectively, around 40-60% of the time on a blank, rather than
+    betting your whole range.
+  why: >-
+    Betting the flop filters your opponent for you: their air leaves, their pairs and draws
+    stay. A range built only from hands that passed a strength test is condensed, and
+    condensed is not weak, it is simply short on nutted hands. Their equity jumps, yours
+    stays flat or drops slightly even though your nut share remains high. Range-betting a turn
+    into that stronger range hands them profitable calls and raises. The exceptions are rare
+    cases where the turn card hugely favours you, like a king arriving on a low board in a
+    3-bet pot where overpairs dominate. Otherwise expect to bet roughly half the time, more in
+    favourable worlds and sometimes as little as 20-30% when the turn is bad for you.
+  common_mistake: >-
+    Treating "they called my c-bet" as weakness and firing the turn with everything, which
+    pays off a range that just removed all its trash.
+  numbers:
+    - "Blank-turn barrel frequency after flop bet-call: ~40-60% on average"
+    - "In bad turn worlds the frequency can fall to ~20-30%"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#02
+      stance: supports
+      note: "Timeline figure - BB equity shoots up after calling; turn betting ranges nearly always selective, 40-60%."
+  consensus_score: 0.5
+  hook_ideas:
+    - "They called your flop bet. Their range just got stronger."
+    - "Range-betting the turn is almost never right. Here's the one exception."
+    - "The 50% rule for turn barrels."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-polarized-betting-concentrates-nuts-005
+  format: cash-6max
+  topic: fundamentals
+  concepts: [nut-advantage, polarization, concentration, range-construction]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Betting a polarized flop range raises your nut share, not your equity
+  claim: >-
+    When you bet the flop with your strongest hands and your bluffs while checking the middle,
+    your betting range's equity barely rises but its share of nutted hands jumps. Ranges work
+    by concentration and dilution, not just by combo counts.
+  why: >-
+    Think of a bucket of mixed balls: remove the mediocre ones and the chance of drawing a
+    premium one goes up, even though you added nothing. Checking back medium pairs and
+    weak ace-highs removes the filler from your betting range; the sets and overpairs that
+    were always betting now make up a larger fraction. Because you also bet plenty of air,
+    overall equity moves only slightly. This is why a c-bettor who bets 40% of the time can
+    still arrive on the turn with a large nut advantage while trailing in equity. The caller,
+    by contrast, checks every hand first, so nothing about their range changes until they
+    call and shed their junk.
+  common_mistake: >-
+    Measuring your range only by how many strong combos you hold, and not by how concentrated
+    they are after your line removes the medium hands.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#02
+      stance: supports
+      note: "Blue/red balls analogy; betting is polarizing and polarizing increases nut prevalence."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Betting less often can make your range scarier."
+    - "Your nut advantage comes from what you check, not what you bet."
+    - "Ranges are concentrations, not combo counts."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-bricks-belong-to-the-bettor-006
+  format: cash-6max
+  topic: board-textures
+  concepts: [turn-card, brick, range-interaction, polarization]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: A low "brick" turn usually hits the flop bettor, not the caller
+  claim: >-
+    After a flop bet and call, a low unconnected turn card such as an 8 on a J-6-3 board is
+    not a true blank. The bettor holds far more of that card, because low-card hands were bet
+    as bluffs on the flop while the caller folded them.
+  why: >-
+    The flop bettor's range is polarized, so weak holdings with an 8 in them, like Q8 or 85
+    suited, were near the front of the queue to bluff, not the back. The caller, meanwhile,
+    needed something to continue with on J-6-3, and random 8-x was exactly what they threw
+    away. So a card that looks dead actually pairs the bettor's air with some regularity and
+    keeps their nut advantage intact. It does not flip the range advantage, because the
+    condensed caller still has more equity on average, but it makes the turn a slightly better
+    transaction for the bettor and nudges the barrel frequency upward. Only cards like a deuce
+    that neither range interacts with are closer to real bricks.
+  common_mistake: >-
+    Labelling every low turn a "brick" and playing it identically, missing that your range,
+    not theirs, is the one that connects with it.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#02
+      stance: supports
+      note: "8 of clubs turn on J63; who has more 8x? Button, because 8x are bluffs on the flop and BB folds them."
+  consensus_score: 0.5
+  hook_ideas:
+    - "That 'brick' turn is your card, not theirs."
+    - "Why an 8 on J-6-3 helps the bettor."
+    - "Bluffing the flop with junk pays off on 'blank' turns."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-favorability-is-the-whole-world-007
+  format: cash-6max
+  topic: turn-play
+  concepts: [favorability, turn-card, action-sequence, position, holistic-evaluation]
+  level: beginner
+  street: turn
+  pot_type: srp
+  position: any
+  title: Judge the turn world, not the turn card
+  claim: >-
+    How favourable a turn spot is depends on five things together: the preflop ranges, the
+    flop, the flop action, position, and the turn card. The fourth card is just one of five
+    inputs and only a quarter of the board.
+  why: >-
+    Players often say "the queen is good for him" and then act as though the first three
+    cards disappeared. They did not. The same queen on the same flop can be a strong barrel
+    card after a small bet and call in position, and a mediocre one out of position after a
+    large bet. Position alone shifts EV by several percent of the pot in every spot, so a
+    card that creates a neutral world for the in-position bettor can create an unfavourable
+    one for an out-of-position bettor with identical ranges. Sorting spots into favourable,
+    neutral and unfavourable is the skill to practise, and it is impossible if you only look
+    at the fourth card.
+  common_mistake: >-
+    Deciding whether to barrel based purely on whether the turn card "looks good" for the
+    preflop raiser.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#02
+      stance: supports
+      note: "Turn card is 25% of the board; favorability is a function of preflop ranges, flop, flop action, turn card."
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#04
+      stance: supports
+      note: "Same bad card is neutral IP, unfavorable OOP; position is a constant EV tax."
+  consensus_score: 0.5
+  hook_ideas:
+    - "One card out of four. Stop treating it like the whole board."
+    - "Same card, same flop, opposite decision. Why?"
+    - "Most players evaluate turns wrong in the first second."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-broadway-turn-on-low-board-008
+  format: cash-6max
+  topic: board-textures
+  concepts: [turn-card, overcard, favorable-world, barrel-frequency, fold-equity]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: btn
+  title: A ten-to-king turn on a low board is the c-bettor's best barrel card
+  claim: >-
+    After c-betting a low or middling flop and being called, a turn ten, jack, queen or king
+    is close to the most favourable world you can get. Bet around 70% of the time, value bet
+    thin and bluff almost anything.
+  why: >-
+    Those cards belong to you for two reasons. Preflop the big blind 3-bet many of their
+    strong broadway hands, so you hold more of them. On the flop, king-high or queen-high was
+    pure air for both players, which means you bet it often as a bluff and they folded it
+    almost always. The card also keeps your overpairs on top. The result is a range that
+    pairs the turn far more often than theirs, with a large nut advantage preserved. In such
+    a world the EV of your range can approach two-thirds of the pot and you can barrel almost
+    as often as a range bet, something that almost never happens elsewhere in a single-raised
+    pot. The ace is the notable exception to this pattern because ace-high often calls small
+    flop bets.
+  common_mistake: >-
+    Slowing down on a king turn because "it's a scare card for both of us", when it is really
+    a scare card almost only for the caller.
+  numbers:
+    - "King turn on a J-high board, BTN vs BB after flop bet-call: bet ~70%, BTN EV ~67% pot"
+    - "BB folds ~43% to the 75% barrel there (roughly breakeven for a bluff)"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#05
+      stance: supports
+      note: "King turn is insanely good for button: EV 67%, bet 70%, BB folds 43%."
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#08
+      stance: supports
+      note: "T, J, Q, K turns on lowish boards are very positive transactions for the c-bettor."
+  consensus_score: 0.5
+  hook_ideas:
+    - "The best turn card to barrel is not the ace."
+    - "Bet 70% of the time on this turn. Yes, really."
+    - "Why a king turn is a monopoly for the preflop raiser."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-ace-turn-fallacy-009
+  format: cash-6max
+  topic: board-textures
+  concepts: [ace-turn, turn-card, sticking-around, range-interaction, fallacy]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: The ace turn is often the worst overcard for the c-bettor on a dry board
+  claim: >-
+    After a small c-bet on a dry low flop is called, an ace turn is usually the least
+    favourable high card for the bettor, not the best. Ace-high hands had every reason to
+    call the flop, so the caller connects with the ace and leapfrogs your overpairs.
+  why: >-
+    On a bone-dry flop like 7-5-2 rainbow, ace-high is comfortably good enough to call a
+    one-third pot bet, so the big blind arrives on the turn with lots of A-x. When the ace
+    lands, their cheap A6 or A9 suddenly beats your kings, queens and jacks, which were unique
+    to your range. Your nut advantage shrinks sharply. By contrast a queen, or a true brick
+    like a three, keeps your overpairs on top and gives them nothing. The ace becomes good for
+    the raiser only when the caller could not keep ace-high: on wet flops like 9-8-6 where
+    A-J offsuit folds, when you opened from early position and hold a bigger share of aces,
+    or when you used a larger flop size that pushed ace-high out.
+  common_mistake: >-
+    Firing every ace turn as a "scare card" because you are the preflop raiser, when the
+    caller holds more aces than you after calling a small bet on a dry board.
+  example_hand:
+    positions: SB vs BB
+    hero: KhKs
+    board: 7d5c2s Ah
+    action: "SB opens, BB calls. Flop: SB bets 33%, BB calls. Turn: ace."
+    decision: Is the ace a good barrel card for the preflop raiser here?
+    answer: >-
+      Not especially. BB kept most ace-high hands against the small bet, so the ace improves
+      their range more than yours and demotes your overpairs. The world stays slightly
+      favourable because of your remaining strong hands, but it is the lowest-EV turn of the
+      thirteen ranks, so barrel more carefully than on a queen or a brick.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#08
+      stance: supports
+      note: "'Ace turn fallacy' - ace is the lowest-EV turn for SB on a dry flop; queen is best; exceptions listed."
+  consensus_score: 0.5
+  hook_ideas:
+    - "The ace turn is a scare card. For you."
+    - "'Ace turn, I'm the raiser, I bet' is costing you money."
+    - "Why the ace is the worst high card to barrel here."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-flush-turn-favors-flop-caller-010
+  format: cash-6max
+  topic: board-textures
+  concepts: [flush-turn, condensed-range, sticking-around, suited-hands, oop]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: oop
+  title: Flush-completing turns favour the flop caller, especially against an OOP bettor
+  claim: >-
+    When the turn completes a flush after a flop bet and call, the caller gains more than the
+    bettor. Out of position this usually makes the world unfavourable for the bettor; in
+    position it is closer to neutral.
+  why: >-
+    The caller's range has passed a strength test: to continue on a two-tone flop they needed
+    a pair, a draw or a backdoor, and suited hands with the flush suit were a big part of that.
+    The bettor needed no such reason, since a flop bet can be made with any two cards, so
+    their range is thinner in flush combos. Preflop also matters: the big blind defends more
+    suited hands and fewer big offsuit pairs. When the third suit arrives, a cluster of the
+    caller's hands jumps ahead of the bettor's overpairs, two pairs and sets, which lose EV
+    on this runout. Add the EV tax of being out of position and the bettor should check at a
+    high frequency and protect that checking range. In position, nut advantage and positional
+    control keep the spot roughly even instead.
+  common_mistake: >-
+    Treating the flush turn as "scary for both" and barrelling anyway, when the caller is far
+    more likely to hold the flush and will raise.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#03
+      stance: supports
+      note: "K98 8h turn, SB vs BB - unfavorable for SB; BB had a reason to stick around; IP it would be neutral."
+  consensus_score: 0.5
+  hook_ideas:
+    - "The flush came in. Whose card is it? Not yours."
+    - "They had to earn their place in this pot. You didn't."
+    - "The flop caller owns the flush turn. Here's why."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-favorability-sets-your-thresholds-011
+  format: cash-6max
+  topic: turn-play
+  concepts: [favorability, barrel-frequency, value-threshold, bluff-selection, checking-range]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: any
+  title: Favourability sets how strict your turn value and bluff thresholds are
+  claim: >-
+    Classify the turn world first, then set your standards. Favourable: bet 60%+ of the time,
+    value bet thin and bluff almost any hand. Neutral: bet around 35-40%, raise the value bar
+    and pick bluffs by blockers and draws. Unfavourable: bet around 20%, only strong value and
+    premium draws, and protect your checking range.
+  why: >-
+    Your opponent's folding frequency is a reaction to your betting range. In a favourable
+    world their range is weak enough that even trash gets enough folds to be indifferent with
+    checking, and marginal hands like second pair become value bets because the top of their
+    range is missing. In a neutral world they fold a little less than the bet size requires,
+    so an air bluff is already a loser and only hands with equity or good blockers may bet.
+    In an unfavourable world they are condensed around hands that connect, they will raise
+    more, and your medium-strong hands drop below the value line entirely. The same hand can
+    be a mandatory bet in one world and a mandatory check in another; the hand did not change,
+    the world did.
+  common_mistake: >-
+    Using one fixed turn barrel frequency regardless of how the card, position and action
+    sequence changed each range.
+  numbers:
+    - "Favourable world: barrel ~60%+; neutral: ~35-40%; unfavourable: ~20%"
+    - "Neutral-world example: BB folds ~40.6% vs ~42.7% needed for a 75% pot bluff to break even"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#04
+      stance: supports
+      note: "Favorability sets standards; favorable 60%+, neutral ~40%, unfavorable mostly check."
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#06
+      stance: supports
+      note: "Neutral world - bet 35%, fold equity 40.6% below the 42.7% breakeven; trash bluffs lose."
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#07
+      stance: supports
+      note: "Unfavorable world OOP - bet 20%, no mandatory value bets, air never bets."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Three turn worlds, three different rules. Which one are you in?"
+    - "The same hand is a must-bet here and a must-check there."
+    - "Your bluff standards should move. Most players' don't."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-thin-value-when-they-cannot-have-the-card-012
+  format: cash-6max
+  topic: value-betting
+  concepts: [thin-value, favorable-world, second-pair, value-drives-bluffs]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: In a favourable turn world, second pair is a value bet and value drives the bluffs
+  claim: >-
+    When the turn card is one the caller almost never holds, your value range widens
+    dramatically: a hand that is now second pair can still bet for value, and because you are
+    value betting so often, your draws and even your air may bet alongside.
+  why: >-
+    Value betting is about being ahead of the hands that call, not about absolute strength.
+    If the turn king is nearly absent from the caller's range, your jack-high top pair from
+    the flop is still ahead of most continuing hands, so it bets. A wide value range needs
+    bluffs to balance it, which is why hands like Q-T with a draw bet very often, and why even
+    low offsuit junk can bet: the fold equity is high enough that betting and checking are
+    equal. Note the order of causation. Value hands drive the aggression; the bluffs simply
+    tag along because the strategy wants a high frequency. Betting trash is not better than
+    checking it, it is merely allowed. Even here the very middle of your range, like a weak
+    pocket pair under the board, still has to check.
+  common_mistake: >-
+    Checking second pair on a king turn because "it's only second pair now", ignoring that
+    the king barely exists in the caller's range.
+  example_hand:
+    positions: BTN vs BB
+    hero: JcTc
+    board: Js6d3h Kd
+    action: "BTN opens, BB calls. Flop: BTN bets 33%, BB calls. Turn: king, BB checks."
+    decision: Is this a check-back or a value bet?
+    answer: >-
+      A value bet is fine. BB folded almost all king-high on the flop and 3-bet much of it
+      preflop, so the king rarely helps them. Your pair of jacks is still ahead of most hands
+      that call, and the world is favourable enough to bet around 75% pot.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#05
+      stance: supports
+      note: "JT value bets on the K turn; T7 and A5 bluffs are 0 EV vs check; value hands 'pull the strings'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Second pair. King turn. Bet for value. Here's why."
+    - "Your bluffs aren't the reason you're betting. Your value is."
+    - "'Only second pair' is the wrong way to think about this."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-fold-equity-reacts-to-your-betting-range-013
+  format: cash-6max
+  topic: bluffing
+  concepts: [fold-equity, breakeven, bluff-selection, betting-range, neutral-world]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: any
+  title: Their fold frequency is a reaction to what you bet, so trash bluffs lose in neutral spots
+  claim: >-
+    A 75% pot bet needs roughly 43% folds to break even as a pure bluff. In neutral or
+    unfavourable turn worlds the caller folds less than that against a well-built range, so
+    bluffing with no draw and no blockers loses money compared with checking.
+  why: >-
+    Fold equity is not a property of the spot; it is a response to your betting range. The
+    caller folds a given amount because your bets are selective. If you start firing random
+    junk, the solver, or an observant opponent, calls more and your fold equity drops further.
+    So the 40% fold rate you see in a neutral world is the best case for a disciplined range,
+    and already below the breakeven for air. Hands with a flush draw or overcards still have
+    equity to fall back on, so they can bet; a hand with nothing cannot. In practice humans
+    fold even less on connecting turns than theory suggests, which makes the restraint more
+    valuable, not less.
+  common_mistake: >-
+    Reading a 40% fold stat and thinking "they fold a lot", then bluffing every air hand into
+    it until the stat stops being true.
+  numbers:
+    - "75% pot bluff breakeven: ~43% folds (42.7%)"
+    - "Neutral turn world after bet-call: caller folds ~40%; unfavourable: lower still"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#06
+      stance: supports
+      note: "B75 requires 42.7% folds; BB folds 40.63% on the 4s turn, so T8hh bluff loses vs check."
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#07
+      stance: supports
+      note: "Fold equity is a reaction to our betting range, not to our whole range."
+  consensus_score: 0.5
+  hook_ideas:
+    - "One number decides whether your turn bluff works: 43%."
+    - "They don't fold 'a lot'. They fold to a disciplined range."
+    - "Why your bluffing stat lies to you."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-worst-bluff-blocks-their-folds-014
+  format: cash-6max
+  topic: blockers
+  concepts: [blocker-selection, bluff-candidates, folding-range, continuing-range, neutral-world]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: The worst turn bluff blocks their folds and unblocks their calls
+  claim: >-
+    In a neutral or unfavourable turn world, pick bluffs that interfere with hands that
+    continue and leave their folding hands intact. A hand with no draw, no overcard, no
+    flush-suit blocker and cards that only hit their weak pairs is the worst possible bluff.
+  why: >-
+    Imagine a jack-high board with two flush draws on the turn and you hold 9-7 offsuit with
+    neither suit. You cannot improve to beat a jack. You hold no card of either flush suit,
+    so every draw that would raise or call you is fully live in their range. And your nine
+    and seven are exactly the cards in their hands that would fold, like 9-9 under the jack
+    or A-9 high; you want them to hold those, and you are making it less likely. Compare a
+    hand like K-8 with one flush card: it blocks some continuing draws and has an overcard to
+    hit, so although still "trash", it is a far more acceptable bluff. In a very favourable
+    world none of this matters, but when fold equity is tight, blocker quality is what
+    separates allowed bluffs from losing ones.
+  common_mistake: >-
+    Choosing turn bluffs by how "bad" the hand looks ("I have nothing, so I might as well
+    bluff") instead of by what the cards block.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#06
+      stance: supports
+      note: "K8 with 8s/Kd is semi-trash with blockers; 97hh is the worst bluff - no redraw, unblocks draws, blocks folds."
+  consensus_score: 0.5
+  hook_ideas:
+    - "'I have nothing, so I'll bluff' is backwards."
+    - "The worst bluff in poker looks exactly like this."
+    - "Your bluff should block calls, not folds."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-oop-unfavorable-check-heavy-015
+  format: cash-6max
+  topic: turn-play
+  concepts: [oop, unfavorable-world, checking-range, slow-play, protected-range]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: oop
+  title: Out of position on a bad turn, check most of your range, including the nuts
+  claim: >-
+    When you c-bet out of position and the turn connects with the caller's range, bet only
+    around 20% of the time. There are no mandatory value bets: even your strongest hands can
+    check at some frequency, because the in-position player will bet often when checked to.
+  why: >-
+    Being out of position is a constant tax on your EV, and a turn that favours the condensed
+    caller pushes the world into unfavourable territory. Their range will raise more and fold
+    less, so medium-strong hands like top pair with a weak kicker fall below the value line
+    and air can never bet. Checking a monster here costs little: there is a whole river left,
+    the opponent bets frequently into a check, and you can check-raise. The occasional missed
+    bet when they check behind is recovered by the raises you get in and the bluffs you
+    induce. A low flush with about 75-80% equity is a genuine mix between betting and
+    checking, not a forced bet. Only strong exploitative reads, such as an opponent who never
+    bets when checked to, should swing you back toward betting.
+  common_mistake: >-
+    Betting every flush and every strong hand out of position because it feels like missing
+    value otherwise, leaving a checking range that stronger regulars attack.
+  numbers:
+    - "Unfavourable OOP turn world: bet ~20%, EV around 47% of pot"
+    - "Weak flush OOP (~75-80% equity): roughly indifferent between bet and check"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#07
+      stance: supports
+      note: "A63 6 turn SB vs BB - bet 20%, EV 47.46%, everything checkable; low flush is a mix."
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#08
+      stance: supports
+      note: "Tiger/antelope - betting all flushes is a pool leak that stronger regs punish."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Checking the nuts out of position is not a slow-play. It's correct."
+    - "You don't have to bet your flush. Here's the proof."
+    - "Out of position on a bad turn? Bet 20%, not 60%."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-positional-slow-play-rule-016
+  format: cash-6max
+  topic: turn-play
+  concepts: [protected-checking-range, slow-play, ip-vs-oop, urgency, check-raise]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: any
+  title: Positional slow-play rule - IP check strong-not-nutted hands, OOP check anything
+  claim: >-
+    In position on the turn, your checking range should contain some strong but not nutted
+    hands (a good top pair, a weak flush) while the true nuts almost always bet. Out of
+    position, keep the checking range fully uncapped: every hand, including the nuts,
+    checks at some frequency.
+  why: >-
+    The driver is urgency, meaning how much money a hand still needs to get in before the
+    river and how much time it has. In position the nuts own too much of the pot to let a
+    street go by, so they must bet; a strong-ish hand gains from checking because it loses
+    less when behind, lets weaker hands bluff the river and keeps hands in that would have
+    folded. Out of position the opponent still has the option to bet when you check, so
+    checking a monster does not lose a street; it often gains one via a check-raise. The one
+    discipline is that when you do check a big hand OOP and they bet small, raise rather than
+    call, because calling and checking again lets time run out. None of this is exploitative
+    guesswork: the equilibrium strategy checks these hands too.
+  common_mistake: >-
+    Assuming "I'm in position, I always bet my strong hands" and "I'm out of position, I
+    must bet before they check behind", which produces face-up checking ranges in both seats.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#09
+      stance: supports
+      note: "Positional slow playing rule; OOP no mandatory value bets; check-raise deuces vs small bet, don't check-call."
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#06
+      stance: supports
+      note: "Solver checks K5-type top pair IP sometimes; KQ must bet because urgency is too high."
+  consensus_score: 0.5
+  hook_ideas:
+    - "In position, check your good hands. Out of position, check anything."
+    - "The nuts don't always need to bet the turn."
+    - "One rule for slow-playing that depends only on your seat."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-i-bet-for-value-is-a-bad-thought-017
+  format: cash-6max
+  topic: value-betting
+  concepts: [thought-process, weak-flush, blockers, relative-hand-strength, checking-range]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: "\"I bet for value\" is an incomplete thought; a weak flush on the turn is often a check"
+  claim: >-
+    Deciding to bet because a hand is "a flush" or "strong" skips the real question: is
+    checking also viable? On a flush-completing turn in position, a low flush is frequently a
+    pure check, while only the near-nut flushes must bet.
+  why: >-
+    Three things argue for checking a low flush. First, blockers: holding two of the suit
+    removes many of the drawing hands that would call your bet, so you are betting into a
+    range that continues less. Second, relative strength: several higher flushes beat you,
+    and checking gets you closer to showdown while losing less against them. Third, you
+    unblock their air; hands that called the flop with overcards will often bluff the river
+    after you check, paying you money that a turn bet would have folded out. A king-high or
+    nut flush is different because it cannot be behind and owns too large a share of the pot
+    to wait. Thinking "strong hand, bet" ignores all of this and makes your range easy to
+    read for anyone paying attention.
+  common_mistake: >-
+    Betting every flush on the turn because it feels like a strong hand, then wondering why
+    the river never produces bluffs when you check.
+  example_hand:
+    positions: BTN vs BB
+    hero: 8c7c
+    board: Qc9c4d 2c
+    action: "BTN opens, BB calls. Flop: BTN bets 33%, BB calls. Turn: a third club, BB checks."
+    decision: Bet the flush or check back?
+    answer: >-
+      Checking is at least as good and often better. Your two clubs block the draws that
+      would call, you lose to every bigger flush, and checking lets BB bluff the river with
+      the overcards they floated with. Only the top flushes here have to bet.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#09
+      stance: supports
+      note: "Stream hand - 87cc flush IP is 100% check; Q7cc optional; K6cc mandatory. 'I bet for value' is a bad thought process."
+  consensus_score: 0.5
+  hook_ideas:
+    - "You made a flush. Checking it might be the only correct play."
+    - "'I bet for value' is costing you money."
+    - "Why the small flush should sometimes stay quiet on the turn."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-draw-ladder-world-first-018
+  format: cash-6max
+  topic: bluffing
+  concepts: [semi-bluff, draw-quality, favorability, bluff-eligibility, turn-barrel]
+  level: beginner
+  street: turn
+  pot_type: srp
+  position: any
+  title: Rank the world first, then your draw - five tiers of unmade hands on the turn
+  claim: >-
+    Sort your unmade turn hands into premium draws, decent draws, marginal draws, semi-trash
+    and utter trash. Premium draws may bet in any world; each weaker tier needs a more
+    favourable world before it is allowed to bluff. Judge the world before you judge the hand.
+  why: >-
+    A flush draw or open-ended straight draw has enough equity to bail itself out, so it can
+    barrel even when your range is suffering. A decent draw, such as a good gutshot or two
+    live overcards, bets almost always but may sit out in a horrible world. A marginal draw,
+    like a weak gutshot or one overcard with a backdoor, needs at least a neutral world.
+    Semi-trash, a lone overcard or a flush blocker, needs a favourable one, and complete air
+    with no outs and poor blockers can bet only in the very best worlds. The important habit
+    is the order: players who start from "my hand is weak, I won't bluff" under-bluff
+    favourable turns badly, where even air should bet sometimes. This ladder is about what
+    can bet, not what must bet, and applies to the turn specifically.
+  common_mistake: >-
+    Starting from the hand ("only a gutshot, not good enough") instead of the world, so you
+    never bluff enough when the turn is great for your range.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#11
+      stance: supports
+      note: "Five categories of unmade hands vs world quality chart; 'think about the world first, then the draw'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Is your draw good enough? Wrong question."
+    - "Five kinds of draws, one question: can this one bet?"
+    - "Most players judge their hand first. That's backwards."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-rng-only-when-indifferent-019
+  format: cash-6max
+  topic: study-methods
+  concepts: [randomization, rng, mixed-strategy, exploitation, indifference]
+  level: intermediate
+  street: multi-street
+  title: Use a randomizer only for spots you know are a true mix
+  claim: >-
+    Randomize between bet and check only when you are confident the two actions have the same
+    EV. If a hand is a clear check, a high RNG roll does not make betting right. And when you
+    have a read, skip the randomizer and take the exploitative line.
+  why: >-
+    Mixing exists because some hands are genuinely indifferent in equilibrium, and a
+    randomizer is the least stressful way to execute that without leaking patterns. The danger
+    for developing players is using it before they know which spots are indifferent: rolling a
+    94 and betting a hand that loses significant EV when bet turns a tool into a blunder
+    generator. So learn the thresholds first, randomize second. Also remember that
+    equilibrium mixing is only the default. Against a station you simply value bet; against
+    someone who overbluffs when checked to you simply check. Live, randomizing is rarely
+    needed at all because reads are so plentiful. A HUD-based RNG is far more pleasant than
+    opening a web page every hand.
+  common_mistake: >-
+    Treating "the solver mixes here" as permission to let a random number choose, even in
+    spots where one option is clearly better for the specific hand or opponent.
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#10
+      stance: supports
+      note: "Don't RNG anything until you know it's indifferent; exploits override mixing; live rarely needs RNG."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Your randomizer is making you worse. Here's when."
+    - "Rolling a 94 does not make a bad bet good."
+    - "Mix only when it's actually a mix."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc07-range-check-horrible-flops-ip-020
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [range-check, bad-flops, low-frequency-cbet, initiative-myth, donk-bet]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: On terrible flops in position, range check rather than c-betting 20% of the time
+  claim: >-
+    When a flop is so bad for the preflop raiser that the equilibrium c-bet frequency drops to
+    about 20% at a small size, simplify to checking your entire range in position. The caller
+    will lead the turn often, so your strong hands still get paid.
+  why: >-
+    A 20% c-bet strategy is nearly impossible to execute: you would need a randomizer for
+    every hand class and gain almost nothing for the effort. On flops like low connected
+    monotone boards, even your overpairs hold only around 62-65% equity against the caller's
+    range, behind more often and less far ahead when in front, so they do not want to build a
+    big pot yet. If the flop is that bad for you it is correspondingly good for the caller,
+    who in theory wants to lead the turn at a high frequency, so your sets and straights
+    make money by letting them bet. Remember that initiative is not a reason to bet: betting
+    with a range disadvantage is the same whether you raised preflop or not. What matters is
+    which ranges arrived at the flop.
+  common_mistake: >-
+    Feeling obliged to c-bet "something" because you were the raiser, and firing a tiny
+    fraction of the time with a strategy you cannot actually apply.
+  numbers:
+    - "Overpair on a very bad flop texture: ~62-65% equity vs the caller's range"
+    - "If the equilibrium c-bet frequency is ~20%, simplify to a range check in position"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#11
+      stance: supports
+      note: "Homework board 6 - range check IP on a horrible flop; BB donks turn a lot; 'initiative is not the thing'."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Some flops you should never c-bet, even in position."
+    - "'I raised, so I bet' is a myth."
+    - "Why checking your whole range here makes more money."
+  status: draft
+  created: "2026-10-04"

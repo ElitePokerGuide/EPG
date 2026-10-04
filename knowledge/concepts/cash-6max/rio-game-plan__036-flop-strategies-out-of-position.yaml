@@ -1,0 +1,367 @@
+- id: c-cash-6max-gp36-wide-3bet-ranges-check-more-001
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [3bet-pots, range-advantage, checking-frequency, polarization, wide-ranges]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Wide 3-bet ranges mean the 3-bettor checks far more often out of position
+  claim: In 3-bet pots where both ranges are wide, the out-of-position 3-bettor should check the flop much more than in tighter-range formats, and when betting, lean toward polarized large bets rather than frequent small ones.
+  why: The small range bet works when the aggressor's range is clearly stronger on most flops. A wide 3-bet range against a wide calling range loses that edge, and many textures quietly favour the in-position caller. With less range advantage, betting the whole range small bleeds value, so the solution is to check often and bet big with a polarized range on the textures where betting is still good. A player can still build a profitable plan with more c-betting than theory, but they should know they are paying for it in EV.
+  common_mistake: Carrying the six-handed habit of range-betting small as the 3-bettor into wide-range blind-vs-blind or button-vs-blind 3-bet pots.
+  hook_ideas:
+    - The 3-bettor checks here. Most players can't believe it.
+    - Range betting small in 3-bet pots has a hidden cost.
+    - Checking makes you more money in these 3-bet pots.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#01
+      stance: supports
+      note: Framed for heads-up 100-120bb; applies where 3-bet and call ranges are both wide.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-disconnected-ak-high-range-bet-002
+  format: cash-6max
+  topic: board-textures
+  concepts: [ace-high-boards, king-high-boards, broadway-connectivity, range-bet, 3bet-pots]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Ace or king high with no Broadway connection is still a range-bet for the 3-bettor
+  claim: Flops like A-8-x or K-7-x, where the middle card does not connect to Broadway, remain high-frequency small-bet textures for the 3-bettor even in wide-range 3-bet pots. Paired boards behave the same way.
+  why: The 3-bettor's range is heavy in big aces and big kings and light in middling connectors, so a single high card with disconnected low cards gives them a large share of top pairs while the caller's suited connectors and small pairs miss. Once the other two cards start connecting to Broadway (K-Q-x, A-J-T), the caller's broadway hands make pairs, draws and two-pair combos that erase the 3-bettor's edge, so those boards shift toward checking and polarized sizing. Lack of connectivity is the feature that makes the texture good for the aggressor.
+  common_mistake: Treating every ace-high board the same way instead of separating A-8-3 from A-J-T.
+  hook_ideas:
+    - A-8-3 and A-J-T are not the same flop for a 3-bettor.
+    - The flop feature that decides whether you range bet.
+    - Why disconnected high cards are the 3-bettor's best friend.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#01
+      stance: supports
+      note: Aggregate report shows small range bets on paired and disconnected A/K-high boards.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-geometric-two-street-sizing-003
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [geometric-sizing, two-broadway-boards, polarization, large-bets, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Two-Broadway flops in 3-bet pots want a geometric two-street size or a check
+  claim: On flops with two Broadway cards, the 3-bettor's strategy is mostly checking with a low frequency of large bets sized so that two equal bets get all the money in by the turn. Expect to bet roughly a fifth to a quarter of the time and check the rest.
+  why: Geometric sizing splits the remaining stack into equal bets across the streets you plan to bet, so a two-street version is a big flop bet followed by a turn shove. On two-Broadway boards the caller's range connects well, so the 3-bettor has little reason to bet medium hands and instead bets a polarized range of strong value and strong draws for a size that sets up stacks. A three-street version uses three equal bets to be all in by the river and shows up as an in-between flop size. This is a harder strategy to execute than range betting and deserves dedicated study.
+  numbers:
+    - "Two-Broadway textures: ~20-25% large-bet frequency, otherwise check"
+  common_mistake: Betting one-third pot on K-Q-x or A-K-x as the 3-bettor because it is a "high board", then having no plan when called.
+  hook_ideas:
+    - "K-Q-x in a 3-bet pot: mostly check, sometimes bet huge."
+    - The flop size that sets up a turn shove.
+    - Why the 3-bettor goes big or goes quiet on Broadway flops.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#01
+      stance: supports
+      note: Coach explains 2E / 3E notation and groups two-Broadway boards into the polar large-bet category.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-low-paired-defined-by-offsuit-trips-004
+  format: cash-6max
+  topic: board-textures
+  concepts: [paired-boards, board-categories, offsuit-combos, range-interaction, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Define a "low paired" board by where offsuit hands stop making trips
+  claim: In 3-bet pots, treat paired boards of 9-9-x and lower as one category and T-T-x and higher as another. The dividing line is the rank at which the caller's range stops playing the offsuit versions of that card at full frequency.
+  why: Board categories should follow how the opponent's range interacts with the texture, and offsuit combos are what decide whether an interaction is a big part of a range or a sliver. A caller against a 3-bet continues almost all offsuit tens and up, so on T-T-x or higher they hold many trips combos and the 3-bettor must respect that. On 9-9-x and below the caller mostly needs suited hands to hold trips, which is a much smaller slice, so the 3-bettor can bet the whole range. This principle, counting where offsuit combos hit, is the general tool for drawing lines between board classes.
+  common_mistake: Lumping all paired boards together, or splitting them by gut feel rather than by what the calling range actually holds.
+  hook_ideas:
+    - 9-9-x and T-T-x are different flops. Here's the line.
+    - "One question defines every board category: do offsuit hands hit?"
+    - Why trips are rarer than you think on low paired boards.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#01
+      stance: supports
+      note: Low paired defined as 99 and under because 9x is where IP stops calling offsuit combos fully.
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#02
+      stance: supports
+      note: Generalises to using offsuit interaction as the category divider.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-pick-size-that-fits-most-textures-005
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [simplification, single-size, texture-grouping, small-bet, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: When a category mixes sizes, keep the one that works on the most textures
+  claim: If a board class shows a mix of small, medium and large bets, simplify to the size that stays useful across the widest set of boards in the group, then check the few textures that preferred another size to confirm the loss is small.
+  why: Low paired boards in 3-bet pots mix three sizes, but adding a high card to the texture removes the large bet entirely while the small bet survives, and a related high-paired board uses only the small bet. A size that keeps showing up across variations is the safe default for the whole category. Before committing, look at the boards where the bigger size was preferred and check the opponent's response to the small bet there. If they must still defend a wide, awkward set of hands, the small size is good enough and the strategy stays simple.
+  common_mistake: Choosing the size that looks best on one representative flop and applying it to the whole category without checking the neighbours.
+  hook_ideas:
+    - Three solver sizes, one table decision. Pick like this.
+    - The bet size that survives every version of the board.
+    - Simplify sizing without giving away the pot.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#02
+      stance: supports
+      note: Coach settles on 30% pot for low paired boards after testing high-card and connected variants.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-frequency-vs-selection-mistakes-006
+  format: cash-6max
+  topic: exploits
+  concepts: [frequency-mistakes, hand-selection, overfolding, node-locking, small-bet]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Only frequency mistakes make a bet size profitable, not hand-selection mistakes
+  claim: When judging whether opponents will misplay a bet size, ask whether they will fold or raise the wrong amount overall. Defending with the wrong hands at the right frequency barely changes your EV; folding noticeably too often does.
+  why: A solver response to a small bet contains hands that look impossible to find, such as raising an offsuit ten-nine with no pair, while also folding some offsuit broadways. Real players will swap one for the other, but that is a hand-selection error and roughly a wash. If instead their total fold frequency climbs from about 17% to about 28% against a small bet, your whole betting range gains automatic profit and the small size becomes clearly right. Focus on aggregate fold and raise frequencies when choosing a size, and use node-locking only if that specific question is the deciding factor.
+  numbers:
+    - "Example: fold vs 30% pot moving from ~17% to ~28% turns the small bet into a clear win"
+  common_mistake: Picking a bet size because one branch of the solver response looks hard to play, without checking whether opponents actually fold or raise too much overall.
+  hook_ideas:
+    - They defend the wrong hands. That makes you nothing.
+    - The only opponent mistake that pays your bet size.
+    - Stop chasing solver lines nobody could find anyway.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#02
+      stance: supports
+      note: Coach distinguishes frequency mistakes from hand-selection mistakes when evaluating the 30% size.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-low-boards-overbet-or-check-007
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [low-boards, overbet, range-bet, simplifier, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: On low-low-low flops in 3-bet pots the big bet is the essential size
+  claim: On three-low-card flops, removing the small bet from the 3-bettor's strategy costs nothing, while removing the large bet or the check costs EV. Overbet-or-check and a single-size range bet are both near-zero-loss simplifications.
+  why: "The 3-bettor's range on a low board is mostly overcards with a few overpairs and sets, so the strategy wants to polarize: bet big with hands that can set up stacks and check the rest. A simplifier shows the small bet is redundant, that a pure overbet-or-check plan loses no EV while checking about 82% of the time, and that a full-range bet at one medium size loses only around 0.01 big blinds. Both are far easier to execute than the solver mix. Adding a wheel draw shifts preference toward a three-quarter pot size, which is why a single geometric three-street size is a robust catch-all for the category."
+  numbers:
+    - "Overbet-or-check on a low rainbow board: ~18% bet, ~82% check, 0 EV loss vs full mix"
+    - "Removing checks on the same board: ~0.01bb loss"
+    - "Range bet one medium size: ~0.01-0.02bb loss"
+  common_mistake: Firing one-third pot on 7-5-2 as the 3-bettor because low boards "look good for the raiser", when that size is the one the solver throws away first.
+  hook_ideas:
+    - On low flops the small c-bet is the size you can delete.
+    - Check 82% of the time and lose nothing. Here's where.
+    - Two simple plans for 7-5-2 that match the solver.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#03
+      stance: supports
+      note: Simplifier tool results on low-low-low textures; coach chose range 3E for the category.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-trade-ev-for-simplicity-008
+  format: cash-6max
+  topic: study-methods
+  concepts: [simplification, ev-loss, playing-to-strengths, exploitative-design]
+  level: intermediate
+  street: multi-street
+  pot_type: 3bet-pot
+  position: any
+  title: Pay a few hundredths of a big blind for a strategy you can actually execute
+  claim: Choose simplified strategies that lose a tiny amount of theoretical EV in exchange for being easier to remember and to play, and pick the simplification that steers the game toward your strengths and your opponents' weak responses.
+  why: "Strong players routinely discard solver mixes in favour of one or two options at a node, because accuracy at the table is worth more than a 0.01bb edge on paper. The choice of simplification is also an exploit: a high-checking plan invites stabs and sets up check-raises, a high-betting plan tests whether opponents fold too much. While you work on a weakness, the plan can route around it. Simplification is not laziness, it is strategy design."
+  common_mistake: Trying to reproduce mixed solver frequencies in real time and making large execution errors to protect a tiny theoretical edge.
+  hook_ideas:
+    - The solver mix costs you more than the simple plan.
+    - Give up 0.01bb on paper, gain real money at the table.
+    - Simplifying is a strategy, not a shortcut.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#03
+      stance: supports
+      note: Coach frames simplification as both a memory aid and an exploitative choice.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-few-options-at-early-nodes-009
+  format: cash-6max
+  topic: study-methods
+  concepts: [game-tree, early-decisions, branching, simplification]
+  level: intermediate
+  street: multi-street
+  pot_type: 3bet-pot
+  position: any
+  title: Keep the first decision point to one or two options so later streets stay learnable
+  claim: Limit preflop and flop decisions to at most two options per spot. Every extra branch at an early node multiplies the number of turn and river strategies you have to know.
+  why: A game tree fans out from each decision. If you use three flop sizes plus a check, you need four different turn plans and many more river plans, and your study time gets spread so thin that none of them is played well. One or two early options let you see every branch that follows and go deep on them. The later parts of a game plan become dramatically simpler when the early nodes were kept narrow. Running sims with only one size allowed, then two, then all, and comparing total EV is the manual way to confirm the cheap simplification.
+  common_mistake: Using four flop sizes "like the solver" and then improvising every turn because no one can study that many branches.
+  hook_ideas:
+    - Every extra flop size doubles your turn homework.
+    - Why the pros use fewer bet sizes than the solver.
+    - Narrow the flop, master the river.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#04
+      stance: supports
+      note: Coach wants one or two options at the first decision point for visibility of later branches.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-high-low-low-range-check-010
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [high-low-low, range-check, small-bet-fails, fold-frequency, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Range-check jack-to-king-high dry flops as the 3-bettor in wide-range pots
+  claim: On flops headed by a jack, queen or king with two low disconnected cards (not ace high), the out-of-position 3-bettor can check the entire range. Removing checks is the most expensive mistake on these boards and a small range bet gets almost no folds.
+  why: The 3-bettor's range is full of broadway cards that miss a board like Q-7-3 or J-6-2, while the caller's suited connectors, small pairs and low suited hands connect or hold backdoors. A quarter-pot stab makes the caller fold only around 13%, so it buys nothing. Checking the whole range costs almost no EV against a correct opponent, whose checking frequency rises only about 3% in response, and it funnels the pot into check-raise and delayed lines where the 3-bettor's value hands do better. This texture category excludes ace-high boards and boards where the middle card makes high-end straight draws.
+  numbers:
+    - Caller folds ~13% to a 25% pot c-bet on high-low-low flops
+    - In-position checking frequency rises only ~3% when the 3-bettor range-checks
+  common_mistake: Auto c-betting Q-7-3 as the 3-bettor because "I have the range advantage", then facing a raise or a call with no plan.
+  hook_ideas:
+    - 3-bet, flop Q-7-3, and the right play is check. Always.
+    - A c-bet that gets 13% folds is not a c-bet.
+    - The dry flop where the 3-bettor should stop betting.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#04
+      stance: supports
+      note: Coach shows the simplifier result and adopts range check for the category; HU framing.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-check-raise-the-float-on-dry-high-boards-011
+  format: cash-6max
+  topic: check-raising
+  concepts: [float-bet, check-raise-value, overfloating, pocket-pairs, 3bet-pots]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: After range-checking a dry high flop, check-raise aggressively into the stab
+  claim: When the 3-bettor checks a jack-to-king-high dry flop, the in-position caller is supposed to bet about half the time and in practice often bets more. A high check-raise frequency, including value hands, attacks that line and gets more money in than c-betting would.
+  why: The caller's natural stabs on these boards are hands with a small pair, a low connector or a wheel draw, plus broadway hands that connect with the king or queen. Those are easy bluffs to find, so real players stab at least as often as theory. Against a large check-raise the caller must fold medium and low pocket pairs that bet the flop and fold the overcards that lack a backdoor flush draw, and most players under-fold here. Value hands in the 3-bettor's range therefore collect extra bets and fewer folds by check-raising than by leading, which is a core reason to prefer the range check on this texture.
+  common_mistake: Checking the flop as the 3-bettor with a strong hand and then only calling the stab, giving up the raise that the texture is built for.
+  hook_ideas:
+    - Let them stab, then raise. The dry-flop trap for 3-bettors.
+    - Why your top pair wants to check-raise, not c-bet, here.
+    - They bet half the time into your check. Punish it.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#04
+      stance: supports
+      note: IP float frequency ~50%; coach expects more in practice and leans into check-raising value.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-checking-opens-delayed-lines-012
+  format: cash-6max
+  topic: turn-play
+  concepts: [delayed-cbet, check-check-lines, range-check, strategy-design, 3bet-pots]
+  level: advanced
+  street: multi-street
+  pot_type: 3bet-pot
+  position: oop
+  title: Build more flop checks into your plan to reach profitable delayed lines
+  claim: A strategy that checks the flop more often as the 3-bettor reaches delayed c-bet and check-check-check lines more often, and those lines hold extra EV against most opponents. Choose flop simplifications partly for how often they get you there.
+  why: Players defend flop c-bets reasonably well because they face them constantly, but turn probes, delayed bets after a flop check-through and river decisions after two checks are studied far less and played worse. The only way to get to those nodes is to check the flop. If the flop check costs almost nothing in theory on a texture, the practical upside of the later streets makes range-checking there a clear choice rather than a toss-up.
+  common_mistake: Judging a flop check only by the flop EV and ignoring the easier turn and river spots it leads into.
+  hook_ideas:
+    - The best spots in 3-bet pots start with a flop check.
+    - Check now, collect on the turn. The delayed-line edge.
+    - Why checking the flop is an investment, not a surrender.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#04
+      stance: supports
+      note: Coach cites delayed lines and check-check-check lines as extra-EV reasons to check more.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp36-stress-test-board-categories-013
+  format: cash-6max
+  topic: board-textures
+  concepts: [board-categories, texture-variation, wheel-draws, flush-draws, category-splitting]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: oop
+  title: Stress-test a board category by changing one feature at a time
+  claim: Before trusting a board category, vary a single property (add a flush draw, a wheel draw, a second straight, a high card) and compare the strategies. Split the category only when the EV difference between the variants is material, not when the solver's preferred size merely shifts.
+  why: Categories exist to make the game playable, so they should be as broad as the strategy allows. On low three-card boards, adding a wheel draw moves the preferred size from an overbet toward three-quarter pot, but the EV gap between the two is around a hundredth of a big blind and both range-bet and range-check remain cheap. That is a change in flavour, not a new category. A category should be broken off only when one variant genuinely demands a different plan, otherwise you end up with texture descriptions so fine-grained that you cannot recall them under pressure.
+  common_mistake: Creating a new board category every time a sim shows a different size, until the plan has more textures than anyone can remember.
+  hook_ideas:
+    - Your board categories are probably too many.
+    - One cheap test tells you whether a flop needs its own rule.
+    - When does a wheel draw change the plan? Usually never.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: rio-game-plan/036-flop-strategies-out-of-position#03
+      stance: supports
+      note: Coach challenges the low-low-low category with dynamic and wheel variants and keeps it whole.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
