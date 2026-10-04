@@ -1,0 +1,679 @@
+- id: c-cash-6max-gp23-categories-from-strategy-001
+  format: cash-6max
+  topic: board-textures
+  concepts: [flop-categories, aggregate-reports, study-process]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Build flop categories from what the solver does, not from how the board looks
+  claim: >-
+    When grouping flops for study, start from solver output and cluster boards that share the same
+    c-bet size and frequency. Do not start from intuitive labels like "ace-high" or "king-high" and
+    then try to describe what happens inside them.
+  why: >-
+    A category is only useful if every board inside it plays roughly the same way. If you draw the
+    boxes first, you end up with groups that mix a range-bet texture and a mostly-check texture, and
+    the guideline you write for the group is wrong for half of it. Sorting an aggregate report by the
+    frequency of the smallest size, then by check frequency, then by the largest size, reveals which
+    boards cluster together. Labels that fall out of this process feel odd at first but become
+    intuitive with repetition, and they let you study one representative board per group instead of
+    hundreds of near-duplicates.
+  common_mistake: >-
+    Memorizing a fixed list of texture names before looking at any solutions, then forcing every
+    flop into one of those names even when the strategies inside the box disagree.
+  hook_ideas:
+    - "Your flop categories are backwards. Here is the fix."
+    - "Stop sorting flops by high card. Sort them by strategy."
+    - "One study trick that cuts your flop work by 90%."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#01
+      stance: supports
+      note: Coach sorts aggregate report by smallest-size frequency, check frequency and largest size to form categories.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-small-bet-paired-ace-high-002
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [range-bet, small-cbet, paired-boards, ace-high-boards]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Paired and ace-high flops are the home of the quarter-pot c-bet in position
+  claim: >-
+    As the in-position raiser in a single raised pot, paired boards and most ace-high boards call for a
+    small c-bet (around 25% pot) at a very high frequency. Whether the board is rainbow or two-tone
+    barely changes this choice.
+  why: >-
+    On these textures the preflop raiser holds the clear range advantage and the caller has few hands
+    that can comfortably raise. A small bet taxes the caller's many weak holdings, keeps your own
+    weak hands in the pot cheaply, and makes future streets simpler. Solver reports show the boards
+    with the highest small-bet frequency are dominated by paired flops, and once those are removed the
+    remainder is mostly ace-high. Monotone and heavily connected boards are notably absent from this
+    group, while suit distribution between rainbow and two-tone shows up on both sides, which tells
+    you flush-draw count is not the driver of size here.
+  common_mistake: >-
+    Sizing up to 2/3 pot with strong hands on A72 or 884 rainbow and checking the rest, which splits
+    the range and makes both parts easier to play against.
+  numbers:
+    - "c-bet ~25% pot on paired and ace-high flops IP in SRP"
+  example_hand:
+    positions: "CO vs BB"
+    hero: "KdQs"
+    board: "As7h2c"
+    action: "CO opens, BB calls. BB checks."
+    decision: "Check, bet 25% or bet 66%?"
+    answer: "Bet 25%. This texture is a small-bet board for the whole range, including king-high air."
+  hook_ideas:
+    - "Most NL10 players size this flop wrong."
+    - "Paired board? Bet a quarter pot. Every time."
+    - "'Two-tone means bet bigger' is costing you money."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#01
+      stance: supports
+      note: Highest 25%-bet boards were paired, then ace-high; mix of rainbow and two-tone; no monotone.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-high-check-textures-003
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [check-back, connected-boards, monotone, caller-advantage]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Straight-heavy middling flops and monotone boards are where the raiser checks most
+  claim: >-
+    In position after a check, the flops with the highest check-back frequency are middling connected
+    boards with several possible straights and monotone boards. When you do bet on the connected
+    middling boards, the typical size is around 75% pot rather than a small bet.
+  why: >-
+    The caller defends preflop with suited and connected medium cards, so textures like T98 or 875
+    hit their range harder than yours and your high-card overpairs are vulnerable. Checking more
+    protects your medium-strength hands and avoids bloating pots where you are often behind. When
+    you do bet, a medium size with a tighter, more polarized range makes sense because the caller
+    has many strong hands and draws that will not fold to a quarter pot anyway. Note that a high
+    check frequency can mean two different things: little money going in because the caller is
+    favored, or a polarized big-bet strategy. Look at the bet size column before concluding which.
+  common_mistake: >-
+    Auto c-betting small on 987 two-tone because "I am the raiser", then facing raises and
+    turn barrels with a range that cannot stand them.
+  numbers:
+    - "when betting middling connected flops IP, ~75% pot is the typical size"
+  hook_ideas:
+    - "Checking this flop makes you more money than betting."
+    - "The one flop type where the raiser is the underdog."
+    - "Raiser checks here 60%+ of the time. Do you?"
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#01
+      stance: supports
+      note: Highest-check boards had many straights and monotone textures; 75% size on mid coordinated boards.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-broadway-overbet-004
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [overbet, broadway-boards, straight-count, polarization]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "Three-Broadway, one-straight flops take big sizes; three-straight boards take medium"
+  claim: >-
+    In position in a single raised pot, flops with three Broadway cards and only one possible straight
+    (for example AKJ or KQT-type boards) favor large bets and overbets. Boards where three different
+    straights are already possible shift toward a medium size around 75% pot, with the rare monotone
+    exception using a small bet.
+  why: >-
+    On high Broadway boards the raiser owns nearly all the two-pair, set and top-pair-good-kicker
+    combos, and the caller's range is capped and full of weak pairs and gutshots. That nut advantage
+    is what licenses an overbet: you can polarize into strong hands plus bluffs and charge the maximum.
+    Once a board offers three live straights, the caller holds more nutted and robust hands, so the
+    raiser's advantage shrinks and the size comes down. Counting possible straights is a quick proxy
+    for how much of the nut advantage you keep.
+  common_mistake: >-
+    Betting the same 1/2 or 2/3 pot on every high-card board, which leaves value on the table
+    when you hold the nut advantage and overcommits when you do not.
+  numbers:
+    - "overbet ~150% pot on three-Broadway, one-straight flops IP"
+    - "~75% pot on boards with three possible straights"
+  hook_ideas:
+    - "Count the straights before you pick a size."
+    - "AKJ rainbow: why 150% pot beats half pot."
+    - "The flop where overbetting is the standard play."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#01
+      stance: supports
+      note: Big sizes on ace-high with three Broadways and one straight; three-straight textures use medium size.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-one-size-per-texture-005
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [simplification, one-size, texture-based-sizing]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Pick one c-bet size per flop category and use it with your whole betting range
+  claim: >-
+    Decide your flop c-bet size from the board texture, not from your hand. For example, every bet
+    on an ace-high board is 25% pot and every bet on an all-low board is 75% pot, regardless of
+    whether you hold a set or air.
+  why: >-
+    Solvers mix several sizes on most flops, but the EV gained from the mix is small compared with
+    the cost of trying to execute it at the table. Fixing one size per texture loses only a sliver of
+    EV while giving you a strategy you fully understand and can play without hesitation. It also
+    removes the most common leak at small stakes: sizing that leaks hand strength. A single size
+    forces your bluffs and value to look identical, and it makes studying turns far easier because
+    there is only one pot size to prepare for in each category.
+  common_mistake: >-
+    Betting big with strong hands and small with weak ones, which is exactly the pattern observant
+    opponents exploit.
+  numbers:
+    - "ace-high flops: 25% pot only"
+    - "all-low flops: 75% pot only"
+  hook_ideas:
+    - "Your bet size should depend on the board, not your hand."
+    - "One size per flop. Here is why the pros simplify."
+    - "Sizing by hand strength is the leak you cannot see."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#02
+      stance: supports
+      note: Coach uses a single size per texture category to get close to max EV with a strategy he understands.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-two-options-rule-006
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [simplification, two-options, remove-checks, range-bet]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "Limit every flop category to two options: check plus one size, or two sizes with no check"
+  claim: >-
+    When simplifying a flop c-bet strategy, cap each texture at two actions. Usually that is check or
+    one size. On some textures, such as two-Broadway boards, the better pair is a quarter-pot bet and
+    an overbet with checking removed entirely.
+  why: >-
+    A solver's three-or-four-way mix on a flop is not something a human can reproduce accurately, and
+    errors in frequency cost more than the simplification does. The trick is to drop the option that
+    is closest in value to another one. Where a paired or ace-high board shows a low but nonzero check
+    frequency, folding the checks into the small bet is almost free. Where the small bet and the
+    overbet both do real work and the checks are the weak option, remove the checks instead. The
+    decision is about which two options carry the EV, not about always keeping a check.
+  common_mistake: >-
+    Assuming simplification always means "check or bet one size", and never considering that the
+    check itself may be the option worth cutting.
+  numbers:
+    - "two-Broadway flops: 25% pot and 150% pot, no checks"
+  hook_ideas:
+    - "Two options per flop. Never three."
+    - "Sometimes the move to cut from your strategy is the check."
+    - "Counterintuitive: never checking this flop is the simple play."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#02
+      stance: supports
+      note: Coach restricts flops to two options; on two-Broadway textures removes checks and keeps 25% and 150%.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-flexible-board-definitions-007
+  format: cash-6max
+  topic: board-textures
+  concepts: [high-mid-low, flop-categories, representative-boards]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  title: Define "high", "middle" and "low" boards relative to the preflop ranges in your game
+  claim: >-
+    Describe flop categories in rank classes (high-low-low, middle, all-low, paired with high or low
+    side card) rather than exact cards, and keep the boundaries flexible. A reasonable default is
+    middle boards from queen-high down to ten-high and low boards nine-high and below, with the
+    number of possible straights as a separate split.
+  why: >-
+    A category exists so that one representative board teaches you how to play dozens of others.
+    K43, K72 and Q42 all belong to a high-low-low group and play almost identically, so studying one
+    sim covers them all. Where exactly "high" ends and "middle" begins depends on which cards your
+    opponents call with preflop, and that differs between a tight full-ring pool and a loose 6-max
+    pool. Treating the boundaries as adjustable keeps the plan useful when the ranges in your game
+    are different from the ones in the sim.
+  common_mistake: >-
+    Studying twenty different king-high rag boards individually and relearning the same pattern each
+    time instead of studying one and transferring the lesson.
+  hook_ideas:
+    - "K72 and Q43 are the same flop. Study them once."
+    - "Why 'ten-high' is a middle board, not a low one."
+    - "You are studying the same flop over and over."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#02
+      stance: supports
+      note: Middle = Q-high to T-high, low = 9-high and below; definitions flexible to preflop ranges.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-study-priority-008
+  format: cash-6max
+  topic: study-methods
+  concepts: [priority, frequency-weighting, win-rate-impact]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  title: Rank spots to study by how often they occur and how much they move your win rate
+  claim: >-
+    Give every node in your game plan a priority based on frequency and win-rate impact, and spend
+    study time accordingly. The in-position flop c-bet in single raised pots is high priority on
+    every texture; rare textures like monotone or trips flops drop in priority only in more specific
+    scenarios.
+  why: >-
+    Study time is finite, and the biggest gains come from the most common decision points. The
+    first-to-act flop decision as the raiser happens in a large share of all hands you play, so even
+    a small mistake there compounds across thousands of hands. Monotone boards are dealt rarely, so
+    a mistake there costs little in total even if it is large in isolation. Writing the priority next
+    to each spot tells you where to start and when a spot is good enough to leave alone.
+  common_mistake: >-
+    Spending hours on an exotic monotone turn spot while your basic flop c-bet frequencies are far
+    from any benchmark.
+  hook_ideas:
+    - "Most players study the wrong spots. Here is the order."
+    - "The spot that decides your win rate is the boring one."
+    - "Stop studying monotone boards until you fix this."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#02
+      stance: supports
+      note: Priority rating based on how common the spot is and how much it affects win rate; whole flop c-bet sheet marked high.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-benchmark-next-node-009
+  format: cash-6max
+  topic: study-methods
+  concepts: [database-review, benchmarks, fold-to-check-raise, trickle-down]
+  level: intermediate
+  street: multi-street
+  pot_type: srp
+  position: ip
+  title: When you check a c-bet stat, also check how you respond to what comes next
+  claim: >-
+    Comparing your tracker stats to solver benchmarks should cover both the action and the follow-up:
+    flop c-bet frequency alongside fold-to-flop-check-raise, and flop check-back alongside
+    fold-to-turn-probe. Then write down which of the two needs work before you open a sim.
+  why: >-
+    Strategy errors cascade. If your c-bet frequency is too high, the extra bets are weak hands that
+    then fold too often to a check-raise, so both stats drift at once. If you only fix the headline
+    number you leave the downstream leak in place. Looking at the pair tells you what kind of hands
+    are wrong: too many thin value bets getting raised off their equity, or too many air bets that
+    should have been check-backs. That diagnosis is what makes the following solver session targeted
+    instead of a general browse.
+  common_mistake: >-
+    Checking only "c-bet flop %" against a target number and declaring the spot fixed.
+  hook_ideas:
+    - "Your c-bet stat is fine. Your fold-to-raise stat is not."
+    - "One number tells you whether your c-bets are too thin."
+    - "Fixing one stat without the next one fixes nothing."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#02
+      stance: supports
+      note: Coach benchmarks c-bet frequency together with fold to flop check-raise and fold to turn probe; trickle-down effect.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-study-sizes-you-face-010
+  format: cash-6max
+  topic: defending
+  concepts: [facing-cbet, bet-size-matching, practical-study]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: oop
+  title: Study your flop defense against the sizes your opponents actually use
+  claim: >-
+    When building a facing-c-bet plan, assume the bet sizes your pool really uses on each texture, not
+    the sizes a solver prefers. Each bet size needs its own response, so there is no value in
+    preparing a precise answer to a size you never see.
+  why: >-
+    The correct check-raise frequency and folding threshold change sharply with bet size, so a defense
+    built against a quarter-pot bet is wrong against a two-thirds bet. Aggregate reports can only be
+    run against one size at a time, which forces you to pick the sizes that matter. If your pool
+    bets 2/3 pot on every board, that is the report to study, even if theory says they should be
+    betting a quarter. The same logic applies when the pool's sizing differs from your own c-bet
+    plan: your defense sheet should mirror what you face, not what you would do.
+  common_mistake: >-
+    Memorizing solver responses to 33% and 150% bets and then facing a 55% pot bet every hand
+    with no plan.
+  hook_ideas:
+    - "You are studying a bet size nobody uses on you."
+    - "Study the 2/3 pot c-bet. That is what you face."
+    - "Why your solver defense fails at NL25."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#03
+      stance: supports
+      note: Separate report per bet size; no point studying the response to a size you never see.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-check-raise-low-boards-011
+  format: cash-6max
+  topic: check-raising
+  concepts: [low-boards, paired-boards, facing-small-cbet, frequency-weighting]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: oop
+  title: Low and paired flops are the highest check-raise textures for the caller
+  claim: >-
+    Facing a c-bet as the caller, the boards with the highest check-raise frequency are all-low and
+    mid-low-low textures, plus paired and trips boards. The relative ranking of textures holds
+    against both small and medium c-bets, but the absolute frequency drops as the bet gets bigger.
+  why: >-
+    Low boards favor the caller: your preflop defense is full of suited connectors and small pairs
+    that make sets, two pairs and strong draws, while the raiser's high cards whiff. That equity edge
+    is what justifies raising often. On paired boards the raiser bets small with almost everything,
+    so a raise with trips, pairs and good draws attacks a range that is mostly air. One caveat: on the
+    lowest boards you rarely face a quarter-pot bet, so the report for the medium size is the one that
+    actually describes most of your check-raise decisions there.
+  common_mistake: >-
+    Check-raising mostly on high-card boards where you hit top pair, which is where the raiser's
+    range is strongest and the raise does least.
+  hook_ideas:
+    - "The flop where the caller should raise most. Not what you think."
+    - "852 rainbow: the raiser is the one in trouble."
+    - "Check-raise low boards, not high ones."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#03
+      stance: supports
+      note: Highest check-raise frequencies on low and mid-low boards plus paired/trips; categories same vs 25% and 75%, overall frequency differs.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-sticky-vs-quarter-pot-012
+  format: cash-6max
+  topic: defending
+  concepts: [facing-small-cbet, mdf, sticky-defense, monotone]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: oop
+  title: "Fold very little to a quarter-pot c-bet, except on high monotone and high paired flops"
+  claim: >-
+    Heads-up as the caller facing a 25% pot c-bet, your fold frequency should stay very low on almost
+    every texture. The few boards where folding climbs toward ~28% are high-card monotone and high
+    paired boards, where a chunk of your range flopped nothing at all.
+  why: >-
+    A quarter-pot bet offers 5-to-1, so almost any hand with a pair, a draw or a backdoor plus an
+    overcard has the equity to continue. Folding more than the bare minimum hands the raiser a
+    profitable bet with any two cards. The exceptions are structural: on a high monotone board, hands
+    without the suit are drawing very thin, and on a king- or ace-high paired board most of your
+    unpaired low cards have no realistic way to win. There, the folds are forced by equity, not by
+    choice, and even then the fold rate stays under a third.
+  common_mistake: >-
+    Folding bottom pair, ace-high or any hand that "missed" to a small bet, which lets the raiser
+    print money with a range bet.
+  numbers:
+    - "max fold frequency vs 25% pot c-bet ~28%, only on high monotone and high paired flops"
+  hook_ideas:
+    - "You fold too much to small bets. Here is the number."
+    - "5-to-1 odds and you are folding ace-high?"
+    - "The two flop types where folding to a quarter pot is right."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#03
+      stance: supports
+      note: Highest fold vs quarter pot was 28%, on high monotone and high paired boards; sticky defense is necessary heads-up.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-relative-frequencies-013
+  format: cash-6max
+  topic: check-raising
+  concepts: [relative-frequency, baseline, bet-size-adjustment, mental-model]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: oop
+  title: "Store check-raise frequencies as high, medium or low relative to a per-size baseline"
+  claim: >-
+    Instead of memorizing a check-raise percentage for every texture, learn one baseline per bet size
+    and tag textures as high, medium or low relative to it. Against a small bet a baseline near 15%
+    might make high about 25% and low about 8%; against an overbet with a baseline near 4%, high is
+    perhaps 7-8% and low is 0-1%.
+  why: >-
+    Absolute numbers for every combination of texture and size are too many to recall in game, and
+    they go stale as soon as the sizes in your pool change. A relative scale captures the part that
+    actually transfers: which textures favor the caller and which do not. Pair that with a feel for
+    how bet size compresses every frequency, and you can produce a sensible frequency on the fly in a
+    spot you never studied. It is a model you understand rather than a table you recite.
+  common_mistake: >-
+    Trying to memorize "check-raise 23% on this board, 11% on that one" and freezing when the bet
+    size does not match the one in the sim.
+  numbers:
+    - "vs small c-bet: baseline ~15% check-raise, high ~25%, low ~8%"
+    - "vs overbet: baseline ~4%, high ~7-8%, low ~0-1%"
+  hook_ideas:
+    - "Stop memorizing check-raise frequencies. Learn one number."
+    - "High, medium, low: all you need for flop check-raises."
+    - "Overbet changes your check-raise frequency more than the board does."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#04
+      stance: supports
+      note: Coach writes high/medium/low rather than numbers; gives 15/25/8 and 4/7-8/0-1 as illustrative baselines.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-folding-threshold-baseline-014
+  format: cash-6max
+  topic: defending
+  concepts: [folding-threshold, hand-class, baseline, adjustments]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: oop
+  title: "Write a one-line folding threshold per flop category to anchor your adjustments"
+  claim: >-
+    For each flop category and the common bet size you face, describe in a few words the weakest hand
+    class that still continues. This is not a minimum-defense target and not something to recite; it is
+    a reference line you need before you can float lighter or fold more against a specific opponent.
+  why: >-
+    Minimum defense frequency is a poor guide on early streets because equity realization and
+    future-street play matter more than a single ratio. A hand-class line such as "double overcard
+    with a backdoor" is something you can actually recall at the table and compare your hand against.
+    More importantly, exploitative adjustments only make sense relative to a baseline. If you want to
+    punish an over-folding opponent by floating, you need to know where the line was to begin with.
+    Over time, through play and drilling, the line becomes intuition and the written note is only a
+    reminder.
+  common_mistake: >-
+    Trying to defend to an MDF percentage on the flop, or having no idea whether a given float is
+    a slight stretch or a huge one.
+  hook_ideas:
+    - "MDF on the flop is misleading. Use this instead."
+    - "One sentence per board. That is your whole defense plan."
+    - "You cannot adjust from a line you never drew."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#03
+      stance: supports
+      note: Folding thresholds as approximate hand-class lines per category; MDF misleading on early streets; baseline for adjusting.
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#04
+      stance: supports
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-no-check-raise-broadway-big-bet-015
+  format: cash-6max
+  topic: check-raising
+  concepts: [broadway-boards, facing-large-cbet, simplification, exploit]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: oop
+  title: Facing a 75%+ c-bet on a Broadway flop, drop check-raising entirely
+  claim: >-
+    On Broadway-heavy flops the caller's check-raise frequency is already low, so when the c-bet is
+    75% pot or larger it is reasonable to simplify to never check-raising. The case gets stronger if
+    the raiser barrels the turn at a high rate after betting the flop big.
+  why: >-
+    High-card boards give the raiser the nut advantage and a large bet polarizes an already strong
+    range, leaving the caller few hands that gain from raising rather than calling. When the solver
+    frequency is a few percent, removing it costs almost nothing and buys execution accuracy. Against
+    an opponent who fires the turn a lot after a big flop bet, calling is even better: you let them
+    keep bluffing into your strong hands instead of raising and folding out the bluffs you want to
+    keep around.
+  common_mistake: >-
+    Check-raising top pair on KQJ into a big bet "for protection", turning a comfortable call into a
+    spot where only better hands continue.
+  numbers:
+    - "vs 75%+ pot c-bet on Broadway flops: check-raise ~0%"
+  hook_ideas:
+    - "Never check-raise this flop. Yes, never."
+    - "Big bet on a Broadway board? Just call."
+    - "The simplest flop defense rule you will ever learn."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#04
+      stance: supports
+      note: Coach's possible simplification; stronger when villain's turn c-bet is high after large flop bets.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-ace-high-check-raise-by-size-016
+  format: cash-6max
+  topic: check-raising
+  concepts: [ace-high-boards, low-boards, bet-size-adjustment, two-broadway]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: oop
+  title: "Ace-high flops: check-raise average vs small bets, low vs big; low flops stay high"
+  claim: >-
+    As the caller on ace-low-low or ace-mid-low flops, check-raise at about an average rate against a
+    small c-bet. When the bet is large, which usually happens on two-Broadway ace boards like A98-type
+    textures, drop to a low check-raise frequency. On all-low flops keep a high check-raise frequency
+    even against big bets, and on two-Broadway boards stay low even against a quarter pot.
+  why: >-
+    Bet size and texture interact. A small bet on a dry ace board is often a range bet, so there is
+    plenty of weak stuff to attack and your sets, two pairs and backdoor draws can raise at a normal
+    clip. A large bet on an ace board with two Broadways comes from a strong, polarized range that
+    will not fold much, so raising mostly isolates you against the top of it. On low boards your
+    range advantage is large enough that even a big bet should still face frequent raises. Two-Broadway
+    boards without an ace are the raiser's territory regardless of size.
+  common_mistake: >-
+    Using one check-raise frequency for "ace-high boards" without noticing that the bet size tells you
+    which kind of ace-high board you are on.
+  hook_ideas:
+    - "Same ace-high flop, two bet sizes, two different plans."
+    - "Big bet on a low board? Raise anyway."
+    - "The bet size tells you how often to check-raise."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#04
+      stance: supports
+      note: "Coach's sheet notes: A-low mid check-raise vs small, low vs big; all-low stays high vs big; two-Broadway low even vs 25%."
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp23-aggregate-reports-flop-only-017
+  format: cash-6max
+  topic: study-methods
+  concepts: [aggregate-reports, solver-workflow, turn-study]
+  level: advanced
+  street: multi-street
+  pot_type: srp
+  title: Aggregate solver reports work for the flop c-bet node but break down from the turn on
+  claim: >-
+    Use aggregate multi-board reports to build flop c-bet and facing-c-bet categories, but switch to
+    individual sims once you move to turn decisions. One node deeper the branches multiply and the
+    report averages over bet-size sequences that would not actually happen on many of the boards.
+  why: >-
+    An aggregate report answers one question across hundreds of flops at once, which is exactly what
+    you need to find texture groups. But it only works when the preceding action is identical, and
+    each bet size you face needs its own report. By the turn the sequence depends on which flop size
+    was used, which on a given texture may be rare or never chosen, so the averaged numbers describe
+    lines that do not occur. At that depth, a few representative single-board sims per category
+    teach more than a report that blends unrealistic lines.
+  common_mistake: >-
+    Drawing turn barrel frequencies from an aggregate report that lumps together flop sizes the
+    solver would never pick on that board.
+  hook_ideas:
+    - "Aggregate reports lie about the turn. Here is why."
+    - "Works on the flop, fails on the turn: aggregate reports."
+    - "Why your turn frequencies from reports are wrong."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: rio-game-plan/023-building-flop-strategies#03
+      stance: supports
+      note: Coach stops using aggregate-report analysis one node past the flop c-bet because sizing sequences diverge.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"

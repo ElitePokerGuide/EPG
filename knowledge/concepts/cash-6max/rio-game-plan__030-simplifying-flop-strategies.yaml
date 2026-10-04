@@ -1,0 +1,478 @@
+- id: c-cash-6max-gp30-range-bet-test-001
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [range-bet, simplification, opponent-response, exploit]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Decide whether to range-bet a flop by checking how hard the correct defense is to find
+  claim: >-
+    When a solver c-bets a texture almost always but not quite, look at the caller's response to the
+    small bet before simplifying to a 100% range bet. If the correct defense relies on hands most
+    opponents will not find, such as weak queen-high or jack-high with only a backdoor straight draw,
+    the range bet is safe. If the defending hands are obvious, follow the solver's checking frequency.
+  why: >-
+    A range bet gives up a little EV versus a perfect opponent but gains a lot in simplicity, and it
+    gains even more against opponents who under-defend. The way to measure that is to study the
+    counter-strategy: how often the caller is supposed to raise, how little they are supposed to fold,
+    and what the marginal continuing hands look like. When those hands are strange and the raise
+    frequency is high, real players will fold too much and raise too little, so betting everything
+    prints. When the defense is intuitive, your air gets punished and the solver's checks are worth
+    keeping.
+  common_mistake: >-
+    Range-betting every "dry" flop by reflex, without checking whether the caller's correct response
+    is easy or hard for real players to execute.
+  hook_ideas:
+    - "Range bet only when the defense is hard to find."
+    - "The one check that tells you to bet 100%."
+    - "Your range bet works because opponents miss these hands."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#01
+      stance: supports
+      note: Coach probes the response to the small bet to decide whether to range bet; weak Q-high/J-high with backdoor straights are hands opponents miss.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp30-paired-high-vs-low-002
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [paired-boards, range-bet, pair-rank, check-raise-size]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Range-bet high paired flops; keep the solver's checks on low paired flops
+  claim: >-
+    In position in a single raised pot, high paired boards such as QQx or KKx can be simplified to a
+    quarter-pot range bet. On lower paired boards (around TTx and below) the c-bet frequency drops,
+    the caller check-raises more, and the correct defense is easy to see, so keep the mixed strategy
+    with checks.
+  why: >-
+    The higher the pair, the more of the caller's range is pure air with little to raise with, and the
+    hands that should continue or raise are awkward ones many players miss. Dropping the pair rank
+    even two notches noticeably increases the solver's checking and the caller's raise frequency.
+    On a low paired board the caller's defending hands are intuitive: pairs, straight draws, overcards
+    with a flush-suit card. Opponents will find those, so betting your whole range into them is less
+    attractive. One side note: the caller's preferred raise size also shifts with pair rank, small on
+    high paired boards and large on lower ones.
+  common_mistake: >-
+    Treating all paired boards as identical range-bet spots and getting check-raised off equity on
+    776 and 554 textures.
+  numbers:
+    - "vs 25% c-bet on high paired flops the caller raises ~20% and folds little"
+  example_hand:
+    positions: "BTN vs BB"
+    hero: "9c8c"
+    board: "KhKd4s"
+    action: "BTN opens, BB calls. BB checks."
+    decision: "Bet or check with a weak unpaired hand?"
+    answer: "Bet 25%. On a high paired board the simplified plan is to bet the entire range at a small size."
+  hook_ideas:
+    - "KK4 and 664 are not the same flop."
+    - "Range bet the high pair, respect the low pair."
+    - "Two ranks lower and the whole plan changes."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#01
+      stance: supports
+      note: Coach range-bets high paired boards, not low paired; dropping pair from Q to T raised checking a lot and switched caller raise size.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp30-two-broadway-keep-both-sizes-003
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [two-broadway, overbet, small-bet, remove-checks, deliberate-preferences]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "Two-Broadway flops: keep the overbet and the quarter-pot bet, cut the checks"
+  claim: >-
+    On flops with two Broadway cards and no ace, the solver uses both a 25% bet and a 150% overbet
+    heavily and assigns each to clearly different hand classes. The right simplification is to keep
+    both sizes and remove checking. Put an ace on the same board and the strategy usually collapses to
+    a full range bet.
+  why: >-
+    Simplification means removing the option that is closest in value to another one. When two bet
+    sizes are each used a lot and each has strong, consistent hand-class preferences, they are doing
+    different jobs and dropping one costs real EV. Checks on these textures are the weak third option,
+    so they go. The ace changes things because it gives the raiser an even larger range and nut edge,
+    which pushes everything toward a single small bet. Before committing, it is worth scanning the
+    caller's response to the small bet and the check-back line to confirm the simplification holds.
+  common_mistake: >-
+    Collapsing KQx and KJx boards to a single medium size, which loses the value of the overbet with
+    strong hands and the cheap pressure of the small bet with the rest.
+  numbers:
+    - "two-Broadway flops IP: 25% and 150% pot, checks removed"
+  hook_ideas:
+    - "Two sizes, zero checks: the KQ7 plan."
+    - "Why the solver wants both a quarter pot and an overbet here."
+    - "Add an ace and the plan flips to one size."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#01
+      stance: supports
+      note: Overbet and quarter pot both used extensively with deliberate hand-class preferences; checks removed; ace on board gives range bet.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp30-overbet-vs-small-threshold-004
+  format: cash-6max
+  topic: defending
+  concepts: [folding-threshold, facing-overbet, facing-small-cbet, backdoor-draws]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: oop
+  title: The folding line moves enormously between a quarter-pot bet and an overbet
+  claim: >-
+    Against a 25% pot c-bet on a two-tone Broadway flop, nearly any two cards of the flush suit
+    continue, even nine-high, and single-suit-card hands fold only with two undercards. Against a 150%
+    overbet on the same board, nut backdoor flush draws, ace-high with a suit card, gutshots and some
+    bottom pairs fold; the line sits around strong bottom pair or weak middle pair.
+  why: >-
+    Price drives the threshold. At 5-to-1 nearly every hand with some equity and a path to improve is
+    a profitable continue, so folding is reserved for pure air. At an overbet you are offered worse
+    than 2-to-1 against a polarized range, and a hand needs real showdown value or a strong draw to
+    continue. The practical lesson is that "I have a backdoor" is a reason to call a small bet and no
+    reason at all to call a big one. If your pool uses both sizes, you need two separate thresholds
+    per texture, not one.
+  common_mistake: >-
+    Calling an overbet with a gutshot or a backdoor flush draw because "it worked against the small
+    bet", or folding bottom pair to a quarter-pot bet.
+  numbers:
+    - "vs 25% pot: any two of the flush suit continue, down to nine-high"
+    - "vs 150% pot: fold nut backdoor flush, ace-high with one suit card, gutshots; continue from strong bottom pair up"
+  example_hand:
+    positions: "CO vs BB"
+    hero: "Td9d"
+    board: "KdJs5c"
+    action: "CO opens, BB calls. BB checks, CO bets 150% pot."
+    decision: "Call with a gutshot plus backdoor flush draw?"
+    answer: "Fold. Against the overbet this hand class is below the line. Against a quarter-pot bet it would be an easy continue."
+  hook_ideas:
+    - "Backdoor draws call small bets. They fold to overbets."
+    - "Same flop, same hand, opposite answer. The bet size decides."
+    - "Facing an overbet? Even bottom pair is close."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#01
+      stance: supports
+      note: Coach contrasts response to 25% (any two of suit, 9-high line) with response to 150% (nut bdfd, A-high, gutshots, some bottom pairs fold).
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp30-short-threshold-notes-005
+  format: cash-6max
+  topic: study-methods
+  concepts: [folding-threshold, flash-cards, hand-class, recall]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: oop
+  title: "Write each flop defense threshold as a short hand-class phrase you can recall in game"
+  claim: >-
+    After studying a texture, compress the folding threshold into a few words that name the strongest
+    hand class that still folds sometimes, for example "queen-high with backdoors and worse" on low
+    paired boards versus a small bet, or "king-high with an overcard and a backdoor flush draw" on high
+    paired boards. Ignore the combo-by-combo exceptions.
+  why: >-
+    A sim shows dozens of mixed combos where this gutshot calls and that one folds, this bottom pair
+    continues and that middle pair does not. None of that is processable in real time. What transfers
+    is the general quality that separates continues from folds, and a phrase short enough for a flash
+    card is what you will actually remember. Getting a borderline combo wrong, say continuing a
+    king-ten instead of a suited king-seven, costs almost nothing. Missing the whole hand class costs a
+    lot. Exposure to many sims is what lets you write the phrase with confidence.
+  common_mistake: >-
+    Writing a paragraph per board with every exception, then remembering none of it when the hand
+    actually comes up.
+  hook_ideas:
+    - "Your flop defense plan should fit on a flash card."
+    - "Stop memorizing combos. Memorize one phrase per board."
+    - "The borderline combo does not matter. The hand class does."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#02
+      stance: supports
+      note: Coach writes thresholds as the strongest hand class that sometimes folds; says small combo differences do not matter.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp30-king-high-kicker-ace-board-006
+  format: cash-6max
+  topic: defending
+  concepts: [ace-high-boards, king-high, kicker, facing-small-cbet]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: oop
+  title: On ace-high flops facing a small bet, let the kicker decide which king-highs continue
+  claim: >-
+    Against a quarter-pot c-bet on an ace-high board, not every king-high hand has to call. Use the
+    second card as the differentiator: king-high with a second overcard to the board continues, while
+    king-high with a weak kicker and no backdoor equity is in the folding region.
+  why: >-
+    On an ace-high flop your king-high is rarely the best hand at showdown, so its value comes from
+    improving to a pair that beats the raiser's bluffs and medium hands. A second overcard doubles the
+    outs to a pair that is good, and a backdoor straight or flush draw adds more. Without those,
+    king-rag is close to a pure bluff-catcher that cannot improve, and even at a cheap price the
+    solver folds a share of them. This is a deliberate hand-quality split, not a randomizer.
+  common_mistake: >-
+    Treating "king-high" as a single hand class and either calling all of it or folding all of it to
+    a small bet on an ace board.
+  example_hand:
+    positions: "BTN vs BB"
+    hero: "Kh4c"
+    board: "Ad8s3c"
+    action: "BTN opens, BB calls. BB checks, BTN bets 25%."
+    decision: "Call or fold with king-high, no backdoors?"
+    answer: "Fold is fine. Swap the four for a ten or a nine and the second overcard makes it a continue."
+  hook_ideas:
+    - "King-high on an ace board: the kicker is the whole decision."
+    - "Which king-high calls a small bet? Not all of them."
+    - "One card decides whether K-high continues here."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#02
+      stance: supports
+      note: Threshold on ace-high textures written as king-high with overcard; not every king-high calls.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp30-low-board-connectivity-beats-overcards-007
+  format: cash-6max
+  topic: hand-reading
+  concepts: [low-boards, relative-hand-strength, backdoor-draws, combo-draws, connectivity]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: oop
+  title: On low flops, connectivity to the main straight draw can outrank a higher overcard
+  claim: >-
+    Facing a c-bet on an all-low flop, the continue line is roughly "two overcards or a combination
+    backdoor". A hand that connects with the board's primary straight draw plus a backdoor flush draw
+    continues even without an overcard, while a hand with a bigger high card but no connectivity can
+    fold. Some weak pairs with no backdoor flush draw rank below those double-overcard or combo
+    backdoor hands.
+  why: >-
+    Relative hand strength on a low board is about equity and how cleanly it is realized, not card
+    rank. Two overcards give six outs to a pair that is often good. A hand like seven-six on a 5-4-x
+    board has a straight draw to come plus flush possibilities, and when it hits it tends to be the
+    best hand. A lone high card with nothing else has three outs and bad reverse implied odds. Pocket
+    threes or seven-deuce with a pair but no backdoors have little chance to improve and are often
+    behind already. The qualities that matter are overcards, connectivity and suits, roughly in that
+    order, and combinations of them beat any single one.
+  common_mistake: >-
+    Ranking continues by the highest card in the hand, so K-T offsuit calls and 7-6 suited folds when
+    the solver does the opposite.
+  example_hand:
+    positions: "CO vs BB"
+    hero: "7s6s"
+    board: "5h4s2c"
+    action: "CO opens, BB calls. BB checks, CO bets 75%."
+    decision: "Continue with no overcard?"
+    answer: "Yes. Open-ended connectivity plus a backdoor flush draw outranks a lone king-high here."
+  hook_ideas:
+    - "7-6 suited beats K-T here. Not what you expect."
+    - "On low boards, high cards are overrated."
+    - "The hand quality that beats an overcard on 542."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#02
+      stance: supports
+      note: Threshold on low boards is double overcard or combo backdoor; connected hands continue without overcards; some pairs without bdfd rank lower.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp30-gutshots-replace-overcards-008
+  format: cash-6max
+  topic: fundamentals
+  concepts: [relative-hand-strength, gutshots, overcards, board-connectivity, equity-shift]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: oop
+  title: "On more connected low flops, gutshots push weak overcards and small pairs out"
+  claim: >-
+    Move the cards of a low flop closer together so that single-card gutshots exist and, facing the same
+    75% pot c-bet, more gutshots continue while weak pairs and single-overcard hands fold more. The
+    overcard hands that remain need extra qualities, such as a second overcard plus a backdoor flush
+    draw to the nuts.
+  why: >-
+    This is not about swapping hand classes to hit a defense frequency. The caller's range on a more
+    connected board contains many more front-door draws, and the raiser's range does too, so an
+    overcard hand that was comfortably ahead of air on a disconnected board now has less equity and
+    worse realization. Gutshots, especially those drawing to the nuts or carrying backdoor equity,
+    simply have more equity than the overcards they displace. The folding threshold moves because the
+    hands' equities moved, and that is the mindset to carry into any texture you have not studied.
+  common_mistake: >-
+    Keeping the same "any two overcards continue" rule on 865 that worked on 843 and calling with
+    hands that are now clearly behind.
+  numbers:
+    - "vs 75% pot on connected low flops: gutshot-plus continues; weak pairs and single overcards fold more"
+  hook_ideas:
+    - "843 or 865: only one lets you call ace-high."
+    - "Why your overcards lost value when the board got connected."
+    - "It is not about MDF. Your hand just got worse."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#02
+      stance: supports
+      note: Coach moves cards closer on a low board; more gutshots continue, more 3x folds, overcards need more; driven by equity not MDF.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp30-monotone-any-suit-card-calls-009
+  format: cash-6max
+  topic: defending
+  concepts: [monotone, facing-small-cbet, flush-draw, floats, check-raise]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: oop
+  title: "Monotone flop vs small c-bet: any suit card continues; pairs and straight draws never fold"
+  claim: >-
+    Facing a small c-bet on a monotone board, a single card of the board's suit is enough to continue
+    with everything. Without a suit card, pairs and real straight draws still continue across the
+    board; check-raises without a suit card come from pairs and straight draws, and light floats come
+    from quality high cards with a backdoor straight draw.
+  why: >-
+    A small bet on a monotone board is often a range bet, because the raiser cannot credibly size up
+    when so many of the caller's hands have a flush draw. Any flush-suit card gives you a draw to a
+    strong hand with a cheap price, so folding those is giving up equity. Without the suit, you lean
+    on hands that can win at showdown or make a straight, which is why pairs and straight draws hold
+    up as continues and as the natural raising hands. Against players who bet small with their whole
+    range on these boards, you can press harder with raises and floats than the baseline suggests.
+  common_mistake: >-
+    Folding a weak pair or a straight draw to a small bet on a monotone board out of fear of the flush,
+    or folding a hand with a lone high suit card.
+  example_hand:
+    positions: "BTN vs BB"
+    hero: "Qc7h"
+    board: "Th8h3h"
+    action: "BTN opens, BB calls. BB checks, BTN bets 25%."
+    decision: "Fold, call or raise with one heart and no pair?"
+    answer: "Call. A single suit card is enough to continue against a small bet on a monotone flop."
+  hook_ideas:
+    - "One card of the suit is all you need to call."
+    - "Monotone flop, small bet: the rule that covers 90% of spots."
+    - "Stop folding pairs on monotone boards."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#02
+      stance: supports
+      note: Any single suit card does not fold vs small bet; coach willing to attack range-small-bettors with raises and floats.
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#03
+      stance: supports
+      note: Without suit card, raises from straight draws and pairs; pairs and straight draws do not fold; floats from quality high cards with backdoor straight.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp30-monotone-high-board-ace-high-010
+  format: cash-6max
+  topic: defending
+  concepts: [monotone, high-card-boards, ace-high, overcards]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: oop
+  title: On a high monotone flop without a suit card, ace-high needs a real kicker to continue
+  claim: >-
+    When the monotone board is high, such as queen-jack-x, and you hold no card of the suit, speculative
+    ace-high stops continuing against a small bet. Only ace-high with a strong kicker (around A9 or A8
+    and up) stays in, alongside pairs, front-door straight draws and quality overcards; two undercards
+    are out.
+  why: >-
+    On a low monotone board your ace-high is two overcards and often the best unpaired hand, so it can
+    float. When the board is queen-jack high, the ace is a single overcard, the raiser's range is full
+    of Broadway pairs, and your unpaired hand needs interaction with the board or a draw to have enough
+    equity. Removing straight draws from the board has a similar effect in the other direction: with
+    fewer draws available, the caller floats a bit more with high cards, and double overcards with a
+    backdoor get in most of the time.
+  common_mistake: >-
+    Calling any ace-high on any monotone flop because "ace-high is strong heads-up", regardless of how
+    high the board is.
+  hook_ideas:
+    - "Ace-high on QJ7 monotone with no suit? Usually a fold."
+    - "The monotone board where ace-high stops being a hand."
+    - "High board, no suit card: here is what still calls."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#03
+      stance: supports
+      note: On QJx monotone no-suit, A9/A8 are the qualifying high-card hands; undercards out; fewer straight draws means slightly more high-card floats.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp30-rare-spot-study-budget-011
+  format: cash-6max
+  topic: study-methods
+  concepts: [study-budget, monotone, oversimplification, frequency-weighting]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  title: For rare textures like monotone flops, learn the basics once and deliberately oversimplify
+  claim: >-
+    Spend only enough study time on low-frequency spots to extract two or three rules of thumb against
+    the bet size you most often face, then move on. Do not chase every nuance of monotone or trips
+    boards; accept that an oversimplified plan is correct for how rarely they occur.
+  why: >-
+    Monotone flops are dealt so rarely that even playing them slightly wrong costs little over a year,
+    while the variations between different monotone boards would take years of play to encounter.
+    Every hour spent there is an hour not spent on the single raised pot c-bet and defense nodes that
+    occur constantly. The right amount of effort is to open a few sims, write a broad rule such as
+    "any suit card continues versus a small bet", note the hands that raise or float without a suit
+    card, and stop. The goal is to avoid being lost in the spot, not to master it.
+  common_mistake: >-
+    Treating every spot as equally worth solving and spending a study session on a texture you will
+    see twice a month.
+  hook_ideas:
+    - "Monotone boards: study them for 20 minutes, then stop."
+    - "The spots you should deliberately play 'wrong'."
+    - "Perfectionism on rare flops is a study leak."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: rio-game-plan/030-simplifying-flop-strategies#03
+      stance: supports
+      note: Coach is comfortable oversimplifying monotone boards; learn the basics, avoid the rabbit hole.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
