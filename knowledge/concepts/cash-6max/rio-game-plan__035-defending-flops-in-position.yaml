@@ -1,0 +1,514 @@
+- id: c-cash-6max-gp35-raise-vs-cbet-7pct-paired-low-001
+  format: cash-6max
+  topic: defending
+  concepts: [3bet-pot, raising-frequency, paired-boards, low-boards]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: "IP vs a 3-bet pot c-bet: raise about 7%, mostly on paired and low flops"
+  claim: After calling a 3-bet in position and facing a flop c-bet, your total raising frequency should be low, around 7%. The raises concentrate on paired boards and boards with low cards; on two-Broadway boards you almost never raise.
+  why: The 3-bettor's range is strong and the pot is already large, so most of your defence is calling. Raises make sense where the out-of-position player c-bets small with a wide range, which happens on paired and low textures where their high cards missed. On high-card boards they bet large with a range that connects, and a raise mostly runs into overpairs and top pair. Knowing the overall number stops you from either never raising or inventing raises on the wrong boards.
+  common_mistake: Raising top pair on a king-high flop in a 3-bet pot "for protection", into a range full of overpairs and better kings.
+  numbers:
+    - "Overall raise vs flop c-bet IP in 3-bet pots: ~7%"
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#01
+      stance: supports
+      note: Database review gives 7% as the right raising frequency; raises on paired and low boards where small c-bets are common. HU context.
+  consensus_score: 0.5
+  hook_ideas:
+    - "One number for raising c-bets in 3-bet pots: 7%."
+    - "Stop raising high flops in 3-bet pots."
+    - "Where do solver raises live in 3-bet pots? Two textures."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-ace-low-low-rainbow-own-category-002
+  format: cash-6max
+  topic: board-textures
+  concepts: [ace-high-boards, 3bet-pot, texture-classification]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: "Ace-low-low rainbow in a 3-bet pot is its own texture: heavy c-betting, almost no raising"
+  claim: Treat ace-low-low rainbow flops in 3-bet pots as a separate category from other ace-high boards. The 3-bettor c-bets these at a very high frequency and the in-position caller should raise almost never.
+  why: The 3-betting range is dense in ace-x and high pairs, so on an ace with two low rainbow cards the out-of-position player has a huge range and nut advantage and can bet nearly everything. The caller's range rarely has a hand strong enough to raise for value and there is little equity to protect, since no draws exist. Raising as a bluff runs into a range that holds the ace very often. Other ace-high boards with Broadway cards or flush draws belong in their normal categories and play more conventionally.
+  common_mistake: Lumping every ace-high flop together and bluff-raising A72 rainbow in a 3-bet pot.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#01
+      stance: supports
+      note: Coach singles out ace-low-low rainbow as having its own c-bet strategy; lots of c-betting coming at IP and very rare raises.
+  consensus_score: 0.5
+  hook_ideas:
+    - "A72 rainbow in a 3-bet pot. Never raise. Here's why."
+    - "The one ace-high flop that plays differently."
+    - "Why they c-bet A-low-low every time."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-facing-cbet-3bet-pot-high-priority-003
+  format: cash-6max
+  topic: study-methods
+  concepts: [training-priority, 3bet-pot, fundamentals]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: Facing a flop c-bet in a 3-bet pot is a must-train spot on every texture
+  claim: Put the in-position decision against a 3-bet-pot c-bet at the top of your training list across all board types. It is frequent, the pot is already big, and the folding thresholds feel unnatural, so drill it even if your stats look fine.
+  why: Mistakes scale with pot size, and a 3-bet pot on the flop is already several times the size of a single-raised pot. The spot comes up every session, and players who learned in tighter games tend to fold too much here because their instinct for what continues is calibrated to smaller ranges. A high-frequency, high-stakes node with a known bias is exactly what drills are for. Good stats over a sample do not excuse skipping it; they only mean you are maintaining rather than repairing.
+  common_mistake: Training exotic spots while the everyday 3-bet pot defence runs on autopilot.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#01
+      stance: supports
+      note: Coach rates this category high across the board and trains it despite having good stats on it.
+  consensus_score: 0.5
+  hook_ideas:
+    - "The biggest pot you play every session. Are you training it?"
+    - "Good stats are not a reason to skip this drill."
+    - "3-bet pot, flop c-bet. Most players fold too much."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-facing-check-which-boards-matter-004
+  format: cash-6max
+  topic: board-textures
+  concepts: [3bet-pot, facing-check, population]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: When the 3-bettor checks the flop, study mid and coordinated boards first
+  claim: "A balanced 3-bettor checks roughly half of flops out of position, but real opponents, especially in 6-max and tournaments, c-bet far more. Focus your facing-check study on the textures people actually check: middling boards, connected boards with straight draws, and to a lesser extent Broadway boards."
+  why: Preparation time should follow how often a spot occurs against your pool, not just in theory. Most players c-bet ace-high and high-card flops almost automatically in 3-bet pots, so being checked to there is rare. Mid and coordinated boards are where they lose confidence and check, so your plan for betting into a check needs to be sharpest there. Monotone boards also get checked a lot but are worth less study time because they are dealt less often.
+  common_mistake: Building a detailed plan for being checked to on A-K-x in a 3-bet pot, a spot that practically never happens against most opponents.
+  numbers:
+    - "Recommended OOP 3-bettor flop check frequency: about 50%"
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#01
+      stance: supports
+      note: Coach recommends ~50% OOP checks, notes 6-max and MTT populations c-bet more; prioritizes mid boards, one-plus straight draw boards.
+  consensus_score: 0.5
+  hook_ideas:
+    - "They checked the flop in a 3-bet pot. Which boards matter?"
+    - "Study the checks that happen, not the ones in theory."
+    - "Why mid boards get checked and high boards don't."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-one-size-per-texture-cost-005
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [simplification, 3bet-pot, geometric-sizing, facing-check]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: One bet size per flop texture when checked to in a 3-bet pot, and know what it costs
+  claim: After the 3-bettor checks, most textures have one clearly dominant in-position bet size, so simplify to it. Dropping the larger size on paired and high-low-low boards is a fine simplification, but it trades away some value from the top of your range.
+  why: A single size per texture is easier to execute and keeps your ranges coherent under pressure. The downside is that the solver's big bet on some textures exists to extract value with strong but not premium hands. Removing it pushes those hands into the small size, where they win less against a passive caller. That is acceptable if you decide so consciously; it is a leak if you do it without noticing which hands pay for it.
+  common_mistake: Simplifying to a small bet everywhere and never asking which hands lost value in the process.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#01
+      stance: supports
+      note: Coach removes the geometric "3e" size on paired and high-low-low boards, flags the cost to the top of range.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Simplifying your bet sizes has a price. Know it."
+    - "One size per flop. Here's what you give up."
+    - "The hidden cost of 'just bet small'."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-big-bet-when-they-wont-raise-006
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [big-vs-small, opponent-reaction, value-hands]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: A big bet is right when the opponent will not put the money in for you
+  claim: The small bet is only better for your strong hands if the opponent reacts by raising often enough. If they mostly call or fold against the small size, your top pair and better make more money by betting large yourself.
+  why: "Betting small with a strong hand is a trap play: you offer a cheap price hoping the opponent raises with draws, weaker pairs and bluffs, building a pot you will win. If they rarely raise, the pot stays small and you miss one or two streets of value against hands that would have paid a bigger bet. The small size still helps your bluffs and marginal hands, which want folds at a cheap price. So the decision hinges on the opponent's most common error against small bets, and for most players that error is passivity."
+  common_mistake: Betting a third of the pot with top pair "because the solver does" against someone who never raises and only calls or folds.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#01
+      stance: supports
+      note: "Coach: a large bet is appropriate when the opponent doesn't put in enough money on your behalf; value benefits mainly when they raise."
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#02
+      stance: supports
+      note: Opponents are more often too passive vs small bets; good for bluffs, bad for strong hands.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Small bets only work if they raise you. Do they?"
+    - "Your top pair is losing money to a small bet."
+    - "The question that decides big bet or small bet."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-keep-big-bet-vs-passive-high-low-low-007
+  format: cash-6max
+  topic: exploits
+  concepts: [passive-opponents, big-bet, high-low-low, value]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: Against passive opponents, keep a big bet on high-low-low boards when checked to
+  claim: On a high-low-low flop like J64 rainbow in a 3-bet pot, your range when checked to contains many strong top pairs. If the opponent plays passively against small bets, keep the large size in your strategy for value instead of simplifying it away.
+  why: On these boards, hands like ace-jack, king-jack and queen-jack make up a big share of your range and want to grow the pot against the opponent's medium pairs and weaker jacks. The solver's small bet relies on the opponent raising with draws and bluffs; a passive player does not, so the small bet gives up value exactly where you have the most of it. Keep the small size for your bluffs and marginal hands, but let strong hands bet big on this texture against this type.
+  common_mistake: Applying a single small-bet simplification to every opponent, including ones who only call or fold.
+  example_hand:
+    positions: "BTN vs SB, 3-bet pot"
+    hero: "KhJs"
+    board: "Jd6c4s"
+    action: "BTN calls a 3-bet from SB. Flop: SB checks."
+    decision: "Bet 30% or bet large?"
+    answer: "Against a passive opponent who rarely check-raises, bet large; the small size only pays off if they raise enough with worse."
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#02
+      stance: supports
+      note: Coach adds a note to his plan to consider the 3e size on high-low-low when villain is too passive, especially for value.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Checked to on J64 in a 3-bet pot? Bet big."
+    - "Passive villain, strong top pair, small bet. Three mistakes."
+    - "The solver's small bet assumes something your opponent won't do."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-ignore-unexplainable-nuance-008
+  format: cash-6max
+  topic: study-methods
+  concepts: [simplification, solver-output, strategy-building]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: If you cannot explain a solver nuance in a minute, leave it out of your game plan
+  claim: When a solver uses a special size only on a very specific sub-texture, like low paired rainbow but not low paired two-tone, and you cannot quickly see why, drop it. Stick to the simple size and move on.
+  why: A strategy you cannot explain is one you cannot apply reliably at the table or adapt when the opponent deviates. Fine distinctions between near-identical textures are the kind of detail that matters for high-precision play against elite regulars after enormous volume, not for building a working plan. Many of these also sit in spots you reach rarely, such as being checked to on a paired board, so the EV at stake is tiny. Spend that attention on frequent spots and clear principles.
+  common_mistake: Memorizing a long list of texture-specific sizing exceptions that never get executed correctly in real time.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#02
+      stance: supports
+      note: Coach removes the 3e size from paired boards after failing to find a quick explanation; "if I can't determine this in a short period of time, I ignore it".
+  consensus_score: 0.5
+  hook_ideas:
+    - "Can't explain the solver's play? Don't copy it."
+    - "Most solver nuance is noise for your game."
+    - "The one-minute rule for solver output."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-realistic-drill-all-actions-009
+  format: cash-6max
+  topic: study-methods
+  concepts: [trainer-drills, game-realism, 3bet-pot]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: Drill the whole in-position flop node rather than one isolated action
+  claim: When you want to train both facing a c-bet and facing a check in 3-bet pots, set the drill to play the full flop in position without knowing what the opponent will do. You get a realistic mix of sizes and checks instead of a single filtered line.
+  why: An isolated drill like "facing a 30% bet" is efficient when you have one narrow leak. But when the leaks span several branches, separate drills for each size and for checks multiply the setup work and make the practice feel artificial. Letting the trainer mix the actions keeps you processing the spot the way you would at the table, exposes you to the less common sizes in proportion, and is a good moment to run two tables to simulate game pace.
+  common_mistake: Only ever drilling one pre-filtered action, so the first time you face a different size is at the table.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#02
+      stance: supports
+      note: Coach switches from an IP flop-float drill to a general IP flop drill, plays two tables for realism.
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#03
+      stance: supports
+      note: "Benefit stated: a realistic distribution of 2e and 3e sizes without separate drills."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Your drills are too narrow. Here's a better setup."
+    - "Train the spot the way it happens at the table."
+    - "One drill, every flop action."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-check-looking-hand-still-bets-010
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [baseline-frequency, mixed-strategy, facing-check]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: On a high-frequency betting board, a hand that looks like a check still bets often
+  claim: When the baseline betting frequency on a texture is high, a hand that seems weaker than average does not become a pure check. It becomes a lower-frequency bet, for example 40% instead of 60%.
+  why: Your betting frequency on a board is a property of the whole range, not of each hand. If the range bets most of the time, then even the below-average hands need to bet some of the time or the frequency collapses and your checks become too weak. Players who judge hand by hand tend to bet only the obvious candidates and end up far below the frequency the board calls for. Anchor on the baseline first, then move individual hands up or down from there.
+  common_mistake: Checking every hand that is not an obvious bet, which drops a 60% board to a 30% board without noticing.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#03
+      stance: supports
+      note: Coach reminds himself and students that a hand "more of a check than average" might be a 40% bet rather than 60%, not 0%.
+  consensus_score: 0.5
+  hook_ideas:
+    - "'This hand is a check' is usually wrong. It's a 40% bet."
+    - "You bet hands. Solvers bet ranges."
+    - "Why your c-bet frequency is quietly too low."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-many-hand-classes-bet-small-011
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [small-bet, mixed-frequencies, range-betting, facing-check]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: A low betting frequency is not just missing bluffs; all hand classes bet small
+  claim: If your in-position betting frequency after a check is too low, do not assume you only lack bluffs. Solvers mix small bets into middle pairs, strong hands and various draws at frequencies most players never use. The gap is spread across all hand classes.
+  why: It is tempting to diagnose a frequency leak as "I need more bluffs", because bluffs feel like the hands you are afraid to bet. But a small bet works for a medium pair that denies equity, for a strong hand that builds the pot, and for a draw that wants a free card less than it wants fold equity. When all of these bet some of the time, the total frequency rises without any single class betting always. Fixing the leak means loosening across the board, not adding one bluff type.
+  common_mistake: Adding a few extra bluffs and declaring the frequency fixed while middle pairs still check 100%.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#04
+      stance: supports
+      note: "Coach sees a surprising amount of small betting with hands he literally never bets: middle pairs, bluffs, strong hands, draws."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Your frequency problem isn't bluffs. It's everything."
+    - "Middle pair bets small here. Yes, really."
+    - "The hands you never bet that solvers bet all the time."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-protection-needs-strength-012
+  format: cash-6max
+  topic: fundamentals
+  concepts: [protection, hand-strength, small-pairs]
+  level: beginner
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: Wanting protection does not make a hand strong enough to bet for protection
+  claim: A small pocket pair on a flop with overcards is vulnerable, but vulnerability alone is not a reason to bet. A protection bet needs a hand that is actually ahead often enough that denying equity is worth the risk; weak pairs usually just check and sometimes fold.
+  why: Protection bets work when you are ahead of most of the range and the opponent has live cards to fold out. A low pocket pair under two or three overcards is often behind already, so a bet does not protect a lead; it builds a pot you are losing and exposes you to raises. The feeling that a hand "needs protection" is a signal of weakness, not a licence to bet. Check it, take your showdown value, and let the hand go when the action gets heavy.
+  common_mistake: Betting pocket deuces on a Q-9-6 flop "so they don't see a free card".
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#04
+      stance: supports
+      note: Coach reminds himself that looking like it needs protection doesn't make a hand strong enough to get protection; pocket deuces example.
+  consensus_score: 0.5
+  hook_ideas:
+    - "'I'm betting for protection' is costing you money."
+    - "Your small pair doesn't need protection. It needs a check."
+    - "Protection bets need a lead. Do you have one?"
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-call-dont-jam-coolers-vs-big-bet-013
+  format: cash-6max
+  topic: defending
+  concepts: [facing-big-cbet, overpairs, raise-selection]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: Facing a big c-bet full of overpairs, call with your strong hands instead of jamming
+  claim: On low flops in 3-bet pots where the opponent's large c-bet is heavy in overpairs, resist the urge to raise all-in with your sets and two pairs. Solvers mostly call there and build the raising range from hands lower in the range.
+  why: When the big bet is dominated by overpairs, those hands are not folding to a raise and will often get it in anyway on later streets. Jamming your strongest hands only speeds up money that was coming, while giving away that your raising range is nutted. Calling keeps the opponent betting the turn with the whole overpair range and keeps your raises, when you do make them, built from hands that benefit from folds. Against a population that overcommits with overpairs, the temptation to jam is strong, but the extra value is smaller than it looks.
+  common_mistake: Shoving a set over a big c-bet because "they have an overpair and will call", when calling extracts the same money and hides your range.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#02
+      stance: supports
+      note: "Coach: tempting vs population to jam where overpairs dominate the big bet, but solver raises lower-in-range hands rather than pure coolers; just call."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Flopped a set vs a big bet? Don't shove yet."
+    - "Jamming coolers is slower money than you think."
+    - "Why solvers call with sets in 3-bet pots."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-backdoor-suit-for-aggression-014
+  format: cash-6max
+  topic: blockers
+  concepts: [backdoor-flush-draw, raise-selection, continue-threshold]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: Prefer the backdoor flush draw when choosing which marginal hand raises or continues
+  claim: Among two otherwise similar marginal hands in a 3-bet pot, the one holding a card in the board's suit is the one to raise, bet or continue with. Without the backdoor, the same hand drops to a call or a fold.
+  why: "A backdoor flush draw adds turn cards that let you keep barrelling or continue, which is what makes an aggressive line with a weak hand profitable. It also affects the raise-or-call line facing a small c-bet: a gutshot with the suit is a frequent raise, the same gutshot without it is a call. The coach found his biggest trainer mistakes, both betting and calling, came from taking aggressive actions with the non-suited version of a hand. Make the suit check a habit before pulling the trigger on a marginal play."
+  common_mistake: Treating the two offsuit and suited-in-the-wrong-suit versions of a hand as identical when choosing bluffs and raises.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#04
+      stance: supports
+      note: "\"the spade is the difference maker\"; coach notes he is not strongly enough preferring the backdoor for aggressive actions."
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#05
+      stance: supports
+      note: Pocket sevens without the backdoor or diamond was the worst combo to bet and to continue with.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Same hand, one suit different, opposite action."
+    - "The backdoor check that decides raise or fold."
+    - "Why your bluff needs a flush card you don't have yet."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-lower-connector-better-than-jt-015
+  format: cash-6max
+  topic: hand-reading
+  concepts: [turn-improvement, continue-threshold, equity-realization]
+  level: advanced
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: Facing a small c-bet, the lower connector continues better than the higher one
+  claim: On a low-to-mid flop in a 3-bet pot, a hand like T9 can be a better continue or raise than JT, even though JT is higher. The lower hand turns open-ended draws on cards that favour the in-position caller, while the higher hand improves on Broadway cards that help the 3-bettor's range.
+  why: What matters is not only how often you improve but what the improving card does to the opponent's range. A turn card that connects with your low cards is typically a brick for a 3-betting range full of high pairs and Broadway hands, so your draw is live and your aggression is credible. A Broadway turn gives you a draw while also giving the opponent top pair or a better draw, so your improvement is worth less. Rank continues by how well your outs interact with the board, not by card rank.
+  common_mistake: Preferring the "higher" hand when choosing between two marginal continues against a 3-bet-pot c-bet.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#04
+      stance: supports
+      note: Coach's post-session review of a JT-offsuit raise; T9 is ok without the backdoor, JT too weak because it improves on Broadway cards that are good for OOP.
+  consensus_score: 0.5
+  hook_ideas:
+    - "T9 beats JT here. Counterintuitive, but true."
+    - "Not all outs are equal. Some help your opponent."
+    - "Which cards do you want to turn? Think about their range."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-fold-marginal-vs-rare-check-raise-016
+  format: cash-6max
+  topic: exploits
+  concepts: [rare-spots, check-raise, population-reads]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: When a 3-bettor checks a flop they normally bet and then raises, fold your marginal hands
+  claim: If the out-of-position player checks a flop that the population almost always c-bets, treat the check itself as suspicious. When they then check-raise your bet, fold marginal hands even if the solver shows a close call.
+  why: "A spot that is near-indifferent in theory becomes a clear fold when the opponent's line is far more weighted to strength than equilibrium assumes. Most players only check these flops with hands they are trapping with or giving up on, and only raise with the former. There is also very little to gain: these spots are rare, the sim is less accurate deep in the tree, and sticking around with a weak pair wins almost nothing even when correct. Reserve your tough calls for the common spots where the opponent's range is actually balanced."
+  common_mistake: Hero-calling a check-raise in a line nobody takes as a bluff because the trainer showed a mixed strategy.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#05
+      stance: supports
+      note: "Coach: realistically not a spot where people check-raise aggressively; be suspicious of the check and fold marginal hands in rare spots."
+  consensus_score: 0.5
+  hook_ideas:
+    - "They checked a flop they always bet. Be suspicious."
+    - "A close call in theory is a fold in practice here."
+    - "Rare spot, marginal hand, big raise. Just fold."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-underpair-bets-are-bluffs-017
+  format: cash-6max
+  topic: defending
+  concepts: [facing-raise, underpairs, board-pairs]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: ip
+  title: "Underpair bets into a check, gets raised: fold it; pairs of the board continue"
+  claim: When you bet a small pocket pair below the board into the 3-bettor's check and get raised, fold. A pair that matches one of the board cards, by contrast, is a clear continue against the same raise.
+  why: Betting a pocket pair that is under the board is essentially a bluff with a little showdown value; against a check-raise its equity is poor and it is often drawing to two outs. A pair of the board card has more outs to improve, blocks the opponent's value and holds up against bluffs. Weak hands that bet for thin reasons should be ready to let go when the opponent pushes back, rather than calling because they were "already in the pot".
+  common_mistake: Calling a check-raise with pocket fives on a 9-7-6 board because the hand was good enough to bet.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#05
+      stance: supports
+      note: "Coach: pair to the board definitely continues; under-pairs that bet are basically bluffs when they start betting, so fold facing the raise."
+  consensus_score: 0.5
+  hook_ideas:
+    - "You bet pocket fives and got raised. Let it go."
+    - "Underpair vs check-raise: it was a bluff, fold it."
+    - "Which pairs continue against a flop raise? Not the low ones."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp35-declare-pure-or-mix-018
+  format: cash-6max
+  topic: study-methods
+  concepts: [trainer-drills, calibration, feedback]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: any
+  title: Before acting in a drill, say whether you think the hand is a pure action or a mix
+  claim: Commit out loud to "clear bet", "clear check" or "mixed" before the trainer shows the distribution. Being told a hand you called pure is actually 50-50 is the useful feedback; without the declaration you will just nod and believe you had it right.
+  why: Trainers show frequencies, not just correct or incorrect. That extra information only improves your model of the spot if you had a prediction to compare it to. Declaring pure versus mix opens you up to being challenged on hands where your action matched the solver but your certainty did not. Over a session, this reveals whether you systematically see mixes as pures (too rigid) or pures as mixes (too random), which is a leak you cannot find from a score alone.
+  common_mistake: Looking at the solver grid afterward and concluding "I had the right idea" when you never committed to an idea.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: rio-game-plan/035-defending-flops-in-position#03
+      stance: supports
+      note: "Coach: verbalize clear bet, clear check or mix so the solver's distribution can challenge you; \"maybe I thought it was pure and it's only 50-50\"."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Pure or mix? Say it before you click."
+    - "Right action, wrong certainty. Still a leak."
+    - "How to get twice the feedback from every drill hand."
+  status: draft
+  created: "2026-10-04"

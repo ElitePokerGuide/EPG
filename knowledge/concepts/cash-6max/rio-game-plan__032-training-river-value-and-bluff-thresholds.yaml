@@ -1,0 +1,316 @@
+- id: c-cash-6max-gp32-checked-down-range-is-high-cards-001
+  format: cash-6max
+  topic: river-play
+  concepts: [range-composition, river-stab, checked-down]
+  level: intermediate
+  street: river
+  pot_type: srp
+  position: ip
+  title: After checking flop and turn in position, your river range is mostly unpaired high cards
+  claim: When the hand checks through to the river in a single-raised pot, the in-position player holds very few pairs and a lot of king-high and ace-high hands. Build your river strategy around that fact rather than around the strong hands you would have bet earlier.
+  why: "Pairs and better bet the flop or turn most of the time, so they rarely reach a checked-down river. What arrives is the hands that had nothing to bet with: unpaired Broadway cards, some weak pairs that checked once, and air. On low boards that means your value comes from a king or ace that is now the best hand far more often than it looks, and your bluffs come from the weakest unpaired hands. Thinking about which hands actually survive the line is what makes the river thresholds make sense."
+  common_mistake: Checking king-high on a low river out of habit, when it is near the top of the range that takes this line.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#01
+      stance: supports
+      note: Coach reasons that after checking a low board twice IP you lack pairs and have a ton of kings, which anchor the strategy.
+  consensus_score: 0.5
+  hook_ideas:
+    - "King-high on the river is often your value hand."
+    - "You checked twice. Now what's actually in your range?"
+    - "Why ace-high bets rivers more than you think."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp32-half-pot-dominant-thin-value-002
+  format: cash-6max
+  topic: value-betting
+  concepts: [thin-value, river-sizing, half-pot]
+  level: intermediate
+  street: river
+  pot_type: srp
+  position: ip
+  title: Half pot is the main river size after a checked-down hand, and it goes thin
+  claim: On most textures where the hand checks to the river, the solver's most common in-position bet is around half pot, and it uses that size with second pair, weak top pair and even small pocket pairs. Pot-size bets are reserved for the top of the range on textures where the opponent holds a lot of calling hands.
+  why: The opponent who checked three times is capped and holds many weak pairs and unpaired hands. A half-pot bet gets called by enough of those hands to make value bets with medium strength profitable, while keeping the loss small when you run into something better. Going big with everything folds out exactly the hands you want to be called by. Players who default to pot leave a layer of thin value unbet, which quietly lowers their river betting frequency.
+  common_mistake: Checking middle pair or a low pocket pair on the river because it does not feel strong enough for a pot-size bet, instead of sizing down.
+  numbers:
+    - "Example texture: top pair ~23% of river range; another ~11% of second pair and low pocket pairs value bet at half pot"
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#02
+      stance: supports
+      note: Coach surprised that half pot is "way more common" with pocket nines, Tx and Jx; "a lot more thin value betting than anticipated".
+  consensus_score: 0.5
+  hook_ideas:
+    - "Second pair on the river. Bet half pot, don't check."
+    - "The river size most players never use enough."
+    - "Pocket deuces can value bet this river. Really."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp32-big-size-vs-low-check-raisers-003
+  format: cash-6max
+  topic: exploits
+  concepts: [river-sizing, check-raise-frequency, population-exploit]
+  level: intermediate
+  street: river
+  pot_type: srp
+  position: ip
+  title: Against opponents who rarely check-raise rivers, keep going big with your value
+  claim: Solvers mix half-pot bets into strong hands partly to protect against river check-raises. Against the typical opponent who almost never check-raises the river, that protection is unnecessary, so betting the largest size your hand can support remains the better play.
+  why: The reason a solver spreads strong hands across sizes is that a pure big-betting range would be easy to attack with raises. Real players at most stakes raise rivers far less than equilibrium, so the big bet faces calls or folds, not pressure. Against them, maximizing the amount called with each value hand matters more than balance. Learn the equilibrium sizes in the trainer, but do not let a check-raise-heavy solver talk you out of a habit that profits against your actual pool.
+  common_mistake: Copying the solver's half-pot frequency against players who will never punish the bigger size.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#02
+      stance: supports
+      note: Coach attributes his biggest-size habit to opponents who don't check-raise enough and says not to be scared away from it; against most opponents it is not his top concern.
+  consensus_score: 0.5
+  contradictions:
+    - "Some coaches teach copying solver river sizing mixes regardless of opponent; this source says go big against passive pools."
+  hook_ideas:
+    - "The solver bets half pot. You should bet more."
+    - "Most regs never check-raise rivers. Punish that."
+    - "Why your river bets should be bigger than GTO."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp32-bluff-everything-below-threshold-004
+  format: cash-6max
+  topic: bluffing
+  concepts: [bluff-threshold, river-stab, showdown-value]
+  level: intermediate
+  street: river
+  pot_type: srp
+  position: ip
+  title: On a checked-down river, every hand below the showdown line bluffs
+  claim: Once you have identified which hand class is your weakest showdown-value hand on a given river, everything weaker should bet. If king-high is the bottom of your checking range, then queen-high and below bluff close to always.
+  why: Checked-down pots are small and the opponent's range is weak, so bluffs need to fold out very little to profit. The in-position range holds many unpaired hands, and the ones that cannot win at showdown have no reason to check. Players tend to pick a few "good-looking" bluffs and check the rest, which leaves their betting frequency far too low. Find the threshold hand, then be systematic below it.
+  common_mistake: Bluffing only with hands that have a blocker or a story and checking the rest of the air.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#02
+      stance: supports
+      note: Coach concludes "every queen high and weaker is just always bluffing" and that this was holding back his frequency.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Queen-high on the river? That's a bet, every time."
+    - "You pick bluffs. The solver bluffs a whole class."
+    - "The river bluff rule nobody follows."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp32-dont-bluff-a-pair-005
+  format: cash-6max
+  topic: bluffing
+  concepts: [showdown-value, bluff-selection, scary-runouts]
+  level: beginner
+  street: river
+  pot_type: srp
+  position: ip
+  title: A pair is a showdown hand, not a bluff, even when the board gets scary
+  claim: When a four-straight or four-flush arrives on the river and you hold a pair that is now unlikely to be best, check it back. Turning a pair into a bluff is almost never right in a checked-down pot because the hand still beats the opponent's air.
+  why: In a hand where both players checked flop and turn, the opponent's range is full of unpaired hands and weak draws that missed. A pair beats all of that at showdown for free. Bluffing with it risks a bet to fold out hands you already beat and only gets called by hands that beat you. The right bluffs are the hands with no showdown value at all, which you have plenty of after checking twice.
+  common_mistake: Bluffing bottom pair when the straight completes because "I can't win at showdown anyway".
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#02
+      stance: supports
+      note: "No reason to bluff a pair, even when the four straight comes in."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Four to a straight on the river. Don't bluff your pair."
+    - "A pair beats air. Stop betting it as a bluff."
+    - "Scary board? Your pair still shows down."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp32-showdown-value-needs-company-006
+  format: cash-6max
+  topic: river-play
+  concepts: [showdown-value, range-density, ace-high]
+  level: intermediate
+  street: river
+  pot_type: srp
+  position: ip
+  title: Ace-high checks back only when you have many hands of similar strength
+  claim: Whether an unpaired high card checks or bets on a checked-down river depends on how many similar hands share your range. Ace-high checks on textures where you hold a lot of comparable showdown-value hands; on textures where it is near the top of your range, it bets for value.
+  why: A hand checks back when betting would mostly fold out worse and get called by better. For that to be true of ace-high you need a dense band of hands at roughly its strength, so that checking is the natural plan for a whole class and the opponent cannot exploit the checks. On low boards where the in-position range is thin on pairs, ace-high and king-high may be the best hands you can hold and betting half pot for value becomes correct.
+  common_mistake: Treating ace-high as an automatic check on every river regardless of what the rest of the range looks like.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#01
+      stance: supports
+      note: "Coach: to not bluff with showdown value you need many similar-strength hands; elsewhere ace-high value bets surprised him."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Ace-high: check or value bet? Depends on your range."
+    - "Checking here makes you more money than betting. Here's why."
+    - "The showdown-value rule that isn't about your hand."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp32-ace-still-pots-on-four-straight-007
+  format: cash-6max
+  topic: value-betting
+  concepts: [four-straight, nut-advantage, big-bet]
+  level: advanced
+  street: river
+  pot_type: srp
+  position: ip
+  title: On a four-straight river, a strong ace-high can still bet pot after a checked-down hand
+  claim: A four-card straight on the board does not kill value for the in-position player who checked twice. The opponent's range is weak, so a hand like ace-high or top pair remains a value bet, and pot-size bets are frequently correct.
+  why: In a checked-down pot neither player has shown strength, so the chance the opponent holds the straight is low. Meanwhile the board scares the opponent's medium hands, and the in-position range is heavy in the exact high cards that benefit from a large size. The solver often bets big here precisely because the opponent is capped and the hand has enough showdown strength to be called by worse. Fear of the four-straight is a population leak, not a reason to check.
+  common_mistake: Checking back a strong ace or top pair when the straight completes, because the board "looks too dangerous".
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#02
+      stance: supports
+      note: "Coach: on a four-straight an ace is still strong and can pot; this is a bet he did not used to make."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Four to a straight. Ace-high. Bet pot."
+    - "The scary river you should be betting big on."
+    - "Checking back the four-straight is a leak."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp32-distribution-before-sizing-008
+  format: cash-6max
+  topic: study-methods
+  concepts: [trainer-drills, river-thresholds, prioritization]
+  level: intermediate
+  street: river
+  pot_type: srp
+  position: ip
+  title: Drill river thresholds first; sizing and blocker details come later
+  claim: "When training river stabs, aim first at getting the bet-or-check decision right across hand classes: not value betting too thin, not missing value, not bluffing with showdown value, not missing bluffs. Treat exact size choices and blocker nuance as a second pass."
+  why: The largest river mistakes are frequency mistakes, like checking a whole class of thin value or bluffs. A sizing mix that is slightly off costs a fraction of a blind; a hand class that never bets costs far more. Running a fast drill with the single question "does this hand bet?" also lets you cover many textures in one session and reveals your thresholds quickly. Once the distribution is right, come back to size selection with a clear picture of which hands are betting.
+  common_mistake: Agonizing over half pot versus pot in the drill while whole hand classes are still being checked that should bet.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#01
+      stance: supports
+      note: Coach plays fast, ignores sizing and blocker usage, and tests only the gist of the bet distribution.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Stop fussing over river sizing. Fix this first."
+    - "Bet or check? Answer that before anything else."
+    - "The fast river drill that finds your thresholds."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp32-river-raise-all-bluffcatchers-009
+  format: cash-6max
+  topic: defending
+  concepts: [facing-river-raise, bluff-catcher, indifference]
+  level: advanced
+  street: river
+  pot_type: srp
+  position: ip
+  title: Facing a river check-raise after a checked-down hand, you hold only bluff-catchers
+  claim: When you bet a checked-down river in position and get raised, there is no hand in your range that is an easy call. Everything is a bluff-catcher at mixed frequency, so use a randomizer and accept folding a decent hand some of the time.
+  why: Your river betting range in this line consists of medium-strength value and bluffs; the nutted hands were bet on earlier streets. The opponent's raise represents the few strong hands that checked twice plus bluffs. The solver's response is a set of indifferent calls spread across your value hands, with no hand calling always. Expecting a "clear call" here leads to either hero-calling too much or folding everything. Pick a frequency and stick to it.
+  common_mistake: Snap-calling the river raise with any top pair because it felt strong when you bet it.
+  numbers:
+    - "Solver call frequencies seen in the drill ranged from ~12% to ~36% depending on the hand"
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#02
+      stance: supports
+      note: "Coach: \"not a single easy call\", all bluff catchers randomizing; earlier he quotes 12% and 36% call frequencies."
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#01
+      stance: supports
+      note: Large check-raise faced; coach would use randomizer, 36% more than expected.
+  consensus_score: 0.5
+  hook_ideas:
+    - "You bet the river and get raised. Nothing is a clear call."
+    - "Every hand is a bluff-catcher here. Flip a coin."
+    - "Why folding top pair to a river raise is fine."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp32-dont-study-unreachable-spots-010
+  format: cash-6max
+  topic: study-methods
+  concepts: [training-priority, paired-boards, game-tree]
+  level: intermediate
+  street: river
+  pot_type: srp
+  position: ip
+  title: Skip drilling spots your strategy almost never reaches
+  claim: Before studying a surprising river result, check how often your strategy actually gets there. A checked-down river on a paired board, for instance, barely exists because the in-position player bets most pairs on the flop or turn, so a strange value bet there is not worth your time.
+  why: Trainer drills deal every possible path, including lines that are a small fraction of a small fraction of hands. Results in those lines are both rare in practice and less reliable, because solver accuracy degrades with every low-frequency branch. Spending study time on them teaches you something you will almost never use. Verify the path frequency, note it, and move on to spots that occur every session.
+  common_mistake: Deep-diving a bizarre solver play without noticing the line is taken a fraction of a percent of the time.
+  numbers:
+    - "Example: low pocket pairs bet ~74% on a paired flop, so they rarely reach a checked-down river"
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#02
+      stance: supports
+      note: Coach dismisses paired-board checked-down results as a spot "almost never going to play"; flop bet 74% with those pairs.
+  consensus_score: 0.5
+  hook_ideas:
+    - "That weird solver play? You'll never be in that spot."
+    - "Study what happens, not what could happen."
+    - "One question before you analyze any hand."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp32-size-for-what-they-hold-011
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [target-hands, river-sizing, blockers]
+  level: advanced
+  street: river
+  pot_type: srp
+  position: ip
+  title: Size the river bet for the hands your opponent actually holds
+  claim: Choose the value size by asking which hands in the opponent's range will call. If the natural target is rare, say a jack on a low board after three checks, size to get called by what is actually there, like ace-high. If your hand blocks the main calling hands, size down.
+  why: A value bet is only as good as the calling range it targets. After a checked-down hand, the opponent's medium pairs may be nearly absent, so a pot-size bet aimed at them is aimed at nothing; a size that ace-high or king-high calls does better. Likewise, holding one of the cards the opponent needs to call with cuts the calling range, so the same hand should bet smaller than its naked version. The solver's sizing choices in these spots mostly reflect this logic rather than hand strength alone.
+  common_mistake: Sizing by absolute hand strength ("top pair bets pot") without checking what remains in the opponent's range.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#02
+      stance: supports
+      note: Coach reasons a jack is so rare that pot targets ace-high; earlier notes blocking the queen makes a king go half pot.
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: rio-game-plan/032-training-river-value-and-bluff-thresholds#01
+      stance: supports
+      note: "\"I guess blocking the queen\" leads to half pot with a hand that otherwise pots."
+  consensus_score: 0.5
+  hook_ideas:
+    - "Who is calling your river bet? Size for them."
+    - "Top pair doesn't decide the size. Their range does."
+    - "Blocking their calls? Bet smaller."
+  status: draft
+  created: "2026-10-04"

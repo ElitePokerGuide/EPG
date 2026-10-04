@@ -1,0 +1,368 @@
+- id: c-cash-6max-gp31-fix-earlier-street-first-001
+  format: cash-6max
+  topic: study-methods
+  concepts: [leak-fixing, check-raise, training-priority]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: any
+  title: Plug the flop leak before worrying about the turns and rivers it creates
+  claim: When your stats show you check-raise or defend too little on the flop, raise that frequency first. Do not hold back because you are unsure how you will handle the new turn and river spots that follow.
+  why: The flop decision comes up far more often than any branch after it, so that is where opponents are taking the most from you. Playing it more aggressively will land you in unfamiliar later-street spots and you will make some mistakes there, but those are smaller and rarer than the one you are already making every orbit. Work from the earliest street forward. Later nodes can get their own drills once you actually reach them in volume.
+  common_mistake: Keeping a passive flop strategy because the aggressive version feels uncomfortable on later streets.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#01
+      stance: supports
+      note: Coach's own leaks were low flop c-bet, high fold to check-raise, low BB check-raise; insists on fixing the frequent node first. HU context.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Scared to check-raise more? That fear is the leak."
+    - "Fix the flop first. The river can wait."
+    - "Most NL10 players fix leaks in the wrong order."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-train-most-frequent-spots-002
+  format: cash-6max
+  topic: study-methods
+  concepts: [training-priority, c-bet, routine]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Give the most frequent spots the most drilling time, even when they feel basic
+  claim: Rank your training drills by how often the spot occurs. The in-position flop c-bet decision in a single-raised pot deserves a permanent place in your routine; a rare branch like facing a check-raise after a 75% c-bet gets a few minutes at most.
+  why: Edge is frequency times EV gain. A fundamental spot you see every session, even with a small per-hand improvement, outweighs a flashy rare node where you might be badly off. Frequency leaks are also slow to move, so they need repeated sessions over months rather than one study block. Treat the common spots as the core of a recurring routine and let everything else be secondary.
+  common_mistake: Spending study time on exotic deep-tree spots because they are interesting, while the everyday c-bet decision stays unexamined.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#01
+      stance: supports
+      note: Coach keeps IP flop c-bet drill in his regular routine for months; facing check-raise after bet 75% gets low priority.
+  consensus_score: 0.5
+  hook_ideas:
+    - "The boring spot is the one making you money."
+    - "Study time should follow frequency, not curiosity."
+    - "You drill rivers. The flop is where you lose."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-force-the-action-you-lack-003
+  format: cash-6max
+  topic: study-methods
+  concepts: [trainer-drills, overcorrection, check-raise]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: bb
+  title: When drilling a frequency leak, force the missing action on every plausible hand
+  claim: If you know you check-raise too little, take the raise with every hand that looks like a candidate during the drill and let the trainer tell you when it was wrong. Keep leaning that way until the feedback starts marking you as too aggressive.
+  why: "Your instinct is already biased toward the passive option, so playing \"what feels right\" in the drill just reproduces the leak. Deliberately overshooting exposes the hand classes you have been missing and recalibrates your sense of what qualifies. The same logic applies in reverse: someone who raises too much should call or fold every mixed hand. The goal is to overcorrect until mistakes appear on the other side, then settle in the middle."
+  common_mistake: Playing the drill to get a high score, which only confirms habits instead of changing them.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#01
+      stance: supports
+      note: "\"Push the raising frequency with hands that seem reasonable\"; aim to err aggressive until feedback flips."
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#02
+      stance: supports
+      note: Long-term goal stated as overcorrecting into the aggressive direction.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Train to be wrong on purpose. Here's why it works."
+    - "Your gut says call. Raise anyway, then check the answer."
+    - "Overcorrect first. Fine-tune later."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-neutral-ev-raises-not-blunders-004
+  format: cash-6max
+  topic: study-methods
+  concepts: [ev-mistakes, trainer-drills, mindset]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: bb
+  title: The goal of a check-raise drill is finding zero-EV raises, not avoiding blunders
+  claim: In a frequency drill, a small negative EV mark on a raise that the solver mixes is a good result. You are hunting for the indifferent raises you never take in game, so avoiding every red mark means you are still too passive.
+  why: Many flop check-raises are near-indifferent between calling and raising. If you never raise those hands, your frequency collapses and opponents can c-bet small with impunity. A trainer that flags a tiny EV loss on a hand that raises 50-60% of the time is confirming that the hand belongs in your raising range some of the time. Fixating on a clean score shifts your attention from the frequency problem you came to solve.
+  common_mistake: Treating every highlighted mistake as equal, then retreating to the safe passive play after the first red mark.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#01
+      stance: supports
+      note: Coach repeats that blunder avoidance is not the point; sole focus is locating missed neutral-EV raises.
+  consensus_score: 0.5
+  hook_ideas:
+    - "A red mark in the trainer can be good news."
+    - "Zero-EV raises are the ones you keep missing."
+    - "Stop chasing a perfect trainer score."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-check-raise-more-vs-small-cbet-005
+  format: cash-6max
+  topic: check-raising
+  concepts: [small-c-bet, bb-defense, frequency]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: bb
+  title: Most of your missing check-raises live in the spot facing a small c-bet
+  claim: When you need to raise your flop check-raise frequency from the big blind, look at the node facing a roughly quarter-pot c-bet. That is where solvers raise most and where passive players leave the most on the table. Against a large c-bet, the gap is much smaller.
+  why: A small c-bet is made with a wide, weak range and offers you a cheap raise that puts real pressure on the in-position player. Solvers respond with far more check-raises there than against a big bet, which is already polarized and expensive to attack. If your overall check-raise stat is low, the deficit is almost certainly concentrated against the small size, so that is where drilling pays off fastest.
+  common_mistake: Defending against a 25% bet mostly by calling, letting the bettor realize equity cheaply with the whole range.
+  numbers:
+    - "Drill focus: facing ~25% pot c-bet; low priority facing ~150% pot"
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#01
+      stance: supports
+      note: Coach starts with facing bet 25 because that is where most additional check-raises come from.
+  consensus_score: 0.5
+  hook_ideas:
+    - "They bet a quarter pot. You call. That's the leak."
+    - "Small c-bets are an invitation. Accept it."
+    - "Where are your missing check-raises hiding? One spot."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-small-raise-paired-monotone-006
+  format: cash-6max
+  topic: check-raising
+  concepts: [raise-sizing, paired-boards, monotone]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: bb
+  title: A small check-raise size shows up mainly on high paired and monotone flops
+  claim: If you add a small check-raise size to your flop strategy, use it on higher paired boards and monotone boards. On most other textures, stick to your standard raise size.
+  why: On paired and monotone flops, both players' ranges contain many hands that are either very strong or almost hopeless, and equities move less from turn to river. A small raise lets you attack a small c-bet cheaply with a wide range without inflating the pot on a texture where your strong hands are already hard to get paid. On more dynamic boards, the larger raise does more work denying equity and charging draws.
+  common_mistake: Using one check-raise size everywhere, which gives up the cheap pressure option on static textures.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#02
+      stance: supports
+      note: Coach identifies higher paired and monotone boards as where the small raise is most common in his sims.
+  consensus_score: 0.5
+  hook_ideas:
+    - "A tiny check-raise on monotone flops. Here's why it works."
+    - "Paired board, small bet, small raise."
+    - "Not every check-raise needs to be big."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-double-broadway-low-not-zero-007
+  format: cash-6max
+  topic: check-raising
+  concepts: [broadway-boards, frequency, board-texture]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: bb
+  title: Low check-raise boards are not zero check-raise boards
+  claim: Two-Broadway flops are among the lowest check-raise textures for the big blind, even against a small c-bet. Low still means a few percent, not never. If you currently raise zero there, add a handful of raises with your strongest hands and best draws.
+  why: On boards with two high cards, the opener has the range and nut advantage, so the caller mostly plays defensively. But a strategy that never raises is too predictable and lets the bettor realize equity with weak holdings at no risk. A low single-digit raise frequency keeps the bettor honest while still respecting the texture. Knowing the baseline is low is useful; rounding it to zero is a leak.
+  common_mistake: Writing off entire board classes as "never raise" and giving the in-position player a free pass there.
+  numbers:
+    - "Coach's own check-raise on double-Broadway: often 0%, target roughly 5%"
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#01
+      stance: supports
+      note: Coach notes double-Broadway as a low check-raise board but says his zero should be about five percent.
+  consensus_score: 0.5
+  hook_ideas:
+    - "'Never check-raise high boards' is costing you money."
+    - "Low frequency is not zero frequency."
+    - "KQ4 flop. Villain bets small. Do you ever raise?"
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-overfold-overraise-linked-008
+  format: cash-6max
+  topic: defending
+  concepts: [small-c-bet, fold-frequency, check-raise]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: bb
+  title: Fixing a low check-raise frequency usually fixes an overfold at the same time
+  claim: A big blind who raises too little against small c-bets is usually folding too much in the same spot. Drilling the raise decision tends to repair both stats because the hands you learn to raise are the ones you were folding.
+  why: Against a quarter-pot bet, the price is so good that very little of your range should fold. Players who are too passive feel they cannot call with weak draws and backdoors, and they do not raise them either, so those hands become folds. Once you start raising the marginal candidates, the folds that remain are the truly hopeless hands and your fold frequency drops toward the target.
+  common_mistake: Working on fold-to-c-bet and check-raise as two separate leaks when they are one habit.
+  numbers:
+    - "Coach's fold vs small c-bet was about 5 percentage points too high"
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#01
+      stance: supports
+      note: Coach notes a side benefit of drilling raises versus the small size is also reducing his too-high folds.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Two leaks, one fix."
+    - "Fold too much vs small bets? Start raising."
+    - "The hands you fold should have been raises."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-wrong-suit-is-not-a-float-009
+  format: cash-6max
+  topic: defending
+  concepts: [backdoor-draws, floating, suit-interaction]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: any
+  title: A backdoor flush draw in the wrong suit does not make a hand a float
+  claim: When you consider peeling a flop bet or check-raise with a weak hand, your suit needs to match the board. Two suited cards in a suit that is not on the flop add almost nothing and do not turn a fold into a call.
+  why: Floats and light continues are justified by the ways a hand can improve on the turn. A backdoor flush draw that shares a suit with the board gives you extra turn cards to continue on and bluff with. If your suit is absent from the flop, you need two perfect cards just to get to a draw, so the hand plays essentially as offsuit. In drills, this was the most common way the coach found himself calling too light.
+  common_mistake: Treating any suited hand as a candidate to continue, regardless of which suits are on the board.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#02
+      stance: supports
+      note: "\"Diamonds usually aren't good on two-spade boards\" repeated twice as the error pattern."
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#03
+      stance: supports
+      note: Coach knows a float without the matching suit is too loose and uses the trainer to confirm.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Suited doesn't mean you can float."
+    - "Your backdoor draw needs the right suit."
+    - "One suit check that saves you a bad call."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-defend-vs-check-raise-not-3bet-010
+  format: cash-6max
+  topic: defending
+  concepts: [facing-check-raise, floats, weak-pairs]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Facing a flop check-raise, defending enough matters far more than finding 3-bets
+  claim: After c-betting and getting check-raised in a single-raised pot, focus on continuing with enough draws, marginal floats and weak pairs. Flop 3-bets are a minor part of the strategy and can mostly be ignored while you fix overfolding.
+  why: The check-raiser's range is wide and includes many bluffs, so the in-position player must call with hands that feel uncomfortable. Players coming from tighter formats or full-ring games tend to carry over a folding reflex and give up hands that are clear continues against a wide raising range. Re-raising the flop adds little EV in comparison and is easy to overdo. Spend the training time on the call-or-fold line and only note when a 3-bet would have been clearly better.
+  common_mistake: Folding weak pairs and backdoor draws to a flop check-raise because they "can't be good", which lets the raiser bluff profitably.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#02
+      stance: supports
+      note: HU context; coach found he was significantly too tight versus check-raises and de-prioritizes flop 3-betting.
+  consensus_score: 0.5
+  hook_ideas:
+    - "You c-bet, they raise, you fold. That's the leak."
+    - "Weak pair facing a check-raise? Calling is often right."
+    - "Forget flop 3-bets. Fix your folds first."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-low-accuracy-sims-trust-frequency-011
+  format: cash-6max
+  topic: tools-software
+  concepts: [solver-accuracy, trainer-drills, ev-noise]
+  level: advanced
+  street: multi-street
+  pot_type: srp
+  position: any
+  title: In low-accuracy sims, trust the frequencies and ignore small EV gaps deep in the tree
+  claim: When a solver was run at low accuracy to extract frequencies quickly, treat tiny EV differences on later nodes as noise. A pure action can still show a non-zero EV loss, and the noise grows with every bet, raise and call that precedes the decision.
+  why: Each node down the tree is solved against a slightly imprecise strategy on the previous node, so the errors compound. A spot reached by a small bet, a raise and a call might be solved with very few combos and an EV figure that is off by more than the gap between options. Frequencies are more robust than exact EVs in these conditions. If a decision shows a meaningful EV difference, check whether it is a genuine mistake or an artifact before changing your play.
+  common_mistake: Rebuilding a strategy around a half-blind EV difference reported by a sim that was never meant to be precise at that depth.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#02
+      stance: supports
+      note: Coach explains layers of inaccuracy compounding and chooses to focus on frequency of the play.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Your solver is lying about that EV. A little."
+    - "Deep-tree EV numbers are mostly noise."
+    - "Trust the frequency, not the decimal."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-verbalize-before-answer-012
+  format: cash-6max
+  topic: study-methods
+  concepts: [calibration, trainer-drills, self-talk]
+  level: intermediate
+  street: multi-street
+  pot_type: srp
+  position: any
+  title: Say how confident you are before the trainer reveals the answer
+  claim: Before each decision in a drill, state out loud whether you think it is clear, close, or a stretch. Then compare with the solution. A "clearly too loose" that turns out fine, or a "close" that turns out pure, is the feedback that moves your game.
+  why: Drills are not about the score; they are about calibrating your internal read of a spot to the solution. If you only look at right or wrong, you miss the information in how sure you were. Verbalizing forces you to commit to a judgment, which makes it obvious afterward when your confidence was misplaced in either direction. It also helps you notice systematic patterns, like always feeling that correct calls are too loose.
+  common_mistake: Looking at the answer and thinking "yes, I knew that", when you had not actually decided.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#03
+      stance: supports
+      note: Coach narrates "loose but not crazy", "clear fold" etc. and explains it calibrates his view to the solutions.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Talk to your solver. Out loud. Seriously."
+    - "Right answer, wrong confidence. Still a mistake."
+    - "The drill habit that actually changes how you play."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-gp31-study-both-sides-of-node-013
+  format: cash-6max
+  topic: study-methods
+  concepts: [trainer-drills, range-awareness, opponent-range]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: any
+  title: Watch the trainer's showdown hands to learn the opponent's side of the node
+  claim: When a trainer deals the opponent's holding from the solver's own range, pay attention to those showdowns. They show you what a correct check-raising or betting range looks like in that spot, so you learn both sides of the decision at once.
+  why: Knowing your own action is only half of the spot. Seeing which hands the solver check-raises, floats or gives up with builds an accurate picture of the range you are facing, which is what makes your calls and folds feel justified rather than forced. It also helps you spot which hand classes you are missing from your own aggressive ranges. Since the showdowns are solver-driven rather than random, they are a reliable sample of correct play.
+  common_mistake: Clicking through the opponent's revealed hands without noting what they say about the raising range.
+  source_refs:
+    - school: rio
+      course: The Game Plan
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: rio-game-plan/031-training-flop-check-raises#03
+      stance: supports
+      note: Coach points out villain showdowns are pulled from the sim, so he studies both sides simultaneously.
+  consensus_score: 0.5
+  hook_ideas:
+    - "Your opponent's cards in the trainer are a free lesson."
+    - "Study both seats at once. Here's how."
+    - "What does a correct check-raising range look like? Watch."
+  status: draft
+  created: "2026-10-04"
