@@ -1,521 +1,522 @@
 - id: c-cash-6max-br2-spot-strong-player-fast-001
   format: cash-6max
   topic: hand-reading
-  concepts: [player-typing, limping, buy-in, vpip-pfr, short-handed]
+  concepts:
+  - player-typing
+  - limping
+  - buy-in
+  - vpip-pfr
+  - short-handed
   level: beginner
   position: any
   title: You can classify a new opponent within about ten hands
-  claim: >-
-    A few early signals separate competent players from weak ones: competent players never
-    open-limp, buy in for a full stack, and show VPIP and PFR close together. Half-stack
-    buy-ins, limps from the small blind or button and a wide VPIP-to-PFR gap point to a weak
-    player. Decide quickly and act on it.
-  why: >-
-    Waiting for a hundred hands of stats before judging an opponent wastes the time you could be
-    spending at a better table. The signals above are not noise: no strong player limps the
-    button, and a big gap between hands played and hands raised means a lot of passive
-    calling. Heads-up a solid player will show something like 50% VPIP and 40% PFR, with the
-    numbers close together. Read these cues early, then either stay and target the weak player
-    or leave if the only opponent looks solid.
-  common_mistake: >-
-    Sitting heads-up against a good player for an hour "to see how it goes" when the first ten
-    hands already said everything.
+  claim: 'A few early signals separate competent players from weak ones: competent players never open-limp,
+    buy in for a full stack, and show VPIP and PFR close together. Half-stack buy-ins, limps from the
+    small blind or button and a wide VPIP-to-PFR gap point to a weak player. Decide quickly and act on
+    it.'
+  why: 'Waiting for a hundred hands of stats before judging an opponent wastes the time you could be spending
+    at a better table. The signals above are not noise: no strong player limps the button, and a big gap
+    between hands played and hands raised means a lot of passive calling. Heads-up a solid player will
+    show something like 50% VPIP and 40% PFR, with the numbers close together. Read these cues early,
+    then either stay and target the weak player or leave if the only opponent looks solid.'
+  common_mistake: Sitting heads-up against a good player for an hour "to see how it goes" when the first
+    ten hands already said everything.
   numbers:
-    - "Solid heads-up stats roughly VPIP 50 / PFR 40, close together"
+  - Solid heads-up stats roughly VPIP 50 / PFR 40, close together
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#01
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#02
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#01
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#02
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Ten hands. That is all you need to type a player.
-    - Nobody good limps the button. Nobody.
-    - Three signs you are sitting with a reg, not a fish.
+  - Ten hands. That is all you need to type a player.
+  - Nobody good limps the button. Nobody.
+  - Three signs you are sitting with a reg, not a fish.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-stack-size-tells-002
   format: cash-6max
   topic: hand-reading
-  concepts: [buy-in, stack-size, tells, recreational-players]
+  concepts:
+  - buy-in
+  - stack-size
+  - tells
+  - recreational-players
   level: beginner
   position: any
   title: Odd buy-in amounts and instant shoves mark a recreational player
-  claim: >-
-    A player who sits with a strange amount such as 62 big blinds or 78 big blinds, rather than
-    a round max or min buy-in, is very likely playing their entire balance and is a weak player.
-    If they also start open-shoving, treat them as a gambler and call with any reasonable hand.
-  why: >-
-    Nobody types an odd number into the buy-in box by choice; it is what is left in the account.
-    Someone depositing their whole bankroll at a micro table is not a studied player, and the
-    behaviour that often follows, shoving preflop, mini-raising and calling with nothing,
-    confirms it. Recognizing this before a single hand is played lets you tag them, seat
-    yourself correctly and widen your calling range before they bust to someone else.
-  common_mistake: >-
-    Giving an unknown short stack the benefit of the doubt for an orbit while they shove into
-    other players.
+  claim: A player who sits with a strange amount such as 62 big blinds or 78 big blinds, rather than a
+    round max or min buy-in, is very likely playing their entire balance and is a weak player. If they
+    also start open-shoving, treat them as a gambler and call with any reasonable hand.
+  why: Nobody types an odd number into the buy-in box by choice; it is what is left in the account. Someone
+    depositing their whole bankroll at a micro table is not a studied player, and the behaviour that often
+    follows, shoving preflop, mini-raising and calling with nothing, confirms it. Recognizing this before
+    a single hand is played lets you tag them, seat yourself correctly and widen your calling range before
+    they bust to someone else.
+  common_mistake: Giving an unknown short stack the benefit of the doubt for an orbit while they shove
+    into other players.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#03
-      stance: supports
-      note: Coach reads a $1.24 buy-in at NL2 as "probably his whole bankroll".
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#04
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#03
+    stance: supports
+    note: Coach reads a $1.24 buy-in at NL2 as "probably his whole bankroll".
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#04
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - The buy-in amount tells you who they are before hand one.
-    - Sixty-two big blinds is not a buy-in. It is a confession.
-    - Spot the fish before the cards are dealt.
-  status: draft
-  created: "2026-10-04"
-
+  - The buy-in amount tells you who they are before hand one.
+  - Sixty-two big blinds is not a buy-in. It is a confession.
+  - Spot the fish before the cards are dealt.
+  status: needs-review
+  created: '2026-10-04'
+  review_note: Dated anecdote, weak publishable value.
 - id: c-cash-6max-br2-call-open-shover-003
   format: cash-6max
   topic: preflop-ranges
-  concepts: [open-shove, calling-range, heads-up, short-stack]
+  concepts:
+  - open-shove
+  - calling-range
+  - heads-up
+  - short-stack
   level: beginner
   street: preflop
   position: any
   title: Against someone shoving every hand, call with an average hand or better
-  claim: >-
-    When a short-stacked player open-shoves hand after hand, stop stealing their blinds and
-    simply wait to call. Heads-up, roughly Q7 offsuit and better is above average against a
-    random hand and is a profitable call. Do not open hands you would not be happy calling an
-    all-in with.
-  why: >-
-    A player who jams every hand has a random range. Against a random hand, a holding like Q7
-    or better wins more than half the time, and the pot already contains their blind, so the
-    call shows a clear profit. Trying to steal becomes pointless because they will shove
-    regardless, and opening weak hands just forces you to fold to the jam. Variance is high,
-    but getting a stack in preflop with 55-60% equity repeatedly is about as good as poker
-    gets.
-  common_mistake: >-
-    Folding everything but premiums to a maniac and letting someone else at the table collect
+  claim: When a short-stacked player open-shoves hand after hand, stop stealing their blinds and simply
+    wait to call. Heads-up, roughly Q7 offsuit and better is above average against a random hand and is
+    a profitable call. Do not open hands you would not be happy calling an all-in with.
+  why: A player who jams every hand has a random range. Against a random hand, a holding like Q7 or better
+    wins more than half the time, and the pot already contains their blind, so the call shows a clear
+    profit. Trying to steal becomes pointless because they will shove regardless, and opening weak hands
+    just forces you to fold to the jam. Variance is high, but getting a stack in preflop with 55-60% equity
+    repeatedly is about as good as poker gets.
+  common_mistake: Folding everything but premiums to a maniac and letting someone else at the table collect
     the stack.
   numbers:
-    - "Heads-up vs random hand: call Q7o or better"
+  - 'Heads-up vs random hand: call Q7o or better'
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#04
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#05
-      stance: supports
-      note: Also warns not to open hands like J3 when you cannot call the inevitable shove.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#04
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#05
+    stance: supports
+    note: Also warns not to open hands like J3 when you cannot call the inevitable shove.
   consensus_score: 0.5
   hook_ideas:
-    - He shoves every hand. Here is exactly what to call with.
-    - Queen-seven is a snap call here. Really.
-    - Stop stealing. Start calling. He is giving it away.
+  - He shoves every hand. Here is exactly what to call with.
+  - Queen-seven is a snap call here. Really.
+  - Stop stealing. Start calling. He is giving it away.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-dumb-once-dumb-again-004
   format: cash-6max
   topic: exploits
-  concepts: [reads, player-tendencies, gamblers, calling-down]
+  concepts:
+  - reads
+  - player-tendencies
+  - gamblers
+  - calling-down
   level: beginner
   street: multi-street
   position: any
   title: One wild play is enough to assume the next one is coming
-  claim: >-
-    When an opponent shows one absurd play, such as getting all-in with jack-six on nothing,
-    assume they will do it again and loosen your stack-off range against them right away rather
-    than waiting for a second confirmation.
-  why: >-
-    Players who make a wild play once are rarely doing it as a one-off balanced bluff; it is
-    how they play. Waiting for more evidence means passing up the exact spot their stack is
-    offered to you, and at these stakes they often bust or leave quickly. The cost of being
-    wrong once is one stack; the cost of being too cautious is missing the most profitable
-    opponent you will see all session. Paired with a small or odd buy-in, the read is nearly
-    certain.
-  common_mistake: >-
-    Folding a decent hand to a known gambler's shove because "he might have it this time".
+  claim: When an opponent shows one absurd play, such as getting all-in with jack-six on nothing, assume
+    they will do it again and loosen your stack-off range against them right away rather than waiting
+    for a second confirmation.
+  why: Players who make a wild play once are rarely doing it as a one-off balanced bluff; it is how they
+    play. Waiting for more evidence means passing up the exact spot their stack is offered to you, and
+    at these stakes they often bust or leave quickly. The cost of being wrong once is one stack; the cost
+    of being too cautious is missing the most profitable opponent you will see all session. Paired with
+    a small or odd buy-in, the read is nearly certain.
+  common_mistake: Folding a decent hand to a known gambler's shove because "he might have it this time".
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#03
-      stance: supports
-      note: Coach stacks off with 98 vs a player who just got it in with J6, reasoning he will repeat.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#03
+    stance: supports
+    note: Coach stacks off with 98 vs a player who just got it in with J6, reasoning he will repeat.
   consensus_score: 0.5
   hook_ideas:
-    - Did something dumb once? He will do it again.
-    - You only need one hand to read a gambler.
-    - Waiting for confirmation is how you miss the easiest stack.
+  - Did something dumb once? He will do it again.
+  - You only need one hand to read a gambler.
+  - Waiting for confirmation is how you miss the easiest stack.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-peel-lighter-vs-maniacs-005
   format: cash-6max
   topic: defending
-  concepts: [implied-odds, maniac, calling-range, top-pair]
+  concepts:
+  - implied-odds
+  - maniac
+  - calling-range
+  - top-pair
   level: beginner
   street: preflop
   position: ip
   title: Defend a bit lighter against a maniac because top pair wins their stack
-  claim: >-
-    Against a wild player who overbets and shoves with weak holdings, call preflop and on the
-    flop with somewhat weaker hands than usual, such as Q8 or a middling pair. Any top pair you
-    make is likely to be paid in full.
-  why: >-
-    The value of a preflop call is not just its showdown equity but what you win when you
-    connect. Against a normal opponent a hand like Q8 makes top pair and wins a small pot.
-    Against a maniac the same top pair collects a whole stack, because they keep firing with
-    worse. That extra payout justifies entering more pots. The same logic says to avoid
-    bloating the pot preflop with marginal hands: you want to see a flop cheaply and let them
-    do the betting once you have something.
-  common_mistake: >-
-    Playing your standard tight range against a maniac and letting other players at the table
-    collect the stack.
+  claim: Against a wild player who overbets and shoves with weak holdings, call preflop and on the flop
+    with somewhat weaker hands than usual, such as Q8 or a middling pair. Any top pair you make is likely
+    to be paid in full.
+  why: 'The value of a preflop call is not just its showdown equity but what you win when you connect.
+    Against a normal opponent a hand like Q8 makes top pair and wins a small pot. Against a maniac the
+    same top pair collects a whole stack, because they keep firing with worse. That extra payout justifies
+    entering more pots. The same logic says to avoid bloating the pot preflop with marginal hands: you
+    want to see a flop cheaply and let them do the betting once you have something.'
+  common_mistake: Playing your standard tight range against a maniac and letting other players at the
+    table collect the stack.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#05
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#05
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Against a maniac, queen-eight becomes a call. Here is why.
-    - Top pair wins a stack here. Pay to see flops.
-    - Implied odds are not just for suited connectors.
+  - Against a maniac, queen-eight becomes a call. Here is why.
+  - Top pair wins a stack here. Pay to see flops.
+  - Implied odds are not just for suited connectors.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-flat-dont-3bet-fish-006
   format: cash-6max
   topic: preflop-ranges
-  concepts: [3-bet, flatting, postflop-edge, recreational-players, variance]
+  concepts:
+  - 3-bet
+  - flatting
+  - postflop-edge
+  - recreational-players
+  - variance
   level: beginner
   street: preflop
   position: ip
   title: Do not 3-bet weak players light; flat and use your postflop edge
-  claim: >-
-    Against a recreational opener, 3-bet for value with strong hands but do not re-raise
-    speculative hands or push for 100 big blinds preflop. Calling in position and letting them
-    make mistakes after the flop keeps your edge intact and your variance low.
-  why: >-
-    Your advantage over a weak player is largest postflop, where they call with nothing, bet
-    odd amounts and give off information every street. A light 3-bet or a preflop stack-off
-    turns a hand you would dominate over three streets into a near coin flip decided before any
-    of those mistakes happen. Flatting keeps the stack-to-pot ratio high so that their later
-    errors are expensive for them. Save the 3-bets for hands that want to build the pot on
-    their own merit.
-  common_mistake: >-
-    Re-raising every fish open "to isolate" and then being forced to play a bloated pot with a
-    hand like K9.
+  claim: Against a recreational opener, 3-bet for value with strong hands but do not re-raise speculative
+    hands or push for 100 big blinds preflop. Calling in position and letting them make mistakes after
+    the flop keeps your edge intact and your variance low.
+  why: Your advantage over a weak player is largest postflop, where they call with nothing, bet odd amounts
+    and give off information every street. A light 3-bet or a preflop stack-off turns a hand you would
+    dominate over three streets into a near coin flip decided before any of those mistakes happen. Flatting
+    keeps the stack-to-pot ratio high so that their later errors are expensive for them. Save the 3-bets
+    for hands that want to build the pot on their own merit.
+  common_mistake: Re-raising every fish open "to isolate" and then being forced to play a bloated pot
+    with a hand like K9.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#04
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#05
-      stance: supports
-      note: Coach declines to 3-bet or get 100bb in pre vs a possibly tilted fish; says big pre pots remove his edge.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#04
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#05
+    stance: supports
+    note: Coach declines to 3-bet or get 100bb in pre vs a possibly tilted fish; says big pre pots remove
+      his edge.
   consensus_score: 0.5
   hook_ideas:
-    - Stop 3-betting the fish. You are throwing away your edge.
-    - The fish makes mistakes after the flop. Let him get there.
-    - A preflop flip is the worst way to play a fish.
+  - Stop 3-betting the fish. You are throwing away your edge.
+  - The fish makes mistakes after the flop. Let him get there.
+  - A preflop flip is the worst way to play a fish.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-cbet-hands-that-can-improve-007
   format: cash-6max
   topic: cbet-strategy
-  concepts: [c-bet, calling-station, equity, backdoor, give-up]
+  concepts:
+  - c-bet
+  - calling-station
+  - equity
+  - backdoor
+  - give-up
   level: beginner
   street: flop
   pot_type: srp
   position: ip
   title: Versus a station, c-bet with hands that can improve and give up with the rest
-  claim: >-
-    Against a player who calls almost every flop bet, do not c-bet simply because you raised.
-    Bet when your hand has ways to improve, such as overcards or a draw, and check back hands
-    like a small pocket pair on a high board that are drawing nearly dead if called.
-  why: >-
-    A c-bet against a non-folder rarely wins the pot outright, so its value has to come from
-    what happens when called. A hand with six or more outs can turn into the best hand and
-    collect more bets from a player who does not fold. A hand with two outs just puts money in
-    behind and then has to fold to any aggression. Checking those hands keeps the pot small and
-    sometimes wins at showdown unimproved, which is a better result than a wasted bet.
-  common_mistake: >-
-    Firing a c-bet with pocket fives on a K-J-8 board against a station and then folding the
-    turn.
+  claim: Against a player who calls almost every flop bet, do not c-bet simply because you raised. Bet
+    when your hand has ways to improve, such as overcards or a draw, and check back hands like a small
+    pocket pair on a high board that are drawing nearly dead if called.
+  why: A c-bet against a non-folder rarely wins the pot outright, so its value has to come from what happens
+    when called. A hand with six or more outs can turn into the best hand and collect more bets from a
+    player who does not fold. A hand with two outs just puts money in behind and then has to fold to any
+    aggression. Checking those hands keeps the pot small and sometimes wins at showdown unimproved, which
+    is a better result than a wasted bet.
+  common_mistake: Firing a c-bet with pocket fives on a K-J-8 board against a station and then folding
+    the turn.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#04
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#04
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Which hands should you c-bet into a station? Only these.
-    - Pocket fives on a king-high flop. Check, do not bet.
-    - A c-bet that cannot improve is a donation at micro stakes.
+  - Which hands should you c-bet into a station? Only these.
+  - Pocket fives on a king-high flop. Check, do not bet.
+  - A c-bet that cannot improve is a donation at micro stakes.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-showdown-value-no-bluff-008
   format: cash-6max
   topic: river-play
-  concepts: [showdown-value, bluffing, pot-control, river]
+  concepts:
+  - showdown-value
+  - bluffing
+  - pot-control
+  - river
   level: beginner
   street: river
   pot_type: srp
   position: ip
   title: With showdown value on the river, check rather than bluff
-  claim: >-
-    If your hand can win at showdown against some of the opponent's missed draws and weak
-    pairs, check the river instead of betting. A bet only gets called by better and folds out
-    the hands you already beat.
-  why: >-
-    A river bet does one of two things: it wins extra money from worse hands that call, or it
-    makes better hands fold. A medium-strength hand achieves neither against a typical micro
-    opponent: their worse hands fold or were never betting anyway, and their better hands call.
-    Checking lets you realize the equity you already have. Turning a hand with showdown value
-    into a bluff throws away the one thing it does well.
-  common_mistake: >-
-    Betting ace-high or a weak pair on the river "because they might fold" and being called by
-    second pair.
+  claim: If your hand can win at showdown against some of the opponent's missed draws and weak pairs,
+    check the river instead of betting. A bet only gets called by better and folds out the hands you already
+    beat.
+  why: 'A river bet does one of two things: it wins extra money from worse hands that call, or it makes
+    better hands fold. A medium-strength hand achieves neither against a typical micro opponent: their
+    worse hands fold or were never betting anyway, and their better hands call. Checking lets you realize
+    the equity you already have. Turning a hand with showdown value into a bluff throws away the one thing
+    it does well.'
+  common_mistake: Betting ace-high or a weak pair on the river "because they might fold" and being called
+    by second pair.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#05
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#05
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - You have showdown value. Why are you bluffing?
-    - The river check that wins more than a bet.
-    - Ace-high on the river is a check, not a bet.
+  - You have showdown value. Why are you bluffing?
+  - The river check that wins more than a bet.
+  - Ace-high on the river is a check, not a bet.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-oop-float-tell-009
   format: cash-6max
   topic: hand-reading
-  concepts: [floating, out-of-position, tells, player-typing]
+  concepts:
+  - floating
+  - out-of-position
+  - tells
+  - player-typing
   level: beginner
   street: flop
   position: oop
   title: Calling a flop bet out of position with nothing is a fish tell
-  claim: >-
-    A player who calls a flop c-bet without a pair or a draw while out of position can be tagged
-    as weak immediately. Floating with nothing can make sense in position, where you can bluff
-    the turn; out of position it has no plan behind it.
-  why: >-
-    The idea behind a float is to take the pot away later when the bettor shows weakness. That
-    only works if you act after them on the next street. A call with nothing from first to act
-    cannot follow that plan, so it is just a loose call. Spotting it tells you two things: the
-    opponent calls too much, and they do not think about position. Both are exploitable by
-    value-betting them relentlessly and never bluffing them.
-  common_mistake: >-
-    Assuming an opponent who peels a flop with air is a tricky player rather than a loose one.
+  claim: A player who calls a flop c-bet without a pair or a draw while out of position can be tagged
+    as weak immediately. Floating with nothing can make sense in position, where you can bluff the turn;
+    out of position it has no plan behind it.
+  why: 'The idea behind a float is to take the pot away later when the bettor shows weakness. That only
+    works if you act after them on the next street. A call with nothing from first to act cannot follow
+    that plan, so it is just a loose call. Spotting it tells you two things: the opponent calls too much,
+    and they do not think about position. Both are exploitable by value-betting them relentlessly and
+    never bluffing them.'
+  common_mistake: Assuming an opponent who peels a flop with air is a tricky player rather than a loose
+    one.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#05
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#05
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - One flop call tells you everything about this player.
-    - Floating out of position is not tricky. It is a leak.
-    - Tag him the moment he calls with nothing from the blinds.
+  - One flop call tells you everything about this player.
+  - Floating out of position is not tricky. It is a leak.
+  - Tag him the moment he calls with nothing from the blinds.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-one-blob-of-players-010
   format: cash-6max
   topic: mental-game
-  concepts: [tilt, hit-and-run, variance, long-run]
+  concepts:
+  - tilt
+  - hit-and-run
+  - variance
+  - long-run
   level: beginner
   position: any
   title: Treat opponents as one pool, not as individuals who owe you money
-  claim: >-
-    When a player wins a pot off you and leaves, or sucks out and quits, do not take it
-    personally or chase them. Think of every opponent as part of one large player pool; what
-    one of them takes with luck, the next one gives back over the long run.
-  why: >-
-    Getting "hit and run" feels unfair, but nothing about your expected value changed. The same
-    mistakes that made the pot profitable to play will be made by the next weak player who
-    sits down. Fixating on one opponent leads to playing hands you should not, staying at
-    tables you should leave and tilting money away elsewhere. Viewing the field as a blob
-    removes the emotional charge and keeps your decisions tied to profit.
-  common_mistake: >-
-    Posting angry forum threads about a hit-and-run instead of opening the next table.
+  claim: When a player wins a pot off you and leaves, or sucks out and quits, do not take it personally
+    or chase them. Think of every opponent as part of one large player pool; what one of them takes with
+    luck, the next one gives back over the long run.
+  why: Getting "hit and run" feels unfair, but nothing about your expected value changed. The same mistakes
+    that made the pot profitable to play will be made by the next weak player who sits down. Fixating
+    on one opponent leads to playing hands you should not, staying at tables you should leave and tilting
+    money away elsewhere. Viewing the field as a blob removes the emotional charge and keeps your decisions
+    tied to profit.
+  common_mistake: Posting angry forum threads about a hit-and-run instead of opening the next table.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#02
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#02
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - He hit and ran you. Who cares? Here is the healthier view.
-    - Nobody owes you a rematch. The pool pays you back.
-    - Tilt starts the moment you take one player personally.
+  - He hit and ran you. Who cares? Here is the healthier view.
+  - Nobody owes you a rematch. The pool pays you back.
+  - Tilt starts the moment you take one player personally.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-ego-off-the-table-011
   format: cash-6max
   topic: mental-game
-  concepts: [ego, discipline, patience, marginal-spots]
+  concepts:
+  - ego
+  - discipline
+  - patience
+  - marginal-spots
   level: beginner
   position: any
   title: Being willing to look weak is a profit skill
-  claim: >-
-    Fold marginal hands to aggression from regulars and let them win small pots without
-    worrying about your image. The only score that matters is your bottom line, and the big pots
-    against weak players are where that score is decided.
-  why: >-
-    A lot of money at micro stakes is lost in spots where a player "has had enough" of being
-    pushed around and makes a stand with a mediocre hand. That is ego, not strategy. Against a
-    weak player you know a top pair hand is coming that will win their stack, so there is no
-    reason to fight over bottom pair now. Keeping decisions simple and ego-free also keeps you
-    off tilt, which protects every other hand you play.
-  common_mistake: >-
-    Calling down a regular with middle pair to show you cannot be bluffed.
+  claim: Fold marginal hands to aggression from regulars and let them win small pots without worrying
+    about your image. The only score that matters is your bottom line, and the big pots against weak players
+    are where that score is decided.
+  why: A lot of money at micro stakes is lost in spots where a player "has had enough" of being pushed
+    around and makes a stand with a mediocre hand. That is ego, not strategy. Against a weak player you
+    know a top pair hand is coming that will win their stack, so there is no reason to fight over bottom
+    pair now. Keeping decisions simple and ego-free also keeps you off tilt, which protects every other
+    hand you play.
+  common_mistake: Calling down a regular with middle pair to show you cannot be bluffed.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#03
-      stance: supports
-      note: Coach says he is not afraid of looking weak and keeps his ego out of the game.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#03
+    stance: supports
+    note: Coach says he is not afraid of looking weak and keeps his ego out of the game.
   consensus_score: 0.5
   hook_ideas:
-    - Looking weak is free. Proving a point costs a stack.
-    - The most profitable players are fine with being pushed around.
-    - Your image does not pay the bills. Your win rate does.
+  - Looking weak is free. Proving a point costs a stack.
+  - The most profitable players are fine with being pushed around.
+  - Your image does not pay the bills. Your win rate does.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-no-auto-buttons-012
   format: cash-6max
   topic: mental-game
-  concepts: [focus, auto-actions, decision-making, tells]
+  concepts:
+  - focus
+  - auto-actions
+  - decision-making
+  - tells
   level: beginner
   position: any
   title: Skip the pre-action buttons and make every decision when it is your turn
-  claim: >-
-    Do not use check-fold or call-any buttons before the action reaches you, even when you
-    already know what you will do. Deciding in the moment keeps you engaged and avoids giving
-    away information through instant actions.
-  why: >-
-    Pre-selected actions lock in a decision before you have seen what happens in front of you,
-    and a sudden raise or an unexpected caller can make the planned action wrong. They also
-    make you predictable: a player who always folds instantly to raises is recognizably on
-    autopilot, and observant opponents will pressure them more. Clicking the real button each
-    time costs a second and keeps the habit of thinking through every spot.
-  common_mistake: >-
-    Pre-checking "fold to any raise" with a hand that would have been a profitable call once a
-    weak player enters the pot.
+  claim: Do not use check-fold or call-any buttons before the action reaches you, even when you already
+    know what you will do. Deciding in the moment keeps you engaged and avoids giving away information
+    through instant actions.
+  why: 'Pre-selected actions lock in a decision before you have seen what happens in front of you, and
+    a sudden raise or an unexpected caller can make the planned action wrong. They also make you predictable:
+    a player who always folds instantly to raises is recognizably on autopilot, and observant opponents
+    will pressure them more. Clicking the real button each time costs a second and keeps the habit of
+    thinking through every spot.'
+  common_mistake: Pre-checking "fold to any raise" with a hand that would have been a profitable call
+    once a weak player enters the pot.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#02
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#02
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - The auto-fold button is a small leak you can fix today.
-    - Instant actions tell the table you are not paying attention.
-    - One click habit that keeps you sharp over four tables.
-  status: draft
-  created: "2026-10-04"
-
+  - The auto-fold button is a small leak you can fix today.
+  - Instant actions tell the table you are not paying attention.
+  - One click habit that keeps you sharp over four tables.
+  status: needs-review
+  created: '2026-10-04'
+  review_note: Not poker strategy; low value.
 - id: c-cash-6max-br2-gap-vpip-pfr-013
   format: cash-6max
   topic: tools-software
-  concepts: [hud, vpip, pfr, player-typing]
+  concepts:
+  - hud
+  - vpip
+  - pfr
+  - player-typing
   level: beginner
   position: any
   title: A wide gap between VPIP and PFR marks a weak, passive player
-  claim: >-
-    When a HUD shows someone playing many hands but raising few of them, for example 50% VPIP
-    and 10% PFR, you are looking at a passive recreational player. Someone with the two numbers
-    close together is usually competent regardless of how loose they are.
-  why: >-
-    The gap measures how often a player enters pots by calling or limping rather than raising.
-    Competent players enter almost every pot with a raise, so their numbers track each other.
-    A large gap means a lot of limping and flatting, which goes hand in hand with calling down
-    too much and rarely applying pressure. Against this type the plan is simple: wait for a
-    strong pair or better, bet every street for value and skip the bluffs.
-  common_mistake: >-
-    Judging a player only by VPIP and treating a 50/40 player and a 50/10 player the same.
+  claim: When a HUD shows someone playing many hands but raising few of them, for example 50% VPIP and
+    10% PFR, you are looking at a passive recreational player. Someone with the two numbers close together
+    is usually competent regardless of how loose they are.
+  why: 'The gap measures how often a player enters pots by calling or limping rather than raising. Competent
+    players enter almost every pot with a raise, so their numbers track each other. A large gap means
+    a lot of limping and flatting, which goes hand in hand with calling down too much and rarely applying
+    pressure. Against this type the plan is simple: wait for a strong pair or better, bet every street
+    for value and skip the bluffs.'
+  common_mistake: Judging a player only by VPIP and treating a 50/40 player and a 50/10 player the same.
   numbers:
-    - "Close VPIP/PFR (e.g. 50/40 heads-up) = competent; wide gap = weak"
+  - Close VPIP/PFR (e.g. 50/40 heads-up) = competent; wide gap = weak
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#03
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#03
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Two HUD numbers that tell you who to target.
-    - Fifty-ten and fifty-forty are not the same player at all.
-    - The gap in the stats is where the money is.
+  - Two HUD numbers that tell you who to target.
+  - Fifty-ten and fifty-forty are not the same player at all.
+  - The gap in the stats is where the money is.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br2-build-pot-with-big-bets-014
   format: cash-6max
   topic: value-betting
-  concepts: [pot-building, sticky-opponents, big-hands, sizing]
+  concepts:
+  - pot-building
+  - sticky-opponents
+  - big-hands
+  - sizing
   level: beginner
   street: multi-street
   position: any
   title: To win a stack from a sticky player, bet big on every street
-  claim: >-
-    When you flop a strong hand against a player who has been calling everything, bet close to
-    pot on each street. Big pots are only built with big bets, and this type of opponent is the
-    one who will pay them.
-  why: >-
-    Stack-to-pot ratio decides whether you can get all the money in by the river. Three bets of
-    a third pot leave most of the stacks behind; three pot-sized bets get everything in. The
-    normal objection, that large bets make them fold, does not apply to a player who has shown
-    they call light. When they also like to shove over bets with weak hands, a big bet both
-    builds the pot and invites the mistake.
-  common_mistake: >-
-    Betting small with a big hand against a station "to keep them in" and winning a third of
-    the stack you could have had.
+  claim: When you flop a strong hand against a player who has been calling everything, bet close to pot
+    on each street. Big pots are only built with big bets, and this type of opponent is the one who will
+    pay them.
+  why: Stack-to-pot ratio decides whether you can get all the money in by the river. Three bets of a third
+    pot leave most of the stacks behind; three pot-sized bets get everything in. The normal objection,
+    that large bets make them fold, does not apply to a player who has shown they call light. When they
+    also like to shove over bets with weak hands, a big bet both builds the pot and invites the mistake.
+  common_mistake: Betting small with a big hand against a station "to keep them in" and winning a third
+    of the stack you could have had.
   numbers:
-    - "Pot-sized bets on each street vs sticky players"
+  - Pot-sized bets on each street vs sticky players
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/002-part2-repack
-      chunk: br79-ctm-6max/002-part2-repack#04
-      stance: supports
-      note: Coach hits the pot button repeatedly, says you can only play a big pot by betting a big amount.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/002-part2-repack
+    chunk: br79-ctm-6max/002-part2-repack#04
+    stance: supports
+    note: Coach hits the pot button repeatedly, says you can only play a big pot by betting a big amount.
   consensus_score: 0.5
   hook_ideas:
-    - Want their stack? Three pot bets gets you there.
-    - Small bets build small pots. Even against a station.
-    - The pot button is your friend when they never fold.
+  - Want their stack? Three pot bets gets you there.
+  - Small bets build small pots. Even against a station.
+  - The pot button is your friend when they never fold.
   status: draft
-  created: "2026-10-04"
+  created: '2026-10-04'

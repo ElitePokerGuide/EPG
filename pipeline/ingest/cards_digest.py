@@ -22,22 +22,31 @@ def main():
         if a.format and f.parent.name != a.format:
             continue
         cards += yaml.safe_load(f.read_text()) or []
+    consensus = [c for c in cards if c.get("kind") == "consensus"]
+    singles = [c for c in cards if c.get("kind") != "consensus"]
     by_topic = defaultdict(list)
-    for c in cards:
+    for c in singles:
         by_topic[c["topic"]].append(c)
     schools = Counter(r["school"] for c in cards for r in c.get("source_refs", []))
     print(f"# Concept cards digest{' - ' + a.format if a.format else ''}\n")
-    print(f"{len(cards)} cards | by status: {dict(Counter(c['status'] for c in cards))} | source refs by school: {dict(schools)}\n")
+    print(f"{len(cards)} cards ({len(consensus)} consensus, {len(singles)} single-source) | by status: {dict(Counter(c['status'] for c in cards))} | source refs by school: {dict(schools)}\n")
     print("Review legend: ✅ approve as is · ✏️ approve with edit · ❌ reject (say why: wrong / obvious / not content-worthy / duplicate)\n")
-    for topic in TOPIC_ORDER + sorted(set(by_topic) - set(TOPIC_ORDER)):
-        if topic not in by_topic:
-            continue
-        print(f"\n## {topic}  ({len(by_topic[topic])})\n")
-        for c in sorted(by_topic[topic], key=lambda c: (-c.get("consensus_score", 0), c["id"])):
+    sections = [("PART 1. Consensus cards (cross-school)", consensus)] + [
+        (f"{t}  ({len(by_topic[t])})", by_topic[t]) for t in TOPIC_ORDER + sorted(set(by_topic) - set(TOPIC_ORDER)) if t in by_topic]
+    first = True
+    for heading, group in sections:
+        if first:
+            print(f"\n## {heading}  ({len(group)})\n"); first = False
+            if group: pass
+        else:
+            if heading.startswith(TOPIC_ORDER[0]):
+                print("\n---\n\n# PART 2. Single-source cards by topic\n")
+            print(f"\n## {heading}\n")
+        for c in sorted(group, key=lambda c: (-c.get("consensus_score", 0), c["id"])):
             sch = ",".join(sorted({r["school"] for r in c.get("source_refs", [])}))
             meta = " · ".join(x for x in (c.get("level"), c.get("street"), c.get("pot_type"), c.get("position")) if x)
             print(f"### {c['title']}")
-            print(f"`{c['id']}` · {meta} · consensus {c.get('consensus_score', 0):.2f} · sources: {sch} · **{c['status']}**\n")
+            print(f"`{c['id']}` · {meta} · consensus {c.get('consensus_score', 0):.2f} · sources: {sch} · **{c['status']}**" + (f" · review note: _{c['review_note']}_" if c.get('review_note') else "") + "\n")
             print(f"**Claim.** {c['claim']}\n")
             print(f"**Why.** {c['why']}\n")
             if c.get("common_mistake"):

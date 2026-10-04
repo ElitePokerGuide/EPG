@@ -6,8 +6,9 @@ Owner = you. Engine = Claude Code sessions in this repo.
 - [x] Drive inbox folder `Courses Content Combined` (48 files, 4 schools)
 - [x] Source manifest, taxonomy, card schema, ingest pipeline
 - [x] Batch 1 (Cash 6-max, 4 courses) split into lessons and chunks
-- [ ] First ~100 concept cards extracted -> `docs/review/cards-cash-6max.md`  **(owner: review, mark ✅/✏️/❌)**
-- [ ] Cross-school consensus pass on batch 1 (`consensus_candidates.py` -> merged cards with `consensus_score`)
+- [x] Batch 1 extracted: 330 single-source cards + 27 consensus cards -> `docs/review/cards-cash-6max.md`
+- [ ] Owner review of the digest (Part 1 first), marks ✅/✏️/❌  **(owner)**
+- [x] Cross-school consensus pass on batch 1 (27 consensus cards in `_consensus.yaml`, 13 at score 1.0)
 - [ ] Batch 2 (remaining Cash 6-max courses, 23 files) ingested and extracted
 - [ ] RIO archives > 15 MB: split on Drive into yearly files, or fetch with rclone **(owner)**
 

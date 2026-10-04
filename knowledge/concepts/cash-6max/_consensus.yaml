@@ -1,0 +1,1426 @@
+# Cross-school consensus cards for cash-6max.
+# Built by merge-concepts from the single-source cards in this directory (see merged_from).
+# source_refs are INTERNAL and never published.
+
+- id: c-cash-6max-x-range-advantage-frequency-nut-advantage-size-001
+  kind: consensus
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [range-advantage, nut-advantage, cbet-frequency, cbet-sizing]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "Range advantage sets how often you c-bet; nut advantage sets how big"
+  claim: "Two separate questions decide a flop c-bet. How much more equity does your whole range have than theirs? That sets frequency. Who holds more of the very strong hands (overpairs, sets, trips)? That sets size. Keep the dials apart: you can bet rarely and big, or everything and small."
+  why: "A weak opposing range has to fold more, which improves value bets, bluffs and equity denial at once, so a large equity edge means betting a big share of your range. Size is about the top of the two ranges. Hands near 85% equity want a fast-growing pot, so when your range is dense with them and theirs is not, bet big. When the caller can hold the nuts as easily as you (a paired rank they defend, three of a suit, an ace that beats your overpairs), a big bet mostly loads money against an uncapped range, so bet small even if you bet everything. An overpair on 982 is near the top of both ranges; on 654 or on a paired board the caller has caught up. The common turn spot, polarized bettor against condensed caller, is where the two dials happen to agree (rarely and big), which is why players confuse them."
+  common_mistake: "Reasoning 'I only bet sometimes here, so I should bet big', or sizing up on a board where the opponent holds the nut region as often as you do."
+  numbers:
+    - "Small c-bet when the nut region is shared: about 25-33% pot"
+  merged_from:
+    - c-cash-6max-cc06-nut-advantage-sets-flop-size-015
+    - c-cash-6max-cc06-frequency-and-size-are-independent-016
+    - c-cash-6max-cc03-range-vs-nut-advantage-009
+    - c-cash-6max-cc06-nut-advantage-is-not-range-advantage-004
+    - c-cash-6max-cc06-equalization-sets-cbet-frequency-021
+    - c-cash-6max-cc06-why-range-advantage-means-more-cbets-013
+    - c-cash-6max-tc15-three-factors-cbet-frequency-001
+    - c-cash-6max-tc13-overpair-value-depends-on-board-002
+    - c-cash-6max-tc13-bet-small-when-bb-has-nuts-003
+    - c-cash-6max-tc13-paired-high-boards-no-overbet-004
+    - c-cash-6max-gp23-one-size-per-texture-005
+    - c-cash-6max-gp23-broadway-overbet-004
+    - c-cash-6max-gp36-wide-3bet-ranges-check-more-001
+  source_refs:
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: "cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07"
+      stance: supports
+      note: "States the rule explicitly: range advantage controls frequency, nut advantage controls size; four worked quadrants; big size ~75%, small ~33%."
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/015-simple-gto-frequency-pt-2
+      chunk: "2cc-flop-exploits/015-simple-gto-frequency-pt-2#01"
+      stance: nuances
+      note: "Agrees nut distribution drives size (overbet vs 33%), but lists nut advantage as one of three frequency drivers too, alongside caller continues and protection."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: "rio-game-plan/023-building-flop-strategies#01"
+      stance: supports
+      note: "Derives sizes per texture from aggregate reports; nut advantage licenses the overbet, less range advantage means checking more and betting polarized."
+  consensus_score: 0.83
+  contradictions:
+    - "Some coaches treat nut advantage as a driver of c-bet frequency as well as size, while others keep it strictly to size and let range equity alone set frequency."
+    - "What 'big' means differs: some coaches cap the large c-bet at about 75% pot, others use overbets of 115-150% on the same high-card textures."
+  hook_ideas:
+    - "You bet big because you bet rarely? That's backwards."
+    - "Two questions decide every c-bet. Most players only ask one."
+    - "Several top courses agree on how often to c-bet. They split on how big."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-one-cbet-size-per-texture-001
+  kind: consensus
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [simplification, cbet-sizing, one-size, ev-loss]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "Use one c-bet size per flop texture; it costs almost no EV"
+  claim: "Pick a single c-bet size for each class of flop and use it with every hand you bet there. Decide only bet or check. A solver forced down to one size loses a negligible amount, and a strategy you can execute beats a multi-size tree you cannot."
+  why: "A raw solver output mixes four or five sizes plus a check, and each combo splits differently. Nobody plays that accurately, and execution errors cost far more than the simplification. When a solver is restricted to one size it compensates: it bets more often with a smaller size or less often with a bigger one, and it repairs the rest on the turn and river. On typical flops the EV matches the full mix to two decimal places. A single size also hides your hand, because bluffs and value look identical, and it makes later streets easier to study since each texture produces one pot size. Where two sizes both do real work on a texture, keep both and cut the check instead, but never carry more than two options into a flop."
+  common_mistake: "Copying a multi-size solver output, applying it inconsistently, and bleeding more EV than the simplification would ever have cost."
+  numbers:
+    - "EV cost of one size per texture: hundredths of a big blind or within solver noise"
+    - "Keep at most two options per flop texture: check plus one size, or two sizes with no check"
+  merged_from:
+    - c-cash-6max-tc12-one-cbet-size-per-flop-001
+    - c-cash-6max-tc12-simplifying-sizes-costs-no-ev-002
+    - c-cash-6max-tc12-two-size-system-33-or-116-003
+    - c-cash-6max-gp23-one-size-per-texture-005
+    - c-cash-6max-gp23-two-options-rule-006
+    - c-cash-6max-gp35-one-size-per-texture-cost-005
+    - c-cash-6max-gp36-pick-size-that-fits-most-textures-005
+    - c-cash-6max-gp36-trade-ev-for-simplicity-008
+    - c-cash-6max-gp36-few-options-at-early-nodes-009
+    - c-cash-6max-cc06-nut-advantage-sets-flop-size-015
+    - c-cash-6max-cc07-single-size-turn-barrel-001
+    - c-cash-6max-cc07-solver-sizing-is-not-a-verdict-002
+    - c-cash-6max-br7-size-bets-by-hand-strength-at-micros-007
+  source_refs:
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/012-simple-gto-bet-size-pt-1
+      chunk: "2cc-flop-exploits/012-simple-gto-bet-size-pt-1#01"
+      stance: supports
+      note: "One size per flop; EV of 1-size vs 4-size solves identical to two decimals; streamlines BTN vs BB to 33% or 116%."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: "rio-game-plan/023-building-flop-strategies#02"
+      stance: supports
+      note: "One size per texture category, at most two options per flop; frames simplification as strategy design and a cure for sizing that leaks hand strength."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: "cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#01"
+      stance: supports
+      note: "Single flop size per board (75 or 33) and a single 75% turn size; EV difference between sizes is solver noise, the real leaks are hand selection."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/007-part7
+      chunk: "br79-ctm-6max/007-part7#04"
+      stance: contradicts
+      note: "At NL2-NL10 bet bigger with strong hands and smaller with stabs because opponents do not track sizing; standardize only when moving up."
+  consensus_score: 0.75
+  contradictions:
+    - "Some coaches say at micro stakes you should bet big with strong hands and small with weak ones because opponents there do not read sizing, while others say sizing that leaks hand strength is the most common small-stakes leak; the first is an exploit of inattentive recreational pools, the second a default against anyone who watches."
+  hook_ideas:
+    - "Solvers use four flop sizes. You need one."
+    - "We cut the solver to one bet size. The EV didn't move."
+    - "One course says bet big with your good hands at the micros. Three say never. Here's the fault line."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-cbet-flop-texture-map-001
+  kind: consensus
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [cbet-frequency, board-textures, high-card-flops, connected-flops, monotone-flops]
+  level: beginner
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "C-bet most on high, dry and paired flops; least on middling connected and monotone ones"
+  claim: "In position as the raiser, bet almost everything on high-card rainbow flops and on paired flops. Slow right down on middling connected boards like 876 or T98, especially two-tone, and on monotone flops. The caller's range is built from medium suited and connected cards; yours from big cards."
+  why: "The caller's preflop range is weighted to small cards, suited connectors and gappers, while the raiser holds the broadways and big pairs. High flops miss the caller and give you top pairs and overpairs, so bets get through and the hands that continue are weak. Paired flops remove most of the caller's two-pair and set combos. Rainbow textures take away flush draws, so fewer hands can continue. Middling connected flops do the opposite: the caller has pairs, two pair, straight draws and combo draws, and your two overcards have about six outs and little fold equity. Monotone boards hand the caller proportionally more flushes. Score a flop on these features before you look at your hand and the c-bet frequency falls out, from near 100% down to a range check."
+  common_mistake: "C-betting a fixed percentage on every flop, which under-bets the boards where the whole range profits and fires on 876 two-tone with two overcards and no plan."
+  numbers:
+    - "Paired A/K/Q-high and rainbow high-card flops: c-bet close to 100%"
+    - "Middling connected two-tone flops (876, T98 type) with no equity: check"
+  merged_from:
+    - c-cash-6max-tc14-high-frequency-flop-types-001
+    - c-cash-6max-tc14-low-frequency-flop-types-002
+    - c-cash-6max-tc15-high-flops-miss-bb-range-004
+    - c-cash-6max-tc15-suited-flops-more-continues-005
+    - c-cash-6max-gp23-high-check-textures-003
+    - c-cash-6max-gp30-paired-high-vs-low-002
+    - c-cash-6max-br7-cbet-frequency-and-the-flops-to-skip-004
+    - c-cash-6max-br3-skip-cbet-two-overs-wet-013
+    - c-cash-6max-br4-wet-coordinated-check-005
+    - c-cash-6max-br3-paired-boards-cbet-008
+    - c-cash-6max-cc07-range-check-horrible-flops-ip-020
+    - c-cash-6max-cc06-equalization-sets-cbet-frequency-021
+    - c-cash-6max-cc06-why-range-advantage-means-more-cbets-013
+  source_refs:
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/014-simple-gto-frequency-pt-1
+      chunk: "2cc-flop-exploits/014-simple-gto-frequency-pt-1#01"
+      stance: supports
+      note: "Aggregate report: high-frequency flops are rainbow, paired, high-card; low-frequency are monotone and ace-high two-tone; low connected boards checked more."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: "rio-game-plan/023-building-flop-strategies#01"
+      stance: supports
+      note: "Highest check textures are straight-heavy middling and monotone boards; paired and ace-high are high-frequency small bets; when betting middling boards uses ~75%."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/007-part7
+      chunk: "br79-ctm-6max/007-part7#03"
+      stance: supports
+      note: "Skip middling two-tone boards (678, 789) with no equity, stab dry and two-broadway boards; paired boards are good c-bet boards."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: "cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#11"
+      stance: supports
+      note: "Range check horrible low connected flops in position; frequency follows how far the defender's range has equalized on the texture."
+  consensus_score: 1.0
+  contradictions:
+    - "When a middling connected flop does get bet, some coaches use about 75% pot while others keep the small third-pot size on every low board."
+    - "Some coaches range-check the worst flops in position because a 20% c-bet cannot be executed, while others keep a small c-bet with the top 20-60% of hands there."
+    - "Ace-high flops split the schools: some range-bet them small, others check them back a third of the time or more."
+  hook_ideas:
+    - "The flop you should never c-bet, and the one you should always bet."
+    - "Three features decide your c-bet before you look at your hand."
+    - "Four courses agree on which flops to bet. They fight over one texture."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-ace-high-flop-cbet-001
+  kind: consensus
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [ace-high-flops, cbet-frequency, small-bet, protection]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "Ace-high flops in position: bet small, but how often is disputed"
+  claim: "On an ace-high flop the raiser's c-bet is small, about a quarter to a third of the pot, because an ace on board lets any random ace beat your overpairs. Whether you fire that small bet with your whole range or check back a third of the time or more is where the schools split."
+  why: "Everyone agrees on why the size is small: the ace erases the nut advantage your overpairs gave you, and the caller holds plenty of weak aces that will not fold. The frequency argument runs two ways. One camp reads aggregate solver output as a near range-bet: the raiser has the clear range edge, the caller has few hands that can raise, and a quarter-pot bet taxes all the junk cheaply. The other camp points out that top pair and second pair on AQ2 need little protection, since a king or jack turn rarely lets a folded hand overtake you, and that two-tone ace-high flops give the caller many draws, so the solver lands near 33% c-bet on boards like AQ2 or A32 two-tone. Our read: rainbow ace-high with disconnected low cards is close to a range bet; add a flush draw or Broadway connectivity and the checks come back."
+  common_mistake: "Auto-betting every ace-high flop 'because I have the ace in my range', or sizing up with top pair on A72 and splitting your range."
+  numbers:
+    - "Small c-bet on ace-high flops: ~25-33% pot"
+  merged_from:
+    - c-cash-6max-gp23-small-bet-paired-ace-high-002
+    - c-cash-6max-gp30-two-broadway-keep-both-sizes-003
+    - c-cash-6max-tc14-low-frequency-flop-types-002
+    - c-cash-6max-tc15-ace-high-flops-less-protection-007
+    - c-cash-6max-tc13-overbet-high-card-flops-001
+    - c-cash-6max-cc06-textures-that-remove-nut-advantage-020
+  source_refs:
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: "rio-game-plan/023-building-flop-strategies#01"
+      stance: supports
+      note: "Paired and most ace-high flops are a ~25% c-bet at very high frequency, rainbow or two-tone; an ace added to a two-Broadway board collapses to a range bet."
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/015-simple-gto-frequency-pt-2
+      chunk: "2cc-flop-exploits/015-simple-gto-frequency-pt-2#02"
+      stance: contradicts
+      note: "Ace-high two-tone flops (AQ2, A32) sit near 33% c-bet because top/second pair need no protection; yet rainbow AK7/AQ4 are overbet boards in the 33/116 system."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: "cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#05"
+      stance: nuances
+      note: "Only addresses size: an ace on board strips the raiser's overpair nut advantage, so c-bet small; no frequency claim."
+  consensus_score: 0.5
+  contradictions:
+    - "Some coaches treat ace-high flops as a quarter-pot range bet at a very high frequency, while others show solver c-bet frequencies near 33% on ace-high two-tone flops and check back many top and second pairs."
+    - "Some coaches even overbet rainbow ace-high flops with two Broadway cards such as AK7 or AQ4, while others put every ace-high flop in the small-bet group."
+  hook_ideas:
+    - "Two solver-based courses, same flop, opposite answers."
+    - "Top pair on an ace-high flop doesn't need protection. So why bet?"
+    - "Everyone bets small on ace-high flops. Nobody agrees how often."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-range-bet-high-paired-flops-001
+  kind: consensus
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [paired-boards, range-bet, small-bet, trips]
+  level: beginner
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "Range-bet high paired flops small; low paired flops are the exception"
+  claim: "On AAx, KKx and QQx flops the preflop raiser can bet the whole range for a small size, about a quarter to a third of the pot. The caller flat-called with a range whose strong aces and kings mostly 3-bet preflop, so the trips belong to you and they mostly hold air. Lower paired boards, around TTx and below, need a different plan."
+  why: "A paired flop is hard to hit: only two cards in the deck make trips, and the caller's strong Ax and Kx mostly 3-bet preflop instead of calling. So on a high paired board one player owns the trips and the other has small pairs and nothing. Every reason to bet improves at once, which is why solvers bet close to 100%. The size stays small because the caller does hold some trips and few hands can raise you, so a quarter-pot bet taxes the junk without exposing your medium hands. As the pair rank drops, the caller holds the paired card more often, the correct defense (pairs, straight draws, suited cards) becomes obvious, and check-raises rise, so the solver mixes in checks and the schools stop agreeing on what to do."
+  common_mistake: "Slowing down on KK4 because 'nobody has anything', and checking back a range that would print money betting."
+  numbers:
+    - "High paired flops (AAx/KKx/QQx): c-bet close to 100% at ~25-33% pot"
+  merged_from:
+    - c-cash-6max-tc15-paired-high-boards-trips-advantage-002
+    - c-cash-6max-tc14-high-frequency-flop-types-001
+    - c-cash-6max-tc13-paired-high-boards-no-overbet-004
+    - c-cash-6max-gp30-paired-high-vs-low-002
+    - c-cash-6max-gp23-small-bet-paired-ace-high-002
+    - c-cash-6max-cc03-flop-range-bet-dont-trap-019
+    - c-cash-6max-cc06-big-range-edge-no-nut-edge-bet-small-019
+    - c-cash-6max-cc06-range-bet-big-on-low-paired-boards-018
+    - c-cash-6max-br3-paired-boards-cbet-008
+  source_refs:
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/015-simple-gto-frequency-pt-2
+      chunk: "2cc-flop-exploits/015-simple-gto-frequency-pt-2#01"
+      stance: supports
+      note: "AAx/KKx near-range-bet because BB's strong Ax/Kx left by 3-betting; QQT is a small-bet board because shared trips kill the overbet."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: "rio-game-plan/030-simplifying-flop-strategies#01"
+      stance: supports
+      note: "Range-bet high paired boards at quarter pot; on TTx and below keep the solver's checks because the caller's defense is intuitive and raises rise."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#10"
+      stance: supports
+      note: "Range-bet KKx as the 3-bettor (33%); AQQ range-bet small because trips are shared; but J22-type low paired boards range-bet 75% because overpairs keep ~90%."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/003-part3
+      chunk: "br79-ctm-6max/003-part3#03"
+      stance: supports
+      note: "Paired flops are hard to hit so c-bet them, including in 3-bet pots; a wide player's action there is usually a draw, not trips."
+  consensus_score: 1.0
+  contradictions:
+    - "On low paired boards some coaches keep range-betting but go big (about 75% pot) because overpairs keep ~90% equity, others bet a third of the pot, and others keep the solver's checks and only range-bet the high pairs."
+  hook_ideas:
+    - "Nobody has anything on KK4. That's exactly why you bet everything."
+    - "Paired boards: four courses agree on the high ones, split on the low ones."
+    - "Why the ace on AA7 belongs to you, not the caller."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-monotone-flop-cbet-001
+  kind: consensus
+  format: cash-6max
+  topic: board-textures
+  concepts: [monotone-flops, cbet-frequency, small-bet, nut-advantage]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "Monotone flops: c-bet far less, and never big"
+  claim: "On a flop where all three cards share a suit, check back much more than usual as the raiser, and when you do bet, use the small size. Flushes and flush draws beat every overpair, and the caller's range holds proportionally more suited hands than yours."
+  why: "The raiser's edge normally lives in overpairs and high-card pairs. On a monotone board both players hold made flushes and strong draws, and those beat any pair, so that edge is irrelevant. The caller's defending range is built heavily from suited hands while the raiser's opening range contains many offsuit broadways, so the share of flushes is higher on the caller's side and the nut advantage flips. With no nut edge and a thin range edge the correct play is to bet infrequently and small; a big bet just loads money against a range that can have it. These boards are rare, so learn the two rules above, note which hands raise or float without a suit card, and do not chase every nuance."
+  common_mistake: "Applying the 'high board equals big bet' rule mechanically and overbetting a KQ3 flop that happens to be all one suit."
+  numbers:
+    - "Monotone flops: when betting, ~25-33% pot; no monotone flop wants an overbet"
+  merged_from:
+    - c-cash-6max-tc15-monotone-bb-more-flushes-003
+    - c-cash-6max-tc14-low-frequency-flop-types-002
+    - c-cash-6max-tc13-never-overbet-monotone-005
+    - c-cash-6max-gp23-high-check-textures-003
+    - c-cash-6max-gp23-broadway-overbet-004
+    - c-cash-6max-gp30-rare-spot-study-budget-011
+    - c-cash-6max-cc06-textures-that-remove-nut-advantage-020
+    - c-cash-6max-cc06-frequency-and-size-are-independent-016
+  source_refs:
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/015-simple-gto-frequency-pt-2
+      chunk: "2cc-flop-exploits/015-simple-gto-frequency-pt-2#01"
+      stance: supports
+      note: "BB's range is proportionally more suited so the nut advantage flips; lowest c-bet frequency group is all monotone; zero monotone flops choose the overbet."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: "rio-game-plan/023-building-flop-strategies#01"
+      stance: supports
+      note: "Monotone among the highest check-back textures; the rare monotone exception to Broadway overbets uses a small bet; oversimplify these rare boards."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: "cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#05"
+      stance: supports
+      note: "Three of a suit hands flushes to both sides and removes the overpair nut edge; SB vs BB monotone quadrant is low frequency, small size."
+  consensus_score: 1.0
+  contradictions: []
+  hook_ideas:
+    - "The flop where your overpair is just a pair."
+    - "You have KK on a monotone flop. Why checking is right."
+    - "Three courses, one texture, zero disagreement: here's the monotone rule."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-big-cbet-high-card-flops-001
+  kind: consensus
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [overbet, nut-advantage, broadway-boards, high-card-flops]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "High Broadway flops like KQ3 and JT6 take the big c-bet or overbet"
+  claim: "In position as the raiser, flops with two high cards and few straights, such as JT6, KQ3 or KJ3, are where you bet big: 75% pot at minimum, and most solver-based coaches use an overbet. The caller 3-bet most of their big pairs and broadways preflop, so after a call you own nearly all the top pairs, two pairs and sets."
+  why: "Size follows the nut region. On these boards the caller's flat range is almost empty of QQ+, AK, AQ and KQ while the raiser has all of them, and the caller can rarely hold the nuts. When one side has most of the strongest hands and the other almost none, the big size is what gets paid, and the bluffs ride along. Count the possible straights as a proxy: with three live straights the caller catches more robust hands and the size comes down to medium. Low flops never overbet, because the caller's small suited and connected cards make sets, two pair and big draws. Paired boards where the caller holds the paired rank (QQT) and monotone boards lose the overbet for the same reason: the top of the ranges is shared."
+  common_mistake: "Betting the same half or two-thirds pot on every high-card board, which leaves value behind when you hold the nut advantage and overcommits when you do not."
+  numbers:
+    - "Overbet on two-Broadway, few-straight flops: ~115-150% pot; 75% is the conservative alternative"
+    - "Boards with three possible straights: medium size ~75% pot"
+  merged_from:
+    - c-cash-6max-tc13-overbet-high-card-flops-001
+    - c-cash-6max-tc13-overpair-value-depends-on-board-002
+    - c-cash-6max-gp23-broadway-overbet-004
+    - c-cash-6max-gp30-two-broadway-keep-both-sizes-003
+    - c-cash-6max-gp23-two-options-rule-006
+    - c-cash-6max-gp36-geometric-two-street-sizing-003
+    - c-cash-6max-cc06-nut-advantage-sets-flop-size-015
+    - c-cash-6max-cc06-textures-that-remove-nut-advantage-020
+  source_refs:
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/013-simple-gto-bet-size-pt-2
+      chunk: "2cc-flop-exploits/013-simple-gto-bet-size-pt-2#01"
+      stance: supports
+      note: "All 116% overbet boards are 9-high or higher with two big cards (JT6, KQ3, KJ3, AQ4, AK7); overpairs and high-card pairs drive it; no low flop overbets."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: "rio-game-plan/023-building-flop-strategies#01"
+      stance: supports
+      note: "Three-Broadway one-straight flops take ~150% overbets; three-straight boards drop to ~75%; two-Broadway flops keep 25% and 150% with checks removed."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: "cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07"
+      stance: nuances
+      note: "Agrees nut advantage means big (uses 75%, no overbet), but says an ace or king on board erases the overpair edge and calls for small sizing."
+  consensus_score: 0.83
+  contradictions:
+    - "Some coaches cap the big c-bet at about 75% pot and say an ace or king on the flop removes the nut edge, while others overbet 115-150% on exactly those king- and ace-high Broadway boards."
+    - "On two-Broadway flops some coaches keep two sizes (quarter pot and overbet) and remove the check entirely, others use one size per texture everywhere."
+  hook_ideas:
+    - "The flop where a pot-sized bet is too small."
+    - "Why the big blind can't have it on KQ3, and what that means for your size."
+    - "75% or 150%? Two courses, same board, different answer."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-cbet-more-than-theory-vs-overfolders-001
+  kind: consensus
+  format: cash-6max
+  topic: exploits
+  concepts: [population-tendency, range-bet, cbet-frequency, over-folding]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "Against typical opponents, c-bet more than theory where the right defense is hard to find"
+  claim: "Before copying a solver's 60-80% c-bet frequency, look at what the caller is supposed to do. If the correct defense relies on hands most players never find, bet your whole range. Real pools fold the flop too much and raise too little, so the hands theory checks for showdown now profit from betting. Where the pool raises more than theory, do the opposite."
+  why: "A solver's checks exist to stop a perfect opponent from exploiting you, and most opponents do not. On a flop like K72 two-tone, both a cautious and a maximum exploit against population data say bet 100% instead of about 80%, because the pool folds more and does not raise more. At micro stakes the effect is stronger: players continue only when they connect and rarely float or check-raise light, so in position against one opponent a bet wins often enough that your hand matters less. The adjustment is board-specific. On low paired two-tone boards the pool check-raises more than theory, and there the right exploit is to bet less and with a stronger range. So the question is not 'am I the raiser' but 'is their correct response obvious or awkward'."
+  common_mistake: "Checking back ace-high and queen-high on K72 against players who fold the flop too often, giving away the fold equity a range bet collects."
+  numbers:
+    - "High dry flops like K72 vs typical pools: c-bet 80-100% rather than the solver's mixed strategy"
+  merged_from:
+    - c-cash-6max-gp30-range-bet-test-001
+    - c-cash-6max-tc32-range-bet-k72-vs-population-005
+    - c-cash-6max-tc17-cbet-less-vs-over-check-raiser-006
+    - c-cash-6max-br5-cbet-most-flops-ip-heads-up-009
+    - c-cash-6max-br7-cbet-frequency-and-the-flops-to-skip-004
+    - c-cash-6max-cc03-dry-board-ace-high-calls-020
+    - c-cash-6max-cc03-underbluffing-biggest-leak-004
+  source_refs:
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: "rio-game-plan/030-simplifying-flop-strategies#01"
+      stance: supports
+      note: "Range-bet a texture when the caller's correct defense relies on awkward hands real players miss; follow the solver's checks where the defense is intuitive."
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/032-exploits-k72-cbet
+      chunk: "2cc-flop-exploits/032-exploits-k72-cbet#01"
+      stance: nuances
+      note: "K72: range-bet 100% vs population instead of 80%; but 774 two-tone: cut c-bet from 57% to 37% because the pool over-check-raises. Direction is board-specific."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/005-part5
+      chunk: "br79-ctm-6max/005-part5#03"
+      stance: supports
+      note: "C-bet 80%+ heads-up in position at the micros because the population only continues when it connects; ~60% pot stab; hand strength secondary."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#10"
+      stance: supports
+      note: "On dry boards theory asks the caller to continue ace-high; humans fold those, so betting all air at 75% is highly profitable; under-bluffing is the biggest low-stakes leak."
+  consensus_score: 0.88
+  contradictions:
+    - "Some coaches set the default at 80-90% of all flops in position because micro opponents fold, while others cap the same flops at 55-80% and check real hands to stay balanced; against passive recreational pools the first works, against regulars the second."
+    - "The adjustment flips by texture: on low paired two-tone flops the population raises more than theory, so some coaches cut the c-bet to about 37% there while still range-betting king-high boards."
+  hook_ideas:
+    - "The solver checks 20% here. Against real players, don't."
+    - "Micro coaches say c-bet 80%. Solver coaches say 57%. Both have a point."
+    - "One number the solver gets 'wrong' against humans."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-cbet-less-out-of-position-001
+  kind: consensus
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [out-of-position, cbet-frequency, 3bet-pots, range-check]
+  level: intermediate
+  street: flop
+  position: oop
+  title: "Out of position, the flops you skip c-betting should be the marginal ones"
+  claim: "Position changes the price of a c-bet that gets called. In position you can check the turn and take a free card; out of position you act first with no information. So keep a very high frequency in position and let most of your non-c-bets happen from the blinds, especially on middling boards and on dry jack-to-king-high flops where a small stab gets few folds."
+  why: "Out of position a called c-bet leaves you first to act on the turn, and a bluff on a bad texture compounds across streets. As the 3-bettor with a wide range on a board like Q73, a quarter-pot bet folds only about 13% of the caller's range, so checking the whole range costs almost nothing and routes the pot into check-raise and delayed lines where your value hands do better. In position the same flop is often a bet, because if called you still control the turn. Position is a proxy, not the whole story: on boards that heavily favour the out-of-position player, such as a paired king-high flop as the 3-bettor from the blinds, you should still bet everything, because the player with the strong range should do the betting."
+  common_mistake: "Using the same c-bet frequency in and out of position, which means bluffing too much from the blinds and too little from the button."
+  merged_from:
+    - c-cash-6max-br8-cbet-less-often-out-of-position-016
+    - c-cash-6max-gp36-wide-3bet-ranges-check-more-001
+    - c-cash-6max-gp36-high-low-low-range-check-010
+    - c-cash-6max-gp35-facing-check-which-boards-matter-004
+    - c-cash-6max-gp36-disconnected-ak-high-range-bet-002
+    - c-cash-6max-cc07-oop-unfavorable-check-heavy-015
+    - c-cash-6max-cc03-flop-range-bet-dont-trap-019
+  source_refs:
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/008-part8
+      chunk: "br79-ctm-6max/008-part8#04"
+      stance: supports
+      note: "Checks a middling flop OOP that would be a c-bet in position; most non-c-bets should be out of position."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: "rio-game-plan/036-flop-strategies-out-of-position#04"
+      stance: supports
+      note: "Wide-range 3-bettor OOP checks far more (~50%); range-check J-K high dry flops where a 25% stab folds ~13%; still range-bets disconnected A/K-high and paired boards."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#10"
+      stance: nuances
+      note: "Position is a tax on EV and OOP bad turns are check-heavy, but the real variable is range equity: OOP 3-bettor on KKx must range-bet, not trap."
+  consensus_score: 0.83
+  contradictions:
+    - "Some coaches frame the rule as position, while others say position only changes the cost of being wrong and an out-of-position range that dominates the board should still bet everything."
+  hook_ideas:
+    - "Same flop, same hand: bet on the button, check from the blinds."
+    - "Why your c-bet frequency should be two numbers, not one."
+    - "Three courses say check more from the blinds. One says position isn't even the reason."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-protection-is-not-a-reason-to-bet-001
+  kind: consensus
+  format: cash-6max
+  topic: fundamentals
+  concepts: [protection, equity-denial, bet-purpose]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: any
+  title: "Protection is a tiebreaker, not a reason to bet"
+  claim: "Decide first whether a bet is for value or as a bluff. Only then let protection nudge a close call. A hand that 'needs protection' is often a hand not strong enough to bet at all, and a bet only protects you against hands that hold real equity and actually fold."
+  why: "Protection means ending the hand before a free card lets a worse hand overtake you. That only happens against hands with live equity that release to your bet; a flush draw that calls was not protected against, and a hand with two undercards was never a threat. A denial bet asks a hand with 15-25% equity to fold, so the gain is at most that slice of the pot, while a value bet or a bluff can justify the chips on its own. Weak pairs under two or three overcards feel vulnerable, but they are often already behind, so betting builds a pot you are losing and exposes you to raises. Top pair on an ace-high flop is the opposite case: it rarely gets outdrawn by a folding hand, so it does not need the bet either. If denial is the only reason you can name, check."
+  common_mistake: "Saying 'I bet to protect against the flush draw' when the flush draw calls, or betting pocket deuces on Q96 so they don't see a free card."
+  merged_from:
+    - c-cash-6max-tc15-protection-definition-006
+    - c-cash-6max-tc15-ace-high-flops-less-protection-007
+    - c-cash-6max-tc15-three-factors-cbet-frequency-001
+    - c-cash-6max-gp35-protection-needs-strength-012
+    - c-cash-6max-cc03-protection-is-a-modifier-003
+    - c-cash-6max-cc03-why-bluffs-beat-denial-002
+    - c-cash-6max-cc03-ask-what-folds-005
+  source_refs:
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/015-simple-gto-frequency-pt-2
+      chunk: "2cc-flop-exploits/015-simple-gto-frequency-pt-2#02"
+      stance: nuances
+      note: "Defines protection strictly (only hands with equity that fold) and shows ace-high top pair needs none, but keeps protection as one of three c-bet frequency drivers."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: "rio-game-plan/035-defending-flops-in-position#04"
+      stance: supports
+      note: "Looking like it needs protection does not make a hand strong enough to bet for protection; pocket deuces under overcards check."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#01"
+      stance: supports
+      note: "Value and bluffing are the two self-sufficient reasons to bet; denial is a modifier that breaks ties and can never produce a bet on its own."
+  consensus_score: 0.83
+  contradictions:
+    - "Some coaches list protection as one of three drivers of c-bet frequency alongside nut advantage and fold equity, while others say it can never produce a bet on its own and only breaks ties between betting and checking."
+  hook_ideas:
+    - "'I bet to protect my hand' is the most expensive sentence in poker."
+    - "The flush draw calls. So what exactly did you protect?"
+    - "Three courses agree protection comes last. One gives it a vote."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-mdf-is-not-a-target-001
+  kind: consensus
+  format: cash-6max
+  topic: defending
+  concepts: [mdf, folding-threshold, range-disadvantage, over-folding]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: oop
+  title: "MDF is not a defense target: fold by equity and by whose range is ahead"
+  claim: "Minimum defense frequency tells you how often to continue so a bettor's pure bluffs break even, assuming roughly equal ranges. Ranges are rarely equal. When your range is well behind, folding more than MDF is correct; when your range dwarfs theirs or the bet is tiny, fold almost nothing. Build your flop defense from hand-class thresholds, not a percentage."
+  why: "Against a range much stronger than yours the bettor is simply profitable; trying to hold them to break-even means calling with hands that lose money, and solvers show the disadvantaged side folding well above the MDF rate on flops the raiser dominates. The reverse holds too: facing a small lead with a range that dominates the board, continue with everything, because even your worst hand is entitled to a big share of the pot. On early streets equity realization and future play matter more than one ratio, so write down the weakest hand class that still continues per texture and bet size, such as 'two overcards or a combination backdoor', and move that line against specific opponents. At micro stakes the same logic says fold medium pairs to raises more readily, since the population raises with real hands, while never folding to a one-blind bet."
+  common_mistake: "Forcing yourself to call 'to meet MDF' as the big blind on a flop where the raiser's range is far ahead, or defending to a percentage instead of a hand class."
+  merged_from:
+    - c-cash-6max-cc06-mdf-assumes-equal-ranges-014
+    - c-cash-6max-cc03-never-fold-extreme-advantage-011
+    - c-cash-6max-gp23-folding-threshold-baseline-014
+    - c-cash-6max-gp23-sticky-vs-quarter-pot-012
+    - c-cash-6max-gp30-gutshots-replace-overcards-008
+    - c-cash-6max-gp36-frequency-vs-selection-mistakes-006
+    - c-cash-6max-tc33-fold-backdoors-vs-real-check-raise-002
+    - c-cash-6max-tc18-call-wider-but-not-everything-007
+    - c-cash-6max-br3-middle-pair-no-hero-call-007
+    - c-cash-6max-br5-never-fold-to-a-min-bet-014
+  source_refs:
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: "cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07"
+      stance: supports
+      note: "Calls MDF a bad concept because it presupposes equal ranges; fold more than MDF when behind, fold nothing to a small lead when your range dwarfs theirs."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: "rio-game-plan/023-building-flop-strategies#03"
+      stance: supports
+      note: "MDF is misleading on early streets; write a hand-class folding threshold per texture; thresholds move by equity, not to hit a defense frequency."
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/033-exploits-k72-vs-xr
+      chunk: "2cc-flop-exploits/033-exploits-k72-vs-xr#01"
+      stance: supports
+      note: "Vs a stronger-than-theory check-raising range, fold most backdoors; vs a weaker one, call wider but not the solver's near-zero fold rate. Defense follows their range."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/003-part3
+      chunk: "br79-ctm-6max/003-part3#02"
+      stance: supports
+      note: "No MDF framing. Fold middle pair to aggression from unknowns because micro ranges are strong; never fold to a min-bet because the price is right."
+  consensus_score: 1.0
+  contradictions:
+    - "Some coaches say fold more than MDF whenever your range is behind, while others show the big blind folding well under MDF to small c-bets on most flops despite being behind, with folds above MDF only on high monotone and high paired boards."
+    - "Some coaches would never fold a pair or a draw to a small bet, while others say that against micro-stakes aggression a middle pair facing a raise is a fold without a read."
+  hook_ideas:
+    - "'Defend MDF or you're exploitable' is wrong most of the time."
+    - "The math says fold 20%. The solver folds 35%. Here's why."
+    - "Four courses, one acronym, two opposite warnings."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-bb-check-raise-vs-small-cbet-001
+  kind: consensus
+  format: cash-6max
+  topic: check-raising
+  concepts: [check-raise-frequency, small-cbet, low-boards, paired-boards]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: bb
+  title: "Most of your flop check-raises belong against the small c-bet on low and paired boards"
+  claim: "As the caller, check-raise most often against a quarter- to third-pot c-bet, and most often on low, mid-low and paired flops. Baseline around 15% against a small bet, over 20% on the best textures, a few percent against an overbet. Two-Broadway flops are low, but low is not zero."
+  why: "A small c-bet is made with a wide weak range and offers you a cheap raise that puts real pressure on it, so solvers raise far more there than against a big polarized bet. Low boards favour the caller: suited connectors and small pairs make sets, two pairs and strong draws while the raiser's high cards whiff. On paired boards the raiser bets small with almost everything, so a raise with trips, pairs and good draws attacks a range that is mostly air; even second and third pairs raise some of the time to fold out six-out overcards before the turn. Draws that raise need extra equity: a flush draw with straight backdoors, or a high card holding one card of the flush suit. Passive players who skip these raises usually also fold too much in the same spot, so fixing one fixes the other."
+  common_mistake: "Defending against a 25% bet almost entirely by calling, and check-raising mostly on high-card boards where you hit top pair and the raise does least."
+  numbers:
+    - "Check-raise vs a small c-bet: baseline ~15%, over 20% on low paired boards like 774, ~13% on king-high boards"
+  merged_from:
+    - c-cash-6max-gp31-check-raise-more-vs-small-cbet-005
+    - c-cash-6max-gp23-check-raise-low-boards-011
+    - c-cash-6max-gp23-relative-frequencies-013
+    - c-cash-6max-gp31-double-broadway-low-not-zero-007
+    - c-cash-6max-gp31-overfold-overraise-linked-008
+    - c-cash-6max-tc17-bb-check-raise-low-pairs-protection-003
+    - c-cash-6max-tc17-bb-check-raise-draw-selection-004
+    - c-cash-6max-tc32-bb-check-raise-k72-made-hands-002
+    - c-cash-6max-tc32-bb-check-raise-k72-draws-003
+  source_refs:
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: "rio-game-plan/031-training-flop-check-raises#01"
+      stance: supports
+      note: "Most missing check-raises are vs the 25% c-bet; low, mid-low and paired boards highest; baseline ~15% vs small, ~4% vs overbet; double-Broadway ~5% not 0."
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/017-exploits-774-cbet
+      chunk: "2cc-flop-exploits/017-exploits-774-cbet#01"
+      stance: supports
+      note: "BB check-raises over 20% on 774 two-tone including low pairs for protection and draws with backdoor equity; ~13.5% on K72 with sets, top two, kicker-driven pairs."
+  consensus_score: 1.0
+  contradictions: []
+  hook_ideas:
+    - "The bet size you should attack most is the smallest one."
+    - "Why pocket fives check-raises 774."
+    - "Your check-raise leak lives in one spot. Here it is."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-backdoor-suit-picks-the-bluff-001
+  kind: consensus
+  format: cash-6max
+  topic: bluffing
+  concepts: [backdoor-flush-draw, bluff-selection, blockers, check-raise]
+  level: intermediate
+  street: flop
+  position: any
+  title: "When a weak hand raises or floats, it should hold a card of the board's suit"
+  claim: "Among marginal hands, the one with a backdoor flush draw in the flop's suit is the one that check-raises, 3-bets or continues; the same hand without the suit calls if it has showdown value and folds if it does not. Two suited cards in a suit not on the board add almost nothing, and never bluff with zero ways to improve."
+  why: "Raising builds a pot you want to keep playing in, so the raising hand should be the one that improves on the most turn cards and blocks the opponent's strongest continuing combos. A backdoor flush draw does both: it adds turn cards to barrel on and removes suited combos from their range. Solvers consistently raise the suited version of a hand class and flat or fold the unsuited one, and the most common drilling error coaches report on themselves is taking the aggressive line with the wrong-suit version. Facing a check-raise, a direct flush draw continues, the strongest suited backdoors continue, and offsuit air folds. On the turn the same idea becomes blocker logic: the worst bluff is the one that blocks the hands that would fold and unblocks the draws that call."
+  common_mistake: "Check-raising ace-high or king-high with no backdoor suit because it feels too weak to call, while flatting the same hands when they do have the suit."
+  merged_from:
+    - c-cash-6max-gp34-check-raise-bluffs-need-suit-006
+    - c-cash-6max-gp35-backdoor-suit-for-aggression-014
+    - c-cash-6max-gp31-wrong-suit-is-not-a-float-009
+    - c-cash-6max-tc17-bb-check-raise-draw-selection-004
+    - c-cash-6max-tc32-bb-check-raise-k72-draws-003
+    - c-cash-6max-tc18-3bet-flush-draws-and-blockers-005
+    - c-cash-6max-tc33-fold-backdoors-vs-real-check-raise-002
+    - c-cash-6max-cc07-worst-bluff-blocks-their-folds-014
+    - c-cash-6max-cc03-no-comfort-blanket-013
+    - c-cash-6max-br7-bluff-raise-donk-bets-but-always-with-outs-011
+  source_refs:
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/034-checking-as-the-preflop-raiser
+      chunk: "rio-game-plan/034-checking-as-the-preflop-raiser#02"
+      stance: supports
+      note: "Check-raise bluffs need the live backdoor suit; the unsuited version flats or folds; wrong-suit backdoors are not floats; the spade is the difference maker."
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/017-exploits-774-cbet
+      chunk: "2cc-flop-exploits/017-exploits-774-cbet#01"
+      stance: supports
+      note: "Almost every unmade check-raise on 774 holds a flush-suit card or a direct straight draw; 3-bet offsuit hands with one suit card as blockers; fold backdoors vs strong raisers."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/007-part7
+      chunk: "br79-ctm-6max/007-part7#06"
+      stance: supports
+      note: "Bluff-raise donk bets on dry paired boards but always with at least a gutshot; never bluff with no outs."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: "cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#06"
+      stance: nuances
+      note: "In neutral or unfavourable worlds pick bluffs by blockers and suit; but in favourable spots pure air should bluff and demanding a get-out clause makes the range too strong."
+  consensus_score: 0.88
+  contradictions:
+    - "Some coaches never bluff without at least a backdoor draw or a gutshot, while others say that in favourable spots pure air should bluff too and demanding a 'get-out clause' before bluffing makes your betting range far too strong."
+  hook_ideas:
+    - "The suit of your cards decides more bluffs than the rank."
+    - "Diamonds on a two-spade board are not a draw."
+    - "Need a draw to bluff? Three courses say yes. One says that's your leak."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-facing-flop-check-raise-001
+  kind: consensus
+  format: cash-6max
+  topic: defending
+  concepts: [facing-check-raise, calling-range, 3-bet-flop, folding-discipline]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: "Facing a flop check-raise: theory calls wide and almost never 3-bets; the micros disagree"
+  claim: "After c-betting in a single-raised pot and getting check-raised, theory continues with more than half of your hands, almost all by calling, and re-raises only a few percent. Defending enough with draws, backdoors and weak pairs matters far more than finding 3-bets. Against micro-stakes pools, where a raise is usually a real hand, coaches split on how much to fold."
+  why: "The check-raiser's range is wide and full of bluffs and semi-bluffs, so the in-position player must call with hands that feel uncomfortable: third pair, ace-high with a backdoor flush draw, suited backdoors. Re-raising adds little because the c-bettor's own range is tight; on a king-high flop the solver 3-bets under 1%, and even on a low paired board only about 4%. Then the opponent model takes over. Where the population check-raises with more draws than theory, 3-bet more and fold less; where it raises with stronger hands and less junk, fold most backdoors and keep only direct flush draws and the best backdoors. Micro-stakes coaches go further and treat a flop raise as a strong hand almost always, folding even top pair when barely invested."
+  common_mistake: "Folding weak pairs and backdoor draws to a check-raise because they 'can't be good', or spending study time balancing a 3-bet range the solver barely uses."
+  merged_from:
+    - c-cash-6max-gp31-defend-vs-check-raise-not-3bet-010
+    - c-cash-6max-tc18-gto-vs-check-raise-774-001
+    - c-cash-6max-tc33-gto-vs-check-raise-k72-001
+    - c-cash-6max-tc18-3bet-22-vs-draw-heavy-raiser-002
+    - c-cash-6max-tc18-call-wider-but-not-everything-007
+    - c-cash-6max-tc33-fold-backdoors-vs-real-check-raise-002
+    - c-cash-6max-br8-do-not-marry-ace-king-005
+    - c-cash-6max-br6-limp-reraise-means-the-nuts-003
+  source_refs:
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: "rio-game-plan/031-training-flop-check-raises#02"
+      stance: supports
+      note: "Defending enough vs the check-raise matters far more than 3-bets; coach found himself significantly too tight; de-prioritizes flop 3-betting."
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/018-exploits-774-vs-xr
+      chunk: "2cc-flop-exploits/018-exploits-774-vs-xr#01"
+      stance: nuances
+      note: "Theory: call ~57%, 3-bet 4% (774) or <1% (K72). Vs real pools: 3-bet 22% and fold less on 774; fold most backdoors on K72. Direction depends on the board."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/008-part8
+      chunk: "br79-ctm-6max/008-part8#02"
+      stance: contradicts
+      note: "At micro stakes a flop raise is a strong hand; fold top pair with AK to a bet and a raise when barely invested; a limp-reraise or river raise is the nuts."
+  consensus_score: 0.5
+  contradictions:
+    - "Some coaches say that facing a check-raise you should worry only about continuing enough, while others say at micro stakes a raise is almost always a real hand and folding top pair is routine; against regulars with wide check-raising ranges the first holds, against passive recreational pools the second."
+    - "Even the exploit direction splits by board: on a low paired two-tone flop the population raises more draws, so some coaches 3-bet about 22% and fold less; on a king-high flop the population raises stronger, so the same coaches fold most backdoor hands."
+  hook_ideas:
+    - "Check-raised with third pair? The solver calls. Here's why that scares people."
+    - "One raise, two schools: call it down or fold top pair."
+    - "The 3-bet you can delete from your game."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-showdown-value-decides-river-bluffs-001
+  kind: consensus
+  format: cash-6max
+  topic: river-play
+  concepts: [showdown-value, bluff-threshold, checked-down, river-bluff]
+  level: beginner
+  street: river
+  pot_type: srp
+  position: ip
+  title: "On the river, check hands with showdown value and bluff everything below them"
+  claim: "Find the weakest hand in your range that still wins at showdown often enough. Check it and everything above it that cannot bet for value. Bet everything below it. A pair is a showdown hand, not a bluff, even when the board gets scary; a hand that beats every fold and loses to every call has no reason to bet."
+  why: "A river bet does one of two things: gets called by worse or folds out better. A medium hand against a typical caller does neither, so betting it throws away the one thing it does well, which is winning at showdown for free. On the other side, a hand with no showdown value gains nothing by checking; a check and a fold are identical there, so any fold you collect is pure profit. Players tend to pick a few 'good-looking' bluffs and check the rest of their air, which leaves the betting frequency far too low. Whether ace-high is a check or a value bet depends on how much company it has: on low boards after two checks it is often near the top of your range and bets for value. And a profitable bluff can still be wrong if checking earns more, so compare bet to check for the hand you actually hold."
+  common_mistake: "Betting middle pair on a brick river 'to represent the flush', folding out only ace-high and getting called by every pair."
+  merged_from:
+    - c-cash-6max-br2-showdown-value-no-bluff-008
+    - c-cash-6max-br8-do-not-bluff-when-you-beat-everything-that-folds-009
+    - c-cash-6max-gp32-dont-bluff-a-pair-005
+    - c-cash-6max-gp32-bluff-everything-below-threshold-004
+    - c-cash-6max-gp32-showdown-value-needs-company-006
+    - c-cash-6max-gp32-checked-down-range-is-high-cards-001
+    - c-cash-6max-cc03-profitable-but-wrong-007
+    - c-cash-6max-cc03-river-must-bluff-checked-down-017
+    - c-cash-6max-cc03-river-busted-draw-after-checkback-018
+    - c-cash-6max-cc03-three-bluffing-worlds-008
+  source_refs:
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/008-part8
+      chunk: "br79-ctm-6max/008-part8#03"
+      stance: nuances
+      note: "Check any hand with showdown value, never bluff when you beat everything that folds; but vs micro callers also skips the river bluffs below the line."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: "rio-game-plan/032-training-river-value-and-bluff-thresholds#02"
+      stance: supports
+      note: "Never bluff a pair, even on a four-straight; every hand below the showdown threshold bluffs; ace-high checks only when it has many similar hands for company."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#04"
+      stance: supports
+      note: "Showdown value and world favourability decide forbidden/optional/mandatory bluffs; a profitable bluff is wrong if checking earns more; checked-down air must bluff."
+  consensus_score: 0.83
+  contradictions:
+    - "Some coaches tell micro-stakes players to skip river bluffs entirely because the pool does not fold, while others say missing the mandatory river bluff is the single biggest leak at those stakes."
+  hook_ideas:
+    - "Bottom pair is never a bluff. Not even on a four-straight."
+    - "The hand that beats everything that folds."
+    - "Bluff the river at NL5? One course says never. Two say you must."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-bluff-more-or-less-at-the-micros-001
+  kind: consensus
+  format: cash-6max
+  topic: exploits
+  concepts: [under-bluffing, calling-stations, population-tendency, fold-equity]
+  level: beginner
+  street: multi-street
+  pot_type: srp
+  position: any
+  title: "Bluff more against players who fold the flop, not against players who call the river"
+  claim: "The schools split on bluffing at low stakes. One side says under-bluffing is the biggest leak there, because the population over-folds when your range is ahead. The other says never bluff a player who does not fold. Both are right about different opponents: bluff more on flops and turns against unknowns and regulars, and stop bluffing rivers against proven stations."
+  why: "Fold equity is a reaction to your range and to the opponent. Solver-based coaches show that real players fold the flop more and call ace-high less than theory requires, so range-betting dry boards and barrelling your air prints against them, and checking down queen-high after three checks surrenders a pot your range owns. Micro-stakes exploitative coaches watch a different player: the loose passive caller who pays off with bottom pair and never folds a draw. Against that player a river bluff is donated money and the profit comes from value. The reconciliation is to tag the opponent first. Unknowns and typical regulars fold too much to early-street aggression; a tagged station does not fold at all, so redirect every bluff into a thinner value bet and call their small bets to see their hands."
+  common_mistake: "Applying one bluffing policy to the whole table: barrelling a station off a pair, or checking down air against a regular who folds far above break-even."
+  merged_from:
+    - c-cash-6max-cc03-underbluffing-biggest-leak-004
+    - c-cash-6max-cc03-dry-board-ace-high-calls-020
+    - c-cash-6max-cc03-delayed-cbet-never-check-down-016
+    - c-cash-6max-gp30-range-bet-test-001
+    - c-cash-6max-gp32-bluff-everything-below-threshold-004
+    - c-cash-6max-tc31-overbluff-low-turns-003
+    - c-cash-6max-tc32-range-bet-k72-vs-population-005
+    - c-cash-6max-br1-dont-bluff-stations-004
+    - c-cash-6max-br6-keep-heads-up-simple-no-river-bluffs-002
+    - c-cash-6max-br6-do-not-bluff-stations-call-to-see-hands-007
+    - c-cash-6max-br4-passive-fish-never-pressure-006
+  source_refs:
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#01"
+      stance: supports
+      note: "Failing to bluff is the most frequent large blunder at low stakes; if unsure, bet; humans fold ace-high on dry boards far more than theory allows."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/030-simplifying-flop-strategies
+      chunk: "rio-game-plan/030-simplifying-flop-strategies#01"
+      stance: supports
+      note: "Real players fold too much and raise too little where the correct defense is awkward, so betting everything prints; bluff every hand below the river threshold."
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/031-exploits-k72-barrel
+      chunk: "2cc-flop-exploits/031-exploits-k72-barrel#01"
+      stance: nuances
+      note: "Population over-folds K72 flops and low turns so the exploit over-bluffs; but on 774 the population over-check-raises, so bet less. Board-dependent."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/006-part6
+      chunk: "br79-ctm-6max/006-part6#01"
+      stance: contradicts
+      note: "Heads-up vs micro players: make top pair, value bet, skip river bluffs even when they would work; never bluff stations; use cheap calls to see hands and tag."
+  consensus_score: 0.63
+  contradictions:
+    - "Some coaches say that at micro stakes the most frequent large blunder is failing to bluff and that when unsure you should bet, while others say at those same stakes you should make top pair, value bet and never bluff a river; the gap is the opponent model, thinking regulars versus loose passive callers."
+    - "On a scare-card turn some coaches barrel far above the solver's count because the population over-folds, while others check against recreational players who hold the scare card more often and call with any pair anyway."
+  hook_ideas:
+    - "Two courses, same stakes: 'bluff more' vs 'never bluff'. Both are right."
+    - "The leak that costs more than every bad call combined."
+    - "Stop bluffing this one player. Start bluffing everyone else."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-thin-river-value-half-pot-001
+  kind: consensus
+  format: cash-6max
+  topic: value-betting
+  concepts: [thin-value, river-sizing, half-pot, river-raise]
+  level: intermediate
+  street: river
+  pot_type: srp
+  position: ip
+  title: "Bet thin for value on the river at about half pot and do not fear the raise"
+  claim: "When the opponent's range is capped, bet medium-strength hands for value on the river, second pair and even small pocket pairs, sizing around half pot so worse hands can call. If you never get called by a better hand you are not betting thin enough. A river raise is rarely a bluff at low stakes, so bet and fold to it without regret."
+  why: "A capped opponent holds many weak pairs and unpaired hands. A half-pot bet gets called by enough of them to make medium-strength value profitable while keeping the loss small when you run into something better; going big with everything folds out exactly the hands you want to be called by. Judge the bet by your equity against the hands that continue, not against the whole range before you bet. The fear of a raise is the most common reason players leave value unbet, yet typical pools raise rivers only with strong hands, so the raise carries little risk: fold and lose one bet. Solvers mix half-pot and pot partly to protect against river check-raises; against players who almost never raise rivers, size your strongest hands bigger and keep half pot for the thin ones."
+  common_mistake: "Checking back middle pair or a low pocket pair on the river because it does not feel strong enough for a pot-sized bet, instead of sizing down."
+  numbers:
+    - "Thin river value against a capped or sticky range: about half pot"
+  merged_from:
+    - c-cash-6max-gp32-half-pot-dominant-thin-value-002
+    - c-cash-6max-gp32-big-size-vs-low-check-raisers-003
+    - c-cash-6max-gp32-river-raise-all-bluffcatchers-009
+    - c-cash-6max-br5-river-raises-are-the-nuts-005
+    - c-cash-6max-br8-occasional-value-town-means-right-frequency-006
+    - c-cash-6max-cc06-do-not-fear-the-nuts-011
+    - c-cash-6max-cc03-finishing-equity-threshold-006
+  source_refs:
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: "rio-game-plan/032-training-river-value-and-bluff-thresholds#02"
+      stance: supports
+      note: "Half pot is the dominant river size after a checked-down hand and goes thin (second pair, small pairs); keep big sizes vs pools that rarely check-raise rivers."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#03"
+      stance: supports
+      note: "Value is judged by finishing equity (~50-55% vs the calling range); 'he could have the nuts' is not a reason to check; small bet with a low pair on a dry board."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/005-part5
+      chunk: "br79-ctm-6max/005-part5#02"
+      stance: supports
+      note: "River raises at NL2-NL10 are almost always the nuts, so bet thin (~half pot vs any-pair callers) and fold to the raise; getting value-towned sometimes means the frequency is right."
+  consensus_score: 1.0
+  contradictions:
+    - "Facing a river raise after a thin value bet, some coaches treat every hand as a bluff-catcher to call at a mixed frequency, while others say at micro stakes the raise is almost always the nuts and the fold is automatic."
+  hook_ideas:
+    - "Getting called by a better hand sometimes means you're doing it right."
+    - "Half pot on the river wins more than pot. Here's why."
+    - "River raise: hero call or snap fold? The courses don't agree."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-turn-barrel-by-caller-range-001
+  kind: consensus
+  format: cash-6max
+  topic: turn-play
+  concepts: [double-barrel, scare-cards, turn-card, favorability]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: "Second-barrel when the turn card hurts the hand they called with, not when it looks scary"
+  claim: "After your c-bet is called, name the hands the caller most likely has and ask what the turn card does to them. A ten-to-king on a low board belongs to the raiser and gets barrelled often; a card that leaves their pair intact does not. Barrel selectively, around 40-60% on a blank, not your whole range: calling the flop made their range stronger."
+  why: "Betting the flop filters the caller: their air leaves, their pairs and draws stay, so on the turn they often hold the equity edge even though you keep the nut edge. That is why turn barrels are fewer and bigger than flop bets. The turn card is only one of five inputs, with preflop ranges, flop, flop action and position. High broadway turns on a low board favour you because the caller 3-bet many of those hands preflop and folded the rest to your flop bet. A card that gives their likely pair nothing, like a jack under their king, produces no folds. The ace is the contested card: it beats the pairs that called, but on a dry flop ace-high called the small c-bet too and now beats your overpairs. Against a specific player type, ask whether they are even capable of folding a pair before you fire."
+  common_mistake: "Firing the turn on any 'new' card because the flop c-bet got called, without asking what the opponent holds and whether the card hurts it."
+  numbers:
+    - "Blank-turn barrel after a called c-bet: roughly 40-60% of your range in theory"
+  merged_from:
+    - c-cash-6max-br8-barrel-only-cards-that-scare-their-hand-010
+    - c-cash-6max-br1-barrel-regs-not-fish-014
+    - c-cash-6max-br7-do-not-barrel-fish-on-scare-cards-003
+    - c-cash-6max-cc07-favorability-is-the-whole-world-007
+    - c-cash-6max-cc07-broadway-turn-on-low-board-008
+    - c-cash-6max-cc07-ace-turn-fallacy-009
+    - c-cash-6max-cc07-favorability-sets-your-thresholds-011
+    - c-cash-6max-cc07-flop-call-condenses-turn-barrels-selective-004
+    - c-cash-6max-cc06-turn-barrel-nut-edge-without-range-edge-017
+    - c-cash-6max-tc16-ace-turn-medium-hands-check-004
+    - c-cash-6max-tc16-straight-and-blank-turns-003
+    - c-cash-6max-tc16-barrel-wide-after-flop-call-001
+    - c-cash-6max-tc31-barrel-slightly-less-k72-001
+  source_refs:
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/008-part8
+      chunk: "br79-ctm-6max/008-part8#01"
+      stance: nuances
+      note: "Name their likely hand and ask if the card scares it; a jack does not scare a king, an ace often does; barrel scare cards vs regs, check them vs fish."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-
+      chunk: "cc-grade-0/008-grade-0-july-lecture-7-turn-barrel-opportunities-simplified-#05"
+      stance: supports
+      note: "Judge the turn world not the card; T-K turns on low boards barrel ~70%; blanks 40-60%; the ace is often the worst overcard for the bettor on a dry flop."
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/016-exploits-774-barrel
+      chunk: "2cc-flop-exploits/016-exploits-774-barrel#01"
+      stance: supports
+      note: "GTO barrel ~54% on 774 and ~38% on K72 after a flop call; ace turn shuts off medium-strength barrels; exploit frequency moves with the pool's flop behaviour."
+  consensus_score: 0.83
+  contradictions:
+    - "Some coaches call the ace the classic scare card to barrel because it beats the pairs that called, while others show the ace turn is often the worst overcard for the raiser on a dry flop, since ace-high called the small c-bet and now beats your overpairs."
+    - "Some coaches barrel scare cards against regulars but check them against recreational players who call any pair, while others say the population over-folds turns and you should bluff far above the solver's count."
+  hook_ideas:
+    - "The ace turn is a scare card for you, not for them."
+    - "They called your c-bet. Their range just got stronger."
+    - "Barrel the ace? One coach says yes, another calls it the worst card in the deck."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-do-not-check-to-induce-vs-passive-001
+  kind: consensus
+  format: cash-6max
+  topic: value-betting
+  concepts: [inducing, slow-play, passive-opponents, big-bet]
+  level: beginner
+  street: multi-street
+  pot_type: srp
+  position: any
+  title: "Check strong hands to induce only when the opponent will actually bet"
+  claim: "Slow-playing or betting small to let the opponent raise works only against players who put money in on their own: aggressive, tilted, or known to attack checks. Against the passive player who calls everything but bets nothing, and against a weak range that will check back, bet yourself and bet big. The player with the strong range should do the betting."
+  why: "A check to induce has two costs when it fails: you miss a full street of value and you give a draw a free card. It pays off only when the chance they bet is very high. The typical low-stakes opponent is passive by nature, calling a lot and betting rarely, and a weak range facing a board that smashes you will mostly check behind, so the trap never springs while their equity gets realised for free. The same logic governs size: a small bet with a strong hand is a trap play that relies on the opponent raising with draws and weaker pairs. If they mostly call or fold, the pot stays small and you lose one or two streets of value, so keep a big size against passive opponents. The exception is a spot where the raise really is coming, such as an opponent who check-raises far too much; there the slow-play earns."
+  common_mistake: "Checking top set 'to let them catch up' against a passive player, then watching the hand check through two streets."
+  merged_from:
+    - c-cash-6max-br1-put-the-money-in-yourself-009
+    - c-cash-6max-br6-induce-only-when-they-will-bet-006
+    - c-cash-6max-cc03-flop-range-bet-dont-trap-019
+    - c-cash-6max-gp35-big-bet-when-they-wont-raise-006
+    - c-cash-6max-gp35-keep-big-bet-vs-passive-high-low-low-007
+    - c-cash-6max-gp32-big-size-vs-low-check-raisers-003
+    - c-cash-6max-tc16-max-exploit-bluff-heavy-barrel-005
+  source_refs:
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/006-part6
+      chunk: "br79-ctm-6max/006-part6#03"
+      stance: supports
+      note: "Induce only vs aggressive or tilted players; vs a nit who checks behind 90% it is a disaster; passive fish will not bet for you, so put the money in yourself."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#10"
+      stance: supports
+      note: "With a massive range advantage bet now rather than trap; the player with the weak range almost always checks back and realises equity you could have denied."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: "rio-game-plan/035-defending-flops-in-position#01"
+      stance: supports
+      note: "The small bet with strong hands only works if the opponent raises enough; vs passive opponents keep the big size for value; vs non-check-raisers go big on rivers."
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/016-exploits-774-barrel
+      chunk: "2cc-flop-exploits/016-exploits-774-barrel#01"
+      stance: nuances
+      note: "Max exploit vs a big blind who over-check-raises slow-plays trips on 774 turns; consistent with inducing only against genuinely aggressive opponents."
+  consensus_score: 0.88
+  contradictions:
+    - "Some coaches slow-play strong hands on turns against opponents who check-raise too much, while others warn that inducing fails far more often than hand-history forums suggest; the difference is whether the opponent is actually aggressive."
+  hook_ideas:
+    - "You checked the nuts to trap. They checked back. Twice."
+    - "Why 'let them bet it for me' loses a street."
+    - "Slow-play the maniac, bet pot into the station. Courses agree on the rule, not the player."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-big-hand-big-pot-001
+  kind: consensus
+  format: cash-6max
+  topic: value-betting
+  concepts: [investment-ceiling, pot-building, sticky-opponents, big-bet]
+  level: beginner
+  street: multi-street
+  pot_type: srp
+  position: any
+  title: "Big hand, big pot; medium hand, small pot"
+  claim: "Match the pot you build to the hand you hold. Nutted hands want a fast-growing pot and bet near pot on every street, especially against players who call with any piece. Second pair and other medium hands have a low ceiling: bet them small or check, and never bet big just because your range is ahead."
+  why: "Each hand can value bet comfortably up to a certain pot size and no further. A set is happy in any pot and benefits from geometric growth that leaves a river shove on the table; second pair that bets big on three streets arrives at a river where it can no longer be a value bet, so the money went in for nothing. Against sticky opponents the first half of the sizing trade-off disappears: they call the same whether you bet half pot or pot, so the only lever left is size, and three near-pot bets get the stack in while three small bets leave most of it behind. Big pots are built with big bets, and only the hands that can stand a big pot should build them. Before sizing up, ask what pot your hand still wants to be in on the river."
+  common_mistake: "Betting small with a monster 'to keep them in' against someone who was never leaving, or betting big with a medium hand to find out where you are."
+  numbers:
+    - "Nutted hands against callers: bet near pot on every street"
+  merged_from:
+    - c-cash-6max-br6-big-hand-big-pot-vs-fish-015
+    - c-cash-6max-br1-overbet-vs-nonfolders-005
+    - c-cash-6max-br2-build-pot-with-big-bets-014
+    - c-cash-6max-br8-bet-near-pot-every-street-with-a-monster-vs-fish-017
+    - c-cash-6max-br3-bet-big-before-scare-cards-015
+    - c-cash-6max-cc06-investment-ceiling-022
+    - c-cash-6max-gp35-big-bet-when-they-wont-raise-006
+  source_refs:
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/006-part6
+      chunk: "br79-ctm-6max/006-part6#03"
+      stance: supports
+      note: "Big hand big pot, medium hand small pot vs fish; near-pot bets on every street with monsters; slight overbets when they never fold."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: "cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07"
+      stance: supports
+      note: "Investment ceiling: nutted hands want geometric growth, second pair has a low ceiling; big sizing on a range read drags medium hands past it."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/035-defending-flops-in-position
+      chunk: "rio-game-plan/035-defending-flops-in-position#01"
+      stance: supports
+      note: "A big bet is right when the opponent will not put the money in for you; keep the large size for value against passive callers."
+  consensus_score: 1.0
+  contradictions: []
+  hook_ideas:
+    - "Second pair, three big bets, river: now what?"
+    - "Betting small 'to keep them in' against someone who was never leaving."
+    - "The pot your hand can afford."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-commit-before-the-solver-answers-001
+  kind: consensus
+  format: cash-6max
+  topic: study-methods
+  concepts: [calibration, trainer-drills, equity-estimation, feedback]
+  level: beginner
+  title: "Commit to your answer before the solver or trainer shows it"
+  claim: "In every drill, say what you think before you look: the equity after a call, whether a hand is a clear bet, a clear check or a mix, how confident you are. Then compare. Reading the answer first trains nothing; a committed guess that turns out wrong is the feedback that moves your game."
+  why: "Estimation is a motor skill: you improve through feedback on your own attempts, not by studying the physics. Players who write down a number and see they were ten points low learn why, for example that the opponent must call many unpaired hands on a dry board. Trainers show frequencies, not just right or wrong, and that extra information only improves your model if you had a prediction to test it against. Declaring 'pure' versus 'mix' reveals whether you systematically see mixes as pures (too rigid) or pures as mixes (too random), a leak no score can show. Saying 'loose but fine' before a call that turns out pure, or 'clear fold' before one that turns out to be a call, is where the learning happens. Nodding at the solver and thinking 'I knew that' is the failure mode."
+  common_mistake: "Opening the solver, nodding at the numbers, and never testing whether you could have produced them yourself."
+  merged_from:
+    - c-cash-6max-cc03-calibrate-equity-guesses-021
+    - c-cash-6max-gp31-verbalize-before-answer-012
+    - c-cash-6max-gp35-declare-pure-or-mix-018
+  source_refs:
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#11"
+      stance: supports
+      note: "Guess the equity before looking it up, every time; ball-in-bucket analogy; drill in a study group."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/031-training-flop-check-raises
+      chunk: "rio-game-plan/031-training-flop-check-raises#03"
+      stance: supports
+      note: "Verbalize confidence before the trainer reveals the answer; declare pure or mix so the distribution can challenge you."
+  consensus_score: 1.0
+  contradictions: []
+  hook_ideas:
+    - "The one-second habit that makes solver study actually stick."
+    - "You didn't know that. You read it."
+    - "Say it out loud before you click. Here's why it works."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-medium-hands-check-the-turn-001
+  kind: consensus
+  format: cash-6max
+  topic: turn-play
+  concepts: [showdown-value, way-ahead-way-behind, pot-control, medium-strength]
+  level: beginner
+  street: turn
+  pot_type: srp
+  position: ip
+  title: "Medium-strength hands check the turn even when your range is ahead"
+  claim: "Range advantage means more of your hands want to bet; it never tells a specific hand to bet. A hand too weak to be called by worse and too strong to turn into a bluff checks: pocket nines on an ace-high board after one bet, kings through jacks on an ace turn, a strong but non-nut hand when a bet only folds out what you beat. One bet, then pot control."
+  why: "The reasons to bet have not changed: value, bluffing, a little denial. A middling hand gains none of them when the opponent's range splits into hands far ahead of you and hands far behind. The better hands call or raise, the worse hands fold, so a second bet buys nothing it did not already have, while a check keeps the pot small when behind and often earns a river call or bluff from the worse hands when ahead. In position, your checking range should contain some strong-but-not-nutted hands for exactly this reason. The exception is the very dry turn where the caller must continue with ace-high and unpaired hands: there second pair and small pairs become thin value bets, because they are ahead of what calls. Ask what calls before you decide which world you are in."
+  common_mistake: "Barrelling nines on an ace-king-x board to 'find out', folding out the pairs you beat and paying off every ace."
+  merged_from:
+    - c-cash-6max-tc16-ace-turn-medium-hands-check-004
+    - c-cash-6max-cc06-range-advantage-does-not-make-every-hand-bet-006
+    - c-cash-6max-cc07-positional-slow-play-rule-016
+    - c-cash-6max-cc07-thin-value-when-they-cannot-have-the-card-012
+    - c-cash-6max-br5-check-turn-with-strong-non-nut-hand-012
+    - c-cash-6max-br8-way-ahead-way-behind-one-and-done-011
+  source_refs:
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/016-exploits-774-barrel
+      chunk: "2cc-flop-exploits/016-exploits-774-barrel#01"
+      stance: supports
+      note: "On an ace turn, KK through JJ, underpairs, weak top pairs and third pairs check while value and bluffs bet; holds in theory and against real opponents."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: "cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#02"
+      stance: nuances
+      note: "Range advantage does not license betting every hand; IP checking range holds strong-not-nutted hands; but on very dry favourable turns second pair is a value bet."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/008-part8
+      chunk: "br79-ctm-6max/008-part8#04"
+      stance: supports
+      note: "Way-ahead-way-behind: medium pair on an ace-high board bets once then stops; strong non-nut hands check the turn when a bet only folds out worse."
+  consensus_score: 0.83
+  contradictions:
+    - "Some coaches bet second pair and even small pairs for value on very dry turns because the caller must continue with ace-high, while others make one bet with a medium pair and then stop regardless of texture."
+  hook_ideas:
+    - "You have the range advantage. Your hand still says check."
+    - "Pocket nines on A-K-x: one bet, then stop."
+    - "Second pair on the turn: one course value bets it, another pot controls. Here's the split."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-fold-little-to-small-bets-001
+  kind: consensus
+  format: cash-6max
+  topic: defending
+  concepts: [small-bet, pot-odds, facing-small-cbet, sticky-defense]
+  level: beginner
+  street: flop
+  pot_type: srp
+  position: oop
+  title: "Against a small bet, fold almost nothing"
+  claim: "Facing a quarter-pot c-bet, a min-bet or a tiny lead, continue with nearly anything that has a pair, a draw, a backdoor plus an overcard or showdown potential. The price is 5-to-1 or better, and folding more than the bare minimum hands the bettor a profitable bet with any two cards. Against an overbet, the line moves to strong bottom pair or a real draw."
+  why: "A quarter-pot bet offers odds that almost any hand with equity and a path to improve can take. Weak players also use tiny bets with both monsters and nothing, so the bet narrows their range very little. When your range is far stronger than the bettor's, fold nothing at all: even your worst hand is entitled to a big share of the pot. The structural exceptions are high monotone boards without a suit card and high paired boards where unpaired low cards have no way to win; even there the fold rate stays under a third. The threshold is driven by price, so a backdoor draw is a reason to call a small bet and no reason at all to call a big one. If your pool uses both sizes you need two thresholds per texture, not one."
+  common_mistake: "Folding bottom pair, ace-high or a gutshot to a quarter-pot bet because the hand 'missed', which lets the bettor print with a range bet."
+  numbers:
+    - "Facing ~25% pot or less: continue with any pair, draw, or overcard plus backdoor; fold only pure air"
+  merged_from:
+    - c-cash-6max-cc03-never-fold-extreme-advantage-011
+    - c-cash-6max-gp23-sticky-vs-quarter-pot-012
+    - c-cash-6max-gp30-monotone-any-suit-card-calls-009
+    - c-cash-6max-gp30-overbet-vs-small-threshold-004
+    - c-cash-6max-gp36-frequency-vs-selection-mistakes-006
+    - c-cash-6max-br5-never-fold-to-a-min-bet-014
+  source_refs:
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#05"
+      stance: supports
+      note: "When your range dwarfs his, fold nothing to a small bet; fold frequency depends on favourability, not just bet size."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: "rio-game-plan/023-building-flop-strategies#03"
+      stance: supports
+      note: "Fold very little to a quarter-pot c-bet, max ~28% on high monotone and high paired; any suit card continues on monotone; the line moves enormously vs an overbet."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/005-part5
+      chunk: "br79-ctm-6max/005-part5#03"
+      stance: supports
+      note: "Never fold to a min-bet; the price is almost always right and small bets from wide players carry little information."
+  consensus_score: 1.0
+  contradictions: []
+  hook_ideas:
+    - "The bet you should almost never fold to."
+    - "5-to-1 and you folded bottom pair?"
+    - "Small bet, big mistake: why folding here pays the bettor."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-marginal-early-opens-need-weak-callers-001
+  kind: consensus
+  format: cash-6max
+  topic: preflop-ranges
+  concepts: [early-position, opening-range, table-composition, weak-players]
+  level: beginner
+  street: preflop
+  position: utg
+  title: "Open marginal hands from early position only when weak players sit behind"
+  claim: "Hands at the edge of an early-position opening range, deuces and threes, 76 suited, T3 suited, are a fold against regulars and a raise when a loose passive player is in the blinds or left to act. The chart gives the answer against the hardest table; who is sitting behind you moves it."
+  why: "Equilibrium charts tell you what is barely losing against opponents who punish you correctly. The margin on these hands is tiny, so table composition swings the answer. Against regulars who 3-bet or fold, a speculative hand has nothing going for it out of position; against a weak player who calls and pays off two pair or a set, the same hand gains more after the flop than the chart says it loses before it. Fewer tables means more focus to extract from those spots, which also shifts the marginal hands from fold to raise. Treat the chart as a baseline for the hardest conditions and move off it when the conditions are softer, not as a rule to follow regardless of who is at the table."
+  common_mistake: "Following a preflop chart rigidly and folding small pairs from early position at a table full of players who will call and pay off."
+  merged_from:
+    - c-cash-6max-cc06-open-small-pairs-vs-weak-players-023
+    - c-cash-6max-br7-tight-early-unless-a-fish-is-in-the-blinds-013
+  source_refs:
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: "cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#06"
+      stance: supports
+      note: "22/33 from the first seat are marginally losing in equilibrium; open them with weak players behind because post-flop EV turns the open profitable."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/007-part7
+      chunk: "br79-ctm-6max/007-part7#02"
+      stance: supports
+      note: "Tight UTG by default; 76s or T3s become opens only when a loose passive player is in the blinds; fewer tables justify a few more opens."
+  consensus_score: 1.0
+  contradictions: []
+  hook_ideas:
+    - "Your preflop chart assumes the worst table. You're not at it."
+    - "Fold 76s from UTG. Unless this guy is in the big blind."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-delayed-cbet-001
+  kind: consensus
+  format: cash-6max
+  topic: turn-play
+  concepts: [delayed-cbet, check-back, fold-equity, range-check]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: "Check the flop, bet the turn: the delayed c-bet is a line, not a give-up"
+  claim: "Checking back the flop in position and betting the turn is a strong plan, especially against players who attack c-bets or who have just lost a pot to you. The opponent never had to call a bet, so their range is still full of air and folds well above the break-even rate. What you must never do after checking back is show down a hand with no showdown value."
+  why: "A flop c-bet filters the opponent's range; a check does not. So on the turn after a check-back they still hold junk, and against a small bet they fold far more than symmetric ranges would, which makes the delayed bet more bluff-friendly than a double barrel. Against fickle players who raise c-bets after losing a pot, checking removes the trigger and lets them take the lead with air. Building more flop checks into a plan also routes the pot into turn probes, delayed bets and check-check-check rivers that opponents study less and play worse. Betting the turn or waiting to bet the river are close in EV; checking all the way down with air while your range still holds the advantage is the serious error."
+  common_mistake: "Checking the flop, checking the turn, then checking the river with queen-high 'because I never showed strength'."
+  merged_from:
+    - c-cash-6max-br7-delayed-cbet-vs-players-who-play-back-014
+    - c-cash-6max-cc03-delayed-cbet-never-check-down-016
+    - c-cash-6max-cc03-optional-bluffs-dont-agonize-015
+    - c-cash-6max-gp36-checking-opens-delayed-lines-012
+  source_refs:
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/007-part7
+      chunk: "br79-ctm-6max/007-part7#03"
+      stance: supports
+      note: "After winning a pot off an active player, a delayed c-bet beats firing into a player who will play back regardless of their hand."
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+      chunk: "cc-grade-0/004-grade-0-july-lecture-3-bluffing#07"
+      stance: supports
+      note: "Delayed c-bet is more bluff-friendly than a double barrel because the range was never filtered; opponent folds ~42% to a third-pot bet vs 25% neutral; never check down air."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/036-flop-strategies-out-of-position
+      chunk: "rio-game-plan/036-flop-strategies-out-of-position#04"
+      stance: supports
+      note: "Build more flop checks into the plan to reach delayed c-bet and check-check-check lines that hold extra EV against most opponents."
+  consensus_score: 1.0
+  contradictions: []
+  hook_ideas:
+    - "You checked the flop. Your bluff just got better."
+    - "The c-bet that works better one street late."
+    - "Checked twice with queen-high? You're not done yet."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-study-flops-by-texture-not-by-board-001
+  kind: consensus
+  format: cash-6max
+  topic: study-methods
+  concepts: [aggregate-reports, flop-categories, pattern-recognition, solver-study]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  title: "Study flops as texture groups from aggregate solver reports, not one board at a time"
+  claim: "Do not memorise solver output flop by flop. Run an aggregate report or a representative subset of around a hundred flops, sort by check frequency and by size, and read off which features (high card, pairing, suits, connectivity) drive the decision. Build categories from what the solver does, not from how the board looks, and compress each into a short rule."
+  why: "There are 1755 strategically distinct flops, but solver choices cluster strongly by texture, so a well-chosen subset reveals the same rules a full study would. Sorting by chosen size or by betting frequency makes the shared features of each group jump out, and those are what you can recognise at the table. Drawing the boxes first ('ace-high', 'king-high') produces groups that mix a range-bet texture with a mostly-check texture, and the rule you write is wrong for half of them. Write each texture's answer as a phrase short enough for a flash card: the size, the frequency, the weakest hand class that still continues. Aggregate reports work for the flop c-bet node; from the turn on, switch to individual sims because the bet-size sequences diverge."
+  common_mistake: "Opening single flops in a solver, memorising specific hand mixes, and having nothing transferable when a slightly different board appears."
+  numbers:
+    - "1755 strategically distinct flops; a subset of roughly 100 is enough to extract the texture rules"
+  merged_from:
+    - c-cash-6max-tc14-sort-aggregate-report-by-check-frequency-003
+    - c-cash-6max-tc12-study-flop-subset-for-patterns-004
+    - c-cash-6max-gp23-categories-from-strategy-001
+    - c-cash-6max-gp23-aggregate-reports-flop-only-017
+    - c-cash-6max-gp30-short-threshold-notes-005
+  source_refs:
+    - school: 2cc
+      course: "Mini-Course: Flop Exploits"
+      lesson: 2cc-flop-exploits/014-simple-gto-frequency-pt-1
+      chunk: "2cc-flop-exploits/014-simple-gto-frequency-pt-1#01"
+      stance: supports
+      note: "Sort an aggregate report by check frequency and compare the ends; 102-flop sheet sorted by best single size; extract texture rules, not hand mixes."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/023-building-flop-strategies
+      chunk: "rio-game-plan/023-building-flop-strategies#01"
+      stance: supports
+      note: "Build categories from solver output not board labels; aggregate reports for the flop node only; write short hand-class threshold phrases per texture."
+  consensus_score: 1.0
+  contradictions: []
+  hook_ideas:
+    - "1755 flops. You need to study about 100."
+    - "Sort the solver report, don't read it."
+    - "Why 'ace-high board' is the wrong category."
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-x-possible-nuts-is-not-a-reason-to-check-001
+  kind: consensus
+  format: cash-6max
+  topic: fundamentals
+  concepts: [nut-phobia, thin-value, range-share, equity-estimation]
+  level: beginner
+  street: multi-street
+  pot_type: srp
+  position: any
+  title: "'They could have the nuts' is not a reason to check or fold"
+  claim: "The opponent can nearly always hold something that beats you. Ask how big a share of their range it is. If trips are a few percent and the rest is worse than your hand, value bet and accept the occasional cooler; on a paired board a wide player who raises is drawing far more often than holding trips. Replace the fear with a frequency."
+  why: "Only two cards in the deck make trips, while a wide range holds many more flush and straight draw combinations, so on a wet paired board a raise from a loose player is a draw far more often than a nine. In a checked-down pot a four-straight on the river is rarely in the opponent's hand because nobody showed strength, so a strong ace or top pair still bets, often big. The same instinct makes players stop bluffing: if you only bluff when the nuts are impossible you never bluff. Fear of the worst case is wired in and gets louder when running badly, which is exactly when thin value and bluffs disappear from a game. Tight preflop stats do not earn automatic credit either; judge the action in the hand, not the label."
+  common_mistake: "Checking a strong hand or abandoning a bluff because 'there are sets in his range', without asking how big that part of the range is."
+  merged_from:
+    - c-cash-6max-cc06-do-not-fear-the-nuts-011
+    - c-cash-6max-br3-paired-boards-cbet-008
+    - c-cash-6max-br3-tight-stats-no-credit-012
+    - c-cash-6max-br3-ship-for-value-vs-fish-despite-reg-005
+    - c-cash-6max-gp32-ace-still-pots-on-four-straight-007
+  source_refs:
+    - school: cc
+      course: "Carrot Poker School Grade 0"
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: "cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#05"
+      stance: supports
+      note: "Nut-phobia section: the question is what share of the range beats you; sometimes you bluff into the nuts and that is correct."
+    - school: br79
+      course: "Crushing the Micros 6-max"
+      lesson: br79-ctm-6max/003-part3
+      chunk: "br79-ctm-6max/003-part3#03"
+      stance: supports
+      note: "On wet paired boards assume draws over trips; stack off vs the fish even if a reg behind could have it; tight stats do not deserve automatic credit."
+    - school: rio
+      course: "The Game Plan"
+      lesson: rio-game-plan/032-training-river-value-and-bluff-thresholds
+      chunk: "rio-game-plan/032-training-river-value-and-bluff-thresholds#02"
+      stance: supports
+      note: "On a four-straight river after a checked-down hand a strong ace or top pair still bets pot; fear of the board is a population leak."
+  consensus_score: 1.0
+  contradictions: []
+  hook_ideas:
+    - "He could have the nuts. He could also have the other 95% of his range."
+    - "Why a four-straight river is still a value bet."
+    - "The fear that quietly deletes your thin value bets."
+  status: draft
+  created: "2026-10-04"

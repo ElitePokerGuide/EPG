@@ -1,611 +1,608 @@
 - id: c-cash-6max-br3-check-two-pair-turn-001
   format: cash-6max
   topic: turn-play
-  concepts: [pot-control, two-pair, deep-stacks, stack-off, delayed-value]
+  concepts:
+  - pot-control
+  - two-pair
+  - deep-stacks
+  - stack-off
+  - delayed-value
   level: beginner
   street: turn
   pot_type: srp
   position: ip
   title: Unsure what to do if shoved on? Checking two pair on the turn is fine
-  claim: >-
-    When you hold two pair or a similar strong-but-not-nut hand on a turn that completes a flush
-    with deep stacks behind, and you do not know how you would respond to a check-raise all-in,
-    checking is acceptable. You can usually collect a bet on the river anyway.
-  why: >-
-    Against most micro opponents you were never getting two more full bets from their calling
-    hands; they call once with a pair and fold to the second bet, or they hold the flush and
-    raise. Betting the turn therefore mostly exposes you to a raise you cannot handle while
-    adding little value. Checking and betting the river gets the same single bet from the
-    hands that would have called, keeps the pot controlled against the hands that beat you,
-    and lets you see what they do with a free card. It is not the sin that "always bet two pair"
-    thinking makes it out to be.
-  common_mistake: >-
-    Betting the turn out of obligation, facing a shove, and making a guess for stacks.
+  claim: When you hold two pair or a similar strong-but-not-nut hand on a turn that completes a flush
+    with deep stacks behind, and you do not know how you would respond to a check-raise all-in, checking
+    is acceptable. You can usually collect a bet on the river anyway.
+  why: Against most micro opponents you were never getting two more full bets from their calling hands;
+    they call once with a pair and fold to the second bet, or they hold the flush and raise. Betting the
+    turn therefore mostly exposes you to a raise you cannot handle while adding little value. Checking
+    and betting the river gets the same single bet from the hands that would have called, keeps the pot
+    controlled against the hands that beat you, and lets you see what they do with a free card. It is
+    not the sin that "always bet two pair" thinking makes it out to be.
+  common_mistake: Betting the turn out of obligation, facing a shove, and making a guess for stacks.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#01
-      stance: supports
-      note: Coach checks two pair on a flush-completing turn with deep stacks and bets the river for value.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#01
+    stance: supports
+    note: Coach checks two pair on a flush-completing turn with deep stacks and bets the river for value.
   consensus_score: 0.5
   hook_ideas:
-    - Checking two pair here makes you more money. Here is why.
-    - "'You have to bet two pair' is costing you stacks."
-    - You will not get two bets anyway. So take one safely.
+  - Checking two pair here makes you more money. Here is why.
+  - '''You have to bet two pair'' is costing you stacks.'
+  - You will not get two bets anyway. So take one safely.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-no-barrel-without-reason-002
   format: cash-6max
   topic: turn-play
-  concepts: [double-barrel, fold-equity, reads, recreational-players, discipline]
+  concepts:
+  - double-barrel
+  - fold-equity
+  - reads
+  - recreational-players
+  - discipline
   level: beginner
   street: turn
   pot_type: srp
   position: ip
   title: Barrel the turn only with a clear reason; otherwise let the small pot go
-  claim: >-
-    Do not fire a second barrel without a made hand unless you have a specific reason, such as
-    stats showing the opponent is a thinking regular who floats flops and folds turns. With no
-    information, or against a recreational player, check back and let them win the small pot.
-  why: >-
-    A turn bluff needs folds, and the players who fold turns are regulars who read boards.
-    Weak players call with any pair and any draw, so barrelling them without a hand is money
-    lost most of the time. Giving up a small pot costs little; the profit comes from the big
-    pots you win when you connect against those same players. Barrelling "because you are
-    supposed to" is a habit that bleeds chips and invites tilt when it fails.
-  common_mistake: >-
-    Double-barrelling an unknown three hands into the session because the flop c-bet got
+  claim: Do not fire a second barrel without a made hand unless you have a specific reason, such as stats
+    showing the opponent is a thinking regular who floats flops and folds turns. With no information,
+    or against a recreational player, check back and let them win the small pot.
+  why: A turn bluff needs folds, and the players who fold turns are regulars who read boards. Weak players
+    call with any pair and any draw, so barrelling them without a hand is money lost most of the time.
+    Giving up a small pot costs little; the profit comes from the big pots you win when you connect against
+    those same players. Barrelling "because you are supposed to" is a habit that bleeds chips and invites
+    tilt when it fails.
+  common_mistake: Double-barrelling an unknown three hands into the session because the flop c-bet got
     called.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#01
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#02
-      stance: supports
-      note: "Coach: happy to let them win small pots and take care of business in the big ones."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#01
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#02
+    stance: supports
+    note: 'Coach: happy to let them win small pots and take care of business in the big ones.'
   consensus_score: 0.5
   hook_ideas:
-    - "'Bet, bet, bet' is advice for a different opponent."
-    - Why the second barrel is a leak at NL5.
-    - Lose the small pots on purpose. Win the big ones.
+  - '''Bet, bet, bet'' is advice for a different opponent.'
+  - Why the second barrel is a leak at NL5.
+  - Lose the small pots on purpose. Win the big ones.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-tilt-collateral-damage-003
   format: cash-6max
   topic: mental-game
-  concepts: [tilt, variance-control, marginal-spots, discipline]
+  concepts:
+  - tilt
+  - variance-control
+  - marginal-spots
+  - discipline
   level: beginner
   position: any
   title: Avoid marginal big pots partly to protect yourself from tilt
-  claim: >-
-    At stakes full of weak players, do not put a lot of money into close, marginal spots. Beyond
-    the direct cost, losing several of those pots tilts you, and the money thrown away afterward
-    is often bigger than the pots themselves.
-  why: >-
-    Tilt has collateral damage: a lost coin flip against a regular does not just cost that pot,
-    it degrades your decisions in the next hour of hands against the players who actually pay
-    you. When easy profit is available from recreational players, the small theoretical edge in
-    a marginal spot is not worth the emotional risk. A relaxed, low-variance style keeps your
-    head clear for the spots that matter and keeps you in the session longer.
-  common_mistake: >-
-    Taking every thin edge against regulars, then playing the next twenty hands on tilt.
+  claim: At stakes full of weak players, do not put a lot of money into close, marginal spots. Beyond
+    the direct cost, losing several of those pots tilts you, and the money thrown away afterward is often
+    bigger than the pots themselves.
+  why: 'Tilt has collateral damage: a lost coin flip against a regular does not just cost that pot, it
+    degrades your decisions in the next hour of hands against the players who actually pay you. When easy
+    profit is available from recreational players, the small theoretical edge in a marginal spot is not
+    worth the emotional risk. A relaxed, low-variance style keeps your head clear for the spots that matter
+    and keeps you in the session longer.'
+  common_mistake: Taking every thin edge against regulars, then playing the next twenty hands on tilt.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#01
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#01
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - The real cost of a lost coin flip is the next hour.
-    - Thin edges have a hidden price. It is called tilt.
-    - Why relaxed players beat the micros.
+  - The real cost of a lost coin flip is the next hour.
+  - Thin edges have a hidden price. It is called tilt.
+  - Why relaxed players beat the micros.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-loss-rate-table-choice-004
   format: cash-6max
   topic: table-selection
-  concepts: [table-selection, win-rate, player-pool, loss-rate]
+  concepts:
+  - table-selection
+  - win-rate
+  - player-pool
+  - loss-rate
   level: beginner
   position: any
   title: Prefer tables with the biggest losers, not just any losing player
-  claim: >-
-    Not all weak players are equal. Someone losing at 20 big blinds per 100 gives away money ten
-    times faster than someone losing at 2 big blinds per 100. When you can choose, leave a
-    table of slightly-bad players for one with an 80% VPIP player, even if the current table is
-    beatable.
-  why: >-
-    Your win rate is roughly the sum of what the other players at the table lose to you. A
-    semi-weak player who limps a bit but also folds a lot is a small, slow source of profit. A
-    player seeing 80-90% of flops is a large, fast one. Being able to beat a table is not the
-    same as it being the best use of your time, so on sites with many tables keep moving until
-    the fast losers are the ones you sit with.
-  common_mistake: >-
-    Staying at a table because "these guys are kind of bad" when much worse players are
+  claim: Not all weak players are equal. Someone losing at 20 big blinds per 100 gives away money ten
+    times faster than someone losing at 2 big blinds per 100. When you can choose, leave a table of slightly-bad
+    players for one with an 80% VPIP player, even if the current table is beatable.
+  why: Your win rate is roughly the sum of what the other players at the table lose to you. A semi-weak
+    player who limps a bit but also folds a lot is a small, slow source of profit. A player seeing 80-90%
+    of flops is a large, fast one. Being able to beat a table is not the same as it being the best use
+    of your time, so on sites with many tables keep moving until the fast losers are the ones you sit
+    with.
+  common_mistake: Staying at a table because "these guys are kind of bad" when much worse players are
     available two clicks away.
   numbers:
-    - "Loser at 20bb/100 gives money ~10x faster than loser at 2bb/100"
-    - "Target VPIP ~80-90% players over ~40% players when both are available"
+  - Loser at 20bb/100 gives money ~10x faster than loser at 2bb/100
+  - Target VPIP ~80-90% players over ~40% players when both are available
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#03
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#03
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Two fish, same table, one is worth ten times more.
-    - Beatable is not the same as best. Move tables.
-    - The 80% VPIP player pays you ten times faster.
+  - Two fish, same table, one is worth ten times more.
+  - Beatable is not the same as best. Move tables.
+  - The 80% VPIP player pays you ten times faster.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-ship-for-value-vs-fish-despite-reg-005
   format: cash-6max
   topic: value-betting
-  concepts: [multiway, side-pot, stack-off, recreational-players]
+  concepts:
+  - multiway
+  - side-pot
+  - stack-off
+  - recreational-players
   level: beginner
   street: flop
   pot_type: multiway
   position: any
   title: Stack off for value against a fish even if a regular behind might have you beat
-  claim: >-
-    In a multiway pot where an active weak player is betting with a wide range, get your strong
-    one-pair hand like top pair top kicker all-in against them. The possibility that a tighter
-    player still in the hand holds better does not outweigh how often you win a big pot from the
-    fish.
-  why: >-
-    Decisions are made against the whole range of hands in play, weighted by how much money
-    each opponent puts in. The weak player is shoving worse hands often enough that your hand
-    is a clear favourite against their range. The regular may occasionally show up with a
-    monster, but they are in the pot less often with a strong hand than the fish is with a
-    weak one, and when the regular folds you win a large side pot from the fish anyway.
-    Folding out of fear of the regular surrenders the main source of profit in the hand.
-  common_mistake: >-
-    Folding a strong hand in a multiway pot because "the tight player could have a set" while
-    the fish is shoving with ace-rag.
+  claim: In a multiway pot where an active weak player is betting with a wide range, get your strong one-pair
+    hand like top pair top kicker all-in against them. The possibility that a tighter player still in
+    the hand holds better does not outweigh how often you win a big pot from the fish.
+  why: Decisions are made against the whole range of hands in play, weighted by how much money each opponent
+    puts in. The weak player is shoving worse hands often enough that your hand is a clear favourite against
+    their range. The regular may occasionally show up with a monster, but they are in the pot less often
+    with a strong hand than the fish is with a weak one, and when the regular folds you win a large side
+    pot from the fish anyway. Folding out of fear of the regular surrenders the main source of profit
+    in the hand.
+  common_mistake: Folding a strong hand in a multiway pot because "the tight player could have a set"
+    while the fish is shoving with ace-rag.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#02
-      stance: supports
-      note: Coach ships AQ on an ace-high board vs active fish with a normal-stat player still in.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#02
+    stance: supports
+    note: Coach ships AQ on an ace-high board vs active fish with a normal-stat player still in.
   consensus_score: 0.5
   hook_ideas:
-    - The reg might have it. Ship anyway. Here is the math.
-    - Play the player who is shoving, not the scary one.
-    - Side pots are where the fish pays you.
+  - The reg might have it. Ship anyway. Here is the math.
+  - Play the player who is shoving, not the scary one.
+  - Side pots are where the fish pays you.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-never-show-cards-006
   format: cash-6max
   topic: exploits
-  concepts: [information, showing-cards, table-image]
+  concepts:
+  - information
+  - showing-cards
+  - table-image
   level: beginner
   position: any
   title: Never show your cards unless there is a showdown
-  claim: >-
-    Do not voluntarily show a hand after the pot is won, whether it was a bluff or a monster.
-    Every shown card is free information for everyone at the table, and you gain nothing from
-    giving it away.
-  why: >-
-    Showing a hand feels harmless, but it tells observant opponents how you size with strong
-    hands, what you fold, what you call with and how you bluff. Those same opponents will use
-    that against you in later pots while you receive nothing in return. The reverse is a gift:
-    when a recreational player shows a fold, note it and adjust. Keep your own information
-    private and collect theirs.
-  common_mistake: >-
-    Showing a big fold to look disciplined or a bluff to look tricky, then wondering why a
-    regular plays differently against you.
+  claim: Do not voluntarily show a hand after the pot is won, whether it was a bluff or a monster. Every
+    shown card is free information for everyone at the table, and you gain nothing from giving it away.
+  why: 'Showing a hand feels harmless, but it tells observant opponents how you size with strong hands,
+    what you fold, what you call with and how you bluff. Those same opponents will use that against you
+    in later pots while you receive nothing in return. The reverse is a gift: when a recreational player
+    shows a fold, note it and adjust. Keep your own information private and collect theirs.'
+  common_mistake: Showing a big fold to look disciplined or a bluff to look tricky, then wondering why
+    a regular plays differently against you.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#02
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#02
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Showing your cards is paying for nothing.
-    - Free information only flows one way. Make sure it is toward you.
-    - The reg thanks you every time you show.
+  - Showing your cards is paying for nothing.
+  - Free information only flows one way. Make sure it is toward you.
+  - The reg thanks you every time you show.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-middle-pair-no-hero-call-007
   format: cash-6max
   topic: defending
-  concepts: [hero-call, middle-pair, folding-discipline, unknown-opponent]
+  concepts:
+  - hero-call
+  - middle-pair
+  - folding-discipline
+  - unknown-opponent
   level: beginner
   street: multi-street
   pot_type: srp
   position: any
   title: With middle pair facing aggression from an unknown, fold rather than hero-call
-  claim: >-
-    When your middle pair faces a bet or raise from a player you have no information on, and a
-    plain second pair or better beats you, fold. Hero-calling weak players is unnecessary
-    because their stack will come to you later in a clearer spot.
-  why: >-
-    A hero call needs the opponent to be bluffing far more often than their play suggests.
-    Against an unknown there is no evidence of that, and recreational players bet with a
-    bizarre collection of real hands more often than with air. Being bluffed off a pot
-    occasionally is cheap; paying off with a hand that loses to any legitimate holding is
-    expensive. Your edge against this type comes from value, not from calling down.
-  common_mistake: >-
-    Calling a river raise with middle pair because "he could be bluffing" and seeing a set.
+  claim: When your middle pair faces a bet or raise from a player you have no information on, and a plain
+    second pair or better beats you, fold. Hero-calling weak players is unnecessary because their stack
+    will come to you later in a clearer spot.
+  why: A hero call needs the opponent to be bluffing far more often than their play suggests. Against
+    an unknown there is no evidence of that, and recreational players bet with a bizarre collection of
+    real hands more often than with air. Being bluffed off a pot occasionally is cheap; paying off with
+    a hand that loses to any legitimate holding is expensive. Your edge against this type comes from value,
+    not from calling down.
+  common_mistake: Calling a river raise with middle pair because "he could be bluffing" and seeing a set.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#02
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#03
-      stance: supports
-      note: Coach gets bluffed once and shrugs; says he is not there to make hero calls against these players.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#02
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#03
+    stance: supports
+    note: Coach gets bluffed once and shrugs; says he is not there to make hero calls against these players.
   consensus_score: 0.5
   hook_ideas:
-    - Getting bluffed is cheap. Paying off is not.
-    - Middle pair facing a raise. The answer is simpler than you think.
-    - Hero calls at the micros are mostly just calls.
+  - Getting bluffed is cheap. Paying off is not.
+  - Middle pair facing a raise. The answer is simpler than you think.
+  - Hero calls at the micros are mostly just calls.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-paired-boards-cbet-008
   format: cash-6max
   topic: board-textures
-  concepts: [paired-board, c-bet, fold-equity, draws-vs-trips]
+  concepts:
+  - paired-board
+  - c-bet
+  - fold-equity
+  - draws-vs-trips
   level: beginner
   street: flop
   position: ip
   title: Paired flops are hard to hit, so c-bet them and respect draws over trips
-  claim: >-
-    A paired flop like 9-9-4 is a good c-bet board because an opponent connects with it rarely,
-    including in 3-bet pots. When you hold top pair or an overpair and a draw-heavy paired board
-    gets action from a wide player, assume flush draws far more often than trips.
-  why: >-
-    Only two cards in the deck make trips, while a wide-ranging player holds many more
-    combinations of flush draws and straight draws. On the pure fold-equity side that means a
-    c-bet gets through often. On the stack-off side it means a weak player who raises or shoves
-    on a wet paired board is more likely drawing than holding a nine. You will occasionally
-    run into trips, but you win the draws' money far more often.
-  common_mistake: >-
-    Shutting down on paired boards because "they could have trips" and giving free cards to
-    the flush draws that actually make up their range.
+  claim: A paired flop like 9-9-4 is a good c-bet board because an opponent connects with it rarely, including
+    in 3-bet pots. When you hold top pair or an overpair and a draw-heavy paired board gets action from
+    a wide player, assume flush draws far more often than trips.
+  why: Only two cards in the deck make trips, while a wide-ranging player holds many more combinations
+    of flush draws and straight draws. On the pure fold-equity side that means a c-bet gets through often.
+    On the stack-off side it means a weak player who raises or shoves on a wet paired board is more likely
+    drawing than holding a nine. You will occasionally run into trips, but you win the draws' money far
+    more often.
+  common_mistake: Shutting down on paired boards because "they could have trips" and giving free cards
+    to the flush draws that actually make up their range.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#03
-      stance: supports
-      note: Coach bets a paired board in a 3-bet pot and notes how hard paired boards are to hit.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#03
+    stance: supports
+    note: Coach bets a paired board in a 3-bet pot and notes how hard paired boards are to hit.
   consensus_score: 0.5
   hook_ideas:
-    - Paired flop? Bet it. Here is why they almost never have it.
-    - Two cards make trips. Nine cards make the flush. Do the math.
-    - The board everybody is scared of is your best c-bet.
+  - Paired flop? Bet it. Here is why they almost never have it.
+  - Two cards make trips. Nine cards make the flush. Do the math.
+  - The board everybody is scared of is your best c-bet.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-check-river-induce-bluff-009
   format: cash-6max
   topic: river-play
-  concepts: [inducing, bluff-catching, scare-card, recreational-players]
+  concepts:
+  - inducing
+  - bluff-catching
+  - scare-card
+  - recreational-players
   level: beginner
   street: river
   pot_type: srp
   position: oop
   title: On a scary river against a fish, check-call to let them bluff with nothing
-  claim: >-
-    When a flush or straight completes on the river and you hold a decent but non-nut hand
-    against a weak player, check and call rather than bet. Their nonsense hands that would fold
-    to a bet will often bet themselves, and you collect from hands that had zero intention of
-    calling.
-  why: >-
-    A river bet into a completed draw gets called by the draws and folded by everything else.
-    A check gives the weak player room to make a mistake: they frequently fire with air on a
-    scary board because the card "looks like" a bluffing opportunity. You lose nothing against
-    the hands that got there, since they would have raised your bet anyway, and you gain a
-    bet from the air. Keep the sizing of your call sensible and accept that sometimes they
-    have the hand.
-  common_mistake: >-
-    Blocking-betting the river and folding out every hand that would have bluffed.
+  claim: When a flush or straight completes on the river and you hold a decent but non-nut hand against
+    a weak player, check and call rather than bet. Their nonsense hands that would fold to a bet will
+    often bet themselves, and you collect from hands that had zero intention of calling.
+  why: 'A river bet into a completed draw gets called by the draws and folded by everything else. A check
+    gives the weak player room to make a mistake: they frequently fire with air on a scary board because
+    the card "looks like" a bluffing opportunity. You lose nothing against the hands that got there, since
+    they would have raised your bet anyway, and you gain a bet from the air. Keep the sizing of your call
+    sensible and accept that sometimes they have the hand.'
+  common_mistake: Blocking-betting the river and folding out every hand that would have bluffed.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#03
-      stance: supports
-      note: Coach check-calls a flush-completing river vs a fish who bets complete air; says there is a lot of value in inducing.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#03
+    stance: supports
+    note: Coach check-calls a flush-completing river vs a fish who bets complete air; says there is a
+      lot of value in inducing.
   consensus_score: 0.5
   hook_ideas:
-    - Checking the river here makes you more money than betting.
-    - Scary river, weak opponent. Let them do the betting.
-    - The bet they make with nothing is yours if you check.
+  - Checking the river here makes you more money than betting.
+  - Scary river, weak opponent. Let them do the betting.
+  - The bet they make with nothing is yours if you check.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-raise-dont-limp-010
   format: cash-6max
   topic: preflop-ranges
-  concepts: [limping, raising, initiative, database-review, isolation]
+  concepts:
+  - limping
+  - raising
+  - initiative
+  - database-review
+  - isolation
   level: beginner
   street: preflop
   position: ip
   title: Raise instead of limping; your own database will show roughly double the win rate
-  claim: >-
-    Enter pots with a raise, not a limp, including when isolating a limper in position. If you
-    doubt it, filter your tracker for hands where you raised preflop versus hands where you
-    limped: the raised hands typically earn about twice as much, often more.
-  why: >-
-    Raising gives you the initiative, which lets you take down pots with a c-bet when everyone
-    misses, builds a bigger pot for the times you connect and earns some respect so your later
-    bets are credited. Limping does none of those things and invites more players into the pot
-    behind you. When isolating a weak limper deep-stacked, a larger raise such as 8 big blinds
-    is fine, since they call anyway and the extra money goes in while you have position and
-    the better hand.
-  common_mistake: >-
-    Limping behind a fish with a speculative hand "to see a cheap flop" and playing a
-    multiway pot with no initiative.
+  claim: 'Enter pots with a raise, not a limp, including when isolating a limper in position. If you doubt
+    it, filter your tracker for hands where you raised preflop versus hands where you limped: the raised
+    hands typically earn about twice as much, often more.'
+  why: Raising gives you the initiative, which lets you take down pots with a c-bet when everyone misses,
+    builds a bigger pot for the times you connect and earns some respect so your later bets are credited.
+    Limping does none of those things and invites more players into the pot behind you. When isolating
+    a weak limper deep-stacked, a larger raise such as 8 big blinds is fine, since they call anyway and
+    the extra money goes in while you have position and the better hand.
+  common_mistake: Limping behind a fish with a speculative hand "to see a cheap flop" and playing a multiway
+    pot with no initiative.
   numbers:
-    - "Win rate when raising preflop ~2x or more vs limping (coach's own tracker)"
-    - "Iso-raise up to ~8bb vs a deep-stacked fish"
+  - Win rate when raising preflop ~2x or more vs limping (coach's own tracker)
+  - Iso-raise up to ~8bb vs a deep-stacked fish
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#04
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#04
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - One filter in your tracker ends the limping debate.
-    - Raise or limp? Your database already answered.
-    - Limping cuts your win rate in half. Literally.
-  status: draft
-  created: "2026-10-04"
-
+  - One filter in your tracker ends the limping debate.
+  - Raise or limp? Your database already answered.
+  - Limping cuts your win rate in half. Literally.
+  status: needs-review
+  created: '2026-10-04'
+  review_note: Conclusion fine, but the 2x win-rate evidence is selection-biased. Rewrite why before publishing.
 - id: c-cash-6max-br3-fewer-tables-011
   format: cash-6max
   topic: study-methods
-  concepts: [multi-tabling, attention, win-rate, table-count]
+  concepts:
+  - multi-tabling
+  - attention
+  - win-rate
+  - table-count
   level: beginner
   position: any
   title: Fewer tables means a higher win rate because you catch what the HUD misses
-  claim: >-
-    Playing two to six tables lets you notice things like a player open-shoving two hands in a
-    row or a fish about to rebuy. Those observations are worth real money and vanish at 18 or
-    24 tables, so expect a far better per-table win rate when you play fewer.
-  why: >-
-    HUD stats are slow to converge and never record context such as who just bought in short,
-    who is tilting or who shoved the last two hands. With a handful of tables you keep that
-    context in the corner of your eye and act on it immediately, for example calling an
-    open-shover with a medium hand you would otherwise fold. Mass multi-tabling trades all of
-    that for volume, and in today's games the trade is often a bad one.
-  common_mistake: >-
-    Adding tables to "make up for" a low win rate, which lowers the win rate further.
+  claim: Playing two to six tables lets you notice things like a player open-shoving two hands in a row
+    or a fish about to rebuy. Those observations are worth real money and vanish at 18 or 24 tables, so
+    expect a far better per-table win rate when you play fewer.
+  why: HUD stats are slow to converge and never record context such as who just bought in short, who is
+    tilting or who shoved the last two hands. With a handful of tables you keep that context in the corner
+    of your eye and act on it immediately, for example calling an open-shover with a medium hand you would
+    otherwise fold. Mass multi-tabling trades all of that for volume, and in today's games the trade is
+    often a bad one.
+  common_mistake: Adding tables to "make up for" a low win rate, which lowers the win rate further.
   numbers:
-    - "Coach recommends 2-6 tables over 18+ for win rate"
+  - Coach recommends 2-6 tables over 18+ for win rate
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#04
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#06
-      stance: supports
-      note: Coach says mass multi-tabling no longer works as the games changed; cut tables down.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#04
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#06
+    stance: supports
+    note: Coach says mass multi-tabling no longer works as the games changed; cut tables down.
   consensus_score: 0.5
   hook_ideas:
-    - Sixteen tables cost more win rate than you think.
-    - Four tables saw the open-shover. Twenty would have missed him.
-    - More tables, less money. Here is the trap.
+  - Sixteen tables cost more win rate than you think.
+  - Four tables saw the open-shover. Twenty would have missed him.
+  - More tables, less money. Here is the trap.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-tight-stats-no-credit-012
   format: cash-6max
   topic: hand-reading
-  concepts: [hud, stats, credit, player-typing, small-samples]
+  concepts:
+  - hud
+  - stats
+  - credit
+  - player-typing
+  - small-samples
   level: beginner
   position: any
   title: Normal-looking stats do not mean an opponent deserves credit
-  claim: >-
-    A player with reasonable VPIP and PFR can still make very bad plays, such as stacking off
-    with a weak draw or a bare pair. Do not fold a strong hand simply because the HUD says the
-    opponent is tight; judge their actual play in the hand.
-  why: >-
-    Preflop stats describe only one part of a player's game. Someone who plays 21% of hands
-    may still have no idea how to play postflop, and at micro stakes that is common. Giving
-    automatic credit to tight stats means folding winners to players who are not thinking at
-    the level you assume. Read the action, the sizing and the board, and use the stats as a
-    starting point rather than a verdict. A tight player who does one silly thing is probably a
-    slight loser, not a reason to stay at the table, but also not a reason to fold.
-  common_mistake: >-
-    Folding top pair to a raise from a 21/17 player and being shown a gutshot.
+  claim: A player with reasonable VPIP and PFR can still make very bad plays, such as stacking off with
+    a weak draw or a bare pair. Do not fold a strong hand simply because the HUD says the opponent is
+    tight; judge their actual play in the hand.
+  why: Preflop stats describe only one part of a player's game. Someone who plays 21% of hands may still
+    have no idea how to play postflop, and at micro stakes that is common. Giving automatic credit to
+    tight stats means folding winners to players who are not thinking at the level you assume. Read the
+    action, the sizing and the board, and use the stats as a starting point rather than a verdict. A tight
+    player who does one silly thing is probably a slight loser, not a reason to stay at the table, but
+    also not a reason to fold.
+  common_mistake: Folding top pair to a raise from a 21/17 player and being shown a gutshot.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#04
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#04
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Tight stats, terrible play. It happens more than you think.
-    - The HUD said reg. The hand said fish. Trust the hand.
-    - Do not fold to a number on a screen.
+  - Tight stats, terrible play. It happens more than you think.
+  - The HUD said reg. The hand said fish. Trust the hand.
+  - Do not fold to a number on a screen.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-skip-cbet-two-overs-wet-013
   format: cash-6max
   topic: cbet-strategy
-  concepts: [c-bet, coordinated-board, overcards, give-up]
+  concepts:
+  - c-bet
+  - coordinated-board
+  - overcards
+  - give-up
   level: beginner
   street: flop
   pot_type: srp
   position: any
   title: With just two overcards on a middling, coordinated flop, do not c-bet
-  claim: >-
-    When you hold a hand like A-Q on a flop such as 9-8-6 with draws everywhere, give up without
-    putting a chip in. The opponent connects with too many hands and you have only two overcards
-    with no backup.
-  why: >-
-    Boards full of middle cards hit the calling ranges of micro players hard: pairs, straight
-    draws, two pairs and combination draws are all common. Your two overcards have about six
-    outs and little fold equity, since this type of opponent calls with any piece. A c-bet
-    here builds a pot you are usually losing and sets up awkward turn decisions. Skipping the
-    bet entirely keeps the loss to the preflop raise.
-  common_mistake: >-
-    C-betting every flop as the preflop raiser and then facing a raise on a board you can never
-    continue on.
+  claim: When you hold a hand like A-Q on a flop such as 9-8-6 with draws everywhere, give up without
+    putting a chip in. The opponent connects with too many hands and you have only two overcards with
+    no backup.
+  why: 'Boards full of middle cards hit the calling ranges of micro players hard: pairs, straight draws,
+    two pairs and combination draws are all common. Your two overcards have about six outs and little
+    fold equity, since this type of opponent calls with any piece. A c-bet here builds a pot you are usually
+    losing and sets up awkward turn decisions. Skipping the bet entirely keeps the loss to the preflop
+    raise.'
+  common_mistake: C-betting every flop as the preflop raiser and then facing a raise on a board you can
+    never continue on.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#04
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#04
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Ace-queen on nine-eight-six. Do not bet a penny.
-    - The flop every c-bet rule forgets about.
-    - Two overcards, wet board, no bet. Here is why.
+  - Ace-queen on nine-eight-six. Do not bet a penny.
+  - The flop every c-bet rule forgets about.
+  - Two overcards, wet board, no bet. Here is why.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-stay-an-orbit-after-fish-busts-014
   format: cash-6max
   topic: table-selection
-  concepts: [table-selection, rebuy, tilt, position]
+  concepts:
+  - table-selection
+  - rebuy
+  - tilt
+  - position
   level: beginner
   position: any
   title: When the fish busts, give them an orbit to reload before leaving
-  claim: >-
-    After the weak player at your table loses their stack, do not leave instantly. Stay for about
-    one orbit to see whether they rebuy. If they do, they are now likely tilted and you already
-    have position on them; if they do not, go find another table.
-  why: >-
-    A busted recreational player who reloads is one of the best opponents available: they are
-    frustrated, chasing losses and in the same seat where you already hold the positional edge.
-    Leaving the moment they bust throws that away for the uncertainty of a new table. An orbit
-    costs almost nothing in blinds and resolves the question. If the seat stays empty, the
-    table has lost its reason and you move on.
-  common_mistake: >-
-    Quitting the table the second the fish is felted, then watching them rebuy against someone
+  claim: After the weak player at your table loses their stack, do not leave instantly. Stay for about
+    one orbit to see whether they rebuy. If they do, they are now likely tilted and you already have position
+    on them; if they do not, go find another table.
+  why: 'A busted recreational player who reloads is one of the best opponents available: they are frustrated,
+    chasing losses and in the same seat where you already hold the positional edge. Leaving the moment
+    they bust throws that away for the uncertainty of a new table. An orbit costs almost nothing in blinds
+    and resolves the question. If the seat stays empty, the table has lost its reason and you move on.'
+  common_mistake: Quitting the table the second the fish is felted, then watching them rebuy against someone
     else.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#04
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#05
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#04
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#05
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - The fish busted. Do not leave yet.
-    - A reloaded fish is a tilted fish. Stay one orbit.
-    - Why the best opponent is the one who just lost a stack.
+  - The fish busted. Do not leave yet.
+  - A reloaded fish is a tilted fish. Stay one orbit.
+  - Why the best opponent is the one who just lost a stack.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-bet-big-before-scare-cards-015
   format: cash-6max
   topic: value-betting
-  concepts: [nuts, wet-board, scare-cards, pot-building, no-slowplay]
+  concepts:
+  - nuts
+  - wet-board
+  - scare-cards
+  - pot-building
+  - no-slowplay
   level: beginner
   street: flop
   pot_type: srp
   position: any
   title: With the nuts on a wet board, bet near pot now before scare cards arrive
-  claim: >-
-    When you flop a very strong hand on a board with flush and straight draws, bet close to the
-    full pot and keep betting. Slow-playing risks a turn or river card that kills your action,
-    and against players who do not give you credit anyway there is nothing to disguise.
-  why: >-
-    Every draw-completing card either makes the opponent's hand or scares them off, and both
-    outcomes reduce what you win. Getting the money in while your hand is clearly best and their
-    draws still look alive maximizes the pot you play for. Micro-stakes players also call big
-    bets with pairs and draws, so there is no benefit in betting small to keep them in. The
-    rare exception for slow-playing is a hand like flopped quads where nothing can beat you
-    and no card changes that.
-  common_mistake: >-
-    Betting a third of the pot with the nut straight on a two-flush board and watching the
+  claim: When you flop a very strong hand on a board with flush and straight draws, bet close to the full
+    pot and keep betting. Slow-playing risks a turn or river card that kills your action, and against
+    players who do not give you credit anyway there is nothing to disguise.
+  why: Every draw-completing card either makes the opponent's hand or scares them off, and both outcomes
+    reduce what you win. Getting the money in while your hand is clearly best and their draws still look
+    alive maximizes the pot you play for. Micro-stakes players also call big bets with pairs and draws,
+    so there is no benefit in betting small to keep them in. The rare exception for slow-playing is a
+    hand like flopped quads where nothing can beat you and no card changes that.
+  common_mistake: Betting a third of the pot with the nut straight on a two-flush board and watching the
     flush complete.
   numbers:
-    - "Bet roughly pot-sized with the nuts on wet boards"
+  - Bet roughly pot-sized with the nuts on wet boards
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#05
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#02
-      stance: supports
-      note: Coach says he rarely slow-plays; flopped quads is the one exception.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#05
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#02
+    stance: supports
+    note: Coach says he rarely slow-plays; flopped quads is the one exception.
   consensus_score: 0.5
   hook_ideas:
-    - Slow-playing the nuts on a wet board costs you the stack.
-    - Bet pot now. The next card might not let you.
-    - The one hand you are allowed to slow-play. Quads.
+  - Slow-playing the nuts on a wet board costs you the stack.
+  - Bet pot now. The next card might not let you.
+  - The one hand you are allowed to slow-play. Quads.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br3-posting-utg-tell-016
   format: cash-6max
   topic: hand-reading
-  concepts: [tells, posting, limping, player-typing]
+  concepts:
+  - tells
+  - posting
+  - limping
+  - player-typing
   level: beginner
   street: preflop
   position: any
   title: Posting a blind out of turn, limping and odd buy-ins are all beginner tells
-  claim: >-
-    A player who posts a blind under the gun instead of waiting one hand for the big blind is
-    volunteering to pay twice, which only an inexperienced player does. Add it to limps and odd
-    buy-in amounts as a quick signal to tag them before they have shown a hand.
-  why: >-
-    Every one of these actions has a free alternative that any studied player would take: wait a
-    hand, raise instead of limping, buy in for a round full stack. Choosing the costly option
-    reveals that the player is not thinking about expected value at all. Spotting it saves you
-    the dozens of hands a HUD needs and lets you widen your isolation and value-betting range
-    against them from the first orbit.
-  common_mistake: >-
-    Ignoring everything that happens before the cards are dealt.
+  claim: A player who posts a blind under the gun instead of waiting one hand for the big blind is volunteering
+    to pay twice, which only an inexperienced player does. Add it to limps and odd buy-in amounts as a
+    quick signal to tag them before they have shown a hand.
+  why: 'Every one of these actions has a free alternative that any studied player would take: wait a hand,
+    raise instead of limping, buy in for a round full stack. Choosing the costly option reveals that the
+    player is not thinking about expected value at all. Spotting it saves you the dozens of hands a HUD
+    needs and lets you widen your isolation and value-betting range against them from the first orbit.'
+  common_mistake: Ignoring everything that happens before the cards are dealt.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#05
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/003-part3
-      chunk: br79-ctm-6max/003-part3#06
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#05
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/003-part3
+    chunk: br79-ctm-6max/003-part3#06
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - He posted under the gun. You already know everything.
-    - Three tells that show up before the first card.
-    - Paying the blind twice is a tell, not a mistake.
-  status: draft
-  created: "2026-10-04"
+  - He posted under the gun. You already know everything.
+  - Three tells that show up before the first card.
+  - Paying the blind twice is a tell, not a mistake.
+  status: needs-review
+  created: '2026-10-04'
+  review_note: Dated anecdote, weak publishable value.

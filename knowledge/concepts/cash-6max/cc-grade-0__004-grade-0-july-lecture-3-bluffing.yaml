@@ -1,721 +1,944 @@
-# Concept cards extracted from lesson cc-grade-0/004-grade-0-july-lecture-3-bluffing (lessoncode cc03).
-# Rephrased in our own words. source_refs are internal and never published.
-
 - id: c-cash-6max-cc03-equity-folded-spectrum-001
   format: cash-6max
   topic: fundamentals
-  concepts: [value, denial, bluffing, equity-folded, bet-purpose]
+  concepts:
+  - value
+  - denial
+  - bluffing
+  - equity-folded
+  - bet-purpose
   level: beginner
   street: multi-street
   title: Classify every bet by how much equity the folded hands had
-  claim: >-
-    Judge what a bet is doing by the average equity of the hands your opponent folds, not by whether you "had the best hand". Near 0% folded equity means a value bet, 15-30% means value plus denial, around 50% is a bluff-denial hybrid, and 75-100% is a pure bluff.
-  why: >-
-    Whether you were technically ahead is a poor label because it makes 50% a magic number. What matters is how much of the pot the folded hands would have won at showdown. When a flush draw bets and makes ace-high fold on the flop, the opponent surrendered roughly half the pot, so there is a real bluffing component even though the draw may have been the favourite. Fold equity (how often he folds) and equity folded (what he gave up when he did) are different quantities, and the second one tells you why the bet made money.
-  common_mistake: Calling any bet with the current best hand a "value bet" and any bet with the worst hand a "bluff", ignoring how much the folded hands would have won.
+  claim: Judge what a bet is doing by the average equity of the hands your opponent folds, not by whether
+    you "had the best hand". Near 0% folded equity means a value bet, 15-30% means value plus denial,
+    around 50% is a bluff-denial hybrid, and 75-100% is a pure bluff.
+  why: Whether you were technically ahead is a poor label because it makes 50% a magic number. What matters
+    is how much of the pot the folded hands would have won at showdown. When a flush draw bets and makes
+    ace-high fold on the flop, the opponent surrendered roughly half the pot, so there is a real bluffing
+    component even though the draw may have been the favourite. Fold equity (how often he folds) and equity
+    folded (what he gave up when he did) are different quantities, and the second one tells you why the
+    bet made money.
+  common_mistake: Calling any bet with the current best hand a "value bet" and any bet with the worst
+    hand a "bluff", ignoring how much the folded hands would have won.
   numbers:
-    - "~0% equity folded: value bet"
-    - "~15-30% equity folded: value/denial"
-    - "~50% equity folded: bluff-denial"
-    - "75-100% equity folded: pure bluff"
+  - '~0% equity folded: value bet'
+  - '~15-30% equity folded: value/denial'
+  - '~50% equity folded: bluff-denial'
+  - '75-100% equity folded: pure bluff'
   hook_ideas:
-    - "Your 'value bet' might actually be a bluff."
-    - "Stop asking who had the best hand. Ask what folded."
-    - "Four kinds of bet, one scale. Here it is."
+  - Your 'value bet' might actually be a bluff.
+  - Stop asking who had the best hand. Ask what folded.
+  - Four kinds of bet, one scale. Here it is.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#01
-      stance: supports
-      note: Coach draws a spectrum of average equity folded from value through denial to pure bluff.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#01
+    stance: supports
+    note: Coach draws a spectrum of average equity folded from value through denial to pure bluff.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-why-bluffs-beat-denial-002
   format: cash-6max
   topic: bluffing
-  concepts: [bluffing, denial, fold-equity, ev]
+  concepts:
+  - bluffing
+  - denial
+  - fold-equity
+  - ev
   level: beginner
   street: multi-street
   title: A pure bluff flips "usually losing" into "always winning"; denial only adds a sliver
-  claim: >-
-    Bluffing, like value, can justify a bet by itself. Denial cannot. When you bluff, each fold turns a hand that would lose most of the time into a won pot; when you bet for protection, most of the pot was already yours and a fold only adds a small extra share.
-  why: >-
-    A denial bet asks a hand with 15-20% equity to fold, so the gain is at most that slice. A pure bluff asks a hand with 90%+ equity to fold, so the gain is close to the whole pot. That is why the downside of bluffing (you lose nearly every time you are called) is worth accepting: the upside is enormous when your range lets you make the opponent fold more often than the break-even frequency. Semi-bluffs feel nicer because they sometimes win when called, but that does not make pure bluffs wrong; you should still bluff with no equity at some frequency on the flop and turn.
-  common_mistake: Treating protection as the main reason to bet while never putting in a bet whose only purpose is to make better hands fold.
+  claim: Bluffing, like value, can justify a bet by itself. Denial cannot. When you bluff, each fold turns
+    a hand that would lose most of the time into a won pot; when you bet for protection, most of the pot
+    was already yours and a fold only adds a small extra share.
+  why: 'A denial bet asks a hand with 15-20% equity to fold, so the gain is at most that slice. A pure
+    bluff asks a hand with 90%+ equity to fold, so the gain is close to the whole pot. That is why the
+    downside of bluffing (you lose nearly every time you are called) is worth accepting: the upside is
+    enormous when your range lets you make the opponent fold more often than the break-even frequency.
+    Semi-bluffs feel nicer because they sometimes win when called, but that does not make pure bluffs
+    wrong; you should still bluff with no equity at some frequency on the flop and turn.'
+  common_mistake: Treating protection as the main reason to bet while never putting in a bet whose only
+    purpose is to make better hands fold.
   hook_ideas:
-    - "Protection bets gain crumbs. Bluffs gain the whole pot."
-    - "Usually losing, always winning. That gap is why you bluff."
-    - "Semi-bluffs feel safer. They are not more correct."
+  - Protection bets gain crumbs. Bluffs gain the whole pot.
+  - Usually losing, always winning. That gap is why you bluff.
+  - Semi-bluffs feel safer. They are not more correct.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#02
-      stance: supports
-      note: Bluffing and value are the two self-sufficient reasons to bet; denial is a bonus.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#02
+    stance: supports
+    note: Bluffing and value are the two self-sufficient reasons to bet; denial is a bonus.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-protection-is-a-modifier-003
   format: cash-6max
   topic: value-betting
-  concepts: [protection, denial, finishing-equity, vulnerable-pairs]
+  concepts:
+  - protection
+  - denial
+  - finishing-equity
+  - vulnerable-pairs
   level: intermediate
   street: turn
   pot_type: srp
   title: Treat protection as a tiebreaker, never as the reason you bet
-  claim: >-
-    Decide first whether a bet is value or a bluff. Only after that should denial nudge a close decision. "This pair needs protection" should never on its own produce a bet, because a hand that truly needed protection would show a clear EV gap between betting and checking.
-  why: >-
-    On a dry turn with a range of medium pairs, the solver often mixes jacks, nines and sevens at similar frequencies. The lower pairs gain more from denial because more of the opponent's hands are live against them, but they also get called by more better hands, so their finishing equity is lower. The two effects cancel, which is why all of them are optional bets. The bigger pairs still bet a little more often, because value is a far stronger reason than protection. If denial is the only thing driving you, you are solving the problem in the wrong order.
-  common_mistake: Betting a vulnerable low pair "because it needs protection" while checking a stronger pair that would be the better value bet.
+  claim: Decide first whether a bet is value or a bluff. Only after that should denial nudge a close decision.
+    "This pair needs protection" should never on its own produce a bet, because a hand that truly needed
+    protection would show a clear EV gap between betting and checking.
+  why: On a dry turn with a range of medium pairs, the solver often mixes jacks, nines and sevens at similar
+    frequencies. The lower pairs gain more from denial because more of the opponent's hands are live against
+    them, but they also get called by more better hands, so their finishing equity is lower. The two effects
+    cancel, which is why all of them are optional bets. The bigger pairs still bet a little more often,
+    because value is a far stronger reason than protection. If denial is the only thing driving you, you
+    are solving the problem in the wrong order.
+  common_mistake: Betting a vulnerable low pair "because it needs protection" while checking a stronger
+    pair that would be the better value bet.
   hook_ideas:
-    - "'My pair needs protection' is not a reason to bet."
-    - "Jacks, nines, sevens: same bet frequency. Here's why."
-    - "Protection is a tiebreaker. Value is the reason."
+  - '''My pair needs protection'' is not a reason to bet.'
+  - 'Jacks, nines, sevens: same bet frequency. Here''s why.'
+  - Protection is a tiebreaker. Value is the reason.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#01
-      stance: supports
-      note: Homework review; bigger pairs bet more because value matters more than denial.
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#10
-      stance: supports
-      note: Jacks/nines/sevens all indifferent; "need" protection is the dangerous word.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#01
+    stance: supports
+    note: Homework review; bigger pairs bet more because value matters more than denial.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#10
+    stance: supports
+    note: Jacks/nines/sevens all indifferent; "need" protection is the dangerous word.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-underbluffing-biggest-leak-004
   format: cash-6max
   topic: bluffing
-  concepts: [under-bluffing, leaks, aggression, micro-stakes]
+  concepts:
+  - under-bluffing
+  - leaks
+  - aggression
+  - micro-stakes
   level: beginner
   street: multi-street
   title: At the micros, missing a required bluff costs more than any calling error
-  claim: >-
-    Facing a bet limits your options, so calling mistakes tend to be small. When you have the free choice to bet or check, the errors are far bigger, and the most frequent large blunder at low stakes is failing to bluff in spots that demand it. If you genuinely cannot work out a spot, lean towards betting.
-  why: >-
-    Most low-stakes players have learned not to stack off with weak hands, but they have not learned to win the pots their range is entitled to. When your range is much stronger than your opponent's and the hand reaches the river, the opponent has to fold more often than the break-even point, and checking throws away a pot that was yours to take. Bluffing in bad spots does happen, but it is the rarer and usually smaller error. That asymmetry is why the default when unsure should be aggression, not caution.
-  common_mistake: Checking down queen-high or eight-high after a check-check-check sequence and feeling virtuous for "not spewing".
+  claim: Facing a bet limits your options, so calling mistakes tend to be small. When you have the free
+    choice to bet or check, the errors are far bigger, and the most frequent large blunder at low stakes
+    is failing to bluff in spots that demand it. If you genuinely cannot work out a spot, lean towards
+    betting.
+  why: Most low-stakes players have learned not to stack off with weak hands, but they have not learned
+    to win the pots their range is entitled to. When your range is much stronger than your opponent's
+    and the hand reaches the river, the opponent has to fold more often than the break-even point, and
+    checking throws away a pot that was yours to take. Bluffing in bad spots does happen, but it is the
+    rarer and usually smaller error. That asymmetry is why the default when unsure should be aggression,
+    not caution.
+  common_mistake: Checking down queen-high or eight-high after a check-check-check sequence and feeling
+    virtuous for "not spewing".
   hook_ideas:
-    - "The most expensive mistake at NL10 is a bet you never made."
-    - "Calling errors are small. Betting errors are huge."
-    - "Not sure whether to bluff? That's usually a bluff."
+  - The most expensive mistake at NL10 is a bet you never made.
+  - Calling errors are small. Betting errors are huge.
+  - Not sure whether to bluff? That's usually a bluff.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#01
-      stance: supports
-      note: Opening claim of the lecture; "if not sure, probably just bluff".
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
-      stance: supports
-      note: Red-line digression; players are too passive in mandatory bluff spots.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#01
+    stance: supports
+    note: Opening claim of the lecture; "if not sure, probably just bluff".
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
+    stance: supports
+    note: Red-line digression; players are too passive in mandatory bluff spots.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-ask-what-folds-005
   format: cash-6max
   topic: hand-reading
-  concepts: [bet-purpose, fold-targets, range-thinking, denial]
+  concepts:
+  - bet-purpose
+  - fold-targets
+  - range-thinking
+  - denial
   level: beginner
   street: flop
   pot_type: srp
   title: Define a bet by naming the hands that fold to it, not by how the board hits a range
-  claim: >-
-    "This board connects with his range" tells you nothing about what your bet does. To understand a bet, name one hand you are bluffing (a better hand that folds) and one hand you are denying equity to (a worse hand with live outs that folds). If you cannot name either, question the bet.
-  why: >-
-    A bet only changes the outcome against hands that fold, so that is the set you must think about. A 3/4-pot c-bet with ace-king on Q-T-3 rainbow folds out small pocket pairs (a bluff, since they are ahead) and also folds out junk like 6-5 with a backdoor draw and two live cards (denial). Hands like K-J that call or raise are not being denied anything; they may even outplay you later. And a hand you beat today, such as K-9, might bluff you off the pot on a later street, so being ahead of it now does not make the bet pure value. Thinking in terms of which hands fold keeps you honest about why the chips go in.
-  common_mistake: Justifying a bet with "I want to fold out X" where X is a small slice of the range, or with "the board hits him" where that says nothing about what folds.
+  claim: '"This board connects with his range" tells you nothing about what your bet does. To understand
+    a bet, name one hand you are bluffing (a better hand that folds) and one hand you are denying equity
+    to (a worse hand with live outs that folds). If you cannot name either, question the bet.'
+  why: A bet only changes the outcome against hands that fold, so that is the set you must think about.
+    A 3/4-pot c-bet with ace-king on Q-T-3 rainbow folds out small pocket pairs (a bluff, since they are
+    ahead) and also folds out junk like 6-5 with a backdoor draw and two live cards (denial). Hands like
+    K-J that call or raise are not being denied anything; they may even outplay you later. And a hand
+    you beat today, such as K-9, might bluff you off the pot on a later street, so being ahead of it now
+    does not make the bet pure value. Thinking in terms of which hands fold keeps you honest about why
+    the chips go in.
+  common_mistake: Justifying a bet with "I want to fold out X" where X is a small slice of the range,
+    or with "the board hits him" where that says nothing about what folds.
   example_hand:
-    positions: "UTG vs BB"
-    hero: "AhKd"
-    board: "Qs Tc 3h"
-    action: "UTG opens, BB calls. BB checks, UTG bets 75% pot."
-    decision: "What is this bet doing?"
-    answer: "Bluff-denial: it folds out small pairs that are ahead (bluff) and junk with live cards (denial). Too little equity when called to be value."
+    positions: UTG vs BB
+    hero: AhKd
+    board: Qs Tc 3h
+    action: UTG opens, BB calls. BB checks, UTG bets 75% pot.
+    decision: What is this bet doing?
+    answer: 'Bluff-denial: it folds out small pairs that are ahead (bluff) and junk with live cards (denial).
+      Too little equity when called to be value.'
   hook_ideas:
-    - "'The board hits his range' is a meaningless sentence."
-    - "Name the hand that folds. Then you understand your bet."
-    - "Ace-king on Q-T-3: value bet or bluff? Neither."
+  - '''The board hits his range'' is a meaningless sentence.'
+  - Name the hand that folds. Then you understand your bet.
+  - 'Ace-king on Q-T-3: value bet or bluff? Neither.'
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#02
-      stance: supports
-      note: Exercise hand 1; coach rejects "this could hit BB's range" as irrelevant.
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#03
-      stance: supports
-      note: Names 22 as the bluff target and 65 as the denial target; KJ is not denied.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#02
+    stance: supports
+    note: Exercise hand 1; coach rejects "this could hit BB's range" as irrelevant.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#03
+    stance: supports
+    note: Names 22 as the bluff target and 65 as the denial target; KJ is not denied.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-finishing-equity-threshold-006
   format: cash-6max
   topic: value-betting
-  concepts: [finishing-equity, thin-value, range-filtering, texture]
+  concepts:
+  - finishing-equity
+  - thin-value
+  - range-filtering
+  - texture
   level: intermediate
   street: turn
   pot_type: srp
   title: Judge value bets by equity after the call; flop action moves that number
-  claim: >-
-    Judge a value bet by your equity against the hands that continue, not against the whole range before you bet. You want about 50-55% after the call. A pair plus a draw on a wet board after a big flop bet often lands near 40% and should check; a small pair on a dry board after the flop checked through can bet a third pot and still be comfortably ahead.
-  why: >-
-    A big flop bet filters your opponent's range hard, so by the turn he holds mostly hands that beat middle pair plus a gutshot; another big bet is too thin. When the flop was checked through on a texture he rarely connects with, his range is full of unpaired hands, so a small turn bet with a low pair gets called by worse and denies equity to all the live overcards. Two small sources of equity (a pair and a draw) added together do not automatically reach the value threshold. Checking is also entitled to a big share of the pot, so "I beat some hands" is not enough.
-  common_mistake: Seeing that you are a favourite before betting and concluding it is a value bet, without asking what you are up against once he calls.
+  claim: Judge a value bet by your equity against the hands that continue, not against the whole range
+    before you bet. You want about 50-55% after the call. A pair plus a draw on a wet board after a big
+    flop bet often lands near 40% and should check; a small pair on a dry board after the flop checked
+    through can bet a third pot and still be comfortably ahead.
+  why: A big flop bet filters your opponent's range hard, so by the turn he holds mostly hands that beat
+    middle pair plus a gutshot; another big bet is too thin. When the flop was checked through on a texture
+    he rarely connects with, his range is full of unpaired hands, so a small turn bet with a low pair
+    gets called by worse and denies equity to all the live overcards. Two small sources of equity (a pair
+    and a draw) added together do not automatically reach the value threshold. Checking is also entitled
+    to a big share of the pot, so "I beat some hands" is not enough.
+  common_mistake: Seeing that you are a favourite before betting and concluding it is a value bet, without
+    asking what you are up against once he calls.
   numbers:
-    - "target finishing equity for a value bet: ~50-55%"
-    - "middle pair + gutshot after a 75% flop c-bet is called: ~39-40% finishing equity, check"
+  - 'target finishing equity for a value bet: ~50-55%'
+  - 'middle pair + gutshot after a 75% flop c-bet is called: ~39-40% finishing equity, check'
   hook_ideas:
-    - "You were the favourite. You bet. Now you're the underdog."
-    - "Pair plus draw on the turn: value bet or spew?"
-    - "One number decides your thin value bet: equity after the call."
+  - You were the favourite. You bet. Now you're the underdog.
+  - 'Pair plus draw on the turn: value bet or spew?'
+  - 'One number decides your thin value bet: equity after the call.'
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#03
-      stance: supports
-      note: Exercise hand 2 (T9 with pair+gutter) is a bad bet, ~39% finishing equity.
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#04
-      stance: supports
-      note: Contrast with hand 4 (53 after check-check, 33% bet) which is value/denial.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#03
+    stance: supports
+    note: Exercise hand 2 (T9 with pair+gutter) is a bad bet, ~39% finishing equity.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#04
+    stance: supports
+    note: Contrast with hand 4 (53 after check-check, 33% bet) which is value/denial.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-profitable-but-wrong-007
   format: cash-6max
   topic: fundamentals
-  concepts: [ev-comparison, showdown-value, breakeven, checking-ev]
+  concepts:
+  - ev-comparison
+  - showdown-value
+  - breakeven
+  - checking-ev
   level: beginner
   street: river
   pot_type: srp
   title: A profitable bluff is still a blunder when checking makes more
-  claim: >-
-    Never evaluate a bluff by whether it beats the break-even fold frequency. Weigh what a bet earns against what a check earns, because a check is not worth zero; a fold is. With real showdown value, a bet that makes money can still cost you a large chunk of the pot.
-  why: >-
-    Take a river where the pot has been checked down and you hold king-high with a strong range on an ace-high paired board. Betting 3/4 pot needs about 43% folds to break even and the opponent folds far more than that, so the bet is profitable. But checking wins the pot very often, so the check is worth even more. In one such solver spot, checking was worth about 47% of the pot while a small bet earned 42% and a 4x-pot overbet still showed +27% of the pot: profitable, and still a mistake. Choosing a thousand when you were offered two thousand is not a good decision just because you ended up richer.
-  common_mistake: Saying "he folds more than 43% so this bet is good" and never asking what the hand would have earned by checking.
+  claim: Never evaluate a bluff by whether it beats the break-even fold frequency. Weigh what a bet earns
+    against what a check earns, because a check is not worth zero; a fold is. With real showdown value,
+    a bet that makes money can still cost you a large chunk of the pot.
+  why: 'Take a river where the pot has been checked down and you hold king-high with a strong range on
+    an ace-high paired board. Betting 3/4 pot needs about 43% folds to break even and the opponent folds
+    far more than that, so the bet is profitable. But checking wins the pot very often, so the check is
+    worth even more. In one such solver spot, checking was worth about 47% of the pot while a small bet
+    earned 42% and a 4x-pot overbet still showed +27% of the pot: profitable, and still a mistake. Choosing
+    a thousand when you were offered two thousand is not a good decision just because you ended up richer.'
+  common_mistake: Saying "he folds more than 43% so this bet is good" and never asking what the hand would
+    have earned by checking.
   numbers:
-    - "75% pot bet breaks even at ~43% folds (3 into 7)"
-    - "33% pot bet breaks even at 25% folds (1 into 4)"
-    - "example river: check ~47% pot EV vs bet ~42% (small) or ~27% (4x pot)"
+  - 75% pot bet breaks even at ~43% folds (3 into 7)
+  - 33% pot bet breaks even at 25% folds (1 into 4)
+  - 'example river: check ~47% pot EV vs bet ~42% (small) or ~27% (4x pot)'
   example_hand:
-    positions: "CO vs BB"
-    hero: "KhJd"
-    board: "Ac 4s 4d 8h 2c"
-    action: "CO opens, BB calls. Checks through on flop and turn. BB checks river."
-    decision: "Bet 75% pot or check?"
-    answer: "Check. The bet is profitable against the fold frequency, but king-high wins at showdown so often that checking earns clearly more."
+    positions: CO vs BB
+    hero: KhJd
+    board: Ac 4s 4d 8h 2c
+    action: CO opens, BB calls. Checks through on flop and turn. BB checks river.
+    decision: Bet 75% pot or check?
+    answer: Check. The bet is profitable against the fold frequency, but king-high wins at showdown so
+      often that checking earns clearly more.
   hook_ideas:
-    - "This bet makes money. It's still a huge mistake."
-    - "Which poker action is worth zero? Not checking."
-    - "'He folds more than 43%' is not a reason to bet."
+  - This bet makes money. It's still a huge mistake.
+  - Which poker action is worth zero? Not checking.
+  - '''He folds more than 43%'' is not a reason to bet.'
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#04
-      stance: supports
-      note: Coach frames this as "profitable but wrong" with a box-one-vs-box-two analogy.
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
-      stance: supports
-      note: A44 checked-down river with KJ; 4x pot EV +27% vs check 47%; folding is the zero action.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#04
+    stance: supports
+    note: Coach frames this as "profitable but wrong" with a box-one-vs-box-two analogy.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
+    stance: supports
+    note: A44 checked-down river with KJ; 4x pot EV +27% vs check 47%; folding is the zero action.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-three-bluffing-worlds-008
   format: cash-6max
   topic: bluffing
-  concepts: [showdown-value, range-favorability, mandatory-bluff, optional-bluff]
+  concepts:
+  - showdown-value
+  - range-favorability
+  - mandatory-bluff
+  - optional-bluff
   level: intermediate
   street: multi-street
   title: Every bluff spot is forbidden, optional or mandatory; two factors decide which
-  claim: >-
-    Sort bluffing decisions into three buckets: cannot bluff (checking is better), optional (bet and check are about equal), and must bluff (checking loses a lot). Two inputs decide the bucket: how much showdown value your hand has, and how favourable the range-versus-range situation is for you.
-  why: >-
-    High showdown value raises the value of checking, so bluffing has a higher bar to clear. A favourable range situation raises your real fold equity above what the pot odds alone suggest, so bluffing clears the bar more easily. Most spots in the middle of the hand are optional because the aggressor has a modest range edge that is roughly offset by the caller's filtered range. Must-bluff spots cluster on the river when you still hold the range advantage and there is no later street to bluff. Cannot-bluff spots require either too much showdown value or a badly unfavourable world, and there are fewer of them than beginners think. When quizzed, "optional" is the safe guess.
-  common_mistake: Treating bluffing as a binary "is this a bluff spot" instead of asking how big the gap between betting and checking is.
+  claim: 'Sort bluffing decisions into three buckets: cannot bluff (checking is better), optional (bet
+    and check are about equal), and must bluff (checking loses a lot). Two inputs decide the bucket: how
+    much showdown value your hand has, and how favourable the range-versus-range situation is for you.'
+  why: High showdown value raises the value of checking, so bluffing has a higher bar to clear. A favourable
+    range situation raises your real fold equity above what the pot odds alone suggest, so bluffing clears
+    the bar more easily. Most spots in the middle of the hand are optional because the aggressor has a
+    modest range edge that is roughly offset by the caller's filtered range. Must-bluff spots cluster
+    on the river when you still hold the range advantage and there is no later street to bluff. Cannot-bluff
+    spots require either too much showdown value or a badly unfavourable world, and there are fewer of
+    them than beginners think. When quizzed, "optional" is the safe guess.
+  common_mistake: Treating bluffing as a binary "is this a bluff spot" instead of asking how big the gap
+    between betting and checking is.
   hook_ideas:
-    - "Can't bluff, can bluff, must bluff. Which one is this?"
-    - "Two questions decide every bluff. Most players ask neither."
-    - "Most bluffs don't matter. A few are mandatory."
+  - Can't bluff, can bluff, must bluff. Which one is this?
+  - Two questions decide every bluff. Most players ask neither.
+  - Most bluffs don't matter. A few are mandatory.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#04
-      stance: supports
-      note: Introduces the three situations and the two factors (SDV, world favourability).
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
-      stance: supports
-      note: Most bluffs are optional; "optional" is the safe multiple-choice answer.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#04
+    stance: supports
+    note: Introduces the three situations and the two factors (SDV, world favourability).
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
+    stance: supports
+    note: Most bluffs are optional; "optional" is the safe multiple-choice answer.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-range-vs-nut-advantage-009
   format: cash-6max
   topic: board-textures
-  concepts: [range-advantage, nut-advantage, sizing, favorability]
+  concepts:
+  - range-advantage
+  - nut-advantage
+  - sizing
+  - favorability
   level: intermediate
   street: turn
   pot_type: srp
   title: Nut advantage sets your bet size; range advantage decides whether you bet at all
-  claim: >-
-    Having more nutted combos than your opponent does not mean you are in a favourable spot. Nut advantage controls sizing (bigger when you have it). Range advantage, meaning whose whole range has more equity, controls whether bluffing is allowed. You can hold the nut advantage and still be in a world where bluffing is a blunder.
-  why: >-
-    On an ace-high paired board after the flop checks through, the big blind has more trips than the in-position raiser. But trips are rare; the rest of his range is stuffed with eight-high and ten-high air, while the raiser's checking range keeps plenty of pairs and ace-x because it checks optional value hands rather than only junk. So the raiser retains the range advantage from preflop. If the big blind leads with air because "I have more fours", the raiser simply does not fold enough and the lead loses money. Judging favourability means looking at both complete ranges, not the top sliver.
-  common_mistake: Saying "I have the range advantage here" when what you actually have is more combos of the nuts.
+  claim: Having more nutted combos than your opponent does not mean you are in a favourable spot. Nut
+    advantage controls sizing (bigger when you have it). Range advantage, meaning whose whole range has
+    more equity, controls whether bluffing is allowed. You can hold the nut advantage and still be in
+    a world where bluffing is a blunder.
+  why: On an ace-high paired board after the flop checks through, the big blind has more trips than the
+    in-position raiser. But trips are rare; the rest of his range is stuffed with eight-high and ten-high
+    air, while the raiser's checking range keeps plenty of pairs and ace-x because it checks optional
+    value hands rather than only junk. So the raiser retains the range advantage from preflop. If the
+    big blind leads with air because "I have more fours", the raiser simply does not fold enough and the
+    lead loses money. Judging favourability means looking at both complete ranges, not the top sliver.
+  common_mistake: Saying "I have the range advantage here" when what you actually have is more combos
+    of the nuts.
   hook_ideas:
-    - "More nuts than him? You still can't bluff here."
-    - "Range advantage and nut advantage are not the same thing."
-    - "'I rep the trips' is not a strategy."
+  - More nuts than him? You still can't bluff here.
+  - Range advantage and nut advantage are not the same thing.
+  - '''I rep the trips'' is not a strategy.'
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
-      stance: supports
-      note: A44 turn probe; BB has nut advantage, CO has range advantage; "nut advantage controls sizing, range advantage controls what we do".
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
+    stance: supports
+    note: A44 turn probe; BB has nut advantage, CO has range advantage; "nut advantage controls sizing,
+      range advantage controls what we do".
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-turn-probe-unfavorable-010
   format: cash-6max
   topic: turn-play
-  concepts: [probe-bet, unfavorable-world, nut-potential, implied-odds]
+  concepts:
+  - probe-bet
+  - unfavorable-world
+  - nut-potential
+  - implied-odds
   level: intermediate
   street: turn
   pot_type: srp
   position: oop
   title: Probe the turn with air only when you have a draw to a nutted hand
-  claim: >-
-    After the in-position raiser checks back the flop, the out-of-position caller is usually in an unfavourable range situation on the turn. Bluff-probing with pure air is then worse than folding would be. Lead only with hands that can make a very strong hand by the river, such as flush draws and gutshots, or with real value.
-  why: >-
-    The raiser's checking range stays stronger than the caller's range, and he has position, so he defends a little more than the pot odds require. Pure air cannot recover when called: even hitting a pair on the river rarely wins and never earns another bet. A draw changes the maths because the times you get called and then hit, you win not just the current pot but an extra river bet, and those implied odds can lift the lead from losing to acceptable. In a solver example, nine-high overbetting the turn here was worth about -3% of the pot while checking kept +3.6%. The exception is low, connected turns that smash the caller's range, where leading becomes close to a range bet.
-  common_mistake: Leading the turn with nothing after a check-back because "he showed weakness", then paying off when he calls.
+  claim: After the in-position raiser checks back the flop, the out-of-position caller is usually in an
+    unfavourable range situation on the turn. Bluff-probing with pure air is then worse than folding would
+    be. Lead only with hands that can make a very strong hand by the river, such as flush draws and gutshots,
+    or with real value.
+  why: 'The raiser''s checking range stays stronger than the caller''s range, and he has position, so
+    he defends a little more than the pot odds require. Pure air cannot recover when called: even hitting
+    a pair on the river rarely wins and never earns another bet. A draw changes the maths because the
+    times you get called and then hit, you win not just the current pot but an extra river bet, and those
+    implied odds can lift the lead from losing to acceptable. In a solver example, nine-high overbetting
+    the turn here was worth about -3% of the pot while checking kept +3.6%. The exception is low, connected
+    turns that smash the caller''s range, where leading becomes close to a range bet.'
+  common_mistake: Leading the turn with nothing after a check-back because "he showed weakness", then
+    paying off when he calls.
   numbers:
-    - "example: nine-high overbet probe ~-3% pot EV vs check ~+3.6%"
+  - 'example: nine-high overbet probe ~-3% pot EV vs check ~+3.6%'
   hook_ideas:
-    - "He checked back. That doesn't mean he's weak."
-    - "Betting here is worse than open-folding your hand."
-    - "Probe the turn with a draw or don't probe at all."
+  - He checked back. That doesn't mean he's weak.
+  - Betting here is worse than open-folding your hand.
+  - Probe the turn with a draw or don't probe at all.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
-      stance: supports
-      note: Turn probe with 96 is a "categorical blunder"; attack only with nutted redraws; bet EV negative, check 3.6%.
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#06
-      stance: nuances
-      note: Exception named - probing a 7-6-5-4 type board is close to a range bet for BB.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
+    stance: supports
+    note: Turn probe with 96 is a "categorical blunder"; attack only with nutted redraws; bet EV negative,
+      check 3.6%.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#06
+    stance: nuances
+    note: Exception named - probing a 7-6-5-4 type board is close to a range bet for BB.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-never-fold-extreme-advantage-011
   format: cash-6max
   topic: defending
-  concepts: [range-advantage, donk-bet, folding, frequency]
+  concepts:
+  - range-advantage
+  - donk-bet
+  - folding
+  - frequency
   level: intermediate
   street: flop
   pot_type: srp
   position: ip
   title: When your range dwarfs his, do not fold any hand to a small bet
-  claim: >-
-    When your range is massively stronger than your opponent's and he makes a small bet into you, fold nothing. Even your worst hands are entitled to a big share of the pot against a range that feeble. Fold frequency depends on favourability, not just on bet size.
-  why: >-
-    If your range were only aces and his only seven-deuce, you would never fold to a shove, and even a small frequency would be absurd; a horrible play does not become fine by doing it rarely. The same logic applies on boards like K-K-7 rainbow when the big blind leads 25% pot into the preflop raiser from early position: the raiser's range is so much stronger that every hand in it continues. Pot odds give the baseline fold frequency for symmetric ranges, but range inequality pushes it towards zero in your favour and towards over-folding when you are the one being smashed.
-  common_mistake: Mechanically folding the bottom of your range to a tiny lead because "I have to fold something", regardless of how weak his range is.
+  claim: When your range is massively stronger than your opponent's and he makes a small bet into you,
+    fold nothing. Even your worst hands are entitled to a big share of the pot against a range that feeble.
+    Fold frequency depends on favourability, not just on bet size.
+  why: 'If your range were only aces and his only seven-deuce, you would never fold to a shove, and even
+    a small frequency would be absurd; a horrible play does not become fine by doing it rarely. The same
+    logic applies on boards like K-K-7 rainbow when the big blind leads 25% pot into the preflop raiser
+    from early position: the raiser''s range is so much stronger that every hand in it continues. Pot
+    odds give the baseline fold frequency for symmetric ranges, but range inequality pushes it towards
+    zero in your favour and towards over-folding when you are the one being smashed.'
+  common_mistake: Mechanically folding the bottom of your range to a tiny lead because "I have to fold
+    something", regardless of how weak his range is.
   numbers:
-    - "vs a 25% pot donk on K-K-7 as the early-position raiser: fold 0%"
+  - 'vs a 25% pot donk on K-K-7 as the early-position raiser: fold 0%'
   hook_ideas:
-    - "Sometimes the correct fold frequency is exactly zero."
-    - "A horrible play done rarely is still a horrible play."
-    - "He donks into your monster range. Fold nothing."
+  - Sometimes the correct fold frequency is exactly zero.
+  - A horrible play done rarely is still a horrible play.
+  - He donks into your monster range. Fold nothing.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
-      stance: supports
-      note: Aces vs 72 thought experiment; UTG never folds to a 25% donk on KK7.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
+    stance: supports
+    note: Aces vs 72 thought experiment; UTG never folds to a 25% donk on KK7.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-red-line-trap-012
   format: cash-6max
   topic: mental-game
-  concepts: [red-line, results-orientation, frequencies, discipline]
+  concepts:
+  - red-line
+  - results-orientation
+  - frequencies
+  - discipline
   level: beginner
   street: multi-street
   title: Never bet to fix your red line or check to feel less spewy
-  claim: >-
-    Do not adjust your aggression in general. Fix the specific spot. Betting more "to be more aggressive" or checking more "to be less spewy" are both ways of avoiding the real question, which is whether this bet beats this check.
-  why: >-
-    A falling non-showdown line usually means you are missing mandatory bluffs, and that diagnosis is often correct. The wrong cure is to start betting randomly, because any fold equity will lift the red line while the showdown line drops by more, so the total graph gets worse. Labels like "too nitty" or "too aggro" operate at the level of whole frequencies and let you dodge engaging with the hand in front of you. Every decision is a comparison of two EVs in one spot, and no global adjustment can replace that.
-  common_mistake: Firing a river bet with a hand that has decent showdown value because the graph looked passive, then losing more at showdown than the bluffs gain.
+  claim: Do not adjust your aggression in general. Fix the specific spot. Betting more "to be more aggressive"
+    or checking more "to be less spewy" are both ways of avoiding the real question, which is whether
+    this bet beats this check.
+  why: A falling non-showdown line usually means you are missing mandatory bluffs, and that diagnosis
+    is often correct. The wrong cure is to start betting randomly, because any fold equity will lift the
+    red line while the showdown line drops by more, so the total graph gets worse. Labels like "too nitty"
+    or "too aggro" operate at the level of whole frequencies and let you dodge engaging with the hand
+    in front of you. Every decision is a comparison of two EVs in one spot, and no global adjustment can
+    replace that.
+  common_mistake: Firing a river bet with a hand that has decent showdown value because the graph looked
+    passive, then losing more at showdown than the bluffs gain.
   hook_ideas:
-    - "Chasing a pretty red line costs you the green one."
-    - "'I need to be more aggressive' is not a plan."
-    - "Your red line is a symptom. Don't treat the symptom."
+  - Chasing a pretty red line costs you the green one.
+  - '''I need to be more aggressive'' is not a plan.'
+  - Your red line is a symptom. Don't treat the symptom.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
-      stance: supports
-      note: Red-line digression; "too nitty" banned as a term because it modifies frequency without engaging the spot.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#05
+    stance: supports
+    note: Red-line digression; "too nitty" banned as a term because it modifies frequency without engaging
+      the spot.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-no-comfort-blanket-013
   format: cash-6max
   topic: bluffing
-  concepts: [pure-air, double-barrel, comfort-blanket, range-construction]
+  concepts:
+  - pure-air
+  - double-barrel
+  - comfort-blanket
+  - range-construction
   level: intermediate
   street: turn
   pot_type: srp
   position: ip
   title: You do not need a draw to barrel the turn when your range is doing fine
-  claim: >-
-    In position with a normal range on a dry runout, betting the turn with pure air after your c-bet is called is fine and often optional in theory, and better than fine against opponents who fold too much. Requiring a draw, backdoor or overcard as a "get-out clause" before bluffing means your betting range is far too strong.
-  why: >-
-    Your value hands sit at the top of your range and your semi-bluffs just below them. If you only barrel those, you bet an unbalanced, top-heavy range and give up the pot with everything else. A hand like queen-high on K-7-3-8 is entitled to only a few percent of the pot whichever way it is played, so betting it costs nothing relative to checking while adding the bluffs your range needs. Fold equity comes from the range-versus-range situation, not from your own card quality. The exception is a runout that hammers your range; then even air with no outs must check, unless it has nut potential.
-  common_mistake: Checking back pure air on the turn with "nothing to rep" and only barrelling when holding some equity, making bluffs easy to spot and too rare.
+  claim: In position with a normal range on a dry runout, betting the turn with pure air after your c-bet
+    is called is fine and often optional in theory, and better than fine against opponents who fold too
+    much. Requiring a draw, backdoor or overcard as a "get-out clause" before bluffing means your betting
+    range is far too strong.
+  why: Your value hands sit at the top of your range and your semi-bluffs just below them. If you only
+    barrel those, you bet an unbalanced, top-heavy range and give up the pot with everything else. A hand
+    like queen-high on K-7-3-8 is entitled to only a few percent of the pot whichever way it is played,
+    so betting it costs nothing relative to checking while adding the bluffs your range needs. Fold equity
+    comes from the range-versus-range situation, not from your own card quality. The exception is a runout
+    that hammers your range; then even air with no outs must check, unless it has nut potential.
+  common_mistake: Checking back pure air on the turn with "nothing to rep" and only barrelling when holding
+    some equity, making bluffs easy to spot and too rare.
   example_hand:
-    positions: "BTN vs BB"
-    hero: "QhJc"
-    board: "Kd 7s 3c 8h"
-    action: "BTN opens, BB calls. BB checks, BTN c-bets, BB calls. Turn: BB checks."
-    decision: "Barrel with queen-high and no draw?"
-    answer: "Yes, at some frequency. Range is in a fine spot, fold equity is normal, and checking is worth almost nothing with this hand."
+    positions: BTN vs BB
+    hero: QhJc
+    board: Kd 7s 3c 8h
+    action: 'BTN opens, BB calls. BB checks, BTN c-bets, BB calls. Turn: BB checks.'
+    decision: Barrel with queen-high and no draw?
+    answer: Yes, at some frequency. Range is in a fine spot, fold equity is normal, and checking is worth
+      almost nothing with this hand.
   hook_ideas:
-    - "Bluffing with nothing on the turn is normal. Here's why."
-    - "Only bluff with draws? Your range is far too strong."
-    - "Queen-high, no draw, dry turn. Bet it."
+  - Bluffing with nothing on the turn is normal. Here's why.
+  - Only bluff with draws? Your range is far too strong.
+  - Queen-high, no draw, dry turn. Bet it.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#04
-      stance: supports
-      note: Q6 turn barrel with no equity is fine; don't look for a get-out clause.
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#06
-      stance: supports
-      note: K73 8 turn with QJ - "who cares, bluff"; comfort blanket fallacy.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#04
+    stance: supports
+    note: Q6 turn barrel with no equity is fine; don't look for a get-out clause.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#06
+    stance: supports
+    note: K73 8 turn with QJ - "who cares, bluff"; comfort blanket fallacy.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-compare-actions-not-hands-014
   format: cash-6max
   topic: bluffing
-  concepts: [ev-comparison, comfort-blanket, bluff-selection, showdown-value]
+  concepts:
+  - ev-comparison
+  - comfort-blanket
+  - bluff-selection
+  - showdown-value
   level: intermediate
   street: turn
   pot_type: srp
-  title: "A better hand is not a better bluff: compare bet vs check for the hand you hold"
-  claim: >-
-    Whether to bluff is the difference between the EV of betting and the EV of checking with your actual hand. A flush draw is worth more than queen-high, but if both have bet EV equal to check EV, both are equally optional bluffs. "I'd rather bluff with a draw" compares hands, not actions, and is irrelevant.
-  why: >-
-    In a double-barrel spot the solver may bet a flush draw and an unpaired queen-high at similar frequencies. The draw is entitled to roughly 30% of the pot whatever it does; the queen-high to about 5% whatever it does. Neither gains anything by betting over checking, which is exactly what makes them optional. Players bet the draw far more often than the air because bluffing with equity feels less troubling, but a feeling about the hand is not evidence about the action. You are choosing between the two options available with these cards, not wishing for different cards.
-  common_mistake: Checking the turn with air because "we have better bluffs in our range", which is a statement about which hands you would prefer, not about which action is higher EV.
+  title: 'A better hand is not a better bluff: compare bet vs check for the hand you hold'
+  claim: Whether to bluff is the difference between the EV of betting and the EV of checking with your
+    actual hand. A flush draw is worth more than queen-high, but if both have bet EV equal to check EV,
+    both are equally optional bluffs. "I'd rather bluff with a draw" compares hands, not actions, and
+    is irrelevant.
+  why: In a double-barrel spot the solver may bet a flush draw and an unpaired queen-high at similar frequencies.
+    The draw is entitled to roughly 30% of the pot whatever it does; the queen-high to about 5% whatever
+    it does. Neither gains anything by betting over checking, which is exactly what makes them optional.
+    Players bet the draw far more often than the air because bluffing with equity feels less troubling,
+    but a feeling about the hand is not evidence about the action. You are choosing between the two options
+    available with these cards, not wishing for different cards.
+  common_mistake: Checking the turn with air because "we have better bluffs in our range", which is a
+    statement about which hands you would prefer, not about which action is higher EV.
   numbers:
-    - "example: flush draw ~31% pot EV, queen-high ~5% pot EV, both indifferent between bet and check"
+  - 'example: flush draw ~31% pot EV, queen-high ~5% pot EV, both indifferent between bet and check'
   hook_ideas:
-    - "You'd rather have a flush draw. You don't. Now decide."
-    - "'We have better bluffs' is an emotion, not an argument."
-    - "Both hands bluff the same amount. One just feels nicer."
+  - You'd rather have a flush draw. You don't. Now decide.
+  - '''We have better bluffs'' is an emotion, not an argument.'
+  - Both hands bluff the same amount. One just feels nicer.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#07
-      stance: supports
-      note: J9ss vs QT double barrel; 31% vs 5% EV, both mixes; coach's "eureka moment".
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#08
-      stance: supports
-      note: Slide titled compare the EV of your actions, not your hand to one you don't hold; sandwich/restaurant analogies.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#07
+    stance: supports
+    note: J9ss vs QT double barrel; 31% vs 5% EV, both mixes; coach's "eureka moment".
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#08
+    stance: supports
+    note: Slide titled compare the EV of your actions, not your hand to one you don't hold; sandwich/restaurant
+      analogies.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-optional-bluffs-dont-agonize-015
   format: cash-6max
   topic: bluffing
-  concepts: [optional-bluff, neutral-spot, results-orientation, double-barrel]
+  concepts:
+  - optional-bluff
+  - neutral-spot
+  - results-orientation
+  - double-barrel
   level: intermediate
   street: multi-street
   pot_type: srp
   title: Most bluffs are optional; in a neutral spot, bet or check and never regret the result
-  claim: >-
-    C-betting the turn after a called flop bet, delayed c-bets, flop bets with a slight range edge and most triple barrels are optional bluffs: betting and checking are close in EV. Pick one, and if you bet and get called, do not conclude the bet was wrong.
-  why: >-
-    Once the opponent has called a flop bet his range has condensed, so neither side holds a large range edge on the turn; that near-neutrality is exactly what makes bluffs optional. If betting air were clearly winning or clearly losing, someone would be playing badly and it would not be equilibrium. In these spots a bad hand is entitled to a small share of the pot by either route; bluffing earns that share through fold equity rather than by improving. Without a specific read that the opponent over- or under-folds, the choice barely matters, so there is nothing to agonise over and nothing to learn from one call.
-  common_mistake: Barrelling, getting called, and deciding "he obviously had it, I should never bluff there" after a single outcome.
+  claim: 'C-betting the turn after a called flop bet, delayed c-bets, flop bets with a slight range edge
+    and most triple barrels are optional bluffs: betting and checking are close in EV. Pick one, and if
+    you bet and get called, do not conclude the bet was wrong.'
+  why: Once the opponent has called a flop bet his range has condensed, so neither side holds a large
+    range edge on the turn; that near-neutrality is exactly what makes bluffs optional. If betting air
+    were clearly winning or clearly losing, someone would be playing badly and it would not be equilibrium.
+    In these spots a bad hand is entitled to a small share of the pot by either route; bluffing earns
+    that share through fold equity rather than by improving. Without a specific read that the opponent
+    over- or under-folds, the choice barely matters, so there is nothing to agonise over and nothing to
+    learn from one call.
+  common_mistake: Barrelling, getting called, and deciding "he obviously had it, I should never bluff
+    there" after a single outcome.
   hook_ideas:
-    - "Most bluffs don't matter. Stop agonising over them."
-    - "He called your bluff. That proves nothing."
-    - "Bet or check: when both are fine, just pick one."
+  - Most bluffs don't matter. Stop agonising over them.
+  - He called your bluff. That proves nothing.
+  - 'Bet or check: when both are fine, just pick one.'
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#06
-      stance: supports
-      note: List of optional spots; QT double barrel is neutral; "don't bet and then call yourself an idiot".
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#07
-      stance: supports
-      note: Bluffing EV is miserable but so is checking; hand entitled to ~5% either way.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#06
+    stance: supports
+    note: List of optional spots; QT double barrel is neutral; "don't bet and then call yourself an idiot".
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#07
+    stance: supports
+    note: Bluffing EV is miserable but so is checking; hand entitled to ~5% either way.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-delayed-cbet-never-check-down-016
   format: cash-6max
   topic: turn-play
-  concepts: [delayed-cbet, fold-equity, range-advantage, bluff-timing]
+  concepts:
+  - delayed-cbet
+  - fold-equity
+  - range-advantage
+  - bluff-timing
   level: intermediate
   street: turn
   pot_type: srp
   position: ip
   title: After checking back the flop, bluff the turn or the river, but never show down air
-  claim: >-
-    A delayed c-bet is more bluff-friendly than a double barrel because the opponent never had to call a bet and his range is still full of air. Betting the turn with air or waiting to bet the river when checked to are close in EV. What is a serious mistake is checking all the way down with a hand that cannot win at showdown while your range retains the advantage.
-  why: >-
-    The out-of-position caller folds well above the pot-odds baseline here: against a 33% bet, symmetric ranges would fold about a quarter, but the actual fold rate in a solver example was around 42%, and on the river he folds even more. That is why both timings work: betting now harvests fold equity while he still has junk; waiting lets him realise a little equity but saves money against his strong hands and sets up a bigger river fold rate. A small size suits the turn because your checked-back range has fewer monsters. The pure error is doing neither and losing the pot with queen-high on a board where he is folding more than enough to make almost any bet profitable.
-  common_mistake: Checking the flop, checking the turn, then checking the river with queen-high "because I never showed strength".
+  claim: A delayed c-bet is more bluff-friendly than a double barrel because the opponent never had to
+    call a bet and his range is still full of air. Betting the turn with air or waiting to bet the river
+    when checked to are close in EV. What is a serious mistake is checking all the way down with a hand
+    that cannot win at showdown while your range retains the advantage.
+  why: 'The out-of-position caller folds well above the pot-odds baseline here: against a 33% bet, symmetric
+    ranges would fold about a quarter, but the actual fold rate in a solver example was around 42%, and
+    on the river he folds even more. That is why both timings work: betting now harvests fold equity while
+    he still has junk; waiting lets him realise a little equity but saves money against his strong hands
+    and sets up a bigger river fold rate. A small size suits the turn because your checked-back range
+    has fewer monsters. The pure error is doing neither and losing the pot with queen-high on a board
+    where he is folding more than enough to make almost any bet profitable.'
+  common_mistake: Checking the flop, checking the turn, then checking the river with queen-high "because
+    I never showed strength".
   numbers:
-    - "neutral break-even vs a 33% pot bet: 25% folds"
-    - "example delayed c-bet spot: opponent folds ~42% to 33% pot"
+  - 'neutral break-even vs a 33% pot bet: 25% folds'
+  - 'example delayed c-bet spot: opponent folds ~42% to 33% pot'
   hook_ideas:
-    - "Checked back the flop? You can still bluff. You must."
-    - "Queen-high, check, check, check. The quietest way to lose."
-    - "He folds 42% to a third pot. Why are you checking?"
+  - Checked back the flop? You can still bluff. You must.
+  - Queen-high, check, check, check. The quietest way to lose.
+  - He folds 42% to a third pot. Why are you checking?
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#07
-      stance: supports
-      note: Q7 delayed c-bet CO vs BB; villain hasn't filtered range; 25% neutral vs 42% actual folds.
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#08
-      stance: supports
-      note: Bet turn or river, both fine; checking down queen-high is the big mistake; small size because range is capped.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#07
+    stance: supports
+    note: Q7 delayed c-bet CO vs BB; villain hasn't filtered range; 25% neutral vs 42% actual folds.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#08
+    stance: supports
+    note: Bet turn or river, both fine; checking down queen-high is the big mistake; small size because
+      range is capped.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-river-must-bluff-checked-down-017
   format: cash-6max
   topic: river-play
-  concepts: [mandatory-bluff, range-advantage, checked-down, representation]
+  concepts:
+  - mandatory-bluff
+  - range-advantage
+  - checked-down
+  - representation
   level: intermediate
   street: river
   pot_type: srp
   position: ip
   title: When the hand checks through to the river and you kept the range advantage, bluff your air
-  claim: >-
-    If you raised preflop against a blind caller and both players checked every street, your range is still stronger than his on the river. With a hand that cannot win at showdown you must bet, because there is no later street to delay to and checking with nothing equals folding. "I can't represent anything after checking twice" is a myth.
-  why: >-
-    In equilibrium the raiser's checking ranges are protected with plenty of showdown value, so checking does not turn his range into junk; both ranges weaken a little and the gap carries through. The opponent therefore has to fold a lot to a river bet, and real opponents with similar ranges tend to fold even more than the maths requires. A solver example with queen-high after three checks showed a pure bet to a 3/4-pot size, with the opponent folding far above the 43% break-even. Since a no-showdown-value check is worth zero, any bet that gets those folds beats it by the entire profit of the bet.
-  common_mistake: Checking down eight-high after check-check-check and calling it "the honest line", when it is simply surrendering a pot your range owns.
+  claim: If you raised preflop against a blind caller and both players checked every street, your range
+    is still stronger than his on the river. With a hand that cannot win at showdown you must bet, because
+    there is no later street to delay to and checking with nothing equals folding. "I can't represent
+    anything after checking twice" is a myth.
+  why: In equilibrium the raiser's checking ranges are protected with plenty of showdown value, so checking
+    does not turn his range into junk; both ranges weaken a little and the gap carries through. The opponent
+    therefore has to fold a lot to a river bet, and real opponents with similar ranges tend to fold even
+    more than the maths requires. A solver example with queen-high after three checks showed a pure bet
+    to a 3/4-pot size, with the opponent folding far above the 43% break-even. Since a no-showdown-value
+    check is worth zero, any bet that gets those folds beats it by the entire profit of the bet.
+  common_mistake: Checking down eight-high after check-check-check and calling it "the honest line", when
+    it is simply surrendering a pot your range owns.
   numbers:
-    - "75% pot river bluff breaks even at ~43% folds; favourable checked-down rivers fold well above this"
+  - 75% pot river bluff breaks even at ~43% folds; favourable checked-down rivers fold well above this
   hook_ideas:
-    - "'I checked twice, I can't rep anything.' Wrong."
-    - "Check, check, check, show down eight-high. Never again."
-    - "On the river, checking air is just folding."
+  - '''I checked twice, I can''t rep anything.'' Wrong.'
+  - Check, check, check, show down eight-high. Never again.
+  - On the river, checking air is just folding.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#10
-      stance: supports
-      note: Must-bluff type 1 (retained preflop advantage after checks); double delayed c-bet Q6 pure bet example.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#10
+    stance: supports
+    note: Must-bluff type 1 (retained preflop advantage after checks); double delayed c-bet Q6 pure bet
+      example.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-river-busted-draw-after-checkback-018
   format: cash-6max
   topic: river-play
-  concepts: [mandatory-bluff, busted-draw, range-condensing, give-up]
+  concepts:
+  - mandatory-bluff
+  - busted-draw
+  - range-condensing
+  - give-up
   level: intermediate
   street: river
   pot_type: srp
   position: oop
-  title: "Called the flop, he checked back the turn, you missed: bet the river almost always"
-  claim: >-
-    When you call a flop c-bet out of position, the in-position player checks the turn, and you reach the river with a busted draw, bluff. Your flop call purged the air from your range while his turn check often means he is giving up with his flop bluffs, so your fold equity is far above the break-even point and checking is worth nothing.
-  why: >-
-    Calling a bet condenses a range: the junk folds and what remains is stronger on average. The flop bettor, by contrast, often bets a wide or polarised range and then checks the turn with its weak part. On the river that leaves you with the range advantage and him with plenty of hands that fold to one bet. Blocker details barely matter in this spot; a missed gutshot and a missed flush draw should both bet. Because a no-showdown-value check and a fold are identical on the river, every fold you collect is pure profit over checking.
-  common_mistake: Checking a missed flush draw to the in-position player "in case he bets", when he will mostly check back and win with ace-high or a weak pair.
+  title: 'Called the flop, he checked back the turn, you missed: bet the river almost always'
+  claim: When you call a flop c-bet out of position, the in-position player checks the turn, and you reach
+    the river with a busted draw, bluff. Your flop call purged the air from your range while his turn
+    check often means he is giving up with his flop bluffs, so your fold equity is far above the break-even
+    point and checking is worth nothing.
+  why: 'Calling a bet condenses a range: the junk folds and what remains is stronger on average. The flop
+    bettor, by contrast, often bets a wide or polarised range and then checks the turn with its weak part.
+    On the river that leaves you with the range advantage and him with plenty of hands that fold to one
+    bet. Blocker details barely matter in this spot; a missed gutshot and a missed flush draw should both
+    bet. Because a no-showdown-value check and a fold are identical on the river, every fold you collect
+    is pure profit over checking.'
+  common_mistake: Checking a missed flush draw to the in-position player "in case he bets", when he will
+    mostly check back and win with ace-high or a weak pair.
   example_hand:
-    positions: "BTN vs BB"
-    hero: "9h8h"
-    board: "Kh 6h 2c 3s Qd"
-    action: "BTN opens, BB calls. BB checks, BTN bets 33%, BB calls. Turn: check, check. River: BB to act."
-    decision: "Check or bet with the missed flush draw?"
-    answer: "Bet. BB's flop call removed his air, BTN's turn check is often a give-up, and checking wins nothing."
+    positions: BTN vs BB
+    hero: 9h8h
+    board: Kh 6h 2c 3s Qd
+    action: 'BTN opens, BB calls. BB checks, BTN bets 33%, BB calls. Turn: check, check. River: BB to
+      act.'
+    decision: Check or bet with the missed flush draw?
+    answer: Bet. BB's flop call removed his air, BTN's turn check is often a give-up, and checking wins
+      nothing.
   hook_ideas:
-    - "He checked back the turn. That's your green light."
-    - "Missed your flush? Good. Now bet the river."
-    - "Blockers don't matter here. Betting does."
+  - He checked back the turn. That's your green light.
+  - Missed your flush? Good. Now bet the river.
+  - Blockers don't matter here. Betting does.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#10
-      stance: supports
-      note: Must-bluff type 2; calling condenses range ("cleansing"); busted draw bluffs regardless of blockers.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#10
+    stance: supports
+    note: Must-bluff type 2; calling condenses range ("cleansing"); busted draw bluffs regardless of blockers.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-flop-range-bet-dont-trap-019
   format: cash-6max
   topic: cbet-strategy
-  concepts: [range-bet, mandatory-bluff, slow-play, equity-denial]
+  concepts:
+  - range-bet
+  - mandatory-bluff
+  - slow-play
+  - equity-denial
   level: intermediate
   street: flop
   pot_type: 3bet-pot
   position: oop
   title: With a massive flop range advantage, bet your air now instead of hoping he bets
-  claim: >-
-    On flops that overwhelmingly favour you, such as a paired king-high board as the 3-bettor from the blinds against the button, bluff immediately with your whole range. Checking to trap fails because the player with the weak range almost always checks back, and delaying lets him realise equity you could have denied.
-  why: >-
-    You hold all the kings and the big pairs; he mostly missed. If you check, a competent opponent, and even a weak one who senses the board is bad for him, will rarely bet into you, so the check-raise you were planning never happens. Meanwhile his jack-ten gets a free card and will not fold once a jack arrives. In one solver example the button folded about 53% to a third-pot bet, roughly double the 25% that pot odds alone would suggest, because he understands how badly his range is doing. Checking here is only a small error since you can bluff later, but it is still an error, and the betting should be done by the player with the strong range.
-  common_mistake: Checking a dry king-high paired flop in a 3-bet pot to "induce", then watching the opponent check back and catch up.
+  claim: On flops that overwhelmingly favour you, such as a paired king-high board as the 3-bettor from
+    the blinds against the button, bluff immediately with your whole range. Checking to trap fails because
+    the player with the weak range almost always checks back, and delaying lets him realise equity you
+    could have denied.
+  why: You hold all the kings and the big pairs; he mostly missed. If you check, a competent opponent,
+    and even a weak one who senses the board is bad for him, will rarely bet into you, so the check-raise
+    you were planning never happens. Meanwhile his jack-ten gets a free card and will not fold once a
+    jack arrives. In one solver example the button folded about 53% to a third-pot bet, roughly double
+    the 25% that pot odds alone would suggest, because he understands how badly his range is doing. Checking
+    here is only a small error since you can bluff later, but it is still an error, and the betting should
+    be done by the player with the strong range.
+  common_mistake: Checking a dry king-high paired flop in a 3-bet pot to "induce", then watching the opponent
+    check back and catch up.
   numbers:
-    - "example: button folds ~53% to a 33% pot c-bet on K-K-x vs the blinds' 3-bet range (neutral baseline 25%)"
-    - "checking instead loses ~1% of the pot in equilibrium"
+  - 'example: button folds ~53% to a 33% pot c-bet on K-K-x vs the blinds'' 3-bet range (neutral baseline
+    25%)'
+  - checking instead loses ~1% of the pot in equilibrium
   hook_ideas:
-    - "Trapping on K-K-5 only traps yourself."
-    - "He folds 53% to a third pot. Bet everything."
-    - "When your range is the bear, you throw the first swipe."
+  - Trapping on K-K-5 only traps yourself.
+  - He folds 53% to a third pot. Bet everything.
+  - When your range is the bear, you throw the first swipe.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#10
-      stance: supports
-      note: SB 3-bet vs BTN on KK5; bear analogy; range bet, opponent folds 53% to b33; also K turn double barrel can be mandatory.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#10
+    stance: supports
+    note: SB 3-bet vs BTN on KK5; bear analogy; range bet, opponent folds 53% to b33; also K turn double
+      barrel can be mandatory.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-cc03-dry-board-ace-high-calls-020
   format: cash-6max
   topic: exploits
-  concepts: [dry-texture, thin-value, ace-high-calls, over-bluffing, landing-equity]
+  concepts:
+  - dry-texture
+  - thin-value
+  - ace-high-calls
+  - over-bluffing
+  - landing-equity
   level: intermediate
   street: turn
   pot_type: srp
   position: ip
   title: On very dry boards opponents must call ace-high, so value bet thinner and bluff more
-  claim: >-
-    When a board is so dry that almost nothing connects, the defender is supposed to keep calling unpaired overcards, ace-high and backdoors. That makes medium and even small pairs strong value bets on the turn (pocket sevens can land around 70% equity after being called), and it makes every air hand a fine bet against humans, who do not call ace-high nearly enough.
-  why: >-
-    Finishing equity depends on what the opponent continues with. On a wet texture his continuing range is full of pairs and draws, so middle pair with a gutshot is an underdog once called. On a bone-dry paired or king-high rag board his continuing range is mostly unpaired hands, so a low pair dominates it. The same fact works in reverse for bluffing: because theory asks him to call with hands like ace-nine, a human who folds those is over-folding, and betting your whole air range at a 3/4 size becomes highly profitable. Hands as low as pocket deuces can even show a slim value-plus-denial bet in theory here, which illustrates how far the dry-board effect goes, though that is an edge case rather than a rule.
-  common_mistake: Checking back middle or low pairs on a blank turn because "I only beat ace-high", when ace-high is exactly what he is calling with.
+  claim: When a board is so dry that almost nothing connects, the defender is supposed to keep calling
+    unpaired overcards, ace-high and backdoors. That makes medium and even small pairs strong value bets
+    on the turn (pocket sevens can land around 70% equity after being called), and it makes every air
+    hand a fine bet against humans, who do not call ace-high nearly enough.
+  why: 'Finishing equity depends on what the opponent continues with. On a wet texture his continuing
+    range is full of pairs and draws, so middle pair with a gutshot is an underdog once called. On a bone-dry
+    paired or king-high rag board his continuing range is mostly unpaired hands, so a low pair dominates
+    it. The same fact works in reverse for bluffing: because theory asks him to call with hands like ace-nine,
+    a human who folds those is over-folding, and betting your whole air range at a 3/4 size becomes highly
+    profitable. Hands as low as pocket deuces can even show a slim value-plus-denial bet in theory here,
+    which illustrates how far the dry-board effect goes, though that is an edge case rather than a rule.'
+  common_mistake: Checking back middle or low pairs on a blank turn because "I only beat ace-high", when
+    ace-high is exactly what he is calling with.
   numbers:
-    - "example dry turn, 75% pot bet: pocket sevens ~72% landing equity, ace-six ~70%, pocket nines ~78%, pocket jacks ~80%"
-    - "ace-queen and ace-ten high: check"
+  - 'example dry turn, 75% pot bet: pocket sevens ~72% landing equity, ace-six ~70%, pocket nines ~78%,
+    pocket jacks ~80%'
+  - 'ace-queen and ace-ten high: check'
   hook_ideas:
-    - "On this board he has to call ace-high. Punish it."
-    - "Pocket sevens, 72% equity after he calls. Bet."
-    - "Dry board, blank turn: every air hand is a bet."
+  - On this board he has to call ace-high. Punish it.
+  - Pocket sevens, 72% equity after he calls. Bet.
+  - 'Dry board, blank turn: every air hand is a bet.'
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#10
-      stance: supports
-      note: Homework review; sevens land ~72% because villain must call unmade hands on a board that is almost impossible to hit.
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#11
-      stance: supports
-      note: Landing equities for 77/A6/99/JJ; deuces anomaly; "against a human I would bet any two here".
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#10
+    stance: supports
+    note: Homework review; sevens land ~72% because villain must call unmade hands on a board that is
+      almost impossible to hit.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#11
+    stance: supports
+    note: Landing equities for 77/A6/99/JJ; deuces anomaly; "against a human I would bet any two here".
   consensus_score: 0.5
-  status: draft
-  created: "2026-10-04"
-
+  status: needs-review
+  created: '2026-10-04'
+  review_note: Edge case; strip solver-config-specific numbers before publishing.
 - id: c-cash-6max-cc03-calibrate-equity-guesses-021
   format: cash-6max
   topic: study-methods
-  concepts: [equity-estimation, calibration, drills, solver-study]
+  concepts:
+  - equity-estimation
+  - calibration
+  - drills
+  - solver-study
   level: beginner
   street: multi-street
   title: Guess the equity before you look it up, every time
-  claim: >-
-    To get good at estimating equity after a bet is called, commit to a number before opening the solver or equity calculator, then check and recalibrate. Repeating guess-check-adjust trains the intuition; reading the answer first trains nothing.
-  why: >-
-    Equity estimation is a motor skill like throwing a ball into a bucket: you improve through feedback on your own attempts, not by studying the physics. Players who write down a guess and then see they were ten points low learn why (for example, they forgot that the opponent must call many unpaired hands on a dry board). Doing it with a study group, where one person sets a texture and action sequence and the others guess the landing equity, makes it social and sticks better. Trying to memorise solver outputs without this step does not transfer to the table.
-  common_mistake: Opening the solver, nodding at the numbers, and never testing whether you could have produced them yourself.
+  claim: To get good at estimating equity after a bet is called, commit to a number before opening the
+    solver or equity calculator, then check and recalibrate. Repeating guess-check-adjust trains the intuition;
+    reading the answer first trains nothing.
+  why: 'Equity estimation is a motor skill like throwing a ball into a bucket: you improve through feedback
+    on your own attempts, not by studying the physics. Players who write down a guess and then see they
+    were ten points low learn why (for example, they forgot that the opponent must call many unpaired
+    hands on a dry board). Doing it with a study group, where one person sets a texture and action sequence
+    and the others guess the landing equity, makes it social and sticks better. Trying to memorise solver
+    outputs without this step does not transfer to the table.'
+  common_mistake: Opening the solver, nodding at the numbers, and never testing whether you could have
+    produced them yourself.
   hook_ideas:
-    - "Study tip: guess first, then look. Always."
-    - "You can't learn to throw by reading about physics."
-    - "Memorising solver outputs doesn't work. This does."
+  - 'Study tip: guess first, then look. Always.'
+  - You can't learn to throw by reading about physics.
+  - Memorising solver outputs doesn't work. This does.
   source_refs:
-    - school: cc
-      course: Carrot Poker School Grade 0
-      lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
-      chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#11
-      stance: supports
-      note: Q&A at the end; ball-in-bucket analogy; drill in group calls.
+  - school: cc
+    course: Carrot Poker School Grade 0
+    lesson: cc-grade-0/004-grade-0-july-lecture-3-bluffing
+    chunk: cc-grade-0/004-grade-0-july-lecture-3-bluffing#11
+    stance: supports
+    note: Q&A at the end; ball-in-bucket analogy; drill in group calls.
   consensus_score: 0.5
   status: draft
-  created: "2026-10-04"
+  created: '2026-10-04'

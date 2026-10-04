@@ -1,569 +1,563 @@
 - id: c-cash-6max-br4-lobby-sort-order-001
   format: cash-6max
   topic: table-selection
-  concepts: [lobby, table-selection, vpip, average-pot]
+  concepts:
+  - lobby
+  - table-selection
+  - vpip
+  - average-pot
   level: beginner
   position: any
   title: Sort the lobby by seated players, then VPIP, then average pot
-  claim: >-
-    Set your lobby to show tables with the most seated players first, then rank by players to
-    the flop (or VPIP) and finally by average pot, all descending. Hide full tables so you only
-    see ones you can actually join, and lock the sort so it survives a session.
-  why: >-
-    The players column tells you what kind of table you are opening, since a 3-handed table and
-    a 5-handed one play very differently. Flop percentage is the most direct measure of how
-    loose the table is, and average pot catches tables where loose players are also betting
-    big. Filtering out full tables stops you from staring at games you cannot sit in, and a
-    locked sort avoids re-doing settings mid-session when you are already stretched across
-    several tables.
-  common_mistake: >-
-    Sorting by one column only, or scrolling an unsorted lobby and picking tables at random.
+  claim: Set your lobby to show tables with the most seated players first, then rank by players to the
+    flop (or VPIP) and finally by average pot, all descending. Hide full tables so you only see ones you
+    can actually join, and lock the sort so it survives a session.
+  why: The players column tells you what kind of table you are opening, since a 3-handed table and a 5-handed
+    one play very differently. Flop percentage is the most direct measure of how loose the table is, and
+    average pot catches tables where loose players are also betting big. Filtering out full tables stops
+    you from staring at games you cannot sit in, and a locked sort avoids re-doing settings mid-session
+    when you are already stretched across several tables.
+  common_mistake: Sorting by one column only, or scrolling an unsorted lobby and picking tables at random.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#01
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#01
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Your lobby settings are a table-selection tool. Set them once.
-    - Three columns that find soft tables for you.
-    - Most players never touch the lobby sort. Big mistake.
+  - Your lobby settings are a table-selection tool. Set them once.
+  - Three columns that find soft tables for you.
+  - Most players never touch the lobby sort. Big mistake.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-buy-in-max-002
   format: cash-6max
   topic: bankroll-moving-up
-  concepts: [buy-in, deep-stacks, covering-fish, stack-size]
+  concepts:
+  - buy-in
+  - deep-stacks
+  - covering-fish
+  - stack-size
   level: beginner
   position: any
   title: Always buy in for the table maximum so you cover the weak players
-  claim: >-
-    Buy in for the largest amount the table allows, for example 250 big blinds where that is the
-    cap, even if nobody else has that much yet. Your goal is to cover any recreational player
-    who sits down, so that when they make a big mistake you win all of it.
-  why: >-
-    The money you win from a weak player is limited by the smaller of the two stacks. If they
-    sit with 150 big blinds and you have 100, the extra 50 they are willing to lose goes to
-    someone else. Deep stacks also increase the value of position and postflop skill, which is
-    exactly where your edge over this type is largest. The only requirement is a bankroll that
-    comfortably supports the bigger buy-in.
-  common_mistake: >-
-    Buying in for 100 big blinds at a deep table out of habit and getting outstacked by the
-    fish.
+  claim: Buy in for the largest amount the table allows, for example 250 big blinds where that is the
+    cap, even if nobody else has that much yet. Your goal is to cover any recreational player who sits
+    down, so that when they make a big mistake you win all of it.
+  why: The money you win from a weak player is limited by the smaller of the two stacks. If they sit with
+    150 big blinds and you have 100, the extra 50 they are willing to lose goes to someone else. Deep
+    stacks also increase the value of position and postflop skill, which is exactly where your edge over
+    this type is largest. The only requirement is a bankroll that comfortably supports the bigger buy-in.
+  common_mistake: Buying in for 100 big blinds at a deep table out of habit and getting outstacked by
+    the fish.
   numbers:
-    - "Buy in for the table max, e.g. 250bb where allowed"
+  - Buy in for the table max, e.g. 250bb where allowed
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#01
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#01
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Buying in short is leaving the fish's money for someone else.
-    - Why 250 big blinds beats 100 at the micros.
-    - Cover the table. Every time.
+  - Buying in short is leaving the fish's money for someone else.
+  - Why 250 big blinds beats 100 at the micros.
+  - Cover the table. Every time.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-fish-vpip-threshold-003
   format: cash-6max
   topic: table-selection
-  concepts: [vpip, hud, player-typing, 6max-vs-full-ring]
+  concepts:
+  - vpip
+  - hud
+  - player-typing
+  - 6max-vs-full-ring
   level: beginner
   position: any
   title: In 6-max, a VPIP of about 35-40% or more marks the player to target
-  claim: >-
-    Use a higher VPIP threshold to identify weak players in 6-max than in full ring. Around 30%
-    is loose at a 9-handed table, but short-handed ranges are naturally wider, so look for
-    roughly 35-40% and above before treating someone as the mark.
-  why: >-
-    Fewer players means everyone should play more hands, so a 30% VPIP that screams
-    recreational at full ring is only slightly loose in 6-max. Applying the full-ring number
-    would have you targeting competent, loose-aggressive regulars. Very short-handed, with two
-    or three players, the numbers inflate further still, so read VPIP relative to how many
-    players were dealt in. A player showing 80-90% at any table size, however, is unambiguous.
-  common_mistake: >-
-    Tagging a 28% VPIP 6-max player as a fish and discovering an aggressive regular.
+  claim: Use a higher VPIP threshold to identify weak players in 6-max than in full ring. Around 30% is
+    loose at a 9-handed table, but short-handed ranges are naturally wider, so look for roughly 35-40%
+    and above before treating someone as the mark.
+  why: Fewer players means everyone should play more hands, so a 30% VPIP that screams recreational at
+    full ring is only slightly loose in 6-max. Applying the full-ring number would have you targeting
+    competent, loose-aggressive regulars. Very short-handed, with two or three players, the numbers inflate
+    further still, so read VPIP relative to how many players were dealt in. A player showing 80-90% at
+    any table size, however, is unambiguous.
+  common_mistake: Tagging a 28% VPIP 6-max player as a fish and discovering an aggressive regular.
   numbers:
-    - "Full ring fish threshold ~30% VPIP; 6-max ~35-40%+"
+  - Full ring fish threshold ~30% VPIP; 6-max ~35-40%+
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#01
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#02
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#01
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#02
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Thirty percent VPIP is not a fish in 6-max.
-    - The one HUD number you need to adjust for table size.
-    - Where the fish line sits at a six-handed table.
+  - Thirty percent VPIP is not a fish in 6-max.
+  - The one HUD number you need to adjust for table size.
+  - Where the fish line sits at a six-handed table.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-tight-start-no-image-004
   format: cash-6max
   topic: exploits
-  concepts: [table-image, session-start, straightforward-play, unknowns]
+  concepts:
+  - table-image
+  - session-start
+  - straightforward-play
+  - unknowns
   level: beginner
   position: any
   title: Start a session tight and straightforward; do not try to build an image
-  claim: >-
-    With no information on new opponents, play tight and apply pressure only in clear spots.
-    Attempts to set up an image early are wasted at micro stakes, where most opponents are not
-    watching closely enough for an image to exist.
-  why: >-
-    Image plays only pay off against opponents who notice and adjust. Recreational players do
-    not track your frequencies, and regulars have not seen enough hands yet. Meanwhile a loose,
-    flashy start puts money at risk against players you have not typed. Keeping it simple for
-    the first orbits lets you gather reads for free and spend chips only once you know who the
-    weak players are and where they sit.
-  common_mistake: >-
-    Opening wide and 3-betting light in the first two orbits "to look aggressive" against
+  claim: With no information on new opponents, play tight and apply pressure only in clear spots. Attempts
+    to set up an image early are wasted at micro stakes, where most opponents are not watching closely
+    enough for an image to exist.
+  why: Image plays only pay off against opponents who notice and adjust. Recreational players do not track
+    your frequencies, and regulars have not seen enough hands yet. Meanwhile a loose, flashy start puts
+    money at risk against players you have not typed. Keeping it simple for the first orbits lets you
+    gather reads for free and spend chips only once you know who the weak players are and where they sit.
+  common_mistake: Opening wide and 3-betting light in the first two orbits "to look aggressive" against
     players who will never notice.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#01
-      stance: supports
-      note: "Coach: dumb down the thinking at these stakes; not trying to set an image early."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#01
+    stance: supports
+    note: 'Coach: dumb down the thinking at these stakes; not trying to set an image early.'
   consensus_score: 0.5
   hook_ideas:
-    - Nobody at NL5 is watching your image. Stop building one.
-    - The first two orbits are for reads, not for moves.
-    - Fancy play at the micros is just expensive noise.
+  - Nobody at NL5 is watching your image. Stop building one.
+  - The first two orbits are for reads, not for moves.
+  - Fancy play at the micros is just expensive noise.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-wet-coordinated-check-005
   format: cash-6max
   topic: board-textures
-  concepts: [wet-board, coordinated-board, c-bet, overcards]
+  concepts:
+  - wet-board
+  - coordinated-board
+  - c-bet
+  - overcards
   level: beginner
   street: flop
   pot_type: srp
   position: oop
   title: Define wet and coordinated, then check your overcards on those flops
-  claim: >-
-    A wet flop has a flush draw; a coordinated flop has several middling cards close together.
-    When a flop is both, such as 8-7-5 with two of a suit, do not c-bet two unpaired overcards
-    against a weak player. Their range connects too often and they will not fold.
-  why: >-
-    Naming the texture makes the decision automatic. Flush draws plus connected middle cards
-    produce the maximum number of pairs, straight draws and combination draws in a wide
-    calling range. Overcards alone have about six outs and almost no fold equity against a
-    player who calls with any piece, so a bet mostly builds a pot you are behind in. Check,
-    see what develops, and remember that a passive opponent will often bet a small amount that
-    gives you a cheap look anyway.
-  common_mistake: >-
-    Betting every flop as the raiser and only noticing afterward that the board was both wet
-    and coordinated.
+  claim: A wet flop has a flush draw; a coordinated flop has several middling cards close together. When
+    a flop is both, such as 8-7-5 with two of a suit, do not c-bet two unpaired overcards against a weak
+    player. Their range connects too often and they will not fold.
+  why: Naming the texture makes the decision automatic. Flush draws plus connected middle cards produce
+    the maximum number of pairs, straight draws and combination draws in a wide calling range. Overcards
+    alone have about six outs and almost no fold equity against a player who calls with any piece, so
+    a bet mostly builds a pot you are behind in. Check, see what develops, and remember that a passive
+    opponent will often bet a small amount that gives you a cheap look anyway.
+  common_mistake: Betting every flop as the raiser and only noticing afterward that the board was both
+    wet and coordinated.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#02
-      stance: supports
-      note: Coach defines wet (flush draw) and coordinated (middling connected cards) and checks two overs.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#02
+    stance: supports
+    note: Coach defines wet (flush draw) and coordinated (middling connected cards) and checks two overs.
   consensus_score: 0.5
   hook_ideas:
-    - Wet and coordinated are different things. Know both before you bet.
-    - Eight-seven-five two-tone. Your ace-king should check.
-    - The flop texture that turns c-bets into donations.
+  - Wet and coordinated are different things. Know both before you bet.
+  - Eight-seven-five two-tone. Your ace-king should check.
+  - The flop texture that turns c-bets into donations.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-passive-fish-never-pressure-006
   format: cash-6max
   topic: exploits
-  concepts: [passive-opponents, small-bets, pot-odds, bluffing, recreational-players]
+  concepts:
+  - passive-opponents
+  - small-bets
+  - pot-odds
+  - bluffing
+  - recreational-players
   level: beginner
   street: multi-street
   pot_type: srp
   position: any
   title: Do not bluff passive players off draws; their small bets give you odds anyway
-  claim: >-
-    When your flush draw misses the turn against a passive weak player, check rather than barrel.
-    If you bet and get called you are committed to a river you may not want; if you check, they
-    typically bet a tiny amount that prices you in to see the river for almost nothing.
-  why: >-
-    The danger of checking is normally that the opponent applies pressure and takes your draw's
-    equity away. Passive players do not do that. They bet amounts that have no relation to the
-    pot, which means you get to realize your equity cheaply while never putting yourself in a
-    hard spot. Barrelling them achieves little since they rarely fold a pair, and it removes
-    the chance to see the river cheaply. This is a large part of why these opponents are so
-    profitable: they never make you guess for real money.
-  common_mistake: >-
-    Firing a big turn bet with a missed draw into a station and being forced to call a river
+  claim: When your flush draw misses the turn against a passive weak player, check rather than barrel.
+    If you bet and get called you are committed to a river you may not want; if you check, they typically
+    bet a tiny amount that prices you in to see the river for almost nothing.
+  why: 'The danger of checking is normally that the opponent applies pressure and takes your draw''s equity
+    away. Passive players do not do that. They bet amounts that have no relation to the pot, which means
+    you get to realize your equity cheaply while never putting yourself in a hard spot. Barrelling them
+    achieves little since they rarely fold a pair, and it removes the chance to see the river cheaply.
+    This is a large part of why these opponents are so profitable: they never make you guess for real
+    money.'
+  common_mistake: Firing a big turn bet with a missed draw into a station and being forced to call a river
     with nothing.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#01
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#02
-      stance: supports
-      note: Coach says bad players never put you in a bad spot; they bet meaningless amounts you can call.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#01
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#02
+    stance: supports
+    note: Coach says bad players never put you in a bad spot; they bet meaningless amounts you can call.
   consensus_score: 0.5
   hook_ideas:
-    - Missed draw against a fish? Check. They price your river.
-    - Passive players never make you guess. Stop guessing for them.
-    - The cheapest river card in poker comes from a station's bet.
+  - Missed draw against a fish? Check. They price your river.
+  - Passive players never make you guess. Stop guessing for them.
+  - The cheapest river card in poker comes from a station's bet.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-tens-3bet-007
   format: cash-6max
   topic: preflop-ranges
-  concepts: [3-bet, pocket-tens, value, 4-bet]
+  concepts:
+  - 3-bet
+  - pocket-tens
+  - value
+  - 4-bet
   level: beginner
   street: preflop
   position: ip
   title: Pocket tens facing an open is mostly a 3-bet, not a call
-  claim: >-
-    Against a normal open, re-raise pocket tens for value most of the time. Flat only against a
-    very tight opener whose range is dominated by bigger pairs and strong broadways.
-  why: >-
-    Tens are far ahead of a typical open-raising range and benefit from building the pot while
-    they are still the best hand. Calling invites multiway action, where a medium pair plays
-    poorly on the many flops with overcards. The hand's one weakness is that a 4-bet is awkward,
-    but at micro stakes 4-bets are rare and usually mean exactly what they look like, so you
-    can fold without much regret. Against a nit whose opens are mostly premiums the value
-    disappears, and a set-mining call is the better line.
-  common_mistake: >-
-    Flatting tens by default to "see a flop" and then being lost on a K-high board multiway.
+  claim: Against a normal open, re-raise pocket tens for value most of the time. Flat only against a very
+    tight opener whose range is dominated by bigger pairs and strong broadways.
+  why: Tens are far ahead of a typical open-raising range and benefit from building the pot while they
+    are still the best hand. Calling invites multiway action, where a medium pair plays poorly on the
+    many flops with overcards. The hand's one weakness is that a 4-bet is awkward, but at micro stakes
+    4-bets are rare and usually mean exactly what they look like, so you can fold without much regret.
+    Against a nit whose opens are mostly premiums the value disappears, and a set-mining call is the better
+    line.
+  common_mistake: Flatting tens by default to "see a flop" and then being lost on a K-high board multiway.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#02
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#02
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Pocket tens is a 3-bet. Here is the one exception.
-    - Stop set-mining with tens against a normal open.
-    - Medium pairs hate multiway pots. Re-raise to avoid them.
+  - Pocket tens is a 3-bet. Here is the one exception.
+  - Stop set-mining with tens against a normal open.
+  - Medium pairs hate multiway pots. Re-raise to avoid them.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-raise-bigger-vs-callers-008
   format: cash-6max
   topic: bet-sizing
-  concepts: [open-size, preflop-sizing, calling-station, value]
+  concepts:
+  - open-size
+  - preflop-sizing
+  - calling-station
+  - value
   level: beginner
   street: preflop
   position: any
   title: Open bigger with strong hands when the callers behind you do not care about size
-  claim: >-
-    If the players likely to call your raise call 4x as readily as 3x, raise 4x or more with
-    your big hands. Against a limper you intend to isolate when deep, 8-9 big blinds is fine.
-    There is no reason to use a small size when a larger one is called just as often.
-  why: >-
-    Open sizing is a balance between getting action and getting value. When the opponent's
-    calling decision does not depend on the size, only the value side remains, so a bigger raise
-    simply builds a bigger pot while you hold the better hand. Isolating a limper with a large
-    raise also thins the field so you play the hand against the weak player rather than the
-    whole table. Keep a sensible size when thinking players are the likely callers.
-  common_mistake: >-
-    Using one fixed open size against everyone and leaving value behind against players who
-    call anything.
+  claim: If the players likely to call your raise call 4x as readily as 3x, raise 4x or more with your
+    big hands. Against a limper you intend to isolate when deep, 8-9 big blinds is fine. There is no reason
+    to use a small size when a larger one is called just as often.
+  why: Open sizing is a balance between getting action and getting value. When the opponent's calling
+    decision does not depend on the size, only the value side remains, so a bigger raise simply builds
+    a bigger pot while you hold the better hand. Isolating a limper with a large raise also thins the
+    field so you play the hand against the weak player rather than the whole table. Keep a sensible size
+    when thinking players are the likely callers.
+  common_mistake: Using one fixed open size against everyone and leaving value behind against players
+    who call anything.
   numbers:
-    - "Raise ~4x instead of 3x with big hands vs sticky callers"
-    - "Isolate a limper ~8-9bb when deep"
+  - Raise ~4x instead of 3x with big hands vs sticky callers
+  - Isolate a limper ~8-9bb when deep
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#02
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#02
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - If they call 4x anyway, why raise 3x?
-    - Your open size should change with who is behind you.
-    - One sizing tweak that adds a bet to every big pot.
+  - If they call 4x anyway, why raise 3x?
+  - Your open size should change with who is behind you.
+  - One sizing tweak that adds a bet to every big pot.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-plan-the-hand-009
   format: cash-6max
   topic: fundamentals
-  concepts: [planning, commitment, selectivity, decision-making]
+  concepts:
+  - planning
+  - commitment
+  - selectivity
+  - decision-making
   level: beginner
   street: multi-street
   position: any
   title: Decide early whether a hand is going all the way, then do not half-commit
-  claim: >-
-    Before putting significant money in, have a general plan for the hand: either you are
-    folding early or you are prepared to see a showdown. The worst outcome in poker is investing
-    heavily and then folding before the river.
-  why: >-
-    Money put in and then abandoned has no chance of being recovered, so half-commitment
-    combines the costs of both playing and folding. A simple plan formed at the start, based on
-    opponent type, stack depth and your hand's playability, prevents that. Against a weak
-    short stack with a strong one-pair hand the plan can be "we are stacking off"; with a
-    marginal hand against an unknown it can be "fold at the first sign of trouble". The plan
-    can bend with new information, but having one makes every later decision easier.
-  common_mistake: >-
-    Calling a raise, calling a flop bet, calling a turn bet and then folding the river with the
-    pot already huge.
+  claim: 'Before putting significant money in, have a general plan for the hand: either you are folding
+    early or you are prepared to see a showdown. The worst outcome in poker is investing heavily and then
+    folding before the river.'
+  why: Money put in and then abandoned has no chance of being recovered, so half-commitment combines the
+    costs of both playing and folding. A simple plan formed at the start, based on opponent type, stack
+    depth and your hand's playability, prevents that. Against a weak short stack with a strong one-pair
+    hand the plan can be "we are stacking off"; with a marginal hand against an unknown it can be "fold
+    at the first sign of trouble". The plan can bend with new information, but having one makes every
+    later decision easier.
+  common_mistake: Calling a raise, calling a flop bet, calling a turn bet and then folding the river with
+    the pot already huge.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#02
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#03
-      stance: supports
-      note: Coach contrasts folding 86 early with committing fully with J9 vs a weak half-stack.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#02
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#03
+    stance: supports
+    note: Coach contrasts folding 86 early with committing fully with J9 vs a weak half-stack.
   consensus_score: 0.5
   hook_ideas:
-    - The most expensive line in poker is call, call, call, fold.
-    - Decide on the flop whether you are going to showdown.
-    - A plan made early saves you a stack later.
+  - The most expensive line in poker is call, call, call, fold.
+  - Decide on the flop whether you are going to showdown.
+  - A plan made early saves you a stack later.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-no-squeeze-oop-vs-nit-010
   format: cash-6max
   topic: preflop-ranges
-  concepts: [squeeze, out-of-position, tight-opener, multiway]
+  concepts:
+  - squeeze
+  - out-of-position
+  - tight-opener
+  - multiway
   level: beginner
   street: preflop
   pot_type: multiway
   position: oop
   title: Do not squeeze out of position when the opener is very tight
-  claim: >-
-    When a tight player opens and several weak players call, resist the squeeze from the blinds
-    with a speculative hand. In position you would call and play against the fish; out of
-    position against a strong opening range, fold.
-  why: >-
-    A squeeze works when the opener's range is wide enough to fold and the callers are weak
-    enough to give up. A player who has entered one pot in ten hands has a range that is not
-    folding, so the squeeze turns into a re-raise into strength. Calling out of position is
-    also poor because every postflop street starts with you acting blind. In position the
-    multiway pot with several weak callers is attractive and a call is correct; the blinds
-    are not that spot.
-  common_mistake: >-
-    Squeezing from the small blind with a suited connector because "there is a lot of dead
+  claim: When a tight player opens and several weak players call, resist the squeeze from the blinds with
+    a speculative hand. In position you would call and play against the fish; out of position against
+    a strong opening range, fold.
+  why: A squeeze works when the opener's range is wide enough to fold and the callers are weak enough
+    to give up. A player who has entered one pot in ten hands has a range that is not folding, so the
+    squeeze turns into a re-raise into strength. Calling out of position is also poor because every postflop
+    street starts with you acting blind. In position the multiway pot with several weak callers is attractive
+    and a call is correct; the blinds are not that spot.
+  common_mistake: Squeezing from the small blind with a suited connector because "there is a lot of dead
     money" while ignoring who opened.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#03
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#03
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Dead money is a trap when the opener is a nit.
-    - Squeezing a tight opener is just a re-raise into aces.
-    - The squeeze spot that is really a fold.
+  - Dead money is a trap when the opener is a nit.
+  - Squeezing a tight opener is just a re-raise into aces.
+  - The squeeze spot that is really a fold.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-light-3bet-below-calling-range-011
   format: cash-6max
   topic: preflop-ranges
-  concepts: [light-3bet, button, blockers, calling-range, weak-open]
+  concepts:
+  - light-3bet
+  - button
+  - blockers
+  - calling-range
+  - weak-open
   level: beginner
   street: preflop
   position: btn
   title: Choose light 3-bets from hands just below your calling range, not from it
-  claim: >-
-    On the button facing a weak-looking open, the hands to occasionally 3-bet light are ones you
-    would not call with, such as a suited connector a notch too weak or an ace-rag with a
-    blocker. Hands you are happy to flat should keep flatting.
-  why: >-
-    Re-raising a hand you would otherwise call does not add anything: you lose a profitable call
-    and replace it with a higher-variance bluff. Re-raising a hand that would otherwise be
-    folded turns zero into positive expectation if the opener folds often enough. Ace-rag works
-    because the blocker makes it slightly less likely the opener holds a premium ace, and
-    because the hand plays badly as a call anyway. Keep the frequency low at micro stakes,
-    where most opponents call 3-bets too much.
-  common_mistake: >-
-    3-betting medium-strength hands like K-J for "balance" and folding to the 4-bet, when a
-    call would have been clearly profitable.
+  claim: On the button facing a weak-looking open, the hands to occasionally 3-bet light are ones you
+    would not call with, such as a suited connector a notch too weak or an ace-rag with a blocker. Hands
+    you are happy to flat should keep flatting.
+  why: 'Re-raising a hand you would otherwise call does not add anything: you lose a profitable call and
+    replace it with a higher-variance bluff. Re-raising a hand that would otherwise be folded turns zero
+    into positive expectation if the opener folds often enough. Ace-rag works because the blocker makes
+    it slightly less likely the opener holds a premium ace, and because the hand plays badly as a call
+    anyway. Keep the frequency low at micro stakes, where most opponents call 3-bets too much.'
+  common_mistake: 3-betting medium-strength hands like K-J for "balance" and folding to the 4-bet, when
+    a call would have been clearly profitable.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#03
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#03
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - Which hands to 3-bet light? The ones you were folding.
-    - Stop 3-betting your calling hands. It costs you twice.
-    - A light 3-bet should come from the trash, not the middle.
+  - Which hands to 3-bet light? The ones you were folding.
+  - Stop 3-betting your calling hands. It costs you twice.
+  - A light 3-bet should come from the trash, not the middle.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-pass-small-edges-vs-fish-012
   format: cash-6max
   topic: exploits
-  concepts: [variance, selectivity, recreational-players, patience]
+  concepts:
+  - variance
+  - selectivity
+  - recreational-players
+  - patience
   level: beginner
   street: multi-street
   position: any
   title: Pass up thin edges against a weak player; their stack is coming anyway
-  claim: >-
-    Against a clearly bad opponent, skip the close, high-variance spots such as stacking off with
-    a marginal hand or a weak draw. You will get their stack soon in a clear spot with a strong
-    hand, and a low-variance style keeps you off tilt.
-  why: >-
-    The total you can win from a weak player is roughly their stack plus rebuys. Taking a
-    55/45 gamble now risks losing a stack you would otherwise collect at 80/20 a few hands
-    later, and losing it hurts your decision-making for the rest of the session. The small
-    edge forgone is real but tiny compared with the value of staying calm, in the game and
-    positioned on the weak player. This is the opposite of how you should treat a regular,
-    where thin edges are all you get.
-  common_mistake: >-
-    Shoving a gutshot with two overcards into a fish's small bet because "I am probably ahead
-    of his range".
+  claim: Against a clearly bad opponent, skip the close, high-variance spots such as stacking off with
+    a marginal hand or a weak draw. You will get their stack soon in a clear spot with a strong hand,
+    and a low-variance style keeps you off tilt.
+  why: The total you can win from a weak player is roughly their stack plus rebuys. Taking a 55/45 gamble
+    now risks losing a stack you would otherwise collect at 80/20 a few hands later, and losing it hurts
+    your decision-making for the rest of the session. The small edge forgone is real but tiny compared
+    with the value of staying calm, in the game and positioned on the weak player. This is the opposite
+    of how you should treat a regular, where thin edges are all you get.
+  common_mistake: Shoving a gutshot with two overcards into a fish's small bet because "I am probably
+    ahead of his range".
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#03
-      stance: supports
-      note: Coach passes several close spots vs a known fish, saying the player will give money eventually.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#03
+    stance: supports
+    note: Coach passes several close spots vs a known fish, saying the player will give money eventually.
   consensus_score: 0.5
   hook_ideas:
-    - You do not need to gamble with a fish. Wait.
-    - The thin edge you skip is the stack you keep.
-    - Why patience beats aggression against bad players.
+  - You do not need to gamble with a fish. Wait.
+  - The thin edge you skip is the stack you keep.
+  - Why patience beats aggression against bad players.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-adjust-vs-frequent-3bettor-013
   format: cash-6max
   topic: exploits
-  concepts: [3-bettor, 4-bet-value, steal-range, small-samples, seat-selection]
+  concepts:
+  - 3-bettor
+  - 4-bet-value
+  - steal-range
+  - small-samples
+  - seat-selection
   level: beginner
   street: preflop
   position: btn
   title: Against a frequent 3-bettor on your left, steal tighter and 4-bet wider for value
-  claim: >-
-    When the player behind you re-raises often, drop weak steals like K4 and widen your 4-bet
-    value range to include hands such as A-Q, tens and jacks. Hold off on firm conclusions until
-    the pattern is clear, since anyone can be dealt good hands for an orbit. Better still, move
-    seats so that player is on your right.
-  why: >-
-    A frequent 3-bettor makes marginal opens unprofitable because they rarely get to see a flop,
-    and makes medium-strong hands more valuable because the 3-bet range is wide enough that
-    they are ahead of it. Both adjustments follow directly. The caution about sample size
-    matters because over-adjusting to a player who simply ran hot costs money in the other
-    direction. Aggressive players are a nuisance on your left and an asset on your right, where
-    their raises come before your decision.
-  common_mistake: >-
-    Deciding a player is a maniac after two 3-bets, or continuing to open K4 into them orbit
+  claim: When the player behind you re-raises often, drop weak steals like K4 and widen your 4-bet value
+    range to include hands such as A-Q, tens and jacks. Hold off on firm conclusions until the pattern
+    is clear, since anyone can be dealt good hands for an orbit. Better still, move seats so that player
+    is on your right.
+  why: A frequent 3-bettor makes marginal opens unprofitable because they rarely get to see a flop, and
+    makes medium-strong hands more valuable because the 3-bet range is wide enough that they are ahead
+    of it. Both adjustments follow directly. The caution about sample size matters because over-adjusting
+    to a player who simply ran hot costs money in the other direction. Aggressive players are a nuisance
+    on your left and an asset on your right, where their raises come before your decision.
+  common_mistake: Deciding a player is a maniac after two 3-bets, or continuing to open K4 into them orbit
     after orbit.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#04
-      stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#04
+    stance: supports
   consensus_score: 0.5
   hook_ideas:
-    - He 3-bets everything. Here is the two-part fix.
-    - Ace-queen becomes a 4-bet against this player.
-    - An aggressive player on your left is a seat problem.
+  - He 3-bets everything. Here is the two-part fix.
+  - Ace-queen becomes a 4-bet against this player.
+  - An aggressive player on your left is a seat problem.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-same-strategy-every-stake-014
   format: cash-6max
-  topic: table-selection
-  concepts: [game-selection, position, recreational-players, ego, moving-up]
+  topic: mental-game
+  concepts:
+  - game-selection
+  - position
+  - recreational-players
+  - ego
+  - moving-up
   level: beginner
   position: any
-  title: "The core plan is the same at every stake: find the fish, get position, play them"
-  claim: >-
-    Moving from one limit to the next changes how often you find very weak players, not what you
-    should be doing. At any stake the job is to find recreational players, sit with position on
-    them, play as many hands against them as possible and avoid tables of regulars.
-  why: >-
-    The lowest stakes are a circus where almost any aggressive, value-heavy strategy wins. One
-    limit up the games already play more like the stakes above them, with fewer wild players
-    and more table hopping needed, especially early in a session. What does not change is the
-    source of profit: other players' mistakes, delivered to you by position. Sitting at a
-    table full of competent players for the ego boost of beating them is far less profitable
-    than it feels.
-  common_mistake: >-
-    Treating a move up as a reason to play a fancier style instead of a reason to table-select
+  title: 'The core plan is the same at every stake: find the fish, get position, play them'
+  claim: Moving from one limit to the next changes how often you find very weak players, not what you
+    should be doing. At any stake the job is to find recreational players, sit with position on them,
+    play as many hands against them as possible and avoid tables of regulars.
+  why: 'The lowest stakes are a circus where almost any aggressive, value-heavy strategy wins. One limit
+    up the games already play more like the stakes above them, with fewer wild players and more table
+    hopping needed, especially early in a session. What does not change is the source of profit: other
+    players'' mistakes, delivered to you by position. Sitting at a table full of competent players for
+    the ego boost of beating them is far less profitable than it feels.'
+  common_mistake: Treating a move up as a reason to play a fancier style instead of a reason to table-select
     harder.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#05
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#02
-      stance: supports
-      note: Coach notes NL5 plays closer to NL10/25 than to NL2 and requires more table hopping.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#05
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#02
+    stance: supports
+    note: Coach notes NL5 plays closer to NL10/25 than to NL2 and requires more table hopping.
   consensus_score: 0.5
   hook_ideas:
-    - Moving up changes the fish count, not the plan.
-    - The strategy that works from NL2 to NL5000.
-    - Beating a reg table is an ego boost, not a profit plan.
+  - Moving up changes the fish count, not the plan.
+  - The strategy that works from NL2 to NL5000.
+  - Beating a reg table is an ego boost, not a profit plan.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br4-call-ip-fold-oop-vs-fish-015
   format: cash-6max
   topic: defending
-  concepts: [position, implied-odds, speculative-hands, recreational-players]
+  concepts:
+  - position
+  - implied-odds
+  - speculative-hands
+  - recreational-players
   level: beginner
   street: preflop
   position: ip
   title: Speculative hands against a fish are a call in position and a fold from the blinds
-  claim: >-
-    A hand like J-9 is worth calling a raise with when a weak player is in the pot and you have
-    position, especially deep-stacked. The same hand facing the same raise from the small or big
-    blind is a fold.
-  why: >-
-    The profit from a speculative hand comes from implied odds, and implied odds depend on
-    acting last: you need to see what the opponent does before you decide how much to invest,
-    and you need them to pay you when you hit. Out of position both are weaker, and against a
-    raise you also face c-bets with no information. A weak opponent who overplays one pair
-    and deep stacks on both sides make the in-position call clearly good and the
-    out-of-position call still bad.
-  common_mistake: >-
-    Defending the blinds with suited and connected junk "because the fish raised" and then
+  claim: A hand like J-9 is worth calling a raise with when a weak player is in the pot and you have position,
+    especially deep-stacked. The same hand facing the same raise from the small or big blind is a fold.
+  why: 'The profit from a speculative hand comes from implied odds, and implied odds depend on acting
+    last: you need to see what the opponent does before you decide how much to invest, and you need them
+    to pay you when you hit. Out of position both are weaker, and against a raise you also face c-bets
+    with no information. A weak opponent who overplays one pair and deep stacks on both sides make the
+    in-position call clearly good and the out-of-position call still bad.'
+  common_mistake: Defending the blinds with suited and connected junk "because the fish raised" and then
     being outplayed on every street.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#04
-      stance: supports
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/004-part4
-      chunk: br79-ctm-6max/004-part4#05
-      stance: supports
-      note: Coach folds a min-raise OOP, saying he really does not like calling out of position.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#04
+    stance: supports
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/004-part4
+    chunk: br79-ctm-6max/004-part4#05
+    stance: supports
+    note: Coach folds a min-raise OOP, saying he really does not like calling out of position.
   consensus_score: 0.5
   hook_ideas:
-    - Jack-nine is a call. Unless you are in the blinds.
-    - Implied odds need position. Here is why.
-    - Same hand, same raise, two different answers.
+  - Jack-nine is a call. Unless you are in the blinds.
+  - Implied odds need position. Here is why.
+  - Same hand, same raise, two different answers.
   status: draft
-  created: "2026-10-04"
+  created: '2026-10-04'

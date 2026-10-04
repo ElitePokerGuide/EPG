@@ -1,662 +1,654 @@
-# Concept cards extracted from br79-ctm-6max / 007-part7 (first NL10 6-max session).
-# Hand-review commentary generalized into principles. Draft, single source.
-
 - id: c-cash-6max-br7-play-abc-profit-from-avoiding-mistakes-001
   format: cash-6max
   topic: fundamentals
-  concepts: [abc-poker, discipline, mistake-avoidance, moving-up]
+  concepts:
+  - abc-poker
+  - discipline
+  - mistake-avoidance
+  - moving-up
   level: beginner
   street: multi-street
   position: any
-  title: "At NL10 play disciplined ABC poker; profit comes from avoiding mistakes, not fancy plays"
-  claim: >-
-    Each step from NL2 to NL5 to NL10 is a real jump in difficulty, but the winning
-    approach stays the same: straightforward, disciplined poker. No light 4-bets, no
-    river check-raise bluffs, no turning pocket threes into a bluff, no wide calls of
-    3-bets unless deep. The players who win big at these stakes are simply not making
-    the spewy plays everyone else makes.
-  why: >-
-    Many players look for a magic trick to beat small stakes. There is none; the
-    population loses by making unforced errors, and the winner is whoever makes the
-    fewest. Big creative plays add variance and only work against opponents who think,
-    which most of these opponents do not. Folding marginal hands, declining to bluff
-    players who never fold, and waiting for weak players to hand over stacks looks
-    boring on screen but it is where the win rate comes from. When unknowns play back
-    at you early in a session, let them; do not shove money in for something to do.
-  common_mistake: >-
-    Turning a medium hand into a bluff "because the board is scary", or 4-betting light
+  title: At NL10 play disciplined ABC poker; profit comes from avoiding mistakes, not fancy plays
+  claim: 'Each step from NL2 to NL5 to NL10 is a real jump in difficulty, but the winning approach stays
+    the same: straightforward, disciplined poker. No light 4-bets, no river check-raise bluffs, no turning
+    pocket threes into a bluff, no wide calls of 3-bets unless deep. The players who win big at these
+    stakes are simply not making the spewy plays everyone else makes.'
+  why: Many players look for a magic trick to beat small stakes. There is none; the population loses by
+    making unforced errors, and the winner is whoever makes the fewest. Big creative plays add variance
+    and only work against opponents who think, which most of these opponents do not. Folding marginal
+    hands, declining to bluff players who never fold, and waiting for weak players to hand over stacks
+    looks boring on screen but it is where the win rate comes from. When unknowns play back at you early
+    in a session, let them; do not shove money in for something to do.
+  common_mistake: Turning a medium hand into a bluff "because the board is scary", or 4-betting light
     against an unknown to feel in control of the table.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#05
-      stance: supports
-      note: "Long passage on keeping things simple, no magic pill, winners avoid silly mistakes like turning 33 into a bluff."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#02
-      stance: supports
-      note: "'Especially at NL10 I'm pretty much just playing an ABC kind of style game'; not 4-betting light."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#01
-      stance: supports
-      note: "NL2, NL5 and NL10 differ a lot; do not lump them together."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#05
+    stance: supports
+    note: Long passage on keeping things simple, no magic pill, winners avoid silly mistakes like turning
+      33 into a bluff.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#02
+    stance: supports
+    note: '''Especially at NL10 I''m pretty much just playing an ABC kind of style game''; not 4-betting
+      light.'
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#01
+    stance: supports
+    note: NL2, NL5 and NL10 differ a lot; do not lump them together.
   consensus_score: 0.5
   hook_ideas:
-    - "There is no trick to beating NL10. Here is what works instead."
-    - "The biggest winners at micro stakes make the fewest plays."
-    - "Stop turning pocket threes into a bluff."
+  - There is no trick to beating NL10. Here is what works instead.
+  - The biggest winners at micro stakes make the fewest plays.
+  - Stop turning pocket threes into a bluff.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-punish-posters-and-blind-limpers-002
   format: cash-6max
   topic: preflop-ranges
-  concepts: [isolation, posting-in, limpers, blind-defense, initiative]
+  concepts:
+  - isolation
+  - posting-in
+  - limpers
+  - blind-defense
+  - initiative
   level: beginner
   street: preflop
   pot_type: limped
   position: any
-  title: "Raise nearly any two in position against a player who posts in or limps into your blind"
-  claim: >-
-    A player who posts a blind out of position to play immediately, or who open-limps
-    into your blind, has announced weakness. Raise them with almost any two cards when
-    you have position, and raise about 4x with nearly your whole range when they limp
-    your blind. Expect a fold preflop or on the flop a large share of the time.
-  why: >-
-    Posting in and open-limping are both plays that losing players make and winning
-    players do not, so the raise is targeted at exactly the opponents who fold too much
-    to aggression and play badly when they continue. With position you also get to see
-    them act first on every street. The hand you hold is nearly irrelevant: the profit
-    comes from the initiative and from how often they give up, so do not wait for a
-    real hand to apply pressure.
-  common_mistake: >-
-    Checking your option or folding playable hands against a limper in your blind,
-    letting the weakest players at the table see cheap flops.
+  title: Raise nearly any two in position against a player who posts in or limps into your blind
+  claim: A player who posts a blind out of position to play immediately, or who open-limps into your blind,
+    has announced weakness. Raise them with almost any two cards when you have position, and raise about
+    4x with nearly your whole range when they limp your blind. Expect a fold preflop or on the flop a
+    large share of the time.
+  why: 'Posting in and open-limping are both plays that losing players make and winning players do not,
+    so the raise is targeted at exactly the opponents who fold too much to aggression and play badly when
+    they continue. With position you also get to see them act first on every street. The hand you hold
+    is nearly irrelevant: the profit comes from the initiative and from how often they give up, so do
+    not wait for a real hand to apply pressure.'
+  common_mistake: Checking your option or folding playable hands against a limper in your blind, letting
+    the weakest players at the table see cheap flops.
   numbers:
-    - "raise ~4x with nearly the whole range when someone limps into your blind"
+  - raise ~4x with nearly the whole range when someone limps into your blind
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#01
-      stance: supports
-      note: "Raises a poster with nearly any two IP; raises first-hand limper to show he cannot limp the blinds."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#02
-      stance: supports
-      note: "'When somebody limps my blind I'm going to make it 4x with almost my whole range'."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#01
+    stance: supports
+    note: Raises a poster with nearly any two IP; raises first-hand limper to show he cannot limp the
+      blinds.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#02
+    stance: supports
+    note: '''When somebody limps my blind I''m going to make it 4x with almost my whole range''.'
   consensus_score: 0.5
   hook_ideas:
-    - "He posted in. That is your cue to raise any two."
-    - "A limp into your blind is an invitation. Accept it."
-    - "The weakest preflop play in poker, and how to punish it."
+  - He posted in. That is your cue to raise any two.
+  - A limp into your blind is an invitation. Accept it.
+  - The weakest preflop play in poker, and how to punish it.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-do-not-barrel-fish-on-scare-cards-003
   format: cash-6max
   topic: turn-play
-  concepts: [barreling, scare-cards, weak-players, player-type-adjustment]
+  concepts:
+  - barreling
+  - scare-cards
+  - weak-players
+  - player-type-adjustment
   level: beginner
   street: turn
   pot_type: srp
   position: ip
-  title: "A scare-card turn is a barrel against regulars, but a check against weak players"
-  claim: >-
-    When the turn brings a high card that beats your opponent's likely pairs, such as a
-    king over a jack-high flop, fire a second barrel against a regular almost every time.
-    Against a loose passive player, check instead: they call far too wide for the card
-    to do its job, so take your free card or show down cheaply.
-  why: >-
-    A second barrel on a scare card works because a thinking player recognizes that
-    your range contains the card and folds their medium pairs. Weak players do not run
-    that logic; they look at their own hand, see a pair, and call. Barrelling them with
-    air just builds a pot you are losing, and barrelling them with a draw costs you the
-    chance to see the river cheaply. Save the aggression for value against this type and
-    the scare-card bluffs for regulars.
-  common_mistake: >-
-    Firing a second barrel on the king because "it is a great card for my range",
-    without checking whether the opponent is capable of folding a pair.
+  title: A scare-card turn is a barrel against regulars, but a check against weak players
+  claim: 'When the turn brings a high card that beats your opponent''s likely pairs, such as a king over
+    a jack-high flop, fire a second barrel against a regular almost every time. Against a loose passive
+    player, check instead: they call far too wide for the card to do its job, so take your free card or
+    show down cheaply.'
+  why: A second barrel on a scare card works because a thinking player recognizes that your range contains
+    the card and folds their medium pairs. Weak players do not run that logic; they look at their own
+    hand, see a pair, and call. Barrelling them with air just builds a pot you are losing, and barrelling
+    them with a draw costs you the chance to see the river cheaply. Save the aggression for value against
+    this type and the scare-card bluffs for regulars.
+  common_mistake: Firing a second barrel on the king because "it is a great card for my range", without
+    checking whether the opponent is capable of folding a pair.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#02
-      stance: supports
-      note: "King turn with queen-jack: 'a card I would bet versus regs almost all the time' but checks vs the fish who calls wide."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#01
-      stance: supports
-      note: "Will not try to barrel a fish off his 8 or 10; sees if he can hit instead."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#02
+    stance: supports
+    note: 'King turn with queen-jack: ''a card I would bet versus regs almost all the time'' but checks
+      vs the fish who calls wide.'
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#01
+    stance: supports
+    note: Will not try to barrel a fish off his 8 or 10; sees if he can hit instead.
   consensus_score: 0.5
   hook_ideas:
-    - "Great barrel card. Wrong opponent."
-    - "The king turn: bet against regs, check against fish."
-    - "Scare cards only scare players who are paying attention."
+  - Great barrel card. Wrong opponent.
+  - 'The king turn: bet against regs, check against fish.'
+  - Scare cards only scare players who are paying attention.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-cbet-frequency-and-the-flops-to-skip-004
   format: cash-6max
   topic: cbet-strategy
-  concepts: [cbet-frequency, board-texture, middling-boards, zero-equity, in-position]
+  concepts:
+  - cbet-frequency
+  - board-texture
+  - middling-boards
+  - zero-equity
+  - in-position
   level: beginner
   street: flop
   pot_type: srp
   position: any
-  title: "C-bet about 80% of flops, 90% when checked to in position; skip middling two-tone boards"
-  claim: >-
-    As the preflop raiser, continuation bet roughly 80% of flops overall, closer to 90%
-    when you are in position and the opponent checks. The flops to skip are the
-    coordinated middling boards, something like six-seven-eight or seven-eight-nine with
-    two of a suit, when you hold nothing: you have no equity and expect few folds. Two
-    broadways plus a low card, or a dry board, is a good flop to stab.
-  why: >-
-    Most micro-stakes opponents fold to a single bet unless they connect, which makes a
-    high c-bet frequency correct. But middling connected two-tone boards hit a calling
-    range hard: they contain pairs, straight draws and flush draws for the caller and
-    nothing for an overcard-heavy raising range. Betting there with no outs just loses a
-    bet. High-card boards do the opposite; they favour the raiser and miss the caller,
-    so a stab there wins often even without a hand.
-  common_mistake: >-
-    C-betting every flop on autopilot, including the eight-seven-six two-tone board
-    where the caller continues most of the time and you have no way to improve.
+  title: C-bet about 80% of flops, 90% when checked to in position; skip middling two-tone boards
+  claim: 'As the preflop raiser, continuation bet roughly 80% of flops overall, closer to 90% when you
+    are in position and the opponent checks. The flops to skip are the coordinated middling boards, something
+    like six-seven-eight or seven-eight-nine with two of a suit, when you hold nothing: you have no equity
+    and expect few folds. Two broadways plus a low card, or a dry board, is a good flop to stab.'
+  why: 'Most micro-stakes opponents fold to a single bet unless they connect, which makes a high c-bet
+    frequency correct. But middling connected two-tone boards hit a calling range hard: they contain pairs,
+    straight draws and flush draws for the caller and nothing for an overcard-heavy raising range. Betting
+    there with no outs just loses a bet. High-card boards do the opposite; they favour the raiser and
+    miss the caller, so a stab there wins often even without a hand.'
+  common_mistake: C-betting every flop on autopilot, including the eight-seven-six two-tone board where
+    the caller continues most of the time and you have no way to improve.
   numbers:
-    - "c-bet ~80% of flops overall"
-    - "~90% when in position and checked to"
-    - "skip flops like 6-7-8 or 7-8-9 with two of a suit when you hold no equity"
+  - c-bet ~80% of flops overall
+  - ~90% when in position and checked to
+  - skip flops like 6-7-8 or 7-8-9 with two of a suit when you hold no equity
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#03
-      stance: supports
-      note: "'Firing at probably about 80% of pots, closer to 90% in position when checked to'; describes the middling two-tone exceptions."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#02
-      stance: supports
-      note: "Checks back a flop with zero equity where few folds expected; 'I don't check back very often but that is the kind of flop'."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#03
+    stance: supports
+    note: '''Firing at probably about 80% of pots, closer to 90% in position when checked to''; describes
+      the middling two-tone exceptions.'
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#02
+    stance: supports
+    note: Checks back a flop with zero equity where few folds expected; 'I don't check back very often
+      but that is the kind of flop'.
   consensus_score: 0.5
   contradictions:
-    - "Solver output c-bets far less than 80% on many textures; the coach's frequency relies on a micro population that folds too much to one bet."
+  - Solver output c-bets far less than 80% on many textures; the coach's frequency relies on a micro population
+    that folds too much to one bet.
   hook_ideas:
-    - "We c-bet 80% of flops. These are the 20% we skip."
-    - "The one flop type where a c-bet is just burning money."
-    - "Two broadways and a brick: always stab."
+  - We c-bet 80% of flops. These are the 20% we skip.
+  - The one flop type where a c-bet is just burning money.
+  - 'Two broadways and a brick: always stab.'
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-set-mine-vs-early-opens-3bet-small-pairs-vs-late-005
   format: cash-6max
   topic: preflop-ranges
-  concepts: [set-mining, implied-odds, raiser-position, small-pairs, 3-betting]
+  concepts:
+  - set-mining
+  - implied-odds
+  - raiser-position
+  - small-pairs
+  - 3-betting
   level: beginner
   street: preflop
   pot_type: srp
   position: any
-  title: "Call small pairs against early-position opens and 3-bet them against button opens"
-  claim: >-
-    With a small pocket pair facing a raise, let the raiser's position decide. Against an
-    under-the-gun open, just call and set-mine: their range is tight and strong, so your
-    implied odds when you hit are excellent. Against a button open, lean towards
-    3-betting: a late-position range is far wider, so you are often ahead and they will
-    rarely pay off a set.
-  why: >-
-    Implied odds depend on the raiser holding a hand strong enough to pay you three
-    streets when you flop a set. Early-position ranges are full of big pairs and big
-    aces, which is exactly what you want to run into. A button range can be twice as
-    wide or more, so it misses most flops and folds to your flop bet, which kills the
-    set-mining plan but makes a 3-bet profitable. Always note where the raise came from
-    before deciding how to play a pair.
-  common_mistake: >-
-    Playing fives the same way against every open, 3-betting a tight early-position
-    raiser or flatting a wide button and getting no action when the set arrives.
+  title: Call small pairs against early-position opens and 3-bet them against button opens
+  claim: 'With a small pocket pair facing a raise, let the raiser''s position decide. Against an under-the-gun
+    open, just call and set-mine: their range is tight and strong, so your implied odds when you hit are
+    excellent. Against a button open, lean towards 3-betting: a late-position range is far wider, so you
+    are often ahead and they will rarely pay off a set.'
+  why: Implied odds depend on the raiser holding a hand strong enough to pay you three streets when you
+    flop a set. Early-position ranges are full of big pairs and big aces, which is exactly what you want
+    to run into. A button range can be twice as wide or more, so it misses most flops and folds to your
+    flop bet, which kills the set-mining plan but makes a 3-bet profitable. Always note where the raise
+    came from before deciding how to play a pair.
+  common_mistake: Playing fives the same way against every open, 3-betting a tight early-position raiser
+    or flatting a wide button and getting no action when the set arrives.
   numbers:
-    - "a button range can be about twice as wide as an under-the-gun range"
-    - "the coach opens up to four times more hands in late position than from UTG"
+  - a button range can be about twice as wide as an under-the-gun range
+  - the coach opens up to four times more hands in late position than from UTG
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#04
-      stance: supports
-      note: "Calls fives vs UTG to set-mine, would 3-bet vs a button open; discusses positional range width."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#04
+    stance: supports
+    note: Calls fives vs UTG to set-mine, would 3-bet vs a button open; discusses positional range width.
   consensus_score: 0.5
   hook_ideas:
-    - "Pocket fives: call or 3-bet? Look at where the raise came from."
-    - "Set-mining only pays against one kind of raiser."
-    - "The question to ask before every small-pair decision."
+  - 'Pocket fives: call or 3-bet? Look at where the raise came from.'
+  - Set-mining only pays against one kind of raiser.
+  - The question to ask before every small-pair decision.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-set-mine-needs-half-a-stack-006
   format: cash-6max
   topic: preflop-ranges
-  concepts: [set-mining, stack-depth, implied-odds]
+  concepts:
+  - set-mining
+  - stack-depth
+  - implied-odds
   level: beginner
   street: preflop
   pot_type: srp
   position: any
-  title: "Set-mine only against a raiser with at least half a stack, unless a weak player is also in"
-  claim: >-
-    Before calling a raise with a small pair, check the raiser's stack. You generally
-    the raiser to hold at least half a buy-in; below that the payoff when you hit is too
-    small. A weak player already in the pot can rescue a borderline spot because they
-    supply the implied odds instead.
-  why: >-
-    A set wins big only when there is money left to win. Against a 40bb stack you flop
-    a set rarely and collect a modest pot when you do, which does not cover all the
-    times you miss and fold. Adding a second, loose opponent changes the math because
-    their calling range will pay you even when the original raiser does not. Make the
-    stack check part of the routine on every small-pair call.
-  common_mistake: >-
-    Calling a half-stack's raise with pocket twos out of habit, then winning a tiny pot
+  title: Set-mine only against a raiser with at least half a stack, unless a weak player is also in
+  claim: Before calling a raise with a small pair, check the raiser's stack. You generally want the raiser
+    to hold at least half a buy-in; below that the payoff when you hit is too small. A weak player already
+    in the pot can rescue a borderline spot because they supply the implied odds instead.
+  why: A set wins big only when there is money left to win. Against a 40bb stack you flop a set rarely
+    and collect a modest pot when you do, which does not cover all the times you miss and fold. Adding
+    a second, loose opponent changes the math because their calling range will pay you even when the original
+    raiser does not. Make the stack check part of the routine on every small-pair call.
+  common_mistake: Calling a half-stack's raise with pocket twos out of habit, then winning a tiny pot
     when the set finally comes.
   numbers:
-    - "set-mine when the raiser has at least half a stack"
+  - set-mine when the raiser has at least half a stack
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#03
-      stance: supports
-      note: "'When you're set mining you want them to have at least half a stack'; the fish in the pot makes a marginal spot fine."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#03
+    stance: supports
+    note: '''When you''re set mining you want them to have at least half a stack''; the fish in the pot
+      makes a marginal spot fine.'
   consensus_score: 0.5
   hook_ideas:
-    - "Half a stack. That is the minimum to set-mine."
-    - "Small pair, short raiser: the fold most players never make."
-    - "One stack check that fixes a common small-pair leak."
-  status: draft
-  created: "2026-10-04"
-
+  - Half a stack. That is the minimum to set-mine.
+  - 'Small pair, short raiser: the fold most players never make.'
+  - One stack check that fixes a common small-pair leak.
+  status: needs-review
+  created: '2026-10-04'
+  review_note: Duplicate of br5-set-mine-needs-stack-depth-008 with a different threshold; merge or drop.
 - id: c-cash-6max-br7-size-bets-by-hand-strength-at-micros-007
   format: cash-6max
   topic: bet-sizing
-  concepts: [exploitative-sizing, value-sizing, bet-presets, unbalanced-sizing]
+  concepts:
+  - exploitative-sizing
+  - value-sizing
+  - bet-presets
+  - unbalanced-sizing
   level: beginner
   street: multi-street
   pot_type: srp
   position: any
-  title: "At micro stakes, bet bigger with strong hands and smaller with the rest"
-  claim: >-
-    Use different bet sizes for different hand strengths: around 60% pot for a standard
-    stab, 75% with top pair against a weak player, closer to full pot when you want
-    stacks in. Opponents at NL2-NL10 do not track your sizing, so this unbalanced
-    approach earns more than a single standardized size. Standardize only once you move
-    up to stakes where players pay attention.
-  why: >-
-    A single bet size is a defence against observant opponents who would otherwise
-    read your hand from your sizing. At the micros that defence is unnecessary because
-    the population reacts to its own cards, not to your patterns. That frees you to
-    charge the maximum with your strong hands and risk the minimum with your bluffs
-    and stabs, which is simply more money per hand. Against players with very wide
-    ranges, size up even your medium value bets, because they call with more.
-  common_mistake: >-
-    Betting a rigid one-third pot with everything because a video said to, leaving value
+  title: At micro stakes, bet bigger with strong hands and smaller with the rest
+  claim: 'Use different bet sizes for different hand strengths: around 60% pot for a standard stab, 75%
+    with top pair against a weak player, closer to full pot when you want stacks in. Opponents at NL2-NL10
+    do not track your sizing, so this unbalanced approach earns more than a single standardized size.
+    Standardize only once you move up to stakes where players pay attention.'
+  why: A single bet size is a defence against observant opponents who would otherwise read your hand from
+    your sizing. At the micros that defence is unnecessary because the population reacts to its own cards,
+    not to your patterns. That frees you to charge the maximum with your strong hands and risk the minimum
+    with your bluffs and stabs, which is simply more money per hand. Against players with very wide ranges,
+    size up even your medium value bets, because they call with more.
+  common_mistake: Betting a rigid one-third pot with everything because a video said to, leaving value
     on the table against players who would have called much larger.
   numbers:
-    - "bet presets ~60%, 75% and 100% of pot"
-    - "~75% pot with top pair against a weak player; a bit above 60% against very wide-range callers"
+  - bet presets ~60%, 75% and 100% of pot
+  - ~75% pot with top pair against a weak player; a bit above 60% against very wide-range callers
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#04
-      stance: supports
-      note: "Presets 60/75/100; 'at stakes like this players aren't paying attention', bet big with good hands; standardize at higher limits."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#03
-      stance: supports
-      note: "Bets ~75% with top pair vs weak player; bigger than 60% vs wide range."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#04
+    stance: supports
+    note: Presets 60/75/100; 'at stakes like this players aren't paying attention', bet big with good
+      hands; standardize at higher limits.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#03
+    stance: supports
+    note: Bets ~75% with top pair vs weak player; bigger than 60% vs wide range.
   consensus_score: 0.5
   contradictions:
-    - "Balanced, standardized sizing is the solver-era default; the coach explicitly recommends unbalanced, hand-strength-based sizing at micro stakes because the population does not exploit it."
+  - Balanced, standardized sizing is the solver-era default; the coach explicitly recommends unbalanced,
+    hand-strength-based sizing at micro stakes because the population does not exploit it.
   hook_ideas:
-    - "Balanced bet sizing is costing you money at NL10."
-    - "Bet big with the goods. Nobody at this stake will notice."
-    - "We studied how coaches size bets at micros. Two very different answers."
+  - Balanced bet sizing is costing you money at NL10.
+  - Bet big with the goods. Nobody at this stake will notice.
+  - We studied how coaches size bets at micros. Two very different answers.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-semi-loose-passive-player-type-008
   format: cash-6max
   topic: hand-reading
-  concepts: [player-types, vpip-pfr-gap, semi-loose-passive, fish-identification]
+  concepts:
+  - player-types
+  - vpip-pfr-gap
+  - semi-loose-passive
+  - fish-identification
   level: beginner
   position: any
-  title: "Recognize the semi-loose passive: fewer hands than a fish, but still a losing player"
-  claim: >-
-    Not every weak player is a 50% VPIP maniac. A semi-loose passive type plays around
-    28% of hands with a very low raise percentage, roughly 28/6. They bleed slower than a
-    true fish (40-50% VPIP), but when they play they call raises with small pairs and limp
-    broadways. A big VPIP-PFR gap is the signature of this losing type; 10-15 hands shows it.
-  why: >-
-    Table selection and isolation decisions depend on classifying opponents accurately.
-    The true fish is your main target, but a table of regulars with one semi-loose
-    passive player is still worth sitting at, while a table with none of either should
-    be left. Recognizing the gap between how often someone plays and how often they
-    raise tells you quickly that they are passive and exploitable: isolate their limps,
-    value bet them thinner, and do not expect them to play back.
-  common_mistake: >-
-    Dismissing a 28/6 as a regular because the VPIP looks moderate, and missing a
-    steady source of value at the table.
+  title: 'Recognize the semi-loose passive: fewer hands than a fish, but still a losing player'
+  claim: Not every weak player is a 50% VPIP maniac. A semi-loose passive type plays around 28% of hands
+    with a very low raise percentage, roughly 28/6. They bleed slower than a true fish (40-50% VPIP),
+    but when they play they call raises with small pairs and limp broadways. A big VPIP-PFR gap is the
+    signature of this losing type; 10-15 hands shows it.
+  why: 'Table selection and isolation decisions depend on classifying opponents accurately. The true fish
+    is your main target, but a table of regulars with one semi-loose passive player is still worth sitting
+    at, while a table with none of either should be left. Recognizing the gap between how often someone
+    plays and how often they raise tells you quickly that they are passive and exploitable: isolate their
+    limps, value bet them thinner, and do not expect them to play back.'
+  common_mistake: Dismissing a 28/6 as a regular because the VPIP looks moderate, and missing a steady
+    source of value at the table.
   numbers:
-    - "semi-loose passive: roughly 28/6 stats"
-    - "true fish: ~40-50% VPIP with a big VPIP-PFR gap"
-    - "10-15 hands is enough to classify a player type"
+  - 'semi-loose passive: roughly 28/6 stats'
+  - 'true fish: ~40-50% VPIP with a big VPIP-PFR gap'
+  - 10-15 hands is enough to classify a player type
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#04
-      stance: supports
-      note: "Defines SLP tag: ~28/6, passive, not as many hands as a fish, still losing."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#03
-      stance: supports
-      note: "10-15 hands to tell the player type; 29% VPIP player cold-calls iso-raise with 77."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#02
-      stance: supports
-      note: "Big gap between VPIP and PFR usually indicates a weaker player."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#04
+    stance: supports
+    note: 'Defines SLP tag: ~28/6, passive, not as many hands as a fish, still losing.'
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#03
+    stance: supports
+    note: 10-15 hands to tell the player type; 29% VPIP player cold-calls iso-raise with 77.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#02
+    stance: supports
+    note: Big gap between VPIP and PFR usually indicates a weaker player.
   consensus_score: 0.5
   hook_ideas:
-    - "The losing player you are not tagging."
-    - "28/6 is not a reg. Here is what it is."
-    - "One gap on your HUD that spots passive players instantly."
+  - The losing player you are not tagging.
+  - 28/6 is not a reg. Here is what it is.
+  - One gap on your HUD that spots passive players instantly.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-isolate-wide-in-position-keep-standards-oop-009
   format: cash-6max
   topic: preflop-ranges
-  concepts: [isolation, limpers, out-of-position, hand-standards, suited-aces]
+  concepts:
+  - isolation
+  - limpers
+  - out-of-position
+  - hand-standards
+  - suited-aces
   level: beginner
   street: preflop
   pot_type: limped
   position: oop
-  title: "Isolate limpers very wide in position, but keep real standards out of position"
-  claim: >-
-    Raising limpers is one of the best plays at micro stakes, but tighten up when the
-    limper will have position on you. In position almost any suited ace or two broadway
-    cards is a raise; from the blinds a hand like ace-three offsuit is the bottom of the
-    range or a fold, and king-eight is a check. Pots are simply harder to win when you
-    act first on every street.
-  why: >-
-    Isolating a limper works because you win the pot preflop or with one c-bet most of
-    the time, and position makes both easier: you see whether they continue before you
-    commit more. Out of position you have to bet blind into their range on every street
-    and cannot take free cards, so marginal hands turn into expensive guesses. Having
-    higher standards out of position keeps your isolation plays profitable instead of
-    just frequent.
-  common_mistake: >-
-    Raising every limper with any ace from the small blind, then facing three streets
-    of decisions out of position with a hand that only makes weak pairs.
+  title: Isolate limpers very wide in position, but keep real standards out of position
+  claim: Raising limpers is one of the best plays at micro stakes, but tighten up when the limper will
+    have position on you. In position almost any suited ace or two broadway cards is a raise; from the
+    blinds a hand like ace-three offsuit is the bottom of the range or a fold, and king-eight is a check.
+    Pots are simply harder to win when you act first on every street.
+  why: 'Isolating a limper works because you win the pot preflop or with one c-bet most of the time, and
+    position makes both easier: you see whether they continue before you commit more. Out of position
+    you have to bet blind into their range on every street and cannot take free cards, so marginal hands
+    turn into expensive guesses. Having higher standards out of position keeps your isolation plays profitable
+    instead of just frequent.'
+  common_mistake: Raising every limper with any ace from the small blind, then facing three streets of
+    decisions out of position with a hand that only makes weak pairs.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#03
-      stance: supports
-      note: "Would isolate with the hand in position but not OOP; 'want to have some standards out of position'."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#05
-      stance: supports
-      note: "Ace-three offsuit is bottom end OOP vs a limper; easy raise in position."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#04
-      stance: supports
-      note: "Checks ace-three off through from the blind vs limper; suited ace is fine to isolate."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#03
+    stance: supports
+    note: Would isolate with the hand in position but not OOP; 'want to have some standards out of position'.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#05
+    stance: supports
+    note: Ace-three offsuit is bottom end OOP vs a limper; easy raise in position.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#04
+    stance: supports
+    note: Checks ace-three off through from the blind vs limper; suited ace is fine to isolate.
   consensus_score: 0.5
   hook_ideas:
-    - "Isolate every limper? Not from the blinds."
-    - "Ace-three offsuit: raise in position, check out of position."
-    - "Position decides how wide you can punish limpers."
+  - Isolate every limper? Not from the blinds.
+  - 'Ace-three offsuit: raise in position, check out of position.'
+  - Position decides how wide you can punish limpers.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-regs-are-tame-steal-wide-but-respect-the-3bettor-010
   format: cash-6max
   topic: preflop-ranges
-  concepts: [stealing, button-range, cutoff, 3-bet-awareness, population-reads]
+  concepts:
+  - stealing
+  - button-range
+  - cutoff
+  - 3-bet-awareness
+  - population-reads
   level: beginner
   street: preflop
   position: btn
-  title: "Micro regs rarely 3-bet, so steal wide from the cutoff and button; back off when one does"
-  claim: >-
-    Most regulars at NL10 are tame: they 3-bet far below 8% and seldom play back. Against
-    tight blinds open very wide from the cutoff and especially the button, including any
-    two suited cards. When you spot one of the rare players with real 3-bet numbers on
-    your left, drop the marginal steals like jack-eight offsuit against them.
-  why: >-
-    Stealing profits from blinds that fold, and the typical micro regular folds the
-    blinds far more often than theory would allow. Super-tight players, at 8% VPIP for
-    example, fold so much that nearly any two cards show a profit from the button. The
-    exception is the uncommon competent regular with 20/18-type stats and a healthy
-    3-bet percentage: against them a marginal steal faces a 3-bet often enough that the
-    hand becomes a fold. Adjust by seat, not by a fixed range.
-  common_mistake: >-
-    Opening a tight textbook button range against blinds that fold everything, or
-    stubbornly opening jack-eight into the one player who 3-bets properly.
+  title: Micro regs rarely 3-bet, so steal wide from the cutoff and button; back off when one does
+  claim: 'Most regulars at NL10 are tame: they 3-bet far below 8% and seldom play back. Against tight
+    blinds open very wide from the cutoff and especially the button, including any two suited cards. When
+    you spot one of the rare players with real 3-bet numbers on your left, drop the marginal steals like
+    jack-eight offsuit against them.'
+  why: 'Stealing profits from blinds that fold, and the typical micro regular folds the blinds far more
+    often than theory would allow. Super-tight players, at 8% VPIP for example, fold so much that nearly
+    any two cards show a profit from the button. The exception is the uncommon competent regular with
+    20/18-type stats and a healthy 3-bet percentage: against them a marginal steal faces a 3-bet often
+    enough that the hand becomes a fold. Adjust by seat, not by a fixed range.'
+  common_mistake: Opening a tight textbook button range against blinds that fold everything, or stubbornly
+    opening jack-eight into the one player who 3-bets properly.
   numbers:
-    - "few micro regs 3-bet as much as ~8%"
-    - "lay off marginal steals vs a 21/18 player with an ~8% 3-bet on your left"
-    - "an 8% VPIP player at 6-max should be stolen from with almost any two"
+  - few micro regs 3-bet as much as ~8%
+  - lay off marginal steals vs a 21/18 player with an ~8% 3-bet on your left
+  - an 8% VPIP player at 6-max should be stolen from with almost any two
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#04
-      stance: supports
-      note: "'Real wide on cutoff and button, any two suited'; regs don't play back, few 3-bet 8%."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#05
-      stance: supports
-      note: "Folds J8o because a 21/18 with 8% 3-bet sits to his left; regs at these limits are tame."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#04
+    stance: supports
+    note: '''Real wide on cutoff and button, any two suited''; regs don''t play back, few 3-bet 8%.'
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#05
+    stance: supports
+    note: Folds J8o because a 21/18 with 8% 3-bet sits to his left; regs at these limits are tame.
   consensus_score: 0.5
   hook_ideas:
-    - "Your button range is too tight for NL10."
-    - "Any two suited from the button? Against these blinds, yes."
-    - "One player type that should shrink your steal range."
+  - Your button range is too tight for NL10.
+  - Any two suited from the button? Against these blinds, yes.
+  - One player type that should shrink your steal range.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-bluff-raise-donk-bets-but-always-with-outs-011
   format: cash-6max
   topic: bluffing
-  concepts: [donk-bets, bluff-raise, paired-boards, outs, semi-bluff]
+  concepts:
+  - donk-bets
+  - bluff-raise
+  - paired-boards
+  - outs
+  - semi-bluff
   level: beginner
   street: flop
   pot_type: srp
   position: ip
-  title: "Bluff-raise weak donk bets on dry paired boards, but never bluff with zero outs"
-  claim: >-
-    When a wide-range player leads into you on a dry paired flop such as eight-four-four,
-    raise rather than call or fold: it is very hard for them to have anything, and
-    players who donk often fold to a raise even if they ignore 3-bets preflop. Do it
-    with at least a gutshot, though. A bluff with no way to improve has only one way to
-    win, and that is not enough.
-  why: >-
-    Donk bets from loose players are usually weak pairs, draws or probes, and a dry
-    paired board gives them almost no strong holdings. A raise makes them fold most of
-    that range immediately. Insisting on some outs is cheap insurance: when the bluff
-    gets called you still have a chance to win, which turns a pure gamble into a
-    semi-bluff. Players who 3-bet-proof their preflop game often still fold to flop
-    raises because the stakes feel bigger, so this is a reliable spot against them.
-  common_mistake: >-
-    Calling a small donk bet with nothing to "see what happens", or bluff-raising with a
+  title: Bluff-raise weak donk bets on dry paired boards, but never bluff with zero outs
+  claim: 'When a wide-range player leads into you on a dry paired flop such as eight-four-four, raise
+    rather than call or fold: it is very hard for them to have anything, and players who donk often fold
+    to a raise even if they ignore 3-bets preflop. Do it with at least a gutshot, though. A bluff with
+    no way to improve has only one way to win, and that is not enough.'
+  why: 'Donk bets from loose players are usually weak pairs, draws or probes, and a dry paired board gives
+    them almost no strong holdings. A raise makes them fold most of that range immediately. Insisting
+    on some outs is cheap insurance: when the bluff gets called you still have a chance to win, which
+    turns a pure gamble into a semi-bluff. Players who 3-bet-proof their preflop game often still fold
+    to flop raises because the stakes feel bigger, so this is a reliable spot against them.'
+  common_mistake: Calling a small donk bet with nothing to "see what happens", or bluff-raising with a
     hand that cannot improve on any turn card.
   numbers:
-    - "a donk-bet stat of ~33% over 6 opportunities already flags a frequent leader"
+  - a donk-bet stat of ~33% over 6 opportunities already flags a frequent leader
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#06
-      stance: supports
-      note: "Raises a donk bet on 8-4-4 with a gutshot; 'never really a reason to bluff with no outs'."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#02
-      stance: supports
-      note: "Raises a 'ridiculous lead' from a 55/32 player who does not fold to 3-bets but folds here."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#06
+    stance: supports
+    note: Raises a donk bet on 8-4-4 with a gutshot; 'never really a reason to bluff with no outs'.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#02
+    stance: supports
+    note: Raises a 'ridiculous lead' from a 55/32 player who does not fold to 3-bets but folds here.
   consensus_score: 0.5
   hook_ideas:
-    - "He leads into you on a paired board. Raise."
-    - "The one rule we never break when bluffing."
-    - "Why a gutshot is the minimum for any bluff."
+  - He leads into you on a paired board. Raise.
+  - The one rule we never break when bluffing.
+  - Why a gutshot is the minimum for any bluff.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-3bet-big-for-value-vs-players-who-give-no-credit-012
   format: cash-6max
   topic: preflop-ranges
-  concepts: [value-3bet, 3-bet-sizing, light-3bets, fickle-opponents]
+  concepts:
+  - value-3bet
+  - 3-bet-sizing
+  - light-3bets
+  - fickle-opponents
   level: beginner
   street: preflop
   pot_type: 3bet-pot
   position: any
-  title: "Against players who never give you credit, 3-bet big for value and skip light 3-bets"
-  claim: >-
-    Many micro players call 3-bets with any two after you have shown aggression once,
-    because they do not believe you. Against them, a light 3-bet is a bad bluff, so fold
-    the marginal hands instead. When you do have a big hand, 3-bet, and 3-bet larger than
-    normal; they will call anyway.
-  why: >-
-    A 3-bet bluff needs folds; a 3-bet for value needs calls. The fickle, stubborn
-    opponent gives you the second and not the first, so your 3-betting range against
-    them should be nearly all value, sized to extract. Bluffing them preflop just builds
-    a pot out of position with a weak hand against someone who will not fold on later
-    streets either. The adjustment is simple and highly profitable: polarize towards
-    value, size up, and let their disbelief pay you.
-  common_mistake: >-
-    3-betting queen-jack as a bluff against a player who has just called two 3-bets with
+  title: Against players who never give you credit, 3-bet big for value and skip light 3-bets
+  claim: Many micro players call 3-bets with any two after you have shown aggression once, because they
+    do not believe you. Against them, a light 3-bet is a bad bluff, so fold the marginal hands instead.
+    When you do have a big hand, 3-bet, and 3-bet larger than normal; they will call anyway.
+  why: 'A 3-bet bluff needs folds; a 3-bet for value needs calls. The fickle, stubborn opponent gives
+    you the second and not the first, so your 3-betting range against them should be nearly all value,
+    sized to extract. Bluffing them preflop just builds a pot out of position with a weak hand against
+    someone who will not fold on later streets either. The adjustment is simple and highly profitable:
+    polarize towards value, size up, and let their disbelief pay you.'
+  common_mistake: 3-betting queen-jack as a bluff against a player who has just called two 3-bets with
     junk, then giving up on the flop.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#01
-      stance: supports
-      note: "Lays off a light 3-bet because the player will call any two; 'if I had a big hand I would 3-bet, maybe big'."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#01
+    stance: supports
+    note: Lays off a light 3-bet because the player will call any two; 'if I had a big hand I would 3-bet,
+      maybe big'.
   consensus_score: 0.5
   hook_ideas:
-    - "He will not fold to your 3-bet. Good. Make it bigger."
-    - "Light 3-bets are wasted on this player type."
-    - "When disbelief becomes your profit source."
+  - He will not fold to your 3-bet. Good. Make it bigger.
+  - Light 3-bets are wasted on this player type.
+  - When disbelief becomes your profit source.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-tight-early-unless-a-fish-is-in-the-blinds-013
   format: cash-6max
   topic: preflop-ranges
-  concepts: [early-position, opening-range, weak-player-in-blinds, table-count]
+  concepts:
+  - early-position
+  - opening-range
+  - weak-player-in-blinds
+  - table-count
   level: beginner
   street: preflop
   position: utg
-  title: "Open tight from early position, and loosen only when a weak player sits in the blinds"
-  claim: >-
-    Hands like six-seven suited or ten-three suited are folds from under the gun in a
-    normal 6-max game. They become opens when a loose passive player is in the blinds
-    and likely to call, because the hand is now a vehicle for playing a pot against them
-    in position. Playing fewer tables also justifies a few more opens, since you can give
-    each spot more attention.
-  why: >-
-    Early-position opens face the most players behind, so the base range must be tight.
-    The value of a speculative hand comes almost entirely from who calls it; against
-    regulars who 3-bet or fold, ten-three suited has nothing going for it, but against a
-    weak player who will call and pay off two pair, the same hand is a profitable open.
-    Fewer tables means more focus and more ability to extract from those spots, which
-    shifts the marginal hands from fold to raise.
-  common_mistake: >-
-    Opening speculative hands from under the gun regardless of who is in the blinds,
-    or folding them when the loosest player at the table is about to call.
+  title: Open tight from early position, and loosen only when a weak player sits in the blinds
+  claim: Hands like six-seven suited or ten-three suited are folds from under the gun in a normal 6-max
+    game. They become opens when a loose passive player is in the blinds and likely to call, because the
+    hand is now a vehicle for playing a pot against them in position. Playing fewer tables also justifies
+    a few more opens, since you can give each spot more attention.
+  why: Early-position opens face the most players behind, so the base range must be tight. The value of
+    a speculative hand comes almost entirely from who calls it; against regulars who 3-bet or fold, ten-three
+    suited has nothing going for it, but against a weak player who will call and pay off two pair, the
+    same hand is a profitable open. Fewer tables means more focus and more ability to extract from those
+    spots, which shifts the marginal hands from fold to raise.
+  common_mistake: Opening speculative hands from under the gun regardless of who is in the blinds, or
+    folding them when the loosest player at the table is about to call.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#02
-      stance: supports
-      note: "Folds a marginal hand UTG; would open it only with a fish in the blinds; 'tight in early position'."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#06
-      stance: supports
-      note: "Plays 67 only because a weak player is in the small blind and he is on four tables."
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#04
-      stance: supports
-      note: "A weak player in the big blind sways a marginal steal with T3s."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#02
+    stance: supports
+    note: Folds a marginal hand UTG; would open it only with a fish in the blinds; 'tight in early position'.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#06
+    stance: supports
+    note: Plays 67 only because a weak player is in the small blind and he is on four tables.
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#04
+    stance: supports
+    note: A weak player in the big blind sways a marginal steal with T3s.
   consensus_score: 0.5
   hook_ideas:
-    - "Six-seven suited under the gun: fold, unless this one thing is true."
-    - "Your opening range should change with who is in the blinds."
-    - "The fish in the big blind just made your junk hand playable."
+  - 'Six-seven suited under the gun: fold, unless this one thing is true.'
+  - Your opening range should change with who is in the blinds.
+  - The fish in the big blind just made your junk hand playable.
   status: draft
-  created: "2026-10-04"
-
+  created: '2026-10-04'
 - id: c-cash-6max-br7-delayed-cbet-vs-players-who-play-back-014
   format: cash-6max
   topic: turn-play
-  concepts: [delayed-cbet, fickle-opponents, recent-history, check-back]
+  concepts:
+  - delayed-cbet
+  - fickle-opponents
+  - recent-history
+  - check-back
   level: beginner
   street: flop
   pot_type: srp
   position: ip
-  title: "After winning a pot off an active player, consider a delayed c-bet instead of firing again"
-  claim: >-
-    When an aggressive or stubborn micro player has just lost a pot to you, expect them
-    to play back at your next c-bet regardless of their hand. Against that player
-    checking the flop in position and betting the turn, or letting them bluff into you,
-    often beats the automatic c-bet.
-  why: >-
-    Players at these limits are fickle; losing a pot makes them want to punish you on
-    the next one, often with a raise or a float they would not normally make. A flop
-    c-bet into that mood invites a raise you cannot continue against. Checking back
-    removes the trigger, lets them take the lead with air, and gives you a cheaper
-    look at the turn where your bet is more credible. It is a timing adjustment, not a
-    change of strategy.
-  common_mistake: >-
-    C-betting into a player who just lost a pot to you and then folding to the inevitable
+  title: After winning a pot off an active player, consider a delayed c-bet instead of firing again
+  claim: When an aggressive or stubborn micro player has just lost a pot to you, expect them to play back
+    at your next c-bet regardless of their hand. Against that player checking the flop in position and
+    betting the turn, or letting them bluff into you, often beats the automatic c-bet.
+  why: Players at these limits are fickle; losing a pot makes them want to punish you on the next one,
+    often with a raise or a float they would not normally make. A flop c-bet into that mood invites a
+    raise you cannot continue against. Checking back removes the trigger, lets them take the lead with
+    air, and gives you a cheaper look at the turn where your bet is more credible. It is a timing adjustment,
+    not a change of strategy.
+  common_mistake: C-betting into a player who just lost a pot to you and then folding to the inevitable
     raise, repeating the pattern every orbit.
   source_refs:
-    - school: br79
-      course: Crushing the Micros 6-max
-      lesson: br79-ctm-6max/007-part7
-      chunk: br79-ctm-6max/007-part7#03
-      stance: supports
-      note: "Gets raised on a c-bet by an active player right after winning a pot; says a delayed c-bet would have been a good alternative."
+  - school: br79
+    course: Crushing the Micros 6-max
+    lesson: br79-ctm-6max/007-part7
+    chunk: br79-ctm-6max/007-part7#03
+    stance: supports
+    note: Gets raised on a c-bet by an active player right after winning a pot; says a delayed c-bet would
+      have been a good alternative.
   consensus_score: 0.5
   hook_ideas:
-    - "Just won a pot off him? Skip the next c-bet."
-    - "The delayed c-bet is built for stubborn opponents."
-    - "Fickle players tell you when they will play back."
+  - Just won a pot off him? Skip the next c-bet.
+  - The delayed c-bet is built for stubborn opponents.
+  - Fickle players tell you when they will play back.
   status: draft
-  created: "2026-10-04"
+  created: '2026-10-04'
