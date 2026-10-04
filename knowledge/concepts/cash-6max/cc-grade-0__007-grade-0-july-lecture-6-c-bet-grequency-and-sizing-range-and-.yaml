@@ -1,0 +1,703 @@
+# Concept cards extracted from lesson cc-grade-0/007 (c-bet frequency and sizing: range vs nut advantage).
+# Agent-mode extraction, 2026-10-04. All text is our own wording.
+
+- id: c-cash-6max-cc06-condensed-range-not-weak-001
+  format: cash-6max
+  topic: hand-reading
+  concepts: [condensed-range, range-equity, flop-call, capped-range]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: any
+  title: Calling a flop bet condenses a range, and that raises its equity
+  claim: When a player calls a bet instead of raising or folding, their range loses its very best and very worst hands at once. The top is capped, but the bottom is cut away, so the average equity of what remains goes up, not down.
+  why: Picture a range as a team. Dropping the weakest members improves the team even if you also lose the star. A flop call does exactly that. The trash folds, a few monsters raise, and what is left is a tight block of medium-to-good hands plus draws. Against the bettor's still-wide range, that block often has as much equity as the bettor or more. Equity is not the same as EV share, though. The player with position and more nutted hands can still be the one making more money. But treating a caller as "weak because they only called" is a reading error that leads to bad barrels.
+  common_mistake: Reading a flop call as a sign of weakness and firing the turn with hands that have no business betting, because "they capped themselves".
+  hook_ideas:
+    - "They called. Their range just got stronger, not weaker."
+    - "Capped does not mean weak. Here is the difference."
+    - "Why a flat call can beat your range in equity"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#01
+      stance: supports
+      note: Coach clarifies the homework misconception that condensing is negative.
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#04
+      stance: supports
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-small-range-advantage-is-no-advantage-002
+  format: cash-6max
+  topic: fundamentals
+  concepts: [range-advantage, range-equity, decision-framework]
+  level: intermediate
+  street: flop
+  position: any
+  title: A small range advantage should be treated as no advantage at all
+  claim: Only talk about having a range advantage when the gap in range-vs-range equity is sizable. If your range is a few points ahead, treat the spot as roughly even and build your strategy from there.
+  why: The question is never "who is ahead" but "by how much". Two armies of a million and 999,999 are equal for planning purposes, and so are two ranges split 51/49. The strategic consequences of range advantage, such as betting your whole range, only follow when the edge is big enough to make the opponent fold a lot of weak hands. Labeling a tiny edge as an advantage tempts you into over-aggression that the actual equity does not support. On the flop a strong edge looks like 60-70% range equity; 55% is already meaningful, but anything close to half is just a coin flip between two teams of hands.
+  common_mistake: Announcing "I have range advantage" in nearly every spot as the preflop raiser and using it to justify betting everything.
+  numbers:
+    - "Range-vs-range equity of ~55% is a real edge; 60-70% on the flop is a very large one"
+    - "Anything near 50/50 should be treated as no advantage"
+  hook_ideas:
+    - "'I have range advantage' is the most abused phrase in poker."
+    - "51% is not an advantage. It is a coin flip."
+    - "How much range advantage you need before it changes anything"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#01
+      stance: supports
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: Army analogy and the 101 dollars vs 100 dollars thought experiment.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-three-sources-of-range-advantage-003
+  format: cash-6max
+  topic: fundamentals
+  concepts: [range-advantage, range-equity, trash-hands, range-composition]
+  level: intermediate
+  street: flop
+  position: any
+  title: Range advantage comes from fewer trash hands as much as from more strong ones
+  claim: Range advantage is whole-range equity against whole-range equity. It is built from three things at once - a higher share of very strong hands, a higher share of decent hands, and a lower share of garbage. The missing garbage is the part almost everyone forgets.
+  why: A team with one superstar and ten children loses. A team of eleven solid players is hard to beat. Ranges work the same way. The preflop raiser on a dry middling board does not lead mainly because of their overpairs; they lead because the big blind is stuffed with low suited junk that whiffed, while the raiser's worst hands are still two overcards. Every weak combo your opponent carries drags their range equity down, and every one you do not carry pulls yours up. So when you assess a flop, ask what both ranges are weighted toward and away from, across the full distribution, not just who holds the monsters.
+  common_mistake: Judging range strength only by the top end ("I can have AA and KK, they can't") and ignoring how much junk each range carries.
+  hook_ideas:
+    - "The reason you have range advantage is not your overpairs."
+    - "Be grateful for the trash hands you don't have."
+    - "Range advantage: it's about the bottom, not the top"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#02
+      stance: supports
+      note: Sports-team analogy; three attributes of a sizable range advantage.
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#06
+      stance: supports
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-nut-advantage-is-not-range-advantage-004
+  format: cash-6max
+  topic: fundamentals
+  concepts: [nut-advantage, range-advantage, fallacy, sets]
+  level: intermediate
+  street: flop
+  position: any
+  title: Having more sets or more nutted combos does not give you range advantage
+  claim: Nut advantage is a component of range advantage, not a substitute for it. A range can hold more of the very best hands and still have less total equity than the opponent's range.
+  why: Think of two sets of numbers. One contains a 12, a 10 and an 8 and sums to 10 because the rest are tiny; the other has nothing above 8 but sums to 15. The second set is "stronger" even though the first has all the best individual pieces. Ranges behave identically. Humans remember the dramatic hands - the set that stacked someone, the flush that got there - so we overweight them when we size up a spot. The best hands matter, but they are only a few combos inside a range of two hundred. Assess the whole distribution first, then look separately at the top end when you decide how big to bet.
+  common_mistake: Saying "we have more sets here, so we have range advantage" and betting as if the whole range were ahead.
+  hook_ideas:
+    - "More sets than villain? Still doesn't mean you're ahead."
+    - "The nut advantage trap that fools most regs"
+    - "Your brain is magnetized to the nuts. Fix that."
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#02
+      stance: supports
+      note: First of three fallacies about detecting range advantage; numbers exercise.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-concentration-beats-combo-count-005
+  format: cash-6max
+  topic: hand-reading
+  concepts: [combinatorics, range-concentration, 3bet-pot, dilution]
+  level: intermediate
+  street: flop
+  pot_type: 3bet-pot
+  position: any
+  title: Judge ranges by concentration, not by raw combo count
+  claim: What matters is the percentage of a range that is strong, not how many strong combos it contains in absolute terms. A wider range can hold more combos of a hand class and still have it less often.
+  why: You only get dealt one hand at a time, so the relevant question is how likely you are to be holding a given class when you look down. A 3-bettor in a blind-vs-blind pot has more total combos of top pair on a queen-high flop than the caller, because they 3-bet every strong queen. But their range is also padded with suited aces, offsuit broadways and bluffs, so top pair makes up a smaller slice. Compare a range that is half nuts and half air with one that is mostly air plus a larger pile of nuts, and the first is stronger even with fewer good combos. Always convert "how many" into "how often".
+  common_mistake: Arguing "I have more Qx than villain in this 3-bet pot" and treating it as a strength argument when Qx is actually a smaller share of the wider range.
+  hook_ideas:
+    - "More combos of top pair, yet you hold it less often."
+    - "Count percentages, not combos. Here's why."
+    - "Would you rather have range A or range B?"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#03
+      stance: supports
+      note: The "total amount fallacy".
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-range-advantage-does-not-make-every-hand-bet-006
+  format: cash-6max
+  topic: turn-play
+  concepts: [range-advantage, showdown-value, delayed-cbet, hand-purpose]
+  level: beginner
+  street: turn
+  pot_type: srp
+  position: ip
+  title: Range advantage raises your betting frequency, it does not license betting every hand
+  claim: A big range advantage means more of your hands want to bet. It never overrides what your specific hand wants. A medium-strength hand with showdown value still checks even when your range is far ahead.
+  why: The reasons for betting have not changed - value, bluffing, and a little equity denial. Range advantage makes those reasons apply to more hands, but a hand that is too weak to be called by worse and too strong to turn into a bluff gains nothing from betting. Betting it might even be profitable in isolation, yet checking is worth more, and the goal is the best line, not a line that happens to be above zero. Your opponent still defends sensibly, continuing with the better part of their range and folding the worst, so a bet with a middling hand buys nothing it did not already have.
+  common_mistake: Checking back a middle pair on the flop, then firing a large turn bet with it after a blank because "I have the range advantage here".
+  example_hand:
+    positions: CO vs BB
+    hero: 8c8d
+    board: "Th6s2c Qd"
+    action: "CO opens, BB calls. Flop checks through. Turn Q: BB checks, CO bets 75% pot."
+    decision: Is a 75% turn bet with 88 correct given CO's range advantage on this runout?
+    answer: No. 88 has showdown value and beats most of what folds while losing to most of what calls. Check and often win at showdown. Range advantage guides range strategy, not this hand's choice.
+  hook_ideas:
+    - "Your range is ahead. Your hand still should not bet."
+    - "The turn bet that is +EV and still a blunder"
+    - "Range advantage is not a free pass to bet anything"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#02
+      stance: supports
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#03
+      stance: supports
+      note: Pocket-eights check-back then 75% turn bet example, called a blunder. Example generalized.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-flop-action-changes-turn-range-advantage-007
+  format: cash-6max
+  topic: turn-play
+  concepts: [range-advantage, flop-call, turn-barrel, polarization]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: After a flop bet gets called, the caller often holds the turn equity lead
+  claim: Range advantage on the turn depends on the flop action, not just the turn card. When the in-position raiser c-bets big and the big blind calls, the big blind's condensed range frequently has more equity on the turn than the bettor's polarized range, especially when the turn pairs the middle of the board.
+  why: Two things move range equity between streets - the new card and what each player did. Players remember the card and forget the action. The caller has folded their junk and kept middle pairs, top pairs and draws; the bettor has kept value and bluffs, and the bluffs are now the weak part of their range. On a jack-ten-four flop, a ten on the turn turns a huge chunk of the caller's middling range into trips. A solver shows the bettor sitting around 43% range equity there. That is why turn barrels become selective - the aggressor still bets, but only with real value, equity-driven bluffs, or hands with good blockers. A smaller flop bet condenses the caller less and dissipates the bettor's edge more slowly, but the direction is the same.
+  common_mistake: Looking at a turn card, deciding "nothing changed, same texture" and assuming the preflop raiser still has the advantage they held before the flop action.
+  numbers:
+    - "Example: aggressor ~43% vs caller ~57% range equity on JT4 with a T turn after a 75% c-bet and call"
+  hook_ideas:
+    - "The turn card didn't change anything. The flop call did."
+    - "Why your turn barrels fail after they call a big c-bet"
+    - "Who really has the equity lead on the turn?"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#04
+      stance: supports
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#05
+      stance: supports
+      note: Student question about a 33% c-bet vs 75%; coach says the edge dissipates less but still equalizes.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-range-disadvantage-still-bet-strong-hands-008
+  format: cash-6max
+  topic: turn-play
+  concepts: [range-disadvantage, polarization, thin-value, bluff-selection]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: A range disadvantage makes you selective, not passive
+  claim: When your range is behind on the turn you still bet your strong hands. The disadvantage shows up as a more polarized betting range - fewer thin value bets and bluffs chosen for blockers or equity - not as checking everything.
+  why: If nine out of ten cookies are ruined, the tenth is not inedible; it is the only one worth eating. A set when your range is weak is exactly that cookie. The opponent's range is strong, they will invest, and your hand is happy to build a pot. What changes is the margin. Second pair that would be a fine value bet against a weak range becomes a never-bet, because the caller's range is now dense with hands that beat it. Random no-equity bluffs become too expensive, so bluffs need a flush blocker, a draw, or a card that removes the opponent's continues. Range disadvantage trims the edges of your betting range; it does not remove the middle of it.
+  common_mistake: Learning about range disadvantage and then checking a set or betting second pair for thin value in the same spot, in both cases ignoring the specific hand.
+  example_hand:
+    positions: CO vs BB
+    hero: 4h4d
+    board: "Jc Th 4s Td"
+    action: "CO c-bets 75% on the flop, BB calls. Turn T: BB checks."
+    decision: CO's range is behind now that the ten paired. Bet or check with the set?
+    answer: Bet. The set wants a big pot and villain's range is strong enough to pay. J9 in the same spot never bets - too thin against a range full of Tx and Jx.
+  hook_ideas:
+    - "Range behind? Bet your set anyway. Here's what changes."
+    - "Range disadvantage means fewer bets, not zero bets."
+    - "The one hand you must never barrel on this turn"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#05
+      stance: supports
+      note: Set of fours on JT4-T; J9 "never betting" there. Example generalized.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-check-to-raiser-is-about-equity-not-initiative-009
+  format: cash-6max
+  topic: board-textures
+  concepts: [donk-bet, initiative, range-disadvantage, oop-flop-play]
+  level: beginner
+  street: flop
+  pot_type: srp
+  position: bb
+  title: You check to the raiser because your range is behind, not because they have initiative
+  claim: The big blind checks most flops to the preflop raiser because its range is at a large equity disadvantage, not because the raiser "has the initiative". On the rare flops where the big blind's range has caught up, leading some hands is correct.
+  why: Initiative and momentum are psychological stories, not strategic facts. Nothing about having raised preflop entitles a player to the first bet. What decides who acts aggressively first is range-vs-range equity on that flop. On a brick board like nine-deuce-deuce the big blind is miles behind - having more deuces is irrelevant because they are a sliver of a range full of junk - so checking the whole range is right. On a low connected monotone flop like six-five-four, the raiser's big unpaired cards are terrible and the big blind's small suited and connected hands have connected hard, so the big blind's range does well enough to start leading. Knowing the real reason you check lets you spot the flops where you should not.
+  common_mistake: Checking every flop as the big blind on autopilot "because they raised", without asking whether this board is one where your range actually does well.
+  hook_ideas:
+    - "'Check to the raiser' - the reason you were taught is wrong."
+    - "Initiative is a myth. Here's what actually decides who bets."
+    - "The flops where the big blind should lead"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#03
+      stance: supports
+      note: Coach calls "initiative" garbage; 922 vs 654 monotone examples.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-nutted-means-85-percent-equity-010
+  format: cash-6max
+  topic: fundamentals
+  concepts: [nut-advantage, overpairs, sets, equity-threshold]
+  level: intermediate
+  street: flop
+  position: any
+  title: Nut advantage is about hands with roughly 85%+ equity, not the literal nuts
+  claim: When assessing nut advantage, count every hand with very high equity - around 85% or more against the opponent's range - not only the single best possible holding. On low dry boards that is mostly overpairs, and overpairs are far more numerous than sets.
+  why: The literal nuts are a tiny part of any range. A set is three combos; a flopped set on a board where pocket pairs are a small part of a range might be 3% of it. Overpairs that the opponent cannot hold can be 24 combos or more, sitting at 85-90% equity. Twenty-four combos at 90% beat three combos at 96% by a wide margin, just as eleven payments of 100 beat three payments of 150. So an overpair on a seven-three-deuce board is a real nut-advantage contributor, while the opponent's extra sets barely register. Treating "nuts" literally makes you give away edges on exactly the boards where your overpairs dominate.
+  common_mistake: Deciding the opponent has the nut advantage because they can hold small sets you cannot, while ignoring that your range holds dozens of unbeatable-in-practice overpairs.
+  numbers:
+    - "Nutted threshold used: roughly 85%+ equity vs the opponent's range"
+    - "A set is 3 combos; in a ~200-combo defending range, 6 set combos is ~3%"
+    - "Example raiser range: 24 combos of JJ+ out of ~224 is ~11% of the range at ~86-87% equity"
+  hook_ideas:
+    - "'He can have a set' is 3% of his range."
+    - "The nuts is not what you think it is."
+    - "24 overpairs beat 3 sets. Every time."
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#05
+      stance: supports
+      note: Literal-nuts fallacy; 85%+ definition; 150 three times vs 100 eleven times.
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: 202-combo BB range with 6 set combos (3%); UTG 224 combos with 24 of JJ+ (11%).
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-do-not-fear-the-nuts-011
+  format: cash-6max
+  topic: value-betting
+  concepts: [nut-phobia, thin-value, bluffing-into-nuts, equity-estimation]
+  level: beginner
+  street: multi-street
+  position: any
+  title: "'He could have the nuts' is not a reason to check"
+  claim: Whether to value bet or bluff comes from estimating your equity and your opponent's folding range, not from whether a hand that beats you is possible. Sometimes you bluff into the nuts and get snapped, and that is correct.
+  why: The opponent can nearly always hold something that beats you. The question is what share of their range it is. If flushes are 5% of their continuing range and the rest is worse than your hand, you value bet and accept the occasional cooler. If you only bluff when the nuts are impossible you never bluff, because they are rarely impossible. Fear of the worst case is wired into us - our instincts rank threats above opportunities - and running badly makes it louder, which is when players stop thin value betting and stop bluffing entirely. Replace the fear with a frequency - how often is that hand actually there?
+  common_mistake: Checking a strong hand or abandoning a bluff because "there are sets in his range", without asking how big that part of the range is.
+  hook_ideas:
+    - "Refuse to bluff into the nuts? Then you never bluff."
+    - "'He might have a flush' is costing you money."
+    - "The fear that stops you betting for value"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#05
+      stance: supports
+      note: Nut-phobia section; lightning analogy.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-range-equity-rarely-exceeds-70-012
+  format: cash-6max
+  topic: fundamentals
+  concepts: [range-equity, range-advantage, calibration]
+  level: beginner
+  street: flop
+  position: any
+  title: A range almost never has more than 60-70% equity, so 55% is already a big edge
+  claim: Because every range carries some hands that miss any given flop, range-vs-range equity on the flop tops out around 60-70% even in lopsided spots. Calibrate accordingly - 55% for a range is a healthy advantage, not a marginal one.
+  why: A single hand can easily hold 80 or 90% equity. A range cannot, for the same reason that 25 random people cannot all be in the top tenth of anything. Even the preflop raiser on a favorable board holds small pairs that missed and suited aces that whiffed, and those drag the average down. So when you see a range sitting at 55% you should read it as "clearly ahead" and when you see 66% as "enormous". This matters because players who expect hand-like numbers from ranges either dismiss real advantages as small or imagine advantages that are not there.
+  common_mistake: Looking at a 55% range equity figure and concluding the ranges are roughly even.
+  numbers:
+    - "Flop range equity rarely exceeds ~60-70% even with a huge advantage"
+    - "~55% range equity in position on a middling board = a sizable edge"
+  hook_ideas:
+    - "55% equity sounds small. For a range it's huge."
+    - "Why no range ever has 80% equity"
+    - "One number that recalibrates how you read range advantage"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#06
+      stance: supports
+      note: CO vs BB on JT4, ~55% equity for CO; IQ-of-25-people analogy.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-why-range-advantage-means-more-cbets-013
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [range-advantage, cbet-frequency, fold-equity, denial, range-bet]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: any
+  title: Range advantage raises c-bet frequency because every reason to bet gets better
+  claim: With a large range advantage on the flop, bet a much larger share of your range - sometimes all of it. The reason is mechanical, not mystical - a weak opposing range has to fold more, which improves value bets, bluffs and equity denial at the same time.
+  why: A range is just a collection of hands, so anything that is good for the range is good for many of the hands in it. When the opponent's range is weak, they fold more often than a break-even defender would, so bluffs win more. Fewer of their hands beat a given holding, so thinner hands become value bets. And because their weak hands still have live outs, denying those outs with a bet is safer - you rarely run into the hand that punishes you. All three motives improve together, which is why solvers range-bet flops where one side is far ahead. This is a flop phenomenon. On the turn and river you are close to showdown, denial matters less and betting polarizes again.
+  common_mistake: Treating "bet your range when ahead" as a memorized rule while still applying it to turns and rivers where the same logic no longer holds.
+  hook_ideas:
+    - "Why range advantage means bet more - the real mechanism"
+    - "Three reasons to bet, and all three improve at once"
+    - "Range-bet the flop. Never range-bet the river."
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: Value, bluff, denial all benefit; positive correlation between range advantage and fold equity.
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#08
+      stance: supports
+      note: Closing summary - range advantage equals frequency, use it for the flop only.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-mdf-assumes-equal-ranges-014
+  format: cash-6max
+  topic: defending
+  concepts: [mdf, range-disadvantage, over-folding, theory]
+  level: intermediate
+  street: flop
+  position: oop
+  title: MDF overstates how much you should defend when your range is behind
+  claim: Minimum defense frequency assumes both ranges are roughly equal. When you face a bet with a large range disadvantage, folding more than MDF suggests is the theoretically correct response, not a leak.
+  why: MDF answers the question "how often must I continue so the bettor's pure bluffs break even". That is only the right target when making the bettor indifferent is achievable and desirable. Against a range that is much stronger than yours, the bettor is simply profitable - they are not indifferent, and trying to hold them to break-even means calling with hands that lose money. Solvers show the disadvantaged side folding well above the MDF-implied rate on flops where the raiser's range dominates. The flip side is the bettor's edge - their bluffs and thin value bets work because the correct response includes a lot of folding.
+  common_mistake: Forcing yourself to call "to meet MDF" as the big blind on a flop where the raiser's range is far ahead, bleeding chips with hands that should fold.
+  contradictions:
+    - "Common teaching: 'always defend at least MDF or you are exploitable'. This lesson says MDF is a poor guide whenever ranges are asymmetric, which is most of the time."
+  hook_ideas:
+    - "MDF is wrong most of the time. Here's why."
+    - "Folding more than MDF can be the theory play."
+    - "Stop defending to make him break even. He's ahead."
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: Coach calls MDF a bad concept because it presupposes equal ranges.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-nut-advantage-sets-flop-size-015
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [nut-advantage, cbet-sizing, b75, b33, one-size-strategy]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: any
+  title: Nut advantage picks your flop c-bet size - 75% with it, 33% without it
+  claim: Simplify flop c-betting to one size per board. When your range holds many more very-high-equity hands than the opponent's, use about 75% pot. When the top ends of the two ranges are similar, use about 33%. Range advantage decides how often you bet; nut advantage decides how big.
+  why: Hands with 85-90% equity want to build a large pot quickly so that by the river an overbet or shove is available. If your range is dense with such hands, accelerating pot growth on the flop serves the whole range. If the opponent can hold the top hands as easily as you can, a big bet gains little and exposes your medium hands. Using one size keeps the strategy learnable and the lesson is that the choice should be made from the nut region of both ranges, not from how often you plan to bet. A bigger size will naturally mean fewer hands qualify as value bets, so you will be more polarized when you bet big, but polarity is a consequence of the size, not the reason for it.
+  common_mistake: Reasoning "I'm going to be polarized here, so I'll bet big". The causation runs the other way - the nut advantage justifies the big size, and the big size makes you polar.
+  numbers:
+    - "Large nut advantage: single flop size ~75% pot"
+    - "No large nut advantage: single flop size ~33% pot"
+  hook_ideas:
+    - "One rule for flop c-bet size. 33% or 75%."
+    - "Range advantage = frequency. Nut advantage = sizing."
+    - "You're betting big for the wrong reason."
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: Flop c-bet sizing rule; coach corrects a slide that mistakenly said range advantage.
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#08
+      stance: supports
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-frequency-and-size-are-independent-016
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [cbet-frequency, cbet-sizing, range-advantage, nut-advantage, fallacy]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: any
+  title: Bet frequency and bet size are separate dials with separate inputs
+  claim: "'If I bet rarely I should bet big' is a fallacy. Frequency follows range advantage and size follows nut advantage, so all four combinations exist - including betting rarely and small, and betting your whole range big."
+  why: The two often move together because the most common post-flop situation is a polarized bettor against a condensed caller - the caller has the range edge, the bettor has the nut edge, so bets are infrequent and large. That correlation gets mistaken for causation. But consider a blind-vs-blind monotone flop where both players hold flushes equally and the raiser's range is only slightly ahead - no nut advantage and little range advantage, so the correct play is to bet infrequently and small. Or a low paired board where the raiser's overpairs are untouchable and the big blind is full of junk - both advantages, so range-bet large. Diagnose the two inputs separately and let the outputs fall where they fall.
+  common_mistake: Asking "shouldn't we bet bigger since we only bet sometimes here?" and sizing up on a board where the opponent holds the nut region as often as you do.
+  numbers:
+    - "Example quadrant: SB vs BB monotone, ~52% range equity, no nut edge: low frequency, small size"
+    - "Example quadrant: BTN vs BB low connected board, ~50% range equity but strong overpair edge: low frequency, big size"
+  hook_ideas:
+    - "Betting rarely does not mean betting big."
+    - "Four c-bet strategies. Most players only know two."
+    - "Frequency and size: two dials, not one"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: Frequency-controls-sizing fallacy; four worked quadrants (small/small, nut-only, range-only, both).
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-turn-barrel-nut-edge-without-range-edge-017
+  format: cash-6max
+  topic: turn-play
+  concepts: [turn-barrel, nut-advantage, range-disadvantage, polarization, big-sizing]
+  level: intermediate
+  street: turn
+  pot_type: srp
+  position: ip
+  title: Turn barrels are usually big and infrequent - nut edge without range edge
+  claim: The typical turn after a c-bet and call is a spot where the bettor has a nut advantage but no longer a range advantage. The right response is to bet a small share of your range and to bet it large.
+  why: The flop call condensed the opponent toward medium hands and raised their range equity, often past yours. Your range, however, still holds the hands they rarely have - sets, overpairs, the strong value you bet the flop with - and those hands sit at the top of the equity distribution. So the range as a whole does not want to bet often, but the hands that do bet want a big pot. This is why the standard turn barreling range is polarized and sized up - it is the natural outcome of two separate inputs, one saying "rarely" and the other saying "big". Recognizing the pattern stops you from either barreling too wide or betting your strong hands too small.
+  common_mistake: Barreling the turn with the same wide range and small size that worked on the flop, after the opponent's call has already caught their range up.
+  hook_ideas:
+    - "Why turn barrels are big and rare - it's not style"
+    - "They called the flop. Now bet less often, but bigger."
+    - "The most common post-flop pattern, explained"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: Coach says nut-advantage-without-range-advantage is the most common combination, e.g. turn barreling.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-range-bet-big-on-low-paired-boards-018
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [range-bet, big-sizing, paired-board, overpairs, nut-advantage]
+  level: advanced
+  street: flop
+  pot_type: srp
+  position: ip
+  title: On low paired boards the raiser can range-bet large, not small
+  claim: On a board like jack-deuce-deuce, an early-position raiser against the big blind holds both a huge range advantage and a huge nut advantage, so betting the entire range for around 75% pot is the theory-preferred strategy. A small range bet is acceptable but gives up a little EV.
+  why: Nobody has many deuces, so the real nut region is still overpairs, which sit above 90% equity against a range full of missed hands. The big blind cannot catch up at the top because the paired card is one they rarely hold. That is the profile for big sizing. Contrast a jack-ten-ten board, where the big blind holds a ten far too often - trips are now easy for them, your overpairs are negated, and a small size is mandatory. The difference is not "paired board" versus "unpaired", it is whether the paired rank is one the defender actually has. Most players assume range bets are always small, and the coach estimates that most regulars would size small here, which makes the big bet unfamiliar to face as well as theoretically better.
+  common_mistake: Equating "range bet" with "small bet" and never considering a large size when betting everything.
+  numbers:
+    - "Range-bet ~75% pot on low paired, hard-to-hit boards where overpairs keep ~90% equity"
+    - "Coach's estimate: 70-80% of regs would bet small on such a board"
+  hook_ideas:
+    - "Yes, you can range-bet 75% pot. Here's where."
+    - "Range bet does not mean small bet."
+    - "J22 and JTT look similar. The sizing is opposite."
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: UTG vs BB J22 range-bet B75; JTT and JJx as the counter-examples.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-big-range-edge-no-nut-edge-bet-small-019
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [range-bet, small-sizing, trips, uncapped-range, nut-advantage]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Huge range advantage with no nut advantage means range-bet small
+  claim: On boards where your range has far more equity but the opponent can easily hold the nuts - a queen-paired board against a big blind who defends many queens, for instance - bet almost your whole range for a small size. Betting big would pile money in against an uncapped range.
+  why: Your range equity can be enormous, around two-thirds of the pot, mainly because the big blind is full of junk and you have more decent hands like ace-king or a lower pocket pair. That justifies a very high betting frequency. But trips on a paired queen board need only a queen plus any kicker, which a big blind defender holds often. You do not have "way more" trips than they do as a share of range, and your quads and pocket aces are too few combos to count. With the top of the two ranges roughly equal, there is no benefit in building a big pot immediately; the small bet collects the frequency edge without exposing your many medium hands to a strong nut region.
+  common_mistake: Seeing 66% range equity and reaching for a large bet, when the opponent's uncapped trips region argues for betting small.
+  numbers:
+    - "Example: HJ vs BB on AQQ, raiser holds ~66% range equity but no large nut edge - range-bet small"
+  hook_ideas:
+    - "66% range equity. Still bet small. Here's why."
+    - "When a big edge still calls for a small bet"
+    - "Who really has the trips here?"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: HJ vs BB AQQ example; student debate about who has more Qx.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-textures-that-remove-nut-advantage-020
+  format: cash-6max
+  topic: board-textures
+  concepts: [nut-advantage, overpairs, ace-high-boards, monotone, paired-boards]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: ip
+  title: Ace-high, paired, monotone and wet boards strip the raiser's nut advantage
+  claim: The raiser's nut advantage lives in overpairs. Any texture that neutralizes overpairs - an ace or king on board, a pair the defender often holds, three of a suit, or a connected board the defender hits hard - removes it and calls for small sizing. Low, dry, disconnected boards preserve it and call for big sizing.
+  why: Preflop raisers carry queens, jacks and tens that the caller mostly lacks. On ten-high-and-lower dry flops those pairs are still near the top of the equity ladder. An ace on the flop lets any random ace beat them; a king does similar damage, though less, because the raiser also holds more kings. A paired board of a rank the defender plays gives them easy trips. A monotone board hands flushes to both sides. Connected low boards give the defender's small suited connectors two pair, straights and big draws. In every case the gap at the top of the two ranges closes, so the hands that wanted a big pot are no longer uniquely yours. The harder a board is to connect with, the more an overpair keeps its power.
+  common_mistake: Betting big on ace-high or king-high flops out of habit because "I'm the raiser", when the ace has just erased the hands that made big bets worthwhile.
+  hook_ideas:
+    - "The ace on the flop just killed your sizing."
+    - "Five board types where your overpairs stop mattering"
+    - "Dry and low? Bet big. Here's the full list."
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#05
+      stance: supports
+      note: Overpairs on 773 vs 732; ace- and king-high boards lose nut advantage.
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: Big-bet boards are low, dry, disconnected; small on paired, acey, monotone boards.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-equalization-sets-cbet-frequency-021
+  format: cash-6max
+  topic: cbet-strategy
+  concepts: [equalization, range-advantage, cbet-frequency, btn-vs-bb, low-connected-boards]
+  level: intermediate
+  street: flop
+  pot_type: srp
+  position: btn
+  title: Ask how much the big blind has caught up, not whether they are ahead
+  claim: The big blind almost never has a range advantage against the button, so the useful question is how much its range has equalized on this flop. The more it has caught up, the lower your c-bet frequency should be, even if you still hold a nut advantage.
+  why: The button's range is dense with two high cards - ace-jack, king-ten and the like. On a low connected flop those hands drop sharply in equity while the big blind's small suited connectors and one-gappers turn into pairs, two pairs and draws. The button may still sit at 50% range equity and still own the overpair region, but the frequency edge is gone. That produces the conventional pattern of betting rarely but big. On a high dry board the equalization is minimal and the button bets very often. Frame every flop as "how far has the defender closed the gap" and your c-bet frequency will follow.
+  common_mistake: C-betting the button at the same high frequency on every flop because the button "always has range advantage".
+  numbers:
+    - "Example: BTN vs BB on a low connected board, button ~50% range equity, keeps overpair nut edge - low frequency, big size"
+  hook_ideas:
+    - "The big blind is never ahead. That's the wrong question."
+    - "How much did they catch up? That sets your c-bet rate."
+    - "Why you c-bet less on low connected flops"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: Equalization keyword; BTN vs BB ~50% equity with nut advantage example.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-investment-ceiling-022
+  format: cash-6max
+  topic: bet-sizing
+  concepts: [investment-ceiling, pot-geometry, medium-hands, big-sizing]
+  level: beginner
+  street: multi-street
+  position: any
+  title: Every hand has an investment ceiling - do not bet it past the pot it can handle
+  claim: Each hand can comfortably value bet up to a certain pot size and no further. Nutted hands have a near-unlimited ceiling and want a fast-growing pot; second pair has a low one. Choosing big sizes because "my range is ahead" can build a pot too large for the hand you actually hold.
+  why: A set is happy in any pot size and benefits from geometric growth that leaves a river shove on the table. Second pair betting big on three streets creates a pot where it can no longer be a value bet, so the money went in for no purpose. This is the per-hand reason the nut-advantage rule exists - when the range is dense with high-ceiling hands, big flop sizing serves most of the range; when it is not, big sizing drags medium hands past their ceiling. Before sizing up, ask what pot your hand still wants to be in on the river.
+  common_mistake: Firing large bets with a medium hand on the back of a range read, then arriving at the river with a pot too big to value bet and no good option.
+  hook_ideas:
+    - "Your second pair cannot afford the pot you just built."
+    - "Every hand has a ceiling. Find yours before you size up."
+    - "Why sets bet big and second pair bets small"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#07
+      stance: supports
+      note: Investment ceiling concept referenced from an earlier lecture.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
+
+- id: c-cash-6max-cc06-open-small-pairs-vs-weak-players-023
+  format: cash-6max
+  topic: exploits
+  concepts: [preflop-deviation, small-pairs, table-composition, equilibrium-vs-exploit]
+  level: beginner
+  street: preflop
+  position: utg
+  title: Open the smallest pairs from early position only when weak players are behind
+  claim: Deuces and threes from the first seat are a marginally losing open against competent opponents, so a chart will say fold. With one or more weak players left to act, open them - the extra post-flop EV turns the open profitable.
+  why: Equilibrium charts tell you what is barely losing against players who punish you correctly. The margin on the smallest pairs is tiny, which means table composition swings the answer. Against a table of regulars, folding costs almost nothing and avoids playing a weak hand out of position. Against passive callers who pay off sets and give free cards, the same hand gains more than the chart loss. Treat the chart as a baseline for the hardest conditions and move off it when the conditions are softer, not as a rule to follow regardless of who is sitting behind you.
+  common_mistake: Following a preflop chart rigidly and folding small pairs from early position at a table full of players who will call and pay off.
+  hook_ideas:
+    - "The chart says fold deuces. Sometimes the chart is wrong."
+    - "One table change that flips a preflop fold to an open"
+    - "Why charts assume the toughest table"
+  source_refs:
+    - school: cc
+      course: Carrot Poker School Grade 0
+      lesson: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-
+      chunk: cc-grade-0/007-grade-0-july-lecture-6-c-bet-grequency-and-sizing-range-and-#06
+      stance: supports
+      note: Aside about UTG opening 22/33 being slightly losing in equilibrium but correct vs fish.
+  consensus_score: 0.5
+  status: draft
+  created: "2026-10-04"
